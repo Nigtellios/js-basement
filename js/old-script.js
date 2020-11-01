@@ -174,3 +174,70 @@ console.log(task5 + currentValue);
 
 /* End of Task 5 --------- */
 
+/* Task 6 - Operators part 2*/
+
+var task6 = "#Task 6: ";
+
+let word1 = "Hello";
+let word2 = "World";
+
+let result = word1 + word2;
+
+console.log(result); 
+
+//Well it is just to said that we can also make a operations on strings
+//which is really useful.
+//Now let's go with comparsion operators.
+
+let number1 = 13;
+let number2 = 17;
+
+let operationResult1 = number1 > number2; //false, not higher than n2.
+//^it would return false because it is simply not true that number1 is greater than number 2.
+let operationResult2 = number1 == number2; //false, not equal
+let operationResult3 = number1 <= number2; //true
+let operationResult4 = number1 != number2; //true, not equal
+
+let ultraOperation = number1 === number2;
+
+ultraOperation = !ultraOperation; //It just changed the value from false to true
+//due to the ! (not) logical operator
+
+let logOp1 = number1 > number2 && number2 == number1;
+let logOp2 = number2 > number1 || number2 == number1;
+//^ with OR operator || only one of operands have to be true to return true
+
+//Ternary ? : something like if else
+
+let ternary = number1 > number2 ? number1 : number2;
+//What we did there? We asked the computer about comparsion, is the number 1 bigger than
+//number 2? No, so if the number 2 is bigger then it will store number 2 value, because
+//first sentence after ? stores only true, so if the statement is true then return number1,
+//if not - there comes an : - then store a value of number2.
+
+//Homework - Game over or not depending on number of lives.
+
+const maxLives = 3;
+let currentLives = 1;
+
+let isTheGameOver = currentLives <= 0 && currentLives < maxLives;
+
+//OR THE SOLUTION OF AUTHOR - SIMPLER
+
+let numberOfLives = 3;
+let isTheGameOver2 = !(numberOfLives > 0);
+
+//So actually the number of lives has to fill two conditions: we have to be at 0 lives to be dead and in
+//the same moment we have to got smaller number than maxLives to don't allow the numbers to override the value.
+
+console.log(task6 + "1 " + operationResult1);
+console.log(task6 + "2 " + operationResult2);
+console.log(task6 + "3 " + operationResult3);
+console.log(task6 + "Ultra: " + ultraOperation);
+console.log(task6 + "AND: " + logOp1);
+console.log(task6 + "OR: " + logOp2);
+console.log(task6 + "Ternary: " + ternary);
+console.log(task6 + "Homework: " + isTheGameOver);
+
+/* End of Task 6 --------- */
+
