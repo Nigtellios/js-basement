@@ -70,3 +70,107 @@ console.log(task3 + question + hasGameCrashed);
 
 /* End of Task 3 ------------------ */
 
+/* Task 4 - Strings */
+
+var task4 = "#Task 4: "
+var characterName = "Nebed";
+characterName = "Miran";
+
+var age = 22;
+
+let encourMessage = `Hi, my name is ${characterName}, and I'm ${age}.`;
+//This string between `` is using interpolation.
+
+let nameLength = characterName.length;
+
+//Now we can use two methods to convert text to Upper and Lower Case:
+
+let upperName = characterName.toUpperCase();
+let lowerName = characterName.toLowerCase();
+
+//Actually these two aren't modifying the literal value, we are creating
+//something like a copy of them and store them in upperName and lowerName.
+//If we want to change the original value, we have to reassing it using these methods.
+
+characterName = characterName.toLowerCase();
+//So this one is geting original value and converts it to lower case.
+
+let nameSlice = characterName.slice(0, 3);
+
+console.log(task4 + encourMessage);
+console.log(task4 + nameLength);
+console.log(task4 + upperName);
+console.log(task4 + lowerName);
+console.log(task4 + nameSlice);
+
+let currentLevel = 0;
+currentLevel = 3;
+
+let currentLevelInfo = `Currently you are at level ${currentLevel}`;
+
+console.log(task4 + currentLevelInfo);
+
+/* End of Task 4 --------- */
+
+/* Task 5 - Operators */
+
+var task5 = "#Task 5: ";
+
+//Assignment operator, it just assigns a value to a variable.
+
+let hp = 50;
+hp = 250;
+
+//Arithmetic operators + - * /
+
+hp = hp + 10; //260
+hp = hp - 20; //240
+hp = hp * 2; //480
+hp = hp / 2; //240
+
+//Now the modulus, which would return us a remainder of selected number
+//With this we can check if a number is even or odd.
+//It would look like health % 2 == 0; - if it's 0 then it's even, if not it's odd.
+
+hp = hp % 21; //9
+
+//Now with exponentiation we can raise first operand to the power of second one.
+
+hp = hp ** 2; //81
+
+//Or even..
+
+//hp = (hp ** 2)**2 ; //43046721
+
+//Now we can do the same with combination of arithmetic and assignment operator together.
+
+hp -= 20; //61
+hp += 30; //91
+hp *= 2; //182
+hp /= 2; //91
+
+//^Yep, we actually raised an 81 to the power of 81 which result is 43 milions.
+
+//Ye now Incrementation and decrementation.
+
+hp++; //92
+hp--; //91
+
+//And remember the PEMDAS with brackets! It is better to make brackets for
+//higher priority operations in maths even if they are no needed.
+
+hp = (hp * 2) - 20; //Value: 162 and THIS IS BETTER than:
+//hp = hp * 2 - 20;
+
+//Homework
+
+hp = hp + 1; //163
+hp++; //164
+hp += 1; //165
+
+let currentValue = `Current value is: ${hp}`;
+
+console.log(task5 + currentValue);
+
+/* End of Task 5 --------- */
+
