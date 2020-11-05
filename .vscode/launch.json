@@ -10,7 +10,7 @@
       "request": "launch",
       "name": "Launch Chrome against localhost",
       "url": "http://js-basement.test",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "${workspaceFolder}/script.js"
     }
   ]
 }
