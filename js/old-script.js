@@ -282,3 +282,139 @@ console.log(task7 + "Value of popArray after the pop(): " + popArray);
 
 /* End of Task 7 --------- */
 
+/* Task 8 - Multidimensional Arrays */
+
+var task8 = "#Task 8: ";
+
+let levels = [
+  [1.1, 1.2, 1.3, 1.4], //Array 1
+  [2.1, 2.2], //Array 2
+  [3.1, 3.2, 3.3], //Array 3
+  [4.1, 4.2, 4.3, 4.4, 4.5] //Array 4
+];
+
+//^Actually we created a 4 arrays inside array, that is called multidimensional arrays.
+//We wanna simulate few levels of our game while every of them has some sub-levels inside.
+//We can assume that they are like rows and columns. In each of inner-array we have some 
+//columns, these columns are: 1.1, 1.2, 1.3, 1.4 etc.
+
+let firstArea = levels[0]; 
+//^ This is simple access of whole 1 innerArray of our levels Array.
+
+let firstLevelArea = levels[0][1]; //It should be 1.2
+//^ This is simple access of 1st content in 1Inner array.
+// in [0] - This is row, while [1] is column inside inner row 0 (array 1)
+
+let firstLevelMod = levels[0][1] = 1.9;
+
+/* Homework - delete 1 item from innerArray 2 and add it to Inner Array 3 */
+
+let secondLevelMod = levels[1].pop();
+let secondLevelMod2 = levels[2].push(secondLevelMod);
+
+console.log(task8 + firstArea);
+console.log(task8 + firstLevelArea);
+console.log(task8 + firstLevelMod);
+console.log(task8 + "Whole Inner-Array1 after Level change: " + levels[0]);
+console.log(task8 + "Whole Inner-Array1 after Level change: " + levels[0]);
+console.log(task8 + "Content of 3rd InnerArray after push: " + levels[2]);
+
+/* End of Task 8 --------- */
+
+/* Task 9 - Functions */ /* */
+
+var task9 = "#Task 9: ";
+
+/*
+function name(inputs) {
+  function body
+  return value
+}
+*/
+//Hovewer, we don't have to return values or scopes any inputs all the time,
+//Our function can work without this and it would be perfectly fair if we
+//just want to do some code without returning anything or scoping any targets.
+
+let currentHealth = 100;
+let healAmount = 25;
+
+function heal() {
+  currentHealth += healAmount;
+}
+
+/* While designing functions we should think about logic behind it, it is much
+better to create something reusable or universal over time than just doing some
+static instructions which would not benefit over time. */
+
+heal();
+
+/* However, we can create an reference using variable to store the function. */
+
+let t1; let t2;
+t1 = 2; t2 = 10;
+
+let ref = function test1() {
+  t1 += t2;
+}
+
+ref();
+
+/* We can also nest a function inside other function, like: */
+
+let t3; let t4;
+t3 = 20; t4 = 5;
+
+function nestTest() {
+  t3 += t4;
+  function nested() {
+    t3--;
+  }
+  nested();
+}
+
+nestTest();
+
+//^The example above was example of nested function which was declared and
+//called inside another function.
+
+console.log(task9 + "Current Health after heal: " + currentHealth);
+console.log(task9 + "Test of a function reference: " + t1);
+console.log(task9 + "Test of a nested function: " + t3);
+
+/* End of Task 9 --------- */
+
+/* Task 10 - Function Parameters */ 
+
+var task10 = "#Task 10: ";
+
+let currentSanity = 0;
+
+// Now we would create some inputs to change the behavior of our function.
+// It is bad practice to declare other variable which can be used as an Input,
+// instead of this we can make it as a parameter.
+
+function sanity(recoverSanity) {
+  currentSanity += recoverSanity;
+}
+
+sanity(100); //currentSanity will be 100.
+
+// Sometimes we just want to pass some default value. However, if we then call another
+// value while calling an function, we will override this.
+
+
+let currentMana = 55.5;
+
+function manaRecover(manaRecoverAmount = 25) {
+  currentMana += manaRecoverAmount;
+}
+
+manaRecover(30.5);
+
+//Now our 30.5 will override the default value of 25.
+//It is very good to have default value of parameter.
+
+console.log(task10 + "Sanity after function call: " + currentSanity);
+console.log(task10 + "Mana after function call: " + currentMana);
+
+/* End of Task 10 --------- */

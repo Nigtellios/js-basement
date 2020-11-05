@@ -1,19 +1,23 @@
-/* Task 8 - Multidimensional Arrays */
+/* Task 11 - Function Return Statements */ 
 
-var task8 = "#Task 8: ";
+var task11 = "#Task 11: ";
 
-let levels = [
-  [1.1, 1.2, 1.3, 1.4], //Array 1
-  [2.1, 2.2], //Array 2
-  [3.1, 3.2, 3.3], //Array 3
-  [4.1, 4.2, 4.3, 4.4, 4.5] //Array 4
-];
+let maxBalance = 200.0;
+let currentBalance = 198.1;
 
-//^Actually we created a 4 arrays inside array, that is called multidimensional arrays.
-//We wanna simulate few levels of our game while every of them has some sub-levels inside.
-//We can assume that they are like rows and columns. In each of inner-array we have some 
-//columns, these columns are: 1.1, 1.2, 1.3, 1.4 etc.
+//Now we want to calculate a precentage of our balance, during this we would 
+//learn how to return something from a function to make some calculations.
 
-console.log(task8 + "1" + levels[1]);
+function transaction(transValue = 1.0) {
+  let calcValue = currentBalance + transValue;
+  currentBalance = calcValue > 200 ? maxBalance : calcValue;
+  currentBalance -= transValue;
+  return (currentBalance / maxBalance) * 100; //Calculating the precentage.
+}
 
-/* End of Task 8 --------- */
+let result = transaction();
+result = transaction(20.9);
+
+console.log(task11 + "Current Balance after transaction: " + currentBalance);
+
+/* End of Task 11 --------- */
