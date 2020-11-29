@@ -1,3 +1,7 @@
+/* Yes, I perfectly know that all of these should be different GIT branches,
+But right now I'm just too lazy to do that so it is much easier to just copy
+and paste every single task. */
+
 /* This is from ZENVA JS Foundations */
 
 /* 1st Task - Beginning */
@@ -418,3 +422,161 @@ console.log(task10 + "Sanity after function call: " + currentSanity);
 console.log(task10 + "Mana after function call: " + currentMana);
 
 /* End of Task 10 --------- */
+
+/* Task 11 - Function Return Statements */ 
+
+var task11 = "#Task 11: ";
+
+let maxBalance = 200.0;
+let currentBalance = 198.1;
+
+//Now we want to calculate a precentage of our balance, during this we would 
+//learn how to return something from a function to make some calculations.
+
+function transaction(transValue = 1.0) {
+  let calcValue = currentBalance + transValue;
+  currentBalance = calcValue > 200 ? maxBalance : calcValue;
+  currentBalance -= transValue;
+  return (currentBalance / maxBalance) * 100; //Calculating the precentage.
+}
+
+let result = transaction();
+result = transaction(20.9);
+
+console.log(task11 + "Current Balance after transaction: " + currentBalance);
+
+/* End of Task 11 --------- */
+
+/* Task 12 - If Statements 1/2 */ 
+
+var task12 = "#Task 12: ";
+
+let keyPress = "r";
+let xPos = 0;
+
+// We are going to create something like test for moving object
+
+if (keyPress == "l") {
+  xPos -= 1; //xPos = -1;
+} else if (keyPress == "r") {
+  xPos += 1; //xPos = -1;
+} else {
+  xPos = 0;
+}
+
+// This code is comparing the value of variable keyPress
+// „else" there works as an backup if we want to do something 
+// if no any of the values matches the requirements specified in above statements
+
+// If any of requirements fails (returns false), then code is going to another one
+
+
+console.log(task12 + "xPos value after debug: " + xPos);
+
+/* End of Task 12 --------- */
+
+/* Task 13 - If Statements 2/2 */ 
+
+var task13 = "#Task 13: ";
+
+// Let's talk about nested Ifs, imagine if we have:
+
+let someNumber = 99;
+let doLMAO = 0;
+
+if (someNumber > 10 ) {
+  doLMAO += 25;
+}
+if (someNumber < 5 ) {
+  doLMAO *= 2;
+}
+
+// We can use something above if we want to execute only one test of code at a time without
+// creating else if statement, but right I can't see this any useful.
+
+// Now we are going to create nested If
+
+let keyPressed = "d";
+let endPos = 200;
+let actualPos = 50;
+
+if (keyPressed == "d") {
+  if (actualPos < endPos) {
+    actualPos += 1;
+  }
+  actualPos += 1;
+} else if (keyPressed == "a") {
+  actualPos -= 1;
+} else {
+  actualPos = 0;
+}
+
+// However, there are scenarios when we shouldn't do that, instead of it we 
+// should add logical expression to it. Properly it would look like this:
+
+if (keyPressed == "d" && actualPos < endPos) {
+  actualPos += 1;
+} else if (keyPressed == "a") {
+  actualPos -= 1;
+} else {
+  actualPos = 0;
+}
+
+// but in the example above, the code would run only if both statements are
+// true, when we still want to do something before matching both of boolean expressions, then
+// we have to use nested if.
+
+/* Homework - Do the same on the left side of map */
+
+if (keyPressed == "d" && actualPos < endPos) {
+  actualPos += 1;
+} else if (keyPressed == "a" && actualPos >= 0) {
+  actualPos -= 1;
+} else {
+  actualPos = 0;
+}
+
+console.log(task13 + "Value after debug: " + doLMAO);
+console.log(task13 + "Actual position: " + actualPos);
+
+/* End of Task 13 --------- */
+
+/* Task 14 - While Loops */ 
+
+var task14 = "#Task 14: ";
+
+// Ye let's do the same another time (oof), now we are going to move foward
+// continously by 50 until we met end of our „map" (at least in math)
+
+let endOfMap = 500;
+let aPos = 0;
+let enemyPos = 450;
+let isGameOver = false;
+
+// while(aPos < endOfMap) {
+//   console.log(aPos); // To look forward if it is working in console.
+//   aPos += 50;
+//   if (aPos == enemyPos) {
+//     console.log('Game Over!');
+//   }
+// }
+
+while(!isGameOver) {
+  console.log("Current Position: " + aPos);
+  if(aPos == enemyPos){
+    isGameOver = true;
+    console.log("You've met enemy! Game is over on: " + aPos);
+  } else if (aPos == endOfMap) {
+    isGameOver = true;
+    console.log("You've met end of the map! Game is over on: " + aPos);
+  } else {
+    aPos += 50;
+  }
+}
+
+// ^ This is also a homework, we've made a code when game would end if we met
+// end of the map or our enemy.
+
+console.log(task14 + "Our actual position: " + aPos);
+
+/* End of Task 14 --------- */
