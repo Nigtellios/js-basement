@@ -1,16 +1,9 @@
-/* Task 15 - Control Statements */ 
+/* Task 17 - Objects */ 
 
-var task15 = "#Task 15: ";
+var task17 = "#Task 17: ";
 
-let endOfMap = 500;
-let aPos = 0;
-let enemyPos = 450;
-let isGameOver = false;
 
-while() {
-  
-}
 
-console.log(task15 + " ");
+console.log(task17);
 
-/* End of Task 15 --------- */
+/* End of Task 17 --------- */

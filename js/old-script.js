@@ -580,3 +580,93 @@ while(!isGameOver) {
 console.log(task14 + "Our actual position: " + aPos);
 
 /* End of Task 14 --------- */
+
+/* Task 15 - Control Statements */ 
+
+var task15 = "#Task 15: ";
+
+let endOfMap = 500;
+let aPos = 0;
+let enemyPos = 250;
+let isGameOver = false;
+
+// while(aPos < endOfMap) {
+//   aPos +=50;
+//   console.log("I'm moving, my position: " + aPos);
+//   if(aPos == enemyPos) {
+//     console.log("You've met enemy! Game is lost!");
+//     break;
+//   }
+// }
+
+// We simply want to stop our code like end game mechanics. 
+// That's why we used break. We are exiting our loop
+
+// Let's say that we want to skip every odd number right now:
+
+endOfMap = 20;
+
+// while(aPos < endOfMap) {
+//   if (xPos % 2 == 1) {
+//     xPos += 2;
+//     continue;
+//   }
+//   aPos++;
+//   if(aPos == enemyPos) {
+//     console.log("You've met enemy! Game is lost!");
+//     break;
+//   }
+//   console.log("I'm moving, my position: " + aPos);
+// }
+
+// This seems like kinda broken logic, but if we hit continue with our statements,
+// we actually leave behind everything that is after continue, because we will endlessly
+// jump between boolean condition inside while till our continue, so actually our break
+// would never happen (in the example above);
+
+function movePlayer() {
+  while(aPos < endOfMap) {
+   aPos ++;
+   if(aPos == enemyPos) {
+     console.log("You've met enemy! Game is lost!");
+     return;
+   }
+  }
+}
+
+// So actually we can move out the entire function with our „return" instead of breaking
+// iterations of whole loop.
+
+console.log(task15 + "Our return function: " + aPos);
+
+/* End of Task 15 --------- */
+
+/* Task 16 - For Loops */ 
+
+var task16 = "#Task 16: ";
+
+let items = ["Polo", "Gloves", "Wallet"];
+let endPointString = "I have: ";
+
+// for(let i = 0; i < items.length; i++) {
+//   //It would run 3 times coz of Array Length
+//   let itemName = items[i]; //We are parsing index so we would get item
+//   endPointString += itemName + ", ";
+// }
+
+// ^With this construction of our for loop we want to attach something
+// to every each item. We want to reach every content of our array
+// so our iterator is our array index. We want to finish when our
+// iterator would be equal to length of our Array.
+
+items.forEach(function(element) {
+  endPointString += element + ", ";
+});
+
+// This looks kinda confusing, but we are just doing a function on each element
+// of our array, so it's simpler and much more clear.
+
+console.log(task16 + endPointString);
+
+/* End of Task 16 --------- */
+
