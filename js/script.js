@@ -1,9 +1,8 @@
-/* Task 17 - Objects */ 
+/* Task 18 - Object Getters and Setters */ 
 
-var task17 = "#Task 17: ";
+var task18 = "#Task 18: ";
 
 
+console.log(task18);
 
-console.log(task17);
-
-/* End of Task 17 --------- */
+/* End of Task 18 --------- */

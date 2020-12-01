@@ -670,3 +670,53 @@ console.log(task16 + endPointString);
 
 /* End of Task 16 --------- */
 
+/* Task 17 - Objects */ 
+
+var task17 = "#Task 17: ";
+
+// We are going to create object called character.
+
+let gameCharacter = {
+  name: "Bezimienny",
+  xPosition: 0,
+  yPosition: 0,
+  items: ["Sword", "Helmet"],
+  // They are the properties
+  // property: value,
+  move: function(x) {
+    this.xPosition += x;
+    // this. means that belongs to this position of this object.
+    // It says: the property xPos of THIS object (gameCharacter) is
+    // going to increase by value of our x.
+  },
+};
+
+let name = gameCharacter.name;
+// We can also perform the same syntax using:
+// let name = gameCharacter['name'];
+
+// We can also re-assign any property.
+
+gameCharacter.items = ["Axe", "Bread"];
+
+// Aaaaand use functions
+
+gameCharacter.move(5);
+var x = gameCharacter.xPosition;
+
+// And we can add properties to the object on the fly simply using:
+
+gameCharacter.surname = "Leon";
+
+// Aaaaaaaaaaaaaaand we can access our functions on the fly and modify them:
+
+gameCharacter.zPosition = 0;
+gameCharacter.move = function(x,y) {
+  this.xPos += x;
+  this.yPos += y;
+};
+
+console.log(task17 + "Our X position is: " + gameCharacter.xPosition);
+console.log(task17 + "Our Additional property is: " + gameCharacter.surname);
+
+/* End of Task 17 --------- */
