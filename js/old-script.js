@@ -670,3 +670,127 @@ console.log(task16 + endPointString);
 
 /* End of Task 16 --------- */
 
+/* Task 17 - Objects */ 
+
+var task17 = "#Task 17: ";
+
+// We are going to create object called character.
+
+let gameCharacter = {
+  name: "Bezimienny",
+  xPosition: 0,
+  yPosition: 0,
+  items: ["Sword", "Helmet"],
+  // They are the properties
+  // property: value,
+  move: function(x) {
+    this.xPosition += x;
+    // this. means that belongs to this position of this object.
+    // It says: the property xPos of THIS object (gameCharacter) is
+    // going to increase by value of our x.
+  },
+};
+
+let name = gameCharacter.name;
+// We can also perform the same syntax using:
+// let name = gameCharacter['name'];
+
+// We can also re-assign any property.
+
+gameCharacter.items = ["Axe", "Bread"];
+
+// Aaaaand use functions
+
+gameCharacter.move(5);
+var x = gameCharacter.xPosition;
+
+// And we can add properties to the object on the fly simply using:
+
+gameCharacter.surname = "Leon";
+
+// Aaaaaaaaaaaaaaand we can access our functions on the fly and modify them:
+
+gameCharacter.zPosition = 0;
+gameCharacter.move = function(x,y) {
+  this.xPos += x;
+  this.yPos += y;
+};
+
+console.log(task17 + "Our X position is: " + gameCharacter.xPosition);
+console.log(task17 + "Our Additional property is: " + gameCharacter.surname);
+
+/* End of Task 17 --------- */
+
+/* Task 18 - References, Object Getters and Setters */ 
+
+var task18 = "#Task 18: ";
+
+// By general, there are NO POINTERS in JavaScript
+// Let's have a look but first let's write some simple object.
+
+let simpleObject = {
+  id: 0,
+  rowName: "null",
+  columnName: "First",
+  profession: "magician",
+  title: "Wizard",
+  // Now we want to get our title and profession from simpleObject and connect them together.
+  //We used it inside of an object, now every time we would use that it would just compute our full name.
+  get connection() {
+    let fullName = this.title + ", the " + this.profession + ".";
+    return fullName;
+  }
+};
+
+// And now, speaking by logic:
+
+let i = 5; // variable i is equal to 5, so we assign a value to the variable j
+let j = i; // but now, the all it is doing it's copying the value of i into j,
+           // i remains the same (5), while j takes new value
+i = 10;    // now j remains the same, because we change value in previous step, but we are not
+           // changing j after that. let's test this out
+
+console.log(task18 + "Value of j: " + j); // Value of j is 5
+console.log(task18 + "Value of i: " + i); // Value of i is 10
+
+// So on, this whole sequence is just copying a value.
+// However, if we create something like:
+
+let refName = simpleObject; //This is called reference.
+refName.id = 1; 
+
+// So now, refName.id is equal to 1, and the same the simpleObject id property is equal to 1.
+
+console.log(task18 + "Value of simpleObject ID: " + simpleObject.id); // And now it is 1.
+console.log(task18 + "Value of refName ID: " + refName.id); // And now it is 1.
+
+// Now let's create some fancy getters and setters.
+
+// get connection() {
+//   let fullName = this.title + " , the " + this.profession;
+//   return fullName;
+// }
+
+simpleObject.connection;
+
+console.log(task18 + "Our first getter called connection: " + simpleObject.connection); // And now it is 1.
+
+// Let's create some setter. They are used to modify some properties.
+
+let crowd = {
+  id: 0,
+  countPeople: 12,
+  set maxPeople(counter) {
+    this.countPeople = counter;
+    // So every time we set max people then we are changing countPeople to it.
+  }
+}
+
+crowd.maxPeople = 50; 
+
+// Now it would change our countPeople to 50, but the crowd.maxPeople itself is UNDEFINED.
+
+console.log(task18 + "Our first setter called maxPeople: " + crowd.countPeople); // And now it is 1.
+
+/* End of Task 18 --------- */
+
