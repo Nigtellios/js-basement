@@ -794,3 +794,33 @@ console.log(task18 + "Our first setter called maxPeople: " + crowd.countPeople);
 
 /* End of Task 18 --------- */
 
+/* Task 19 - Object Functions */ 
+
+var task19 = "#Task 19: ";
+
+// We are going to create multiple instances of single object.
+
+// This kind of abstraction allows us to create multiple, infinite instances of object
+// while we have to copy standard one to create another instances.
+
+function townNPC(id, name, title, pos) {
+  this.id = id;
+  this.name = name;
+  this.title = title;
+  this.pos = pos;
+  this.move = function(x) {
+    this.pos += x;
+  }
+  this.type = "default"; // If some value is not passed as a parameter, it would be
+  // default for this whole object type. It is useful when we would use some (the same)
+  // function on every instance of single object type.
+}
+
+// However, this it something like blueprint, now we are going to create instance of this object.
+// To do this, we have to use „new" keyword.
+
+let salesman = new townNPC(0, "Maverick", "Salesman", 120); // So now we store those values in salesman.
+
+console.log(task19 + "Our first NPC is: " + salesman.name + " with an ID value "+ salesman.id + ". Who's profession is: " + salesman.title + ". He stood at: " + salesman.pos + ".");
+
+/* End of Task 19 --------- */

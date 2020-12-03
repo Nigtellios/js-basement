@@ -1,9 +1,7 @@
-/* Task 19 - References, Object Getters and Setters */ 
+/* Task 20 - Object Functions */ 
 
-var task19 = "#Task 19: ";
+var task20 = "#Task 20: ";
 
+console.log(task20);
 
-
-console.log(task19); // And now it is 1.
-
-/* End of Task 19 --------- */
+/* End of Task 20 --------- */
