@@ -881,3 +881,45 @@ console.log(task20 + "Our function after using prototype on 2nd instance: " + cr
 // 2nd object instance assign.
 
 /* End of Task 20 --------- */
+
+/* Task 21 - Classes */ 
+
+var task21 = "#Task 21: ";
+
+class gameCharacter {
+  constructor(id, name, title, health, mana, xPosition) {
+    this.id = id;
+    this.name = name;
+    this.title = title;
+    this.health = health;
+    this.mana = mana;
+    this.xPosition = xPosition;
+  }
+  move(distance){
+    this.xPosition += distance;
+  }
+}
+
+let warrior = new gameCharacter(1, "Dave", "Barbarian", 150, 100, 200);
+
+warrior.move(50);
+
+// Now let's talk about inheritance of classes.
+// We want to use keyword super to inherit properties from parent class,
+// also if we want to add something that doesn't exist in parent class
+// we can easily do so. 
+
+class elfCharacter extends gameCharacter {
+  constructor(id, name, title, health, mana, xPosition){
+    super(id, name, title, health, mana, xPosition);
+    this.fishingSkillLevel = 0;
+  }
+}
+
+// Right up the fishingSkillLevel only exists in elfCharacter, so in children
+// class that inherit values from parent class. Parent class.
+
+console.log(task21 + "Some of the values from our class: ");
+console.log("Warrior name: " + warrior.name);
+
+/* End of Task 21 --------- */
