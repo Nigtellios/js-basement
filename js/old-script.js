@@ -824,3 +824,60 @@ let salesman = new townNPC(0, "Maverick", "Salesman", 120); // So now we store t
 console.log(task19 + "Our first NPC is: " + salesman.name + " with an ID value "+ salesman.id + ". Who's profession is: " + salesman.title + ". He stood at: " + salesman.pos + ".");
 
 /* End of Task 19 --------- */
+
+/* Task 20 - Object Prototypes */ 
+
+var task20 = "#Task 20: ";
+
+function constructor(id, posX, posY, name, swingPos) {
+  this.id = id;
+  this.posX = posX;
+  this.posY = posY;
+  this.name = name;
+  this.swingPos = swingPos;
+}
+
+// And now let's try to create another property on the fly by
+// doing prototype.
+
+let crane = new constructor(1, 15, 35, "Meril 1", 0);
+
+console.log(task20 + "Our constructor: " + crane.id + " " + crane.posX + " " + crane.posY + " " + crane.name + " ");
+
+crane.title = "Mother Crane";
+
+console.log(task20 + "Our additional property in Obj as a function 1st instance: " + crane.title);
+
+// So actually we've added another value to our Obj as a func, but it would
+// not appear in another instance because we've added it on the fly to this one,
+// it is not attached to our „blueprint".
+
+let crane2 = new constructor(2, 50, 590, "Meril 2");
+crane2.title;
+
+console.log(task20 + "Our additional property in Obj as a function 2st instance: " + crane2.title);
+// so it is undefined, as should be, it is an reference error.
+
+// We can outsmart it using prototype. Now every instance of Object as a Function would have this property.
+
+constructor.prototype.profession = "Blacksmith";
+
+console.log(task20 + "Our property after using prototype: " + crane.profession);
+
+// Ofc later on, we can reassign these values, just „Blacksmith" is now the default one for whole blueprint.
+// Let's use it more complex. Let's create a function that would heal our character.
+
+let swingCrane = function(swingAmount) {
+  this.swingPos += swingAmount;
+}
+
+constructor.prototype.swingCrane = swingCrane;
+crane.swingCrane(20);
+crane2.swingCrane(40);
+
+console.log(task20 + "Our function after using prototype on 1st instance: " + crane.swingPos);
+console.log(task20 + "Our function after using prototype on 2nd instance: " + crane2.swingPos);
+// This function done on crane2 would return undefined, because our value was not defines in
+// 2nd object instance assign.
+
+/* End of Task 20 --------- */
