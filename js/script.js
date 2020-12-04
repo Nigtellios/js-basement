@@ -1,9 +1,7 @@
-/* Task 21 - Classes */ 
+/* Task 22 - Classes */ 
 
-var task21 = "#Task 21: ";
+var task22 = "#Task 22: ";
 
+console.log(task22);
 
-
-console.log(task21 + "Our function after using prototype on 2nd instance: " + crane2.swingPos);
-
-/* End of Task 21 --------- */
+/* End of Task 22 --------- */
