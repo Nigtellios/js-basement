@@ -80,7 +80,7 @@ var quotient = 66 / 33; // 2
 
 var myVar = 87;
 myVar++;
-console.log(myVar);
+console.log("Task 12: " + myVar);
 
 /* Task 13: Basic JavaScript: Decrement a Number with JavaScript */
 
@@ -171,7 +171,7 @@ var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 /* Task 25: Basic JavaScript: Escape Sequences in Strings */
 
 var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
-console.log(myStr);
+console.log("Task 25: " + myStr);
 
 /* Task 26: Basic JavaScript: Concatenating Strings with Plus Operator */
 
@@ -192,7 +192,7 @@ var myStr = "My name is " + myName + " and I am well!";
 var someAdjective = "Okay";
 var myStr = "Learning to code is ";
 myStr += someAdjective;
-console.log(myStr);
+console.log("Task 29: " + myStr);
 
 /* Task 30: Basic JavaScript: Find the Length of a String */
 
@@ -201,3 +201,131 @@ var lastName = "Lovelace";
 lastNameLength = lastName.length;
 
 /* Task 31: Basic JavaScript: Use Bracket Notation to Find the First Character in a String */
+
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+firstLetterOfLastName = lastName[0]; // L
+console.log("Task 31: " + lastName[0]);
+
+
+/* Task 32: Basic JavaScript: Understand String Immutability */
+
+var myStr = "Jello World";
+myStr[0] = "H"; 
+// ^It can't be done, strings are immutable. Proper way is below.
+myStr = "Hello World";
+
+/* Task 33: Basic JavaScript: Use Bracket Notation to Find the Nth Character in a String */
+
+var lastName = "Lovelace";
+var thirdLetterOfLastName = lastName[2]; // third letter - v
+
+/* Task 34: Basic JavaScript: Use Bracket Notation to Find the Last Character in a String */
+
+var lastName = "Lovelace";
+var lastLetterOfLastName = lastName[lastName.length - 1];
+
+/* Task 35: Basic JavaScript: Use Bracket Notation to Find the Nth-to-Last Character in a String */
+
+var lastName = "Lovelace";
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+
+/* Task 36: Basic JavaScript: Word Blanks */
+
+var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+var wordBlanks = "The " + myNoun + " was " + myAdjective + " and he just " + myVerb + " very " + myAdverb;
+
+
+/* Task 37: Basic JavaScript: Store Multiple Values in one Variable using JavaScript Arrays */
+
+var myArray = ["LeMoiJelly", 0];
+
+/* Task 38: Basic JavaScript: Nest one Array within Another Array */
+
+var myArray = [["Nested Array, 0"]];
+
+/* Task 39: Basic JavaScript: Access Array Data with Indexes */
+
+var myArray = [50,60,70];
+var myData = myArray[0]; // 50
+
+/* Task 40: Basic JavaScript: Modify Array Data With Indexes */
+
+var myArray = [18,64,99];
+myArray[0] = 45; // now index 0 is 45 instead of 18
+
+/* Task 41: Basic JavaScript: Access Multi-Dimensional Arrays With Indexes */
+
+var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+// We are going for item with value 8, so:
+var myData = myArray[2][1];
+
+/* Task 42: Basic JavaScript: Manipulate Arrays With push() */
+
+var myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+console.log("Task 43: " + myArray);
+
+/* Task 43: Basic JavaScript: Manipulate Arrays With pop() */
+
+var myArray = [["John", 23], ["cat", 2]];
+var removedFromMyArray = myArray.pop(); // So now we assigned .poped value to variable removedFromMyArray
+
+/* Task 44: Basic JavaScript: Manipulate Arrays With shift() */
+
+var myArray = [["John", 23], ["dog", 3]];
+var removedFromMyArray = myArray.shift(); // now removedFromMyArray has ["John", 23]
+
+/* Task 45: Basic JavaScript: Manipulate Arrays With unshift() */
+
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35]); // Now we have also ["Paul", 35] at the beginning of array myArray
+
+/* Task 46: Basic JavaScript: Shopping List */
+
+var myList = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];
+
+/* Task 47: Basic JavaScript: Write Reusable JavaScript with Functions */
+
+function reusableFunction() {
+  console.log("Hi World")
+}
+
+reusableFunction(); // We call the function
+
+/* Task 48: Basic JavaScript: Passing Values to Functions with Arguments */
+
+function functionWithArgs(arg1, arg2) {
+  console.log("Task 48: " + (arg1 + arg2)); // It outputs sum of arg1 and arg2
+}
+
+functionWithArgs(3, 16);
+
+/* Task 49: Basic JavaScript: Global Scope and Functions */
+
+var myGlobal = 10;
+
+function fun1() {
+  oopsGlobal = 5; // oopsGlobal is defined without var so it has Global scope.
+}
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log("Task 49: " + output);
+}
+
+fun2();
+
+/* Task 50: Basic JavaScript: Local Scope and Functions */
+
