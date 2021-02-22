@@ -30,7 +30,7 @@ b = a;
 
 var a = 9; //Now it's the inital value of variable a.
 
-/* Task 6: BBasic JavaScript: Understanding Uninitialized Variables */
+/* Task 6: Basic JavaScript: Understanding Uninitialized Variables */
 
 // When JavaScript variables are declared, they have an initial value of undefined. 
 // If you do a mathematical operation on an undefined variable your result will 
@@ -329,3 +329,25 @@ fun2();
 
 /* Task 50: Basic JavaScript: Local Scope and Functions */
 
+/* Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. */
+
+function letsTestIt() {
+  var loc = "foo";
+  console.log("Task 50: " + loc);
+}
+
+letsTestIt(); //log "foo"
+console.log("Task 50: " + loc); // is not defines because of local scope
+
+/* Task 51: Global vs. Local Scope in Functions */
+
+/* However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precendence over the global variable. */
+
+var globalOne = "Hello";
+function locTest() {
+  var globalOne = "World";
+  return globalOne;
+}
+
+locTest();
+console.log("Task 51: " + globalOne);
