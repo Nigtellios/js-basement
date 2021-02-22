@@ -337,17 +337,47 @@ function letsTestIt() {
 }
 
 letsTestIt(); //log "foo"
-console.log("Task 50: " + loc); // is not defines because of local scope
+// console.log("Task 50: " + loc); // is not defined because of local scope
 
 /* Task 51: Global vs. Local Scope in Functions */
 
 /* However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precendence over the global variable. */
 
-var globalOne = "Hello";
+const globalOne = "What";
 function locTest() {
   var globalOne = "World";
   return globalOne;
 }
 
-locTest();
 console.log("Task 51: " + globalOne);
+
+/* But as far as I see, in ES6+ now the local one just doesn't work and the final value is „What". */
+
+/* Task 52: Return a Value from a Function with Return */
+
+/* We can pass values into a function with arguments. You can use a return statement to send a value back out of a function. */
+
+function plusVal52(pv52Arg) {
+  return pv52Arg + 3;
+}
+
+const pv52Answer = plusVal52(10);
+console.log("Task 52: " + pv52Answer);
+
+/* Task 53: Understanding Undefined Value returned from a Function */
+
+/* Function can include the return statement but it does not have to. In this case when you call this function it would process inner code but returned value would be undefined. */
+
+var checkSum = 0;
+
+function notDefined(sumNum) {
+  checkSum = checkSum + sumNum;
+}
+
+notDefined(5);
+console.log("Task 53: " + checkSum);
+
+/* But as far as I see, in ES6+ now it can not return anything so the output of checkSum would be 5. */
+
+/* Task 54: Assignment with a Returned Value */
+
