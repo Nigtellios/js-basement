@@ -381,3 +381,108 @@ console.log("Task 53: " + checkSum);
 
 /* Task 54: Assignment with a Returned Value */
 
+/* In JS everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable. */
+
+var process = 0;
+
+function passProcess(number) {
+  return (number + 10)/5;
+}
+
+process = passProcess(100);
+//We are assigning returned value to variable.
+
+console.log("Task 54: " + process);
+
+/* Task 55: Stand in Line (QUEUE) */
+
+/* in CS a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue. */
+
+/* First of all, we want to add the number to the end of array, then remove the first element of the array. */
+
+function pushArray(arr, arrItem) {
+  testArray.push(arrItem);
+  var item = testArray.shift();
+  return arrItem;
+}
+
+var testArray = [1,2,3,4,5];
+
+console.log("Task 55: Before: " + JSON.stringify(testArray));
+console.log("Task 55: Pushing array with: " + pushArray(testArray, 6));
+console.log("Task 55: After: " + JSON.stringify(testArray));
+
+/* Task 56: Understanding Boolean Values */
+
+/* Boolean is another data type. They may only be one of two values: true or false. They are basically little on-off switches, there TRUE is ON, and FALSE is OFF. These two states are mutually exclusive. Booleans are never written with QUOTES! */
+
+function booleanTest() {
+  return true;
+  //Only thing that we want is to return TRUE.
+}
+
+var bT = booleanTest();
+
+console.log("Task 56: Value of bT is (booleanTest): " + bT);
+
+/* Task 57: Use Conditional Logic with If Statements */
+
+/* If statements are used to make decisions in code. The keyword If tells JavaScript to execute the code in curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false. When condition will be true -> code in curly brackets will execute statements inside them, while FALSE -> they will not. */
+
+function testIfs(testIfsCondition) {
+  if(testIfsCondition) {
+    return "This condition was true";
+  }
+  //Otherwise
+  return "This condition was false";
+}
+
+console.log("Task 57: " + testIfs(true));
+console.log("Task 57: " + testIfs(false));
+
+/* Task 58: Comparison with the Equality Operator */
+
+/* There are many comparison operators in JS. All of these operators return a boolean true or false. The most basic operator is equality == and it compares two values and returns true if they're equivalent or false if they are not. */
+
+function testEqual(testEqualVal) {
+  if (testEqualVal == 50) {
+    return "Your testEqualVal is equivalent to value of 50.";
+  }
+  return "Your testEqualVal isn't equivalent to value of 50.";
+}
+
+console.log("Task 58: " + testEqual(50));
+
+/* Task 59: Comparison with the Strict Equality Operator */
+
+/* Strict equality === is the counterpart to the equality operator ==. However, unlike the equality operator which attempts to convert both values being compared to a common type, the strict equality operator DOES NOT perform a type conversion. */
+
+function testStrict(testStrictVal) {
+  if(testStrictVal === "XD") {
+    return "Your testStrictVal is equal and the same type of XD String";
+  }
+  return "Your testStrictVal is NOT EQUAL and the NOT same type of XD String";
+}
+
+console.log("Task 59: " + testStrict("XD"));
+
+/* Task 60: Practice comparing different values */
+
+/* In JS you can determine the type of a variable or a value with tyPEOF operator */
+
+var comp1 = 5;
+var comp2 = '5';
+
+console.log("Task 60: comp1 is: " + typeof comp1);
+console.log("Task 60: comp2 is: " + typeof comp2);
+
+function compareComps(comp1, comp2) {
+  if (comp1 === comp2) {
+    return "comp1 and comp2 are equal";
+  }
+  return "comp1 and comp2 are not equal";
+}
+
+console.log("Task 60: " + compareComps(5, '5'));
+
+/* Task 61: Comparison with inqeuality operator */
