@@ -396,13 +396,13 @@ console.log("Task 54: " + process);
 
 /* Task 55: Stand in Line (QUEUE) */
 
-/* in CS a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue. */
+/* in Computer Science a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue. */
 
 /* First of all, we want to add the number to the end of array, then remove the first element of the array. */
 
 function pushArray(arr, arrItem) {
   testArray.push(arrItem);
-  var item = testArray.shift();
+  var arrItem = testArray.shift();
   return arrItem;
 }
 
@@ -486,3 +486,137 @@ function compareComps(comp1, comp2) {
 console.log("Task 60: " + compareComps(5, '5'));
 
 /* Task 61: Comparison with inqeuality operator */
+
+/* The inequality operator (!=) is the opposite of the equality operator. It means „Not Equal". and returns false where equality would return true and vice versa. The same like equality operator, the inequality operator will convert data types of values while comparing. */
+
+function testNotEqual(testNotEqualVal) {
+  if(testNotEqualVal != 99) {
+    return "TestNotEqual Value isn't equal 99."
+  }
+  return "TNEV is equal."
+}
+
+console.log("Task 61: " + testNotEqual(98));
+
+/* Task 62: Comparison with Strict Inequality Operator */
+
+/* Strict inequality operator (!==) is the logical opposite of the strict equality operator. „Stricty Not Equal" returns FALSE where strict equality woulr return true and vice versa. IT WILL NOT CONVERT DATA TYPES. */
+
+function testStrictNotEqual(testStrictNotEqualVal) {
+  if(testStrictNotEqualVal !== 564) {
+    return "testStrictNotEqualVal isn't equal 564.";
+  }
+  return "testStrictNotEqualVal is equal 564.";
+}
+
+console.log("Task 62: " + testStrictNotEqual(563));
+
+/* Task 63: Comparison with the Greater Than Operator */
+
+/* The greater than (>) operator compares the values of two numbers and returns true if number to the left is greater than the number to the right. Otherwise it returns FALSE. It will convert data types of values while comparing. */
+
+function testGreaterThan(testGreaterThanVal) {
+  if(testGreaterThanVal > 500) {
+    return "It's over 500.";
+  }
+  if(testGreaterThanVal > 100) {
+    return "It's over 100.";
+  }
+  return "It's 100 or below.";
+}
+
+console.log("Task 63: " + testGreaterThan(301));
+
+/* Task 64: Comparison with the Greater Than or Equal To Operator */
+
+/* The greater than (>=) operator compares the values of two numbers and returns true if number to the left is greater than the number to the right. Otherwise it returns FALSE. It will convert data types of values while comparing. */
+
+function testGreaterOrEqual(testGreaterOrEqualVal) {
+  if(testGreaterOrEqualVal >= 66) {
+    return "Nice, it's equal to or greater than 66.";
+  }
+  if(testGreaterOrEqualVal >= 33) {
+    return "Nice, it's equal to or greater than 33.";
+  }
+  return "It's less than 33.";
+}
+
+console.log("Task 64: " + testGreaterOrEqual(20));
+
+/* Task 65: Comparison with the Less Than Operator */
+
+/* Less Than operator compares two values and if value tothe left is less than number to the right, it returns true. It does convert data types while comparing. */
+
+function testLessThan(testLessThanVal) {
+  if(testLessThanVal < 55) {
+    return "It's under 55.";
+  }
+  if(testLessThanVal > 99) {
+    return "It's under 99.";
+  }
+  return "It's 99 or over.";
+}
+
+console.log("Task 65: " + testLessThan(68));
+
+/* Task 66: Comparison with Less Than or Equal To Operator */
+
+/* Less than or equal to operator (<=) compares the values of two numbers. if the number to the left is less than or equal to the number to the right, it will return TRUE. It converts data types. */
+
+function testLessThanOrEqual(testLessThanOrEqualVal) {
+  if(testLessThanOrEqualVal <= 19) {
+    return "Smaller than or Equal to 12.";
+  }
+  if(testLessThanOrEqualVal <= 29) {
+    return "Smaller than or Equal to 29.";
+  }
+  return "More than 29.";
+}
+
+console.log("Task 66: " + testLessThanOrEqual(68));
+
+/* Task 67: Comparisons with the Logical And Operator */
+
+/* Sometimes we have to test more than one thing at a time. The logical AND operator (&&) returns TRUE if and only if the operands to the left and right of it are true. */
+
+/* However, the same efect can be achieved by nesting an if statement inside another if. */
+
+// if (nNum > 5) {
+//   if (nNum < 10) {
+//     return "Yes.";
+//   }
+// }
+// return "No";
+
+/* It will only return Yes if nNum is greater than 5 and less than 10. The same logic can be written as: */
+
+// if (nNum > 5 && num < 10) {
+//   return "Yes";
+// }
+// return "No";
+
+function testLogicalAnd(testLogicalAndVal) {
+  if(testLogicalAndVal > 10 && testLogicalAndVal < 50) {
+    return "Greater than 10 while smaller than 50.";
+  }
+  return "Smaller than 10 or bigger than 50.";
+}
+
+console.log("Task 67: " + testLogicalAnd(60));
+
+/* Task 68: Comparisons with the Logical OR Operator */
+
+/* The logical OR operator (||) returns true if either of the operands is TRUE. Otherwise it returns FALSE. It's composed of two pipe symbols ||. */
+
+/* Let's write a function that would return GREAT when number would not be between 1 and 100. */
+
+function testLogicalOr(testLogicalOrVal) {
+  if(testLogicalOrVal > 1 || testLogicalOrVal < 100) {
+    return "GREAT!";
+  }
+  return "Unfortunately, your number is between 1 and 100.";
+}
+
+console.log("Task 68: " + testLogicalOr(101));
+
+/* Task 69: Introducing Else Statements */
