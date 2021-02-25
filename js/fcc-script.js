@@ -468,7 +468,7 @@ console.log("Task 59: " + testStrict("XD"));
 
 /* Task 60: Practice comparing different values */
 
-/* In JS you can determine the type of a variable or a value with tyPEOF operator */
+/* In JS you can determine the type of a variable or a value with TYPEOF operator */
 
 var comp1 = 5;
 var comp2 = '5';
@@ -551,7 +551,7 @@ function testLessThan(testLessThanVal) {
   if(testLessThanVal < 55) {
     return "It's under 55.";
   }
-  if(testLessThanVal > 99) {
+  if(testLessThanVal < 99) {
     return "It's under 99.";
   }
   return "It's 99 or over.";
@@ -620,3 +620,125 @@ function testLogicalOr(testLogicalOrVal) {
 console.log("Task 68: " + testLogicalOr(101));
 
 /* Task 69: Introducing Else Statements */
+
+/* With else, we can execute code when previous IF condition is false. Normally, nothing special would happen if we just declare some boolean test inside if condition without ELSE. */
+
+function testIfElse(testIfElseVal) {
+  if(testIfElseVal === "password") {
+    return "You are logged in!";
+  } else {
+    return "Your password is incorrect.";
+  }
+}
+
+console.log("Task 69: " + testIfElse("harry"));
+
+/* Task 70: Introducint Else If Statements */
+
+/* If we have multiple conditions that needs to be adressed, we can chain if's statements together with else if statements. */
+
+function testElseIf(testElseIfVal) {
+  if(testElseIfVal === "email@mail.org") {
+    return "Your recovery email has been send!";
+  } else if (testElseIfVal === "email@mailorg") {
+    return "There is an error in your email address.";
+  } else {
+    return "Your email address is incorrect";
+  }
+}
+
+console.log("Task 70: " + testElseIf("email@mailorg"));
+
+/* Task 71: Logical Orded in If Else Statements */
+
+/* In: if, else if and else statements order is very important. The whole function is executed from top to bottom so you will want to be careful of what statement comes first. It would be better explained in math problem: */
+
+function testIfOrder(testIfOrderVal) {
+  if(testIfOrderVal <= 25) {
+    return "Smaller than or equal to 25.";
+  } else if (testIfOrderVal <= 50) {
+    return "Smaller than or equal to 50.";
+  } else {
+    return "Greater than 50.";
+  }
+}
+
+console.log("Task 71: " + testIfOrder(44));
+
+/* Task 72: Chaining If Else Statements */
+
+/* if/else can be chained together to make more complex logic (while not using SWITCH) */
+
+function testIfChain(testIfChainVal) {
+  if(testIfChainVal < 1) {
+    return "Today it's very cold outside.";
+  } else if (testIfChainVal < 10) {
+    return "Today it's cold outside.";
+  } else if (testIfChainVal < 15) {
+    return "You should wear a hoodie today.";
+  } else if (testIfChainVal < 20) {
+    return "It's pretty nice outside today.";
+  } else if (testIfChainVal < 30) {
+    return "It's very hot outisde!";
+  } else {
+    "Just don't leave house today!";
+  }
+}
+
+console.log("Task 72: " + testIfChain(18));
+
+/* Task 73: Golf Game */
+
+/* Well, I don't know nothing about GOLF, but I did it. */
+
+function golfScore(par, strokes) {
+  if(strokes == 1) {
+    return "Hole-in-one!";
+  } else if (strokes <= par - 2) {
+    return "Eagle";
+  } else if (strokes == par - 1) {
+    return "Birdie";
+  } else if (strokes == par) {
+    return "Par";
+  } else if (strokes == par + 1) {
+    return "Bogey";
+  } else if (strokes == par + 2) {
+    return "Double Bogey";
+  } else if (strokes >= par + 3) {
+    return "Go Home!"
+  }
+}
+
+console.log("Task 73: " + golfScore(5, 4));
+
+/* Task 74: Selecting from Many Options with Switch Statements */
+
+/* If you have many options to choose from, use a SWITCH statement. Switch Statement tests a value and can have many CASE statements which define various possible values. Statements are executed from the first matched CASE value until a BREAK is encountered. Remember that case values are tested with STRICT EQUALITY OPERATOR (===)! */
+
+function testSwitch(testSwitchVal) {
+  var testSwitchResponse = "";
+
+  switch(testSwitchVal) {
+    case 'a1':
+      testSwitchResponse = "Correct, Ferraris usually are red!"
+      break;
+    case 'b2':
+      testSwitchResponse = "Wrong answer.";
+      break;
+    case 'c3':
+      testSwitchResponse = "Wrong answer, green is more default for Lamborghini than Ferrari.";
+      break;
+    case 'd4':
+      testSwitchResponse = "Wrong answer, well, yellow is definitely default for Lamborghini, not Ferrari!";
+      break;
+  }
+  return testSwitchResponse;
+  //^because we want to return full case response which is stored in testSwitchResponse Variable.
+}
+
+console.log("Task 74: Which colour has Ferrari car?\na. Red\nb. Blue\nc. Green\nd. Yellow");
+console.log("Task 74: " + testSwitch('d4'));
+
+/* Task 75: Adding a Default Option in Switch Statements */
+
+/* */
