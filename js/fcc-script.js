@@ -741,4 +741,26 @@ console.log("Task 74: " + testSwitch('d4'));
 
 /* Task 75: Adding a Default Option in Switch Statements */
 
-/* */
+/* Default option in switch statements works almost the same as ELSE in if ELSE - it makes us a default behaviour bracket if none of above switch cases values are matched in comparing process */
+
+
+function testSwitchDefault(testSwitchDefaultVal) {
+  var testSwitchDefaultResponse = "";
+  
+  
+  switch(testSwitchDefaultVal) {
+  case 1: 
+    testSwitchDefaultResponse =  "We are going North";
+    break;
+  case 2:
+    testSwitchDefaultResponse =  "We are going South";
+    break;
+  default:
+    testSwitchDefaultResponse = "We are heading East;
+    break;
+  }
+  return testSwitchDefaultResponse;
+}
+  
+console.log("Task 75: Where are we going?");
+console.log("Task 75: " + testSwitchDefault(3));
