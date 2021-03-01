@@ -897,7 +897,7 @@ console.log("Task 80: " + cardCounter(2) + " " + cardCounter(6) + " " + cardCoun
 
 /* Task 81: Build JavaScript Objects */
 
-/* */
+/*  */
 
 console.log("");
 console.log("");
