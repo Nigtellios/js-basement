@@ -750,13 +750,13 @@ function testSwitchDefault(testSwitchDefaultVal) {
   
   switch(testSwitchDefaultVal) {
   case 1: 
-    testSwitchDefaultResponse =  "We are going North";
+    testSwitchDefaultResponse =  "We are going North.";
     break;
   case 2:
-    testSwitchDefaultResponse =  "We are going South";
+    testSwitchDefaultResponse =  "We are going South.";
     break;
   default:
-    testSwitchDefaultResponse = "We are heading East;
+    testSwitchDefaultResponse = "We are heading East.";
     break;
   }
   return testSwitchDefaultResponse;
@@ -764,3 +764,140 @@ function testSwitchDefault(testSwitchDefaultVal) {
   
 console.log("Task 75: Where are we going?");
 console.log("Task 75: " + testSwitchDefault(3));
+
+/* Task 76: Multiple Identical Options in Switch Statements */
+
+/* If the break statement is ommited from a switch statement's case, the following case statement(s) are executed until a break is encountered. If we have multiple inputs with the same output, we can represent them in a switch statement like this: */
+
+function testMultipleSwitch(testMultipleSwitchVal) {
+  var testMultipleSwitchResult = "";
+
+  switch (testMultipleSwitchVal) {
+    case 1:
+    case 2:
+    case 3:
+      testMultipleSwitchResult = "Please choose between first, second, or third route!";
+      break;
+    case 4:
+      testMultipleSwitchResult = "Please go back! There is no other way.";
+      break;
+    default:
+      testMultipleSwitchResult = "Please, choose something first.";
+      break;
+  }
+
+  return testMultipleSwitchResult;
+}
+
+console.log("Task 76: " + testMultipleSwitch(2));
+
+/* Task 77: Replacing If Else Chains with Switch */
+
+/* If you have many options to choose from, a switch statement would be easier and more proper way to write many chained options than if/else if statements. */
+
+function replaceSwitch(replaceSwitchVal) {
+  var replaceSwitchAnswer = "";
+
+  // if (replaceSwitchVal === 1) {
+  //   replaceSwitchAnswer = "Lmao.";
+  // } else if (replaceSwitchVal === 2) {
+  //   replaceSwitchAnswer = "Ay de La Lmao.";
+  // } else {
+  //   replaceSwitchAnswer = "Ok?";
+  // }
+
+  switch(replaceSwitchVal) {
+    case 1:
+      replaceSwitchAnswer = "Lmao.";
+      break;
+    case 2:
+      replaceSwitchAnswer = "Ay de La Lmao.";
+      break;
+    default:
+      replaceSwitchAnswer = "Ok.";
+      break;
+  }
+
+  return replaceSwitchAnswer;
+}
+
+console.log("Task 77: " + replaceSwitch(2));
+
+/* Task 78: Returning Boolean Values From Functions */
+
+/* There are a few approaches to do comparisons with the equality operator (which return a boolean TRUE or FALSE.) Sometimes, people do things like: */
+
+function booleanIsEqual(a1, b1) {
+  if (a1 === b1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log('Task 78: ' + booleanIsEqual(1, 2));
+
+/* But the more proper, and better way is to do this via: */
+
+function booleanIsEqualVariant(aa1, bb1) {
+  return aa1 === bb1;
+}
+
+console.log('Task 78: ' + booleanIsEqualVariant(1, 2));
+
+/* It would give us False, because === returns TRUE or FALSE. */
+
+
+/* Task 79: Return Early Pattern for Functions */
+
+/* When a return statement is reached, the execution of the current function stops and control returns to the calling location. */
+
+function earlyPattern() {
+  console.log("Task 79: Early Pattern 1/2 Stage. ");
+  return "Task 79: Early Pattern 2/2 Stage - from RETURN statement.";
+  console.log("Task 79: Early Pattern - Statement never used.");
+}
+
+console.log('### FOLLOW UP ###' + ' ' + earlyPattern());
+
+/* Task 80: Counting Cards */
+
+/* BlackJack - Actually, I have to write a programm that would count my cards. It is done by keeping track of the relative numbers of high and low cards remaining in the deck. Each Card is assigned a value according to the table below. Then the count is positive, the player should bet high. When the count is zero or negative, the player should bet low. */
+
+/* First of all, I tried to  do it only via ifs, so I put everything in a dunction and forgot that it would not properly display my output with „Bet" and „Hold" because it would output every step instead of only calculated output. So the solution for this is to create switch inside function. */
+
+var cardCount = 0;
+
+function cardCounter(cardItems){
+  switch(cardItems){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      cardCount++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      cardCount--;
+      break;
+  }
+  if(cardCount > 0) {
+    return cardCount + " Bet";
+  } else {
+    return cardCount + " Hold";
+  }
+}
+
+console.log("Task 80: " + cardCounter(2) + " " + cardCounter(6) + " " + cardCounter(7) + " " + cardCounter('A'));
+
+
+/* Task 81: Build JavaScript Objects */
+
+/* */
+
+console.log("");
+console.log("");
