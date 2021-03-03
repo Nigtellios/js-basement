@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="pl_PL">
-  <head>
-    <!-- Basic SEO Tags -->
-    <title>JavaScript Basement - by jakubkowalski.dev</title>
-    <meta name="description" content="JS Basement by jakubkowalski.dev - Created for learning purposes. It's place where I will post my tasks or courses (which I do on daily routing) related to widely known JavaScript.">
-    <!-- Browser -> Check for RWD avaliability -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="JS Basement by jakubkowalski.dev">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://js-basement.jakubkowalski.dev">
-    <meta property="og:image" content="/media/js-basement-og.png">
-    <!-- Normalize, CSS Resets-->
-    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
-    <!-- Main/Obligatory Styles -->
-    <link rel="stylesheet" href="/css/glide.core.min.css" type="text/css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-  </head>
-  <body>
-    <header class="container">
-      <div class="encour">
-        <figure>
-          <img src="/media/reaper.svg" width="150px" height="200px" Alt="Spooky Reaper">
-        </figure>
-        <div class="encour-content">
-          <h1>SPOOKTOBER</h1>
-          <h3>...is not so spooky!</h3>
+<head>
+  <!-- Basic SEO Tags -->
+  <title>JavaScript Basement - by jakubkowalski.dev</title>
+  <meta name="description" content="JS Basement by jakubkowalski.dev - Created for learning purposes. It's place where I willpost my tasks or courses (which I do on daily routing) related to widely known JavaScript.">
+  <!-- Browser -> Check for RWD avaliability -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="JS Basement by jakubkowalski.dev">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://js-basement.jakubkowalski.dev">
+  <meta property="og:image" content="/media/js-basement-og.png">
+  <!-- Normalize, CSS Resets-->
+  <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+  <!-- Main/Obligatory Styles -->
+  <link rel="stylesheet" href="/css/glide.core.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body class="main-wrapper"> <!-- body class -->
+
+
+    <main class="main-container"> <!-- main-tile -->
+      <section class="main-container__content">
+        <div class="main-container__content__wrap">
+
+          <div class="promo-bar"> <!-- top bar -->
+            <div class="promo-bar__logotype">
+              <img src="media/js-logo.png" width="56" height="56">
+              <h1 class="font-light">Basement</h1>
+            </div>
+            <div class="promo-bar__socials">
+              <span class="promo-bar__socials-item">
+                <a href="https://github.com/Nigtellios" target="_blank"><i><img src="media/github-icon.svg" width="40"  height="40"></i></a>
+              </span>
+              <span class="promo-bar__socials-item">
+                <a href="https://www.linkedin.com/in/jakub-kowalski-209248170/" target="_blank"><i><img src="/media/linkedin-icon.svg" width="36" height="36"></i></a>
+              </span>
+            </div>
+          </div><!-- /top bar -->
+
+          <div class="glide-container"> <!-- slider + toolbar -->
+            <div class="glide-container__content">
+              <aside class="glide-container__content--toolbar">
+                <div class="toolbar--item">
+                  <a onClick="window.location.reload()"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
+                </div>
+                <div class="toolbar--item">
+                  <a><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                </div>
+                <div class="toolbar--item">
+                  <a><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                </div>
+                <div class="toolbar--item">
+                  <a><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                </div>
+              </aside>
+
+              <div class="glide-container__content__single">
+                <div class="glide-container__content__single--heading">
+
+                </div>
+                <div class="glide-container__content__single--scrollable">
+
+                </div>
+              </div>
+
+            </div>
+            <div class="glide-container__control">
+
+            </div>
+          </div> <!-- /slider -->
+
         </div>
-      </div>
-      <nav>
-        <!-- It is and propably would stay empty -->
-      </nav>
-    </header>
+      </section>
 
-    <main class="container"> <!-- Here goes our JS -->
+      <aside class="sidebar">
+        <nav class="navbar">
 
-    </main> <!-- Well, here ends our jS -->
+        </nav>
+      </aside>
+    </main> <!-- /main-tile -->
 
-    <footer class="container">
-      <!-- It is and propably would stay empty -->
-    </footer>
 
-    <!-- Script Includes -->
-    <script src="/js/glide.min.js"></script>
-    <script src="/js/fcc-scripts.js"></script>
-    <script src="/js/glide-functionality.js"></script>
-  </body>
+  <!-- Script Includes -->
+  <script src="/js/glide.min.js"></script>
+  <script src="/js/fcc-scripts.js"></script>
+  <script src="/js/glide-functionality.js"></script>
+</body>
+
 </html>
