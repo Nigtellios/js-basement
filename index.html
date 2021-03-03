@@ -25,10 +25,10 @@
       <section class="main-container__content">
         <div class="main-container__content__wrap">
 
-          <div class="promo-bar"> <!-- top bar -->
+          <header class="promo-bar"> <!-- top bar -->
             <div class="promo-bar__logotype">
               <img src="media/js-logo.png" width="56" height="56">
-              <h1 class="font-light">Basement</h1>
+              <h1>Basement</h1>
             </div>
             <div class="promo-bar__socials">
               <span class="promo-bar__socials-item">
@@ -38,13 +38,13 @@
                 <a href="https://www.linkedin.com/in/jakub-kowalski-209248170/" target="_blank"><i><img src="/media/linkedin-icon.svg" width="36" height="36"></i></a>
               </span>
             </div>
-          </div><!-- /top bar -->
+          </header><!-- /top bar -->
 
           <div class="glide-container"> <!-- slider + toolbar -->
             <div class="glide-container__content">
               <aside class="glide-container__content--toolbar">
                 <div class="toolbar--item">
-                  <a onClick="window.location.reload()"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
+                  <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
                 </div>
                 <div class="toolbar--item">
                   <a><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
@@ -62,7 +62,7 @@
 
                 </div>
                 <div class="glide-container__content__single--scrollable">
-
+                  
                 </div>
               </div>
 
@@ -70,15 +70,29 @@
             <div class="glide-container__control">
 
             </div>
-          </div> <!-- /slider -->
+          </div> <!-- /slider + toolbar -->
 
         </div>
       </section>
 
       <aside class="sidebar">
         <nav class="navbar">
-
+          <div class="navbar__item">
+            <a href="/index.html"><i><img src="/media/nav-home-icon.svg" width="35" height="35"></i></a>
+          </div>
+          <div class="navbar__item">
+            <a href="/index.html"><i><img src="/media/nav-share-icon.svg" width="35" height="36"></i></a>
+          </div>
+          <div class="navbar__item">
+            <a href="/index.html"><i><img src="/media/nav-info-icon.svg" width="20" height="33"></i></a>
+          </div>
+          <div class="navbar__item">
+            <a href="/index.html"><i><img src="/media/nav-envelope-icon.svg" width="35" height="28"></i></a>
+          </div>
         </nav>
+        <footer class="copyright">
+          <p>Made with <span class="font--pink font--bolded">love </span>by <a href="https://jakubkowalski.dev"><span class="font--bolded">jakubkowalski.dev</span></a></p>
+        </footer>
       </aside>
     </main> <!-- /main-tile -->
 
