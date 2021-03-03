@@ -897,7 +897,7 @@ console.log("Task 80: " + cardCounter(2) + " " + cardCounter(6) + " " + cardCoun
 
 /* Task 81: Build JavaScript Objects */
 
-/* */
+/* 03.03.2021 - IT'S REWORK TIME! <3 */
 
 console.log("");
 console.log("");
