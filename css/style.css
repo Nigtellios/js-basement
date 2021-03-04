@@ -273,6 +273,20 @@ img {
   overflow-y: scroll;
 }
 
+.slide-container__content-single__wrap::-webkit-scrollbar{
+  width: 1em;
+}
+
+.slide-container__content-single__wrap::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+ 
+.slide-container__content-single__wrap::-webkit-scrollbar-thumb {
+  background: #FFC354;
+  border-radius: 25px;
+}
+
 .toolbar__item {
   width: 70px;
   height: 70px;
@@ -363,7 +377,7 @@ img {
 
 .slide-container__controls__nav {
   position: absolute;
-  margin: -50px 0 0 0;
+  margin: -55px 0 0 0;
   left: 37%;
   display: flex;
   flex-flow: row nowrap;
