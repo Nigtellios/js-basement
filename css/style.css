@@ -7,6 +7,24 @@ body {
   padding: 0;
 }
 
+ul, ol, li {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+/* FONTS */
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
@@ -15,16 +33,28 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 {
-  font-family: 'Baloo Chettan 2';
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 69px;
 }
 
-a {
-  text-decoration: none;
-  color: #FFFFFF;
+h2 {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
 }
 
 .font--light {
@@ -37,6 +67,44 @@ a {
 
 .font--pink {
   color: #FF506B;
+}
+
+/* MARKERS */
+
+.marker--cyan {
+  border-left: 10px solid #43CFFF;
+  border-radius: 25px;
+}
+
+.marker--yellow {
+  border-left: 10px solid #FFC354;;
+  border-radius: 25px;
+}
+
+/* BUTTONS */
+
+.button {
+  padding: 10px 35px 10px 35px; 
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.0);
+  font-family: 'Baloo Chettan 2';
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.button--debug{
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.prev, .next {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  background: rgba(255, 255, 255, 1.0);
+  border-radius: 60px;
+  border: none;
 }
 
 img {
@@ -161,16 +229,51 @@ img {
   margin: 0 15px 0 0;
 }
 
-.promo-bar__socials-item {
+.socials__item {
   padding: 15px;
 }
 
-.glide-container {
+.slide-container {
   width: 100%;
   height: 100%;
 }
 
-.toolbar--item {
+.single-slide__toolbar {
+  max-width: 70px;
+}
+
+.single-slide--layout {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.slide-container__content-single {
+  padding: 0 0 0 68px;
+  width: 100%;
+}
+
+.slide-container__content-single__heading {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 75px;
+  margin: 0 0 20px 0;
+}
+
+.slide-container__content-single__heading > img {
+  margin: 8px 0 0 0;
+}
+
+.slide-container__content-single__heading > h2 {
+  margin: 0 0 0 20px;
+}
+
+.slide-container__content-single__wrap {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+.toolbar__item {
   width: 70px;
   height: 70px;
   background: rgba(255, 255, 255, 0.95);
@@ -180,14 +283,14 @@ img {
   margin: 0 0 40px 0;
 }
 
-.toolbar--item > a {
+.toolbar__item > a {
   display: block;
   width: 100%;
   height: 100%;
   text-align: center;
 }
 
-.toolbar--item > a > i > img {
+.toolbar__item > a > i > img {
   padding: 22px 0 22px 0;
 }
 
@@ -198,6 +301,84 @@ img {
 
 .font--bolded {
   font-weight: bold;
+}
+
+.wrap__list {
+  width: 100%;
+}
+
+.wrap__list__module__header {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 0 30px 0;
+}
+
+.wrap__list__module__header > h3 {
+  margin: 0 0 0 20px;
+}
+
+.wrap__list__module__single-item {
+  margin: 0 0 30px 0;
+}
+
+.wrap__list__module__single-item {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-item__header {
+  margin: 0 0 10px 20px;
+}
+
+.single-item__debug-box {
+  margin: 15px 0 0 20px;
+}
+
+.single-item__paragraph {
+  margin: 5px 0 5px 20px;
+  font-family: 'Baloo Chettan 2';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slide-container__controls {
+  margin: 30px 0 0 0;
+}
+
+.slide-container__controls__arrows {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.prev > img {
+  margin: 5px 0 0 -2px;
+}
+
+.next > img {
+  margin: 5px 0 0 0;
+}
+
+.slide-container__controls__nav {
+  position: absolute;
+  margin: -50px 0 0 0;
+  left: 37%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav__dot {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 1.0);
+  border-radius: 20px;
+}
+
+.tns-nav-active {
+  background: #FFC354;
 }
 
 /* MEDIA */
