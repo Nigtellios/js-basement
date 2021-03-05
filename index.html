@@ -66,7 +66,7 @@
                       <img src="media/fcc_primary_large.svg" width="400" height="42"> <h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
 
-                    <div id="fcc" class="slide-container__content-single__wrap"> <!-- Course notes content -->
+                    <div id="fcc" class="slide-container__content-single__wrap"> <!-- FCC Course notes content -->
                       <ul id="list-fcc" class="wrap__list">
 
                         <li class="wrap__list__module__header">
@@ -74,7 +74,7 @@
                           <h3>#1: Basic JavaScript (ES5)</h3>
                         </li>
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 1 -->
                           <span class="marker--yellow"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 1: Comment Your  JavaScript Code</h4>
@@ -92,53 +92,113 @@
                           </div>
                         </li> <!-- /SINGLE TASK -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 2 -->
                           <span class="marker--yellow"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 2: Declare JavaScript Variables</h4>
                             <p class="single-item__paragraph">
                               There are 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.</p>
                             <div class="single-item__debug-box">
-                              <button class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-2" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-1"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-2"></span></p>
                               </div>
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 3 -->
                           <span class="marker--yellow"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 2: Declare JavaScript Variables</h4>
+                            <h4 class="single-item__header">Task 3: Storing Values with the Assignment Operator</h4>
                             <p class="single-item__paragraph">
-                              There are 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.</p>
+                              Variable a stores value of 7. Any calculations to the right of = operator are performed on the left of the operator. Like +=, -= etc.</p>
                             <div class="single-item__debug-box">
-                              <button class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-3" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-1"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-3"></span></p>
                               </div>
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 4 -->
                           <span class="marker--yellow"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 2: Declare JavaScript Variables</h4>
+                            <h4 class="single-item__header">Task 4: Assigning the Value of One Variable to Another</h4>
                             <p class="single-item__paragraph">
-                              There are 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.</p>
+                              Assigning the Value of One Variable to Another. Remeber that they are just a copy of memory instead of scope.</p>
                             <div class="single-item__debug-box">
-                              <button class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-4" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-1"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-4"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 5 -->
+                          <span class="marker--yellow"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 5: Initializing Variables with the Assignment Operator</h4>
+                            <p class="single-item__paragraph">
+                              var a = 9; Now it's the inital value of variable a. (Yeah well, a and b has been used so many times so far, that debug output will output some false values in result of over-assignments in next tasks).</p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-5" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-5"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 6 -->
+                          <span class="marker--yellow"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 6: Understanding Uninitialized Variables</h4>
+                            <p class="single-item__paragraph">
+                              When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a literal string of "undefined".</p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-6" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-6"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 7 -->
+                          <span class="marker--yellow"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 7: Understanding Case Sensitivity in Variables</h4>
+                            <p class="single-item__paragraph">
+                              JS is Case Sensitive, capitalization matters. It is best practice to use camelCase.</p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-7" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-7"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 8 -->
+                          <span class="marker--yellow"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 8: Add Two Numbers with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              In example: var sum = 10 + 10;</p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-8" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-8"></span></p>
                               </div>
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK -->
 
                       </ul>
-                    </div> <!-- /Course notes content -->
+                    </div> <!-- /FCC Course notes content -->
 
                   </div>
 
@@ -236,9 +296,9 @@
 
   <!-- Script Includes -->
   <script src="/js/tiny-slider.js"></script>
-  <script src="/js/fcc-scripts.js"></script>
   <script src="/js/slider-tiny-slider.js"></script>
   <script src="/js/layout-scripts.js"></script>
+  <script src="/js/fcc-scripts.js"></script>
 </body>
 
 </html>
