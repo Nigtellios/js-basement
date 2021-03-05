@@ -50,13 +50,13 @@
                       <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25"     height="25"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-top-fcc"><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-bot-fcc"><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/fcc-scripts.js" target="_blank" alt="Check github file."><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
                     </div>
                   </aside> <!-- /Course notes TOOLBAR -->
 
@@ -66,8 +66,8 @@
                       <img src="media/fcc_primary_large.svg" width="400" height="42"> <h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
 
-                    <div class="slide-container__content-single__wrap"> <!-- Course notes content -->
-                      <ul class="wrap__list">
+                    <div id="fcc" class="slide-container__content-single__wrap"> <!-- Course notes content -->
+                      <ul id="list-fcc" class="wrap__list">
 
                         <li class="wrap__list__module__header">
                           <span class="marker--cyan"></span>
@@ -83,6 +83,21 @@
                               // in-line comment<br>
                               /* multi line<br>
                               comment */</p>
+                            <div class="single-item__debug-box">
+                              <button class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-1"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
+                          <span class="marker--yellow"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 2: Declare JavaScript Variables</h4>
+                            <p class="single-item__paragraph">
+                              There are 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.</p>
                             <div class="single-item__debug-box">
                               <button class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -223,6 +238,7 @@
   <script src="/js/tiny-slider.js"></script>
   <script src="/js/fcc-scripts.js"></script>
   <script src="/js/slider-tiny-slider.js"></script>
+  <script src="/js/layout-scripts.js"></script>
 </body>
 
 </html>
