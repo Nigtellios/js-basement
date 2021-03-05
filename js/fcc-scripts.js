@@ -1,5 +1,12 @@
 /* Free Code Camp Tasks */
 
+/* BASE -> FUNCTION OUTPUT SETUP */
+
+/* function debugFccX() {
+  document.getElementById('fcc-task-X').innerHTML = "Output: " + someVariable;
+}
+document.getElementById('run-fcc-task-X').addEventListener('click', debugFccX); */
+
 /* Task 1: Basic JavaScript: Comment Your JavaScript Code */
 
 // in-line comment
@@ -12,12 +19,23 @@ comment */
 // 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.
 
 var myName;
+myName = "Jakub";
+
+function debugFcc2() {
+  document.getElementById('fcc-task-2').innerHTML = "Output: " + myName;
+}
+document.getElementById('run-fcc-task-2').addEventListener('click', debugFcc2);
 
 /* Task 3: Basic JavaScript: Storing Values with the Assignment Operator */
 
 var a;
 a = 7; // Now a stores value of 7. Any calculations to the right of = operator are performed
 // on the left of the operator. Like +=, -= etc.
+
+function debugFcc3() {
+  document.getElementById('fcc-task-3').innerHTML = "Output: " + a;
+}
+document.getElementById('run-fcc-task-3').addEventListener('click', debugFcc3);
 
 /* Task 4: Basic JavaScript: Assigning the Value of One Variable to Another */
 
@@ -26,9 +44,19 @@ a = 7;
 var b;
 b = a;
 
+function debugFcc4() {
+  document.getElementById('fcc-task-4').innerHTML = "Output: " + b;
+}
+document.getElementById('run-fcc-task-4').addEventListener('click', debugFcc4);
+
 /* Task 5: Basic JavaScript: Initializing Variables with the Assignment Operator */
 
 var a = 9; //Now it's the inital value of variable a.
+
+function debugFcc5() {
+  document.getElementById('fcc-task-5').innerHTML = "Output: " + a;
+}
+document.getElementById('run-fcc-task-5').addEventListener('click', debugFcc5);
 
 /* Task 6: Basic JavaScript: Understanding Uninitialized Variables */
 
@@ -45,6 +73,11 @@ a = 5;
 b = 10;
 c = "I am a";
 
+function debugFcc6() {
+  document.getElementById('fcc-task-6').innerHTML = "Output: " + a + ", " + b + ", " + c;
+}
+document.getElementById('run-fcc-task-6').addEventListener('click', debugFcc6);
+
 /* Task 7: Understanding Case Sensitivity in Variables */
 
 // JS is Case Sensitive, capitalization matters. It is best practice to use camelCase.
@@ -59,10 +92,20 @@ studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
 
+function debugFcc7() {
+  document.getElementById('fcc-task-7').innerHTML = "Output: " + studlyCapVar + ", " + properCamelCase + ", " + titleCaseOver;
+}
+document.getElementById('run-fcc-task-7').addEventListener('click', debugFcc7);
+
 
 /* Task 8: Basic JavaScript: Add Two Numbers with JavaScript */
 
 var sum = 10 + 10; // 20
+
+function debugFcc8() {
+  document.getElementById('fcc-task-8').innerHTML = "Output: " + sum;
+}
+document.getElementById('run-fcc-task-8').addEventListener('click', debugFcc8);
 
 /* Task 9: Basic JavaScript: Subtract One Number from Another with JavaScript */
 

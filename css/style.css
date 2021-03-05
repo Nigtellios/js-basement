@@ -349,6 +349,9 @@ img {
 
 .single-item__debug-box {
   margin: 15px 0 0 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .single-item__paragraph {
