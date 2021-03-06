@@ -14,10 +14,9 @@ function scrollToTop() {
 }
 
 function scrollToBot() {
-  /* Reverse Y Axis, top value + height value = bottom edge */
-  let yReverse = fcc.offsetTop + fcc.offsetHeight;
+  /* Reverse Y Axis, scrollHeight instead of offsetTop + offsetHeight... There was also scrollIntoView (but scollIntoView works for whole page) */
   fcc.scrollTo({
-    top: yReverse,
+    top: fcc.scrollHeight,
     behavior: 'smooth'
   });
 }
