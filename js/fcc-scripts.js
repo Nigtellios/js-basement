@@ -111,9 +111,20 @@ document.getElementById('run-fcc-task-8').addEventListener('click', debugFcc8);
 
 var difference = 45 - 33; // 12
 
+function debugFcc9() {
+  document.getElementById('fcc-task-9').innerHTML = "Output: " + difference;
+}
+document.getElementById('run-fcc-task-9').addEventListener('click', debugFcc9);
+
 /* Task 10: Basic JavaScript: Multiply Two Numbers with JavaScript */
 
-var product = 8 * 10; // 80
+var product1 = 8 * 10; // 80
+
+function debugFcc10() {
+  document.getElementById('fcc-task-10').innerHTML = "Output: " + product1;
+}
+document.getElementById('run-fcc-task-10').addEventListener('click', debugFcc10);
+
 
 /* Task 11: Basic JavaScript: Divide One Number by Another with JavaScript */
 
