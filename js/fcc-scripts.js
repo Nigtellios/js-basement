@@ -2,10 +2,20 @@
 
 /* BASE -> FUNCTION OUTPUT SETUP */
 
-/* function debugFccX() {
-  document.getElementById('fcc-task-X').innerHTML = "Output: " + someVariable;
+/* const btnFCCX = document.getElementById('run-fcc-task-X');
+const scopeFCCX = document.getElementById('fcc-task-X');
+
+function debugFccX() {
+  scopeFCCX.innerHTML = outputResponse + someVariable;
 }
-document.getElementById('run-fcc-task-X').addEventListener('click', debugFccX); */
+
+if (btnFCCX !== null && scopeFCCX !== null) {
+  btnFCCX.addEventListener('click', debugFccX);
+} else {
+  scopeFCCX.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+} */
+
+let outputResponse = "Output: ";
 
 /* Task 1: Basic JavaScript: Comment Your JavaScript Code */
 
@@ -18,43 +28,52 @@ comment */
 
 // 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.
 
-var myName;
-myName = "Jakub";
+var myNameT2;
+myNameT2 = "Jakub";
+
+const btnFCC2 = document.getElementById('run-fcc-task-2');
+const scopeFCC2 = document.getElementById('fcc-task-2');
 
 function debugFcc2() {
-  document.getElementById('fcc-task-2').innerHTML = "Output: " + myName;
+  scopeFCC2.innerHTML = outputResponse + myNameT2;
 }
-document.getElementById('run-fcc-task-2').addEventListener('click', debugFcc2);
+
+if (btnFCC2 !== null && scopeFCC2 !== null) {
+  btnFCC2.addEventListener('click', debugFcc2);
+} else {
+  scopeFCC2.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 
 /* Task 3: Basic JavaScript: Storing Values with the Assignment Operator */
 
-var a;
-a = 7; // Now a stores value of 7. Any calculations to the right of = operator are performed
+var aT3;
+aT3 = 7; // Now a stores value of 7. Any calculations to the right of = operator are performed
 // on the left of the operator. Like +=, -= etc.
 
 function debugFcc3() {
-  document.getElementById('fcc-task-3').innerHTML = "Output: " + a;
+  document.getElementById('fcc-task-3').innerHTML = outputResponse + aT3;
 }
 document.getElementById('run-fcc-task-3').addEventListener('click', debugFcc3);
 
 /* Task 4: Basic JavaScript: Assigning the Value of One Variable to Another */
 
-var a;
-a = 7;
-var b;
-b = a;
+var aT4;
+aT4 = 7;
+var bT4;
+bT4 = aT4;
 
 function debugFcc4() {
-  document.getElementById('fcc-task-4').innerHTML = "Output: " + b;
+  document.getElementById('fcc-task-4').innerHTML = outputResponse + bT4;
 }
 document.getElementById('run-fcc-task-4').addEventListener('click', debugFcc4);
 
 /* Task 5: Basic JavaScript: Initializing Variables with the Assignment Operator */
 
-var a = 9; //Now it's the inital value of variable a.
+var aT5 = 9; //Now it's the inital value of variable a.
 
 function debugFcc5() {
-  document.getElementById('fcc-task-5').innerHTML = "Output: " + a;
+  document.getElementById('fcc-task-5').innerHTML = "Output: " + aT5;
 }
 document.getElementById('run-fcc-task-5').addEventListener('click', debugFcc5);
 
@@ -65,16 +84,16 @@ document.getElementById('run-fcc-task-5').addEventListener('click', debugFcc5);
 // be NaN which means "Not a Number". If you concatenate a string with an undefined 
 // variable, you will get a literal string of "undefined".
 
-var a;
-var b;
-var c;
+var aT6;
+var bT6;
+var cT6;
 
-a = 5;
-b = 10;
-c = "I am a";
+aT6 = 5;
+bT6 = 10;
+cT6 = "I am a";
 
 function debugFcc6() {
-  document.getElementById('fcc-task-6').innerHTML = "Output: " + a + ", " + b + ", " + c;
+  document.getElementById('fcc-task-6').innerHTML = "Output: " + aT6 + ", " + bT6 + ", " + cT6;
 }
 document.getElementById('run-fcc-task-6').addEventListener('click', debugFcc6);
 
@@ -100,119 +119,119 @@ document.getElementById('run-fcc-task-7').addEventListener('click', debugFcc7);
 
 /* Task 8: Basic JavaScript: Add Two Numbers with JavaScript */
 
-var sum = 10 + 10; // 20
+var sumT8 = 10 + 10; // 20
 
 function debugFcc8() {
-  document.getElementById('fcc-task-8').innerHTML = "Output: " + sum;
+  document.getElementById('fcc-task-8').innerHTML = "Output: " + sumT8;
 }
 document.getElementById('run-fcc-task-8').addEventListener('click', debugFcc8);
 
 /* Task 9: Basic JavaScript: Subtract One Number from Another with JavaScript */
 
-var difference = 45 - 33; // 12
+var differenceT9 = 45 - 33; // 12
 
 function debugFcc9() {
-  document.getElementById('fcc-task-9').innerHTML = "Output: " + difference;
+  document.getElementById('fcc-task-9').innerHTML = "Output: " + differenceT9;
 }
 document.getElementById('run-fcc-task-9').addEventListener('click', debugFcc9);
 
 /* Task 10: Basic JavaScript: Multiply Two Numbers with JavaScript */
 
-var product1 = 8 * 10; // 80
+var productT10 = 8 * 10; // 80
 
 function debugFcc10() {
-  document.getElementById('fcc-task-10').innerHTML = "Output: " + product1;
+  document.getElementById('fcc-task-10').innerHTML = "Output: " + productT10;
 }
 document.getElementById('run-fcc-task-10').addEventListener('click', debugFcc10);
 
 
 /* Task 11: Basic JavaScript: Divide One Number by Another with JavaScript */
 
-var quotient = 66 / 33; // 2
+var quotientT11 = 66 / 33; // 2
 
 /* Task 12: Basic JavaScript: Increment a Number with JavaScript */
 
-var myVar = 87;
-myVar++;
-console.log("Task 12: " + myVar);
+var myVarT12 = 87;
+myVarT12++;
+console.log("Task 12: " + myVarT12);
 
 /* Task 13: Basic JavaScript: Decrement a Number with JavaScript */
 
-var myVar = 11;
-myVar--; // 10
+var myVarT13 = 11;
+myVarT13--; // 10
 
 /* Task 14: Basic JavaScript: Create Decimal Numbers with JavaScript */
 
-var myDecimal = 5.8;
+var myDecimalT14 = 5.8;
 
 /* Task 15: Basic JavaScript: Multiply Two Decimals with JavaScript */
 
-var product = 2.0 * 2.5; // 5
+var productT15 = 2.0 * 2.5; // 5
 
 /* Task 16: Basic JavaScript: Divide One Decimal by Another with JavaScript */
 
-var quotient = 4.4 / 2.0; // 2.2
+var quotientT16 = 4.4 / 2.0; // 2.2
 
 /* Task 17: Basic JavaScript: Finding a Remainder in JavaScript */
 
-var remainder;
-remainder = 11;
-remainder = remainder % 3; // 2
+var remainderT17;
+remainderT17 = 11;
+remainderT17 = remainderT17 % 3; // 2
 
 /* Task 18: Basic JavaScript: Compound Assignment With Augmented Addition */
 
-var a = 3;
-var b = 17;
-var c = 12;
+var aT18 = 3;
+var bT18 = 17;
+var cT18 = 12;
 
-a += 12;
-b += 9;
-c += 7;
+aT18 += 12;
+bT18 += 9;
+cT18 += 7;
 
 /* Task 19: Basic JavaScript: Compound Assignment With Augmented Subtraction */
 
-var a = 11;
-var b = 9;
-var c = 3;
+var aT19 = 11;
+var bT19 = 9;
+var cT19 = 3;
 
-a -= 6;
-b -= 15;
-c -= 1;
+aT19 -= 6;
+bT19 -= 15;
+cT19 -= 1;
 
 /* Task 20: Basic JavaScript: Compound Assignment With Augmented Multiplication */
 
-var a = 5;
-var b = 12;
-var c = 4.6;
+var aT20 = 5;
+var bT20 = 12;
+var cT20 = 4.6;
 
-a *= 5;
-b *= 3;
-c *= 10;
+aT20 *= 5;
+bT20 *= 3;
+cT20 *= 10;
 
 /* Task 21: Basic JavaScript: Compound Assignment With Augmented Division */
 
-var a = 48;
-var b = 108;
-var c = 33;
+var aT21 = 48;
+var bT21 = 108;
+var cT21 = 33;
 
-a /= 12;
-b /= 4;
-c /= 11;
+aT21 /= 12;
+bT21 /= 4;
+cT21 /= 11;
 
 /* Task 22: Basic JavaScript: Declare String Variables */
 
-var myFirstName;
-var myLastName;
+var myFirstNameT22;
+var myLastNameT22;
 
-myFirstName = "Jakub";
-myLastName = "Kowalski";
+myFirstNameT22 = "Jakub";
+myLastNameT22 = "Kowalski";
 
 /* Task 23: Basic JavaScript: Escaping Literal Quotes in Strings */
 
 // In JavaScript, you can escape a quote from considering it as an end of string quote by 
 // placing a backslash (\) in front of the quote.
 
-var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+var myStrT23 = "I am a \"double quoted\" string inside \"double quotes\".";
 
 /* Task 24: Basic JavaScript: Quoting Strings with Single Quotes */
 
@@ -220,92 +239,92 @@ var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
 // But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
 // That's why we can use single quotes in strings too.
 
-var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+var myStrT24 = '<a href="http://www.example.com" target="_blank">Link</a>';
 
 /* Task 25: Basic JavaScript: Escape Sequences in Strings */
 
-var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
-console.log("Task 25: " + myStr);
+var myStrT25 = "FirstLine\n\t\\SecondLine\nThirdLine";
+console.log("Task 25: " + myStrT25);
 
 /* Task 26: Basic JavaScript: Concatenating Strings with Plus Operator */
 
-var myStr = "This is the start. " + "This is the end.";
+var myStrT26 = "This is the start. " + "This is the end.";
 
 /* Task 27: Basic JavaScript: Concatenating Strings with the Plus Equals Operator */
 
-var myStr = "This is the first sentence. ";
-myStr += "This is the second sentence.";
+var myStrT27 = "This is the first sentence. ";
+myStrT27 += "This is the second sentence.";
 
 /* Task 28: Basic JavaScript: Constructing Strings with Variables */
 
-var myName = "Jakub";
-var myStr = "My name is " + myName + " and I am well!";
+var myNameT28 = "Jakub";
+var myStrT28 = "My name is " + myNameT28 + " and I am well!";
 
 /* Task 29: Basic JavaScript: Appending Variables to Strings */
 
-var someAdjective = "Okay";
-var myStr = "Learning to code is ";
-myStr += someAdjective;
-console.log("Task 29: " + myStr);
+var someAdjectiveT29 = "Okay";
+var myStrT29 = "Learning to code is ";
+myStrT29 += someAdjectiveT29;
+console.log("Task 29: " + myStrT29);
 
 /* Task 30: Basic JavaScript: Find the Length of a String */
 
-var lastNameLength = 0;
-var lastName = "Lovelace";
-lastNameLength = lastName.length;
+var lastNameLengthT30 = 0;
+var lastNameT30 = "Lovelace";
+lastNameLengthT30 = lastNameT30.length;
 
 /* Task 31: Basic JavaScript: Use Bracket Notation to Find the First Character in a String */
 
-var firstLetterOfLastName = "";
-var lastName = "Lovelace";
-firstLetterOfLastName = lastName[0]; // L
-console.log("Task 31: " + lastName[0]);
+var firstLetterOfLastNameT31 = "";
+var lastNameT31 = "Lovelace";
+firstLetterOfLastNameT31 = lastNameT31[0]; // L
+console.log("Task 31: " + lastNameT31[0]);
 
 
 /* Task 32: Basic JavaScript: Understand String Immutability */
 
-var myStr = "Jello World";
-myStr[0] = "H"; 
+var myStrT32 = "Jello World";
+myStrT32[0] = "H"; 
 // ^It can't be done, strings are immutable. Proper way is below.
-myStr = "Hello World";
+myStrT32 = "Hello World";
 
 /* Task 33: Basic JavaScript: Use Bracket Notation to Find the Nth Character in a String */
 
-var lastName = "Lovelace";
-var thirdLetterOfLastName = lastName[2]; // third letter - v
+var lastNameT33 = "Lovelace";
+var thirdLetterOfLastNameT33 = lastNameT33[2]; // third letter - v
 
 /* Task 34: Basic JavaScript: Use Bracket Notation to Find the Last Character in a String */
 
-var lastName = "Lovelace";
-var lastLetterOfLastName = lastName[lastName.length - 1];
+var lastNameT34 = "Lovelace";
+var lastLetterOfLastNameT34 = lastNameT34[lastName.length - 1];
 
 /* Task 35: Basic JavaScript: Use Bracket Notation to Find the Nth-to-Last Character in a String */
 
-var lastName = "Lovelace";
-var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+var lastNamT35 = "Lovelace";
+var secondToLastLetterOfLastNameT35 = lastNameT35[lastNameT35.length - 2];
 
 /* Task 36: Basic JavaScript: Word Blanks */
 
-var myNoun = "dog";
-var myAdjective = "big";
-var myVerb = "ran";
-var myAdverb = "quickly";
+var myNounT36 = "dog";
+var myAdjectiveT36 = "big";
+var myVerbT36 = "ran";
+var myAdverbT36 = "quickly";
 
-var wordBlanks = "The " + myNoun + " was " + myAdjective + " and he just " + myVerb + " very " + myAdverb;
+var wordBlanksT36 = "The " + myNounT36 + " was " + myAdjectiveT36 + " and he just " + myVerbT36 + " very " + myAdverbT6;
 
 
 /* Task 37: Basic JavaScript: Store Multiple Values in one Variable using JavaScript Arrays */
 
-var myArray = ["LeMoiJelly", 0];
+var myArrayT37 = ["LeMoiJelly", 0];
 
 /* Task 38: Basic JavaScript: Nest one Array within Another Array */
 
-var myArray = [["Nested Array, 0"]];
+var myArrayT37 = [["Nested Array, 0"]];
 
 /* Task 39: Basic JavaScript: Access Array Data with Indexes */
 
-var myArray = [50,60,70];
-var myData = myArray[0]; // 50
+var myArrayT37 = [50,60,70];
+var myDataT37 = myArrayT37[0]; // 50
 
 /* Task 40: Basic JavaScript: Modify Array Data With Indexes */
 

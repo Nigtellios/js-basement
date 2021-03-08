@@ -75,6 +75,18 @@
                         </li>
 
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 1 -->
+                          <span class="marker--red"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Standarization Info:</h4>
+                            <p class="single-item__paragraph">
+                              The same standarization is used in every file and would not change.</br></br>
+                              <strong>IN JS FILES:</strong> If some values has many duplicates in different tasks, their names has been changed with something that is sugar-like ID. In example, if I have variable "a" duplicated 3-4 times, in each task duplicated variables has other ID at the end of their name. Variable "a" in #Task 4 would stand for "aT4" (T4 is ID of Task 4).<br><br>
+                              <strong>IN HTML FILES:</strong> Task IDs has always the same construction, they are started with name of parent div (for FreeCodeCamp ID shortcut would be "fcc". And so on: buttons attached to tasks has the same constructions but they are preceded by "run-". In example: for #Task 2, debug button ID would be "run-fcc-task-2", and span id inside debug box (from JS FILES -> debug scope) would be "fcc-task-2", which stands for Standard Task.<br><br>
+                              <strong>Debug functions</strong> are based on <strong>debug buttons</strong> (with task ID, in ex. "run-fcc-task-2") and <strong>debug scopes</strong> (spans with task IDs, in ex. "fcc-task-2"), and their functionalities are all <strong>located inside JS files associated with tasks that are completed there</strong>. For better functionality, I left them all under the tasks instead of creating arrays or big lists, which simply would not be good idea while scopes still have to be defined, so Array would simply not change much instead of creating more code.</p>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 1 -->
                           <span class="marker--yellow"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 1: Comment Your  JavaScript Code</h4>
@@ -240,7 +252,7 @@
                 <div class="single-slide--layout">
                   <aside class="single-slide__toolbar"> <!-- Course notes TOOLBAR -->
                     <div class="toolbar__item">
-                      <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25"     height="25"></i></a>
+                      <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
                     </div>
                     <div class="toolbar__item">
                       <a><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
@@ -255,7 +267,7 @@
 
                   <div class="slide-container__content-single">
                     <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
-                      <img src="media/zenva-academy.png" width="auto" height="60"> <h2>Tasks</h2>
+                      <img src="/media/zenva-academy.png" width="auto" height="60"> <h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
                     <div class="slide-container__content-single__wrap"> <!-- Course notes content -->
                       <ul class="wrap__list">
