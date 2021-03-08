@@ -81,7 +81,7 @@ const btnFCC4 = document.getElementById('run-fcc-task-4');
 const scopeFCC4 = document.getElementById('fcc-task-4');
 
 function debugFCC4() {
-  scopeFCC4.innerHTML = outputResponse + bT4;
+  scopeFCC4.innerHTML = outputResponse + aT4 + ', ' + bT4;
 }
 
 if (btnFCC4 !== null && scopeFCC4 !== null) {
@@ -231,34 +231,138 @@ if (btnFCC10 !== null && scopeFCC10 !== null) {
 
 var quotientT11 = 66 / 33; // 2
 
+/* OUTPUT CODE */
+
+const btnFCC11 = document.getElementById('run-fcc-task-11');
+const scopeFCC11 = document.getElementById('fcc-task-11');
+
+function debugFCC11() {
+  scopeFCC11.innerHTML = outputResponse + quotientT11;
+}
+
+if (btnFCC11 !== null && scopeFCC11 !== null) {
+  btnFCC11.addEventListener('click', debugFCC11);
+} else {
+  scopeFCC11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 12: Basic JavaScript: Increment a Number with JavaScript */
 
 var myVarT12 = 87;
 myVarT12++;
-console.log("Task 12: " + myVarT12);
+
+/* OUTPUT CODE */
+
+const btnFCC12 = document.getElementById('run-fcc-task-12');
+const scopeFCC12 = document.getElementById('fcc-task-12');
+
+function debugFCC12() {
+  scopeFCC12.innerHTML = outputResponse + myVarT12;
+}
+
+if (btnFCC12 !== null && scopeFCC12 !== null) {
+  btnFCC12.addEventListener('click', debugFCC12);
+} else {
+  scopeFCC12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 13: Basic JavaScript: Decrement a Number with JavaScript */
 
 var myVarT13 = 11;
 myVarT13--; // 10
 
+/* OUTPUT CODE */
+
+const btnFCC13 = document.getElementById('run-fcc-task-13');
+const scopeFCC13 = document.getElementById('fcc-task-13');
+
+function debugFCC13() {
+  scopeFCC13.innerHTML = outputResponse + myVarT13;
+}
+
+if (btnFCC13 !== null && scopeFCC13 !== null) {
+  btnFCC13.addEventListener('click', debugFCC13);
+} else {
+  scopeFCC13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 14: Basic JavaScript: Create Decimal Numbers with JavaScript */
 
 var myDecimalT14 = 5.8;
+
+/* OUTPUT CODE */
+
+const btnFCC14 = document.getElementById('run-fcc-task-14');
+const scopeFCC14 = document.getElementById('fcc-task-14');
+
+function debugFCC14() {
+  scopeFCC14.innerHTML = outputResponse + myDecimalT14;
+}
+
+if (btnFCC14 !== null && scopeFCC14 !== null) {
+  btnFCC14.addEventListener('click', debugFCC14);
+} else {
+  scopeFCC14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 15: Basic JavaScript: Multiply Two Decimals with JavaScript */
 
 var productT15 = 2.0 * 2.5; // 5
 
+/* OUTPUT CODE */
+
+const btnFCC15 = document.getElementById('run-fcc-task-15');
+const scopeFCC15 = document.getElementById('fcc-task-15');
+
+function debugFCC15() {
+  scopeFCC15.innerHTML = outputResponse + productT15;
+}
+
+if (btnFCC15 !== null && scopeFCC15 !== null) {
+  btnFCC15.addEventListener('click', debugFCC15);
+} else {
+  scopeFCC15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 16: Basic JavaScript: Divide One Decimal by Another with JavaScript */
 
 var quotientT16 = 4.4 / 2.0; // 2.2
+
+/* OUTPUT CODE */
+
+const btnFCC16 = document.getElementById('run-fcc-task-16');
+const scopeFCC16 = document.getElementById('fcc-task-16');
+
+function debugFCC16() {
+  scopeFCC16.innerHTML = outputResponse + quotientT16;
+}
+
+if (btnFCC16 !== null && scopeFCC16 !== null) {
+  btnFCC16.addEventListener('click', debugFCC16);
+} else {
+  scopeFCC16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 17: Basic JavaScript: Finding a Remainder in JavaScript */
 
 var remainderT17;
 remainderT17 = 11;
 remainderT17 = remainderT17 % 3; // 2
+
+/* OUTPUT CODE */
+
+const btnFCC17 = document.getElementById('run-fcc-task-17');
+const scopeFCC17 = document.getElementById('fcc-task-17');
+
+function debugFCC17() {
+  scopeFCC17.innerHTML = outputResponse + remainderT17;
+}
+
+if (btnFCC17 !== null && scopeFCC17 !== null) {
+  btnFCC17.addEventListener('click', debugFCC17);
+} else {
+  scopeFCC17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 18: Basic JavaScript: Compound Assignment With Augmented Addition */
 
@@ -270,6 +374,21 @@ aT18 += 12;
 bT18 += 9;
 cT18 += 7;
 
+/* OUTPUT CODE */
+
+const btnFCC18 = document.getElementById('run-fcc-task-18');
+const scopeFCC18 = document.getElementById('fcc-task-18');
+
+function debugFCC18() {
+  scopeFCC18.innerHTML = outputResponse + aT18 + ', ' + bT18 + ', ' + cT18;
+}
+
+if (btnFCC18 !== null && scopeFCC18 !== null) {
+  btnFCC18.addEventListener('click', debugFCC18);
+} else {
+  scopeFCC18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 19: Basic JavaScript: Compound Assignment With Augmented Subtraction */
 
 var aT19 = 11;
@@ -280,6 +399,21 @@ aT19 -= 6;
 bT19 -= 15;
 cT19 -= 1;
 
+/* OUTPUT CODE */
+
+const btnFCC19 = document.getElementById('run-fcc-task-19');
+const scopeFCC19 = document.getElementById('fcc-task-19');
+
+function debugFCC19() {
+  scopeFCC19.innerHTML = outputResponse + aT19 + ', ' + bT19 + ', ' + cT19;
+}
+
+if (btnFCC19 !== null && scopeFCC19 !== null) {
+  btnFCC19.addEventListener('click', debugFCC19);
+} else {
+  scopeFCC19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 20: Basic JavaScript: Compound Assignment With Augmented Multiplication */
 
 var aT20 = 5;
@@ -289,6 +423,21 @@ var cT20 = 4.6;
 aT20 *= 5;
 bT20 *= 3;
 cT20 *= 10;
+
+/* OUTPUT CODE */
+
+const btnFCC20 = document.getElementById('run-fcc-task-20');
+const scopeFCC20 = document.getElementById('fcc-task-20');
+
+function debugFCC20() {
+  scopeFCC20.innerHTML = outputResponse + aT20 + ', ' + bT20 + ', ' + cT20;
+}
+
+if (btnFCC20 !== null && scopeFCC20 !== null) {
+  btnFCC20.addEventListener('click', debugFCC20);
+} else {
+  scopeFCC20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 21: Basic JavaScript: Compound Assignment With Augmented Division */
 

@@ -82,7 +82,9 @@
                               The same standarization is used in every file and would not change.</br></br>
                               <strong>IN JS FILES:</strong> If some values has many duplicates in different tasks, their names has been changed with something that is sugar-like ID. In example, if I have variable "a" duplicated 3-4 times, in each task duplicated variables has other ID at the end of their name. Variable "a" in #Task 4 would stand for "aT4" (T4 is ID of Task 4).<br><br>
                               <strong>IN HTML FILES:</strong> Task IDs has always the same construction, they are started with name of parent div (for FreeCodeCamp ID shortcut would be "fcc". And so on: buttons attached to tasks has the same constructions but they are preceded by "run-". In example: for #Task 2, debug button ID would be "run-fcc-task-2", and span id inside debug box (from JS FILES -> debug scope) would be "fcc-task-2", which stands for Standard Task.<br><br>
-                              <strong>Debug functions</strong> are based on <strong>debug buttons</strong> (with task ID, in ex. "run-fcc-task-2") and <strong>debug scopes</strong> (spans with task IDs, in ex. "fcc-task-2"), and their functionalities are all <strong>located inside JS files associated with tasks that are completed there</strong>. For better functionality, I left them all under the tasks instead of creating arrays or big lists, which simply would not be good idea while scopes still have to be defined, so Array would simply not change much instead of creating more code.</p>
+                              <strong>Debug functions</strong> are based on <strong>debug buttons</strong> (with task ID, in ex. "run-fcc-task-2") and <strong>debug scopes</strong> (spans with task IDs, in ex. "fcc-task-2"), and their functionalities are all <strong>located inside JS files associated with tasks that are completed there</strong>. For better functionality, I left them all under the tasks instead of creating arrays or big lists, which simply would not be good idea while scopes still have to be defined, so Array would simply not change much instead of creating more code.<br><br>
+                              <strong>In order to leave proper learning curve, constructions with old standards (ES5 etc.) hasn't been changed. That's why you may find some VARs inside JS files. (In example - there are some local/global scopes examples which need specific constructions)</strong>
+                            </p>
                           </div>
                         </li> <!-- /SINGLE TASK -->
 
@@ -91,7 +93,7 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 1: Comment Your  JavaScript Code</h4>
                             <p class="single-item__paragraph">
-                              We can comment code inside our *.js files via:<br>
+                              We can comment code inside our *.js files via:<br><br>
                               // in-line comment<br>
                               /* multi line<br>
                               comment */</p>
@@ -103,7 +105,11 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 2: Declare JavaScript Variables</h4>
                             <p class="single-item__paragraph">
-                              There are 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.</p>
+                              There are 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.<br><br>
+                              var myNameT2;<br>
+                              myNameT2 = "Jakub";<br><br>
+                              <strong>Debug will show value of myNameT2.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-2" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -118,7 +124,11 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 3: Storing Values with the Assignment Operator</h4>
                             <p class="single-item__paragraph">
-                              Variable a stores value of 7. Any calculations to the right of = operator are performed on the left of the operator. Like +=, -= etc.</p>
+                              Variable aT3 stores value of 7. Any calculations to the right of = operator are performed on the left of the operator. Like +=, -= etc.<br><br>
+                              var aT3;<br>
+                              aT3 = 7;<br><br>
+                              <strong>Debug will show value of aT3.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-3" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -133,7 +143,13 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 4: Assigning the Value of One Variable to Another</h4>
                             <p class="single-item__paragraph">
-                              Assigning the Value of One Variable to Another. Remeber that they are just a copy of memory instead of scope.</p>
+                              Assigning the Value of One Variable to Another. Remeber that they are just a copy of memory instead of scope.<br><br>
+                              var aT4;<br>
+                              aT4 = 7;<br>
+                              var bT4;<br>
+                              bT4 = aT4;<br><br>
+                              <strong>Debug will show value of aT4 and then bT4.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-4" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -148,7 +164,10 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 5: Initializing Variables with the Assignment Operator</h4>
                             <p class="single-item__paragraph">
-                              var a = 9; Now it's the inital value of variable a. (Yeah well, a and b has been used so many times so far, that debug output will output some false values in result of over-assignments in next tasks).</p>
+                              var aT5 = 9;<br><br>
+                              Now it's the inital value of variable aT5.<br><br>
+                              <strong>Debug will show value of aT5.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-5" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -163,7 +182,16 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 6: Understanding Uninitialized Variables</h4>
                             <p class="single-item__paragraph">
-                              When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a literal string of "undefined".</p>
+                              When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a literal string of "undefined".<br><br>
+                              var aT6;<br>
+                              var bT6;<br>
+                              var cT6;<br>
+                              <br>
+                              aT6 = 5;<br>
+                              bT6 = 10;<br>
+                              cT6 = "I am a";<br><br>
+                              <strong>Debug will show values of aT6, bT6 and cT6.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-6" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -178,7 +206,18 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 7: Understanding Case Sensitivity in Variables</h4>
                             <p class="single-item__paragraph">
-                              JS is Case Sensitive, capitalization matters. It is best practice to use camelCase.</p>
+                              JS is Case Sensitive, capitalization matters. It is best practice to use camelCase.<br><br>
+                              // Variable declarations<br>
+                              var studlyCapVar;<br>
+                              var properCamelCase;<br>
+                              var titleCaseOver;<br>
+                              <br>
+                              // Variable assignments<br>
+                              studlyCapVar = 10;<br>
+                              properCamelCase = "A String";<br>
+                              titleCaseOver = 9000;<br><br>
+                              <strong>Debug will show values of studlyCapVar, properCamelCase and titleCaseOver.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-7" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -193,7 +232,10 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 8: Add Two Numbers with JavaScript</h4>
                             <p class="single-item__paragraph">
-                              In example: var sum = 10 + 10;</p>
+                              <strong>In example:</strong><br><br>
+                              var sumT8 = 10 + 10;<br><br>
+                              <strong>Debug will show value of sumT8.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-8" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -208,7 +250,10 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 9: Subtract One Number from Another with JavaScript</h4>
                             <p class="single-item__paragraph">
-                              In example: var difference = 45 - 33;</p>
+                              <strong>In example:</strong><br><br>
+                              var differenceT9 = 45 - 33;<br><br>
+                              <strong>Debug will show value of differenceT9.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-9" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -223,7 +268,10 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 10: Multiply Two Numbers with JavaScript</h4>
                             <p class="single-item__paragraph">
-                              In example: var product = 8 * 10;</p>
+                              <strong>In example:</strong><br><br>
+                              var productT10 = 8 * 10;<br><br>
+                              <strong>Debug will show values of productT10.</strong>
+                            </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-10" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
@@ -232,6 +280,210 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 11 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 11: Divide One Number by Another with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br> 
+                              var quotientT11 = 66 / 33; // 2<br><br>
+                              <strong>Debug will show value of quotientT11.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-11" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-11"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 12 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 12: Increment a Number with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br> 
+                              var myVarT12 = 87; <br> myVarT12++;<br><br>
+                              <strong>Debug will show value of myVarT12.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-12" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-12"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 13 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 13: Decrement a Number with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var myVarT13 = 11; myVarT13--; // 10<br><br>
+                              <strong>Debug will show value of myVarT13.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-13" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-13"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 14 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 14: Create Decimal Numbers with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br> 
+                              var myDecimalT14 = 5.8;<br><br>
+                              <strong>Debug will show value of myDecimalT14.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-14" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-14"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 15 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 15: Multiply Two Decimals with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                                var productT15 = 2.0 * 2.5; // 5<br><br>
+                                <strong>Debug will show value of productT15.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-15" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-15"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 16 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 16: Divide One Decimal by Another with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var quotientT16 = 4.4 / 2.0; // 2.2<br><br>
+                              <strong>Debug will show value of quotientT16</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-16" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-16"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 17 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 17: Finding a Remainder in JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var remainderT17;<br>
+                              remainderT17 = 11;<br>
+                              remainderT17 = remainderT17 % 3; // 2<br><br>
+                              <strong>Debug will show value of remainderT17.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-17" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-17"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 18 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 18: Compound Assignment With Augmented Addition</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var aT18 = 3;<br>
+                              var bT18 = 17;<br>
+                              var cT18 = 12;<br>
+                              <br>
+                              aT18 += 12;<br>
+                              bT18 += 9;<br>
+                              cT18 += 7;<br><br>
+                              <strong>Debug will show values of aT18, bT18 and cT18.</strong>
+                             </p>
+
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-18" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-18"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 19 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 19: Compound Assignment With Augmented Subtraction</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var aT19 = 11;<br>
+                              var bT19 = 9;<br>
+                              var cT19 = 3;<br>
+                              <br>
+                              aT19 -= 6;<br>
+                              bT19 -= 15;<br>
+                              cT19 -= 1;<br><br>
+                              <strong>Debug will show values of aT19, bT19 and cT19.</strong>
+                            
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-19" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-19"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 20 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 20: Compound Assignment With Augmented Multiplication</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var aT20 = 5;<br>
+                              var bT20 = 12;<br>
+                              var cT20 = 4.6;<br>
+                              <br>
+                              aT20 *= 5;<br>
+                              bT20 *= 3;<br>
+                              cT20 *= 10;<br><br>
+                              <strong>Debug will show values of aT20, bT20 and cT20.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-20" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-20"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
