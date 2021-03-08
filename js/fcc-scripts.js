@@ -449,6 +449,22 @@ aT21 /= 12;
 bT21 /= 4;
 cT21 /= 11;
 
+
+/* OUTPUT CODE */
+
+const btnFCC21 = document.getElementById('run-fcc-task-21');
+const scopeFCC21 = document.getElementById('fcc-task-21');
+
+function debugFCC21() {
+  scopeFCC21.innerHTML = outputResponse + aT21 + ', ' + bT21 + ', ' + cT21;
+}
+
+if (btnFCC21 !== null && scopeFCC21 !== null) {
+  btnFCC21.addEventListener('click', debugFCC21);
+} else {
+  scopeFCC21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 22: Basic JavaScript: Declare String Variables */
 
 var myFirstNameT22;
@@ -457,12 +473,42 @@ var myLastNameT22;
 myFirstNameT22 = "Jakub";
 myLastNameT22 = "Kowalski";
 
+/* OUTPUT CODE */
+
+const btnFCC22 = document.getElementById('run-fcc-task-22');
+const scopeFCC22 = document.getElementById('fcc-task-22');
+
+function debugFCC22() {
+  scopeFCC22.innerHTML = outputResponse + myFirstNameT22 + myLastNameT22;
+}
+
+if (btnFCC22 !== null && scopeFCC22 !== null) {
+  btnFCC22.addEventListener('click', debugFCC22);
+} else {
+  scopeFCC22.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 23: Basic JavaScript: Escaping Literal Quotes in Strings */
 
 // In JavaScript, you can escape a quote from considering it as an end of string quote by 
 // placing a backslash (\) in front of the quote.
 
 var myStrT23 = "I am a \"double quoted\" string inside \"double quotes\".";
+
+/* OUTPUT CODE */
+
+const btnFCC23 = document.getElementById('run-fcc-task-23');
+const scopeFCC23 = document.getElementById('fcc-task-23');
+
+function debugFCC23() {
+  scopeFCC23.innerHTML = outputResponse + myStrT23;
+}
+
+if (btnFCC23 !== null && scopeFCC23 !== null) {
+  btnFCC23.addEventListener('click', debugFCC23);
+} else {
+  scopeFCC23.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 24: Basic JavaScript: Quoting Strings with Single Quotes */
 
@@ -472,31 +518,119 @@ var myStrT23 = "I am a \"double quoted\" string inside \"double quotes\".";
 
 var myStrT24 = '<a href="http://www.example.com" target="_blank">Link</a>';
 
+/* OUTPUT CODE */
+
+const btnFCC24 = document.getElementById('run-fcc-task-24');
+const scopeFCC24 = document.getElementById('fcc-task-24');
+
+function debugFCC24() {
+  scopeFCC24.innerHTML = outputResponse + myStrT24;
+}
+
+if (btnFCC24 !== null && scopeFCC24 !== null) {
+  btnFCC24.addEventListener('click', debugFCC24);
+} else {
+  scopeFCC24.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 25: Basic JavaScript: Escape Sequences in Strings */
 
 var myStrT25 = "FirstLine\n\t\\SecondLine\nThirdLine";
-console.log("Task 25: " + myStrT25);
+
+/* OUTPUT CODE */
+
+const btnFCC25 = document.getElementById('run-fcc-task-25');
+const scopeFCC25 = document.getElementById('fcc-task-25');
+
+function debugFCC25() {
+  scopeFCC25.innerHTML = outputResponse + myStrT25;
+}
+
+if (btnFCC25 !== null && scopeFCC25 !== null) {
+  btnFCC25.addEventListener('click', debugFCC25);
+} else {
+  scopeFCC25.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 26: Basic JavaScript: Concatenating Strings with Plus Operator */
 
 var myStrT26 = "This is the start. " + "This is the end.";
+
+/* OUTPUT CODE */
+
+const btnFCC26 = document.getElementById('run-fcc-task-26');
+const scopeFCC26 = document.getElementById('fcc-task-26');
+
+function debugFCC26() {
+  scopeFCC26.innerHTML = outputResponse + myStrT26;
+}
+
+if (btnFCC26 !== null && scopeFCC26 !== null) {
+  btnFCC26.addEventListener('click', debugFCC26);
+} else {
+  scopeFCC26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 27: Basic JavaScript: Concatenating Strings with the Plus Equals Operator */
 
 var myStrT27 = "This is the first sentence. ";
 myStrT27 += "This is the second sentence.";
 
+/* OUTPUT CODE */
+
+const btnFCC27 = document.getElementById('run-fcc-task-27');
+const scopeFCC27 = document.getElementById('fcc-task-27');
+
+function debugFCC27() {
+  scopeFCC27.innerHTML = outputResponse + myStrT27;
+}
+
+if (btnFCC27 !== null && scopeFCC27 !== null) {
+  btnFCC27.addEventListener('click', debugFCC27);
+} else {
+  scopeFCC27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 28: Basic JavaScript: Constructing Strings with Variables */
 
 var myNameT28 = "Jakub";
 var myStrT28 = "My name is " + myNameT28 + " and I am well!";
 
+/* OUTPUT CODE */
+
+const btnFCC28 = document.getElementById('run-fcc-task-28');
+const scopeFCC28 = document.getElementById('fcc-task-28');
+
+function debugFCC28() {
+  scopeFCC28.innerHTML = outputResponse + myStrT28;
+}
+
+if (btnFCC28 !== null && scopeFCC28 !== null) {
+  btnFCC28.addEventListener('click', debugFCC28);
+} else {
+  scopeFCC28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 29: Basic JavaScript: Appending Variables to Strings */
 
 var someAdjectiveT29 = "Okay";
 var myStrT29 = "Learning to code is ";
-myStrT29 += someAdjectiveT29;
-console.log("Task 29: " + myStrT29);
+var T29response = myStrT29 += someAdjectiveT29;
+
+/* OUTPUT CODE */
+
+const btnFCC29 = document.getElementById('run-fcc-task-29');
+const scopeFCC29 = document.getElementById('fcc-task-29');
+
+function debugFCC29() {
+  scopeFCC29.innerHTML = outputResponse + T29response;
+}
+
+if (btnFCC29 !== null && scopeFCC29 !== null) {
+  btnFCC29.addEventListener('click', debugFCC29);
+} else {
+  scopeFCC29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 30: Basic JavaScript: Find the Length of a String */
 
