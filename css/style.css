@@ -72,18 +72,24 @@ h4 {
 /* MARKERS */
 
 .marker--cyan {
-  border-left: 10px solid #43CFFF;
+  border: 5px solid #43CFFF;
   border-radius: 25px;
 }
 
 .marker--yellow {
-  border-left: 10px solid #FFC354;;
+  border: 5px solid #FFC354;;
   border-radius: 25px;
 }
 
 .marker--red {
-  border-left: 10px solid #ff5c5c;
+  border: 5px solid #ff5c5c;
   border-radius: 25px;
+}
+
+/* HOVERS */
+
+.wrap__list__module__single-item:hover .marker--highlight{
+  border-color: #00e71f;
 }
 
 /* BUTTONS */

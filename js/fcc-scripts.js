@@ -31,15 +31,17 @@ comment */
 var myNameT2;
 myNameT2 = "Jakub";
 
+/* OUTPUT CODE */
+
 const btnFCC2 = document.getElementById('run-fcc-task-2');
 const scopeFCC2 = document.getElementById('fcc-task-2');
 
-function debugFcc2() {
+function debugFCC2() {
   scopeFCC2.innerHTML = outputResponse + myNameT2;
 }
 
 if (btnFCC2 !== null && scopeFCC2 !== null) {
-  btnFCC2.addEventListener('click', debugFcc2);
+  btnFCC2.addEventListener('click', debugFCC2);
 } else {
   scopeFCC2.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
@@ -51,10 +53,20 @@ var aT3;
 aT3 = 7; // Now a stores value of 7. Any calculations to the right of = operator are performed
 // on the left of the operator. Like +=, -= etc.
 
-function debugFcc3() {
-  document.getElementById('fcc-task-3').innerHTML = outputResponse + aT3;
+/* OUTPUT CODE */
+
+const btnFCC3 = document.getElementById('run-fcc-task-3');
+const scopeFCC3 = document.getElementById('fcc-task-3');
+
+function debugFCC3() {
+  scopeFCC3.innerHTML = outputResponse + aT3;
 }
-document.getElementById('run-fcc-task-3').addEventListener('click', debugFcc3);
+
+if (btnFCC3 !== null && scopeFCC3 !== null) {
+  btnFCC3.addEventListener('click', debugFCC3);
+} else {
+  scopeFCC3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 4: Basic JavaScript: Assigning the Value of One Variable to Another */
 
@@ -63,19 +75,39 @@ aT4 = 7;
 var bT4;
 bT4 = aT4;
 
-function debugFcc4() {
-  document.getElementById('fcc-task-4').innerHTML = outputResponse + bT4;
+/* OUTPUT CODE */
+
+const btnFCC4 = document.getElementById('run-fcc-task-4');
+const scopeFCC4 = document.getElementById('fcc-task-4');
+
+function debugFCC4() {
+  scopeFCC4.innerHTML = outputResponse + bT4;
 }
-document.getElementById('run-fcc-task-4').addEventListener('click', debugFcc4);
+
+if (btnFCC4 !== null && scopeFCC4 !== null) {
+  btnFCC4.addEventListener('click', debugFCC4);
+} else {
+  scopeFCC4.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 5: Basic JavaScript: Initializing Variables with the Assignment Operator */
 
 var aT5 = 9; //Now it's the inital value of variable a.
 
-function debugFcc5() {
-  document.getElementById('fcc-task-5').innerHTML = "Output: " + aT5;
+/* OUTPUT CODE */
+
+const btnFCC5 = document.getElementById('run-fcc-task-5');
+const scopeFCC5 = document.getElementById('fcc-task-5');
+
+function debugFCC5() {
+  scopeFCC5.innerHTML = outputResponse + aT5;
 }
-document.getElementById('run-fcc-task-5').addEventListener('click', debugFcc5);
+
+if (btnFCC5 !== null && scopeFCC5 !== null) {
+  btnFCC5.addEventListener('click', debugFCC5);
+} else {
+  scopeFCC5.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 6: Basic JavaScript: Understanding Uninitialized Variables */
 
@@ -92,10 +124,20 @@ aT6 = 5;
 bT6 = 10;
 cT6 = "I am a";
 
-function debugFcc6() {
-  document.getElementById('fcc-task-6').innerHTML = "Output: " + aT6 + ", " + bT6 + ", " + cT6;
+/* OUTPUT CODE */
+
+const btnFCC6 = document.getElementById('run-fcc-task-6');
+const scopeFCC6 = document.getElementById('fcc-task-6');
+
+function debugFCC6() {
+  scopeFCC6.innerHTML = outputResponse + aT6 + ', ' + bT6 + ', ' + cT6;
 }
-document.getElementById('run-fcc-task-6').addEventListener('click', debugFcc6);
+
+if (btnFCC6 !== null && scopeFCC6 !== null) {
+  btnFCC6.addEventListener('click', debugFCC6);
+} else {
+  scopeFCC6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 7: Understanding Case Sensitivity in Variables */
 
@@ -111,38 +153,78 @@ studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
 
-function debugFcc7() {
-  document.getElementById('fcc-task-7').innerHTML = "Output: " + studlyCapVar + ", " + properCamelCase + ", " + titleCaseOver;
+/* OUTPUT CODE */
+
+const btnFCC7 = document.getElementById('run-fcc-task-7');
+const scopeFCC7 = document.getElementById('fcc-task-7');
+
+function debugFCC7() {
+  scopeFCC7.innerHTML = outputResponse + studlyCapVar + ', ' + properCamelCase + ', ' + titleCaseOver;
 }
-document.getElementById('run-fcc-task-7').addEventListener('click', debugFcc7);
+
+if (btnFCC7 !== null && scopeFCC7 !== null) {
+  btnFCC7.addEventListener('click', debugFCC7);
+} else {
+  scopeFCC7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 
 /* Task 8: Basic JavaScript: Add Two Numbers with JavaScript */
 
 var sumT8 = 10 + 10; // 20
 
-function debugFcc8() {
-  document.getElementById('fcc-task-8').innerHTML = "Output: " + sumT8;
+/* OUTPUT CODE */
+
+const btnFCC8 = document.getElementById('run-fcc-task-8');
+const scopeFCC8 = document.getElementById('fcc-task-8');
+
+function debugFCC8() {
+  scopeFCC8.innerHTML = outputResponse + sumT8;
 }
-document.getElementById('run-fcc-task-8').addEventListener('click', debugFcc8);
+
+if (btnFCC8 !== null && scopeFCC8 !== null) {
+  btnFCC8.addEventListener('click', debugFCC8);
+} else {
+  scopeFCC8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 9: Basic JavaScript: Subtract One Number from Another with JavaScript */
 
 var differenceT9 = 45 - 33; // 12
 
-function debugFcc9() {
-  document.getElementById('fcc-task-9').innerHTML = "Output: " + differenceT9;
+/* OUTPUT CODE */
+
+const btnFCC9 = document.getElementById('run-fcc-task-9');
+const scopeFCC9 = document.getElementById('fcc-task-9');
+
+function debugFCC9() {
+  scopeFCC9.innerHTML = outputResponse + differenceT9;
 }
-document.getElementById('run-fcc-task-9').addEventListener('click', debugFcc9);
+
+if (btnFCC9 !== null && scopeFCC9 !== null) {
+  btnFCC9.addEventListener('click', debugFCC9);
+} else {
+  scopeFCC9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 10: Basic JavaScript: Multiply Two Numbers with JavaScript */
 
 var productT10 = 8 * 10; // 80
 
-function debugFcc10() {
-  document.getElementById('fcc-task-10').innerHTML = "Output: " + productT10;
+/* OUTPUT CODE */
+
+const btnFCC10 = document.getElementById('run-fcc-task-10');
+const scopeFCC10 = document.getElementById('fcc-task-10');
+
+function debugFCC10() {
+  scopeFCC10.innerHTML = outputResponse + productT10;
 }
-document.getElementById('run-fcc-task-10').addEventListener('click', debugFcc10);
+
+if (btnFCC10 !== null && scopeFCC10 !== null) {
+  btnFCC10.addEventListener('click', debugFCC10);
+} else {
+  scopeFCC10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 
 /* Task 11: Basic JavaScript: Divide One Number by Another with JavaScript */
@@ -290,18 +372,17 @@ myStrT32 = "Hello World";
 
 /* Task 33: Basic JavaScript: Use Bracket Notation to Find the Nth Character in a String */
 
-var lastNameT33 = "Lovelace";
+var lastNameT33 = "Kowalsky";
+
 var thirdLetterOfLastNameT33 = lastNameT33[2]; // third letter - v
 
 /* Task 34: Basic JavaScript: Use Bracket Notation to Find the Last Character in a String */
 
-var lastNameT34 = "Lovelace";
-var lastLetterOfLastNameT34 = lastNameT34[lastName.length - 1];
+var lastLetterOfLastNameT34 = lastNameT33[lastNameT33.length - 1];
 
 /* Task 35: Basic JavaScript: Use Bracket Notation to Find the Nth-to-Last Character in a String */
 
-var lastNamT35 = "Lovelace";
-var secondToLastLetterOfLastNameT35 = lastNameT35[lastNameT35.length - 2];
+var secondToLastLetterOfLastNameT33 = lastNameT33[lastNameT33.length - 2];
 
 /* Task 36: Basic JavaScript: Word Blanks */
 
@@ -310,7 +391,7 @@ var myAdjectiveT36 = "big";
 var myVerbT36 = "ran";
 var myAdverbT36 = "quickly";
 
-var wordBlanksT36 = "The " + myNounT36 + " was " + myAdjectiveT36 + " and he just " + myVerbT36 + " very " + myAdverbT6;
+var wordBlanksT36 = "The " + myNounT36 + " was " + myAdjectiveT36 + " and he just " + myVerbT36 + " very " + myAdverbT36;
 
 
 /* Task 37: Basic JavaScript: Store Multiple Values in one Variable using JavaScript Arrays */

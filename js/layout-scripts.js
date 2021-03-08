@@ -1,6 +1,6 @@
 /* Assign FreeCodeCamp Toolbar buttons */
-let bttFccTop = document.getElementById('go-to-top-fcc');
-let bttFccBot = document.getElementById('go-to-bot-fcc');
+const bttFccTop = document.getElementById('go-to-top-fcc');
+const bttFccBot = document.getElementById('go-to-bot-fcc');
 
 /* Assign FreeCodeCamp and Zenva slider divs */
 let fcc = document.getElementById('fcc');
@@ -22,10 +22,10 @@ function scrollToBot() {
 }
 
 /* Check if buttons exists before listening to it */
-if(bttFccTop) {
+if (bttFccTop !== null) {
   bttFccTop.addEventListener('click', scrollToTop);
 } 
 
-if (bttFccBot) {
+if (bttFccBot !== null) {
   bttFccBot.addEventListener('click', scrollToBot);
 }
