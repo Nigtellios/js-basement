@@ -864,47 +864,169 @@ var myArrayT41 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 // We are going for item with value 8, so:
 var myDataT41 = myArrayT41[2][1];
 
+/* OUTPUT CODE */
+
+const btnFCC41 = document.getElementById('run-fcc-task-41');
+const scopeFCC41 = document.getElementById('fcc-task-41');
+
+function debugFCC41() {
+  scopeFCC41.innerHTML = outputResponse + myDataT41;
+}
+
+if (btnFCC41 !== null && scopeFCC41 !== null) {
+  btnFCC41.addEventListener('click', debugFCC41);
+} else {
+  scopeFCC41.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 42: Basic JavaScript: Manipulate Arrays With push() */
 
 var myArrayT42 = [["John", 23], ["cat", 2]];
 myArrayT42.push(["dog", 3]);
-console.log("Task 43: " + myArrayT42);
+
+/* OUTPUT CODE */
+
+const btnFCC42 = document.getElementById('run-fcc-task-42');
+const scopeFCC42 = document.getElementById('fcc-task-42');
+
+function debugFCC42() {
+  scopeFCC42.innerHTML = outputResponse + myArrayT42;
+}
+
+if (btnFCC42 !== null && scopeFCC42 !== null) {
+  btnFCC42.addEventListener('click', debugFCC42);
+} else {
+  scopeFCC42.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 43: Basic JavaScript: Manipulate Arrays With pop() */
 
 var myArrayT43 = [["John", 23], ["cat", 2]];
-var removedFromMyArrayT43 = myArrayT43.pop(); // So now we assigned .poped value to variable removedFromMyArray
+var removedFromMyArrayT43 = myArrayT43.pop(); 
+// So now we assigned .poped value to variable removedFromMyArray
+
+/* OUTPUT CODE */
+
+const btnFCC43 = document.getElementById('run-fcc-task-43');
+const scopeFCC43 = document.getElementById('fcc-task-43');
+
+function debugFCC43() {
+  scopeFCC43.innerHTML = outputResponse + removedFromMyArrayT43;
+}
+
+if (btnFCC43 !== null && scopeFCC43 !== null) {
+  btnFCC43.addEventListener('click', debugFCC43);
+} else {
+  scopeFCC43.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 44: Basic JavaScript: Manipulate Arrays With shift() */
 
 var myArrayT44 = [["John", 23], ["dog", 3]];
-var removedFromMyArrayT44 = myArrayT44.shift(); // now removedFromMyArray has ["John", 23]
+var removedFromMyArrayT44 = myArrayT44.shift(); 
+// Now removedFromMyArrayT44 has ["John", 23]
+
+/* OUTPUT CODE */
+
+const btnFCC44 = document.getElementById('run-fcc-task-44');
+const scopeFCC44 = document.getElementById('fcc-task-44');
+
+function debugFCC44() {
+  scopeFCC44.innerHTML = outputResponse + removedFromMyArrayT44;
+}
+
+if (btnFCC44 !== null && scopeFCC44 !== null) {
+  btnFCC44.addEventListener('click', debugFCC44);
+} else {
+  scopeFCC44.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 45: Basic JavaScript: Manipulate Arrays With unshift() */
 
 var myArrayT45 = [["John", 23], ["dog", 3]];
 myArrayT45.shift();
-myArrayT45.unshift(["Paul", 35]); // Now we have also ["Paul", 35] at the beginning of array myArray
+myArrayT45.unshift(["Paul", 35]); 
+// Now we have also ["Paul", 35] at the beginning of array myArray
+
+/* OUTPUT CODE */
+
+const btnFCC45 = document.getElementById('run-fcc-task-45');
+const scopeFCC45 = document.getElementById('fcc-task-45');
+
+function debugFCC45() {
+  scopeFCC45.innerHTML = outputResponse + myArrayT45;
+}
+
+if (btnFCC45 !== null && scopeFCC45 !== null) {
+  btnFCC45.addEventListener('click', debugFCC45);
+} else {
+  scopeFCC45.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 46: Basic JavaScript: Shopping List */
 
 var myListT46 = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];
 
+/* OUTPUT CODE */
+
+const btnFCC46 = document.getElementById('run-fcc-task-46');
+const scopeFCC46 = document.getElementById('fcc-task-46');
+
+function debugFCC46() {
+  scopeFCC46.innerHTML = outputResponse + "First position is: " + myListT46[0][0] + ', and its price is ' + myListT46[0][1] + 'zl.';
+}
+
+if (btnFCC46 !== null && scopeFCC46 !== null) {
+  btnFCC46.addEventListener('click', debugFCC46);
+} else {
+  scopeFCC46.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 47: Basic JavaScript: Write Reusable JavaScript with Functions */
 
 function reusableFunctionT47() {
-  console.log("Hi World")
+  return "Hi World";
 }
 
-reusableFunctionT47(); // We call the function
+reusableFunctionT47(); // We need to call the function
+
+/* OUTPUT CODE */
+
+const btnFCC47 = document.getElementById('run-fcc-task-47');
+const scopeFCC47 = document.getElementById('fcc-task-47');
+
+function debugFCC47() {
+  scopeFCC47.innerHTML = outputResponse + reusableFunctionT47();
+}
+
+if (btnFCC47 !== null && scopeFCC47 !== null) {
+  btnFCC47.addEventListener('click', debugFCC47);
+} else {
+  scopeFCC47.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 48: Basic JavaScript: Passing Values to Functions with Arguments */
 
 function functionWithArgsT48(arg1T48, arg2T48) {
-  console.log("Task 48: " + (arg1T48 + arg2T48)); // It outputs sum of arg1 and arg2
+  return arg1T48 + arg2T48; // It outputs sum of arg1 and arg2
 }
 
 functionWithArgsT48(3, 16);
+
+/* OUTPUT CODE */
+
+const btnFCC48 = document.getElementById('run-fcc-task-48');
+const scopeFCC48 = document.getElementById('fcc-task-48');
+
+function debugFCC48() {
+  scopeFCC48.innerHTML = outputResponse + functionWithArgsT48(8, 12);
+}
+
+if (btnFCC48 !== null && scopeFCC48 !== null) {
+  btnFCC48.addEventListener('click', debugFCC48);
+} else {
+  scopeFCC48.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 49: Basic JavaScript: Global Scope and Functions */
 
@@ -922,10 +1044,25 @@ function fun2T49() {
   if (typeof oopsGlobalT49 != "undefined") {
     outputT49 += " oopsGlobal: " + oopsGlobalT49;
   }
-  console.log("Task 49: " + outputT49);
+  return "Task 49: " + outputT49;
 }
 
 fun2T49();
+
+/* OUTPUT CODE */
+
+const btnFCC49 = document.getElementById('run-fcc-task-49');
+const scopeFCC49 = document.getElementById('fcc-task-49');
+
+function debugFCC49() {
+  scopeFCC49.innerHTML = outputResponse + fun2T49();
+}
+
+if (btnFCC49 !== null && scopeFCC49 !== null) {
+  btnFCC49.addEventListener('click', debugFCC49);
+} else {
+  scopeFCC49.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 50: Basic JavaScript: Local Scope and Functions */
 
@@ -933,11 +1070,26 @@ fun2T49();
 
 function letsTestIt() {
   var loc = "foo";
-  console.log("Task 50: " + loc);
+  return "Task 50: " + loc;
 }
 
 letsTestIt(); //log "foo"
-// console.log("Task 50: " + loc); // is not defined because of local scope
+// return "Task 50: " + loc; // is not defined because of local scope
+
+/* OUTPUT CODE */
+
+const btnFCC50 = document.getElementById('run-fcc-task-50');
+const scopeFCC50 = document.getElementById('fcc-task-50');
+
+function debugFCC50() {
+  scopeFCC50.innerHTML = outputResponse + letsTestIt();
+}
+
+if (btnFCC50 !== null && scopeFCC50 !== null) {
+  btnFCC50.addEventListener('click', debugFCC50);
+} else {
+  scopeFCC50.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 51: Global vs. Local Scope in Functions */
 
