@@ -860,72 +860,72 @@ if (btnFCC40 !== null && scopeFCC40 !== null) {
 
 /* Task 41: Basic JavaScript: Access Multi-Dimensional Arrays With Indexes */
 
-var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myArrayT41 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 // We are going for item with value 8, so:
-var myData = myArray[2][1];
+var myDataT41 = myArrayT41[2][1];
 
 /* Task 42: Basic JavaScript: Manipulate Arrays With push() */
 
-var myArray = [["John", 23], ["cat", 2]];
-myArray.push(["dog", 3]);
-console.log("Task 43: " + myArray);
+var myArrayT42 = [["John", 23], ["cat", 2]];
+myArrayT42.push(["dog", 3]);
+console.log("Task 43: " + myArrayT42);
 
 /* Task 43: Basic JavaScript: Manipulate Arrays With pop() */
 
-var myArray = [["John", 23], ["cat", 2]];
-var removedFromMyArray = myArray.pop(); // So now we assigned .poped value to variable removedFromMyArray
+var myArrayT43 = [["John", 23], ["cat", 2]];
+var removedFromMyArrayT43 = myArrayT43.pop(); // So now we assigned .poped value to variable removedFromMyArray
 
 /* Task 44: Basic JavaScript: Manipulate Arrays With shift() */
 
-var myArray = [["John", 23], ["dog", 3]];
-var removedFromMyArray = myArray.shift(); // now removedFromMyArray has ["John", 23]
+var myArrayT44 = [["John", 23], ["dog", 3]];
+var removedFromMyArrayT44 = myArrayT44.shift(); // now removedFromMyArray has ["John", 23]
 
 /* Task 45: Basic JavaScript: Manipulate Arrays With unshift() */
 
-var myArray = [["John", 23], ["dog", 3]];
-myArray.shift();
-myArray.unshift(["Paul", 35]); // Now we have also ["Paul", 35] at the beginning of array myArray
+var myArrayT45 = [["John", 23], ["dog", 3]];
+myArrayT45.shift();
+myArrayT45.unshift(["Paul", 35]); // Now we have also ["Paul", 35] at the beginning of array myArray
 
 /* Task 46: Basic JavaScript: Shopping List */
 
-var myList = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];
+var myListT46 = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];
 
 /* Task 47: Basic JavaScript: Write Reusable JavaScript with Functions */
 
-function reusableFunction() {
+function reusableFunctionT47() {
   console.log("Hi World")
 }
 
-reusableFunction(); // We call the function
+reusableFunctionT47(); // We call the function
 
 /* Task 48: Basic JavaScript: Passing Values to Functions with Arguments */
 
-function functionWithArgs(arg1, arg2) {
-  console.log("Task 48: " + (arg1 + arg2)); // It outputs sum of arg1 and arg2
+function functionWithArgsT48(arg1T48, arg2T48) {
+  console.log("Task 48: " + (arg1T48 + arg2T48)); // It outputs sum of arg1 and arg2
 }
 
-functionWithArgs(3, 16);
+functionWithArgsT48(3, 16);
 
 /* Task 49: Basic JavaScript: Global Scope and Functions */
 
-var myGlobal = 10;
+var myGlobalT49 = 10;
 
-function fun1() {
-  oopsGlobal = 5; // oopsGlobal is defined without var so it has Global scope.
+function funT49() {
+  oopsGlobalT49 = 5; // oopsGlobal is defined without var so it has Global scope.
 }
 
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
+function fun2T49() {
+  var outputT49 = "";
+  if (typeof myGlobalT49 != "undefined") {
+    outputT49 += "myGlobal: " + myGlobalT49;
   }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
+  if (typeof oopsGlobalT49 != "undefined") {
+    outputT49 += " oopsGlobal: " + oopsGlobalT49;
   }
-  console.log("Task 49: " + output);
+  console.log("Task 49: " + outputT49);
 }
 
-fun2();
+fun2T49();
 
 /* Task 50: Basic JavaScript: Local Scope and Functions */
 
