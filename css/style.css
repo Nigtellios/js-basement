@@ -465,7 +465,8 @@ img {
     text-align: center;
   }
   .slide-container__content-single__wrap {
-    max-height: 600px;
+    /* SLIDER HEIGHT FIX */
+    max-height: 54vh;
   }
 }
 

@@ -27,12 +27,12 @@
 
           <header class="promo-bar"> <!-- top bar -->
             <div class="promo-bar__logotype">
-              <img src="media/js-logo.png" width="56" height="56">
+              <img src="/media/js-logo.png" width="56" height="56">
               <h1>Basement</h1>
             </div>
             <div class="promo-bar__socials">
               <span class="socials__item">
-                <a href="https://github.com/Nigtellios" target="_blank"><i><img src="media/github-icon.svg" width="40"  height="40"></i></a>
+                <a href="https://github.com/Nigtellios" target="_blank"><i><img src="/media/github-icon.svg" width="40"  height="40"></i></a>
               </span>
               <span class="socials__item">
                 <a href="https://www.linkedin.com/in/jakub-kowalski-209248170/" target="_blank"><i><img src="/media/linkedin-icon.svg" width="36" height="36"></i></a>
@@ -668,19 +668,217 @@
                             <h4 class="single-item__header">Task 30: Find the Length of a String</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var aT20 = 5;<br>
-                              var bT20 = 12;<br>
-                              var cT20 = 4.6;<br>
+                              var lastNameLengthT30 = 0;<br>
+                              var lastNameT30 = "Lovelace";<br>
+                              lastNameLengthT30 = lastNameT30.length;<br>
                               <br>
-                              aT20 *= 5;<br>
-                              bT20 *= 3;<br>
-                              cT20 *= 10;<br><br>
-                              <strong>Debug will show values of aT20, bT20 and cT20.</strong>
+                              <strong>Debug will show value of lastNameLengthT30.</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-20" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-30" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-20"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-30"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 31 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 31: Use Bracket Notation to Find the First Character in a String</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var firstLetterOfLastNameT31 = "";<br>
+                              var lastNameT31 = "Lovelace";<br>
+                              firstLetterOfLastNameT31 = lastNameT31[0]; // L<br>
+                              <br>
+                              <strong>Debug will show value of firstLetterOfLastNameT31.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-31" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-31"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 32 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 32: Understand String Immutability</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var myStrT32 = "Jello World";<br>
+                              myStrT32[0] = "H"; <br><br>
+                              ^It can't be done, strings are immutable. Proper way below:<br><br>
+                              myStrT32 = "Hello World";<br><br>
+                              <strong>Debug will show value of myStrT32.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-32" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-32"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 33 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 33: Use Bracket Notation to Find the Nth Character in a String</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var lastNameT33 = "Kowalsky";<br>
+                              var thirdLetterOfLastNameT33 = lastNameT33[2]; // third letter - w<br>
+                              <br>
+                              <strong>Debug will show value of thirdLetterOfLastNameT33.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-33" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-33"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 34 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 34: Use Bracket Notation to Find the Last Character in a String</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var lastLetterOfLastNameT34 = lastNameT33[lastNameT33.length - 1];<br>
+                              <br>
+                              <strong>Debug will show value of lastLetterOfLastNameT34.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-34" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-34"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 35 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 35: Use Bracket Notation to Find the Nth-to-Last Character in a String</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var secondToLastLetterOfLastNameT33 = lastNameT33[lastNameT33.length - 2];<br>
+                              <br>
+                              <strong>Debug will show value of secondToLastLetterOfLastNameT33.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-35" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-35"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 36 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 36: Word Blanks</h4>
+                            <p class="single-item__paragraph">
+                              <strong>Quiz-like Task.</strong><br><br>
+                              var myNounT36 = "dog";<br>
+                              var myAdjectiveT36 = "big";<br>
+                              var myVerbT36 = "ran";<br>
+                              var myAdverbT36 = "quickly";<br><br>
+                              var wordBlanksT36 = "The " + myNounT36 + " was " + myAdjectiveT36 + " and he just " + myVerbT36 + " very " + myAdverbT36;<br>
+                              <br>
+                              <strong>Debug will show value of wordBlanksT36.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-36" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-36"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 37 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 37: Store Multiple Values in one Variable using JavaScript Arrays</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var myArrayT37 = ["LeMoiJelly", 0];<br>
+                              <br>
+                              <strong>Debug will show values of myArrayT37[0] and myArrayT37[1].</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-37" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-37"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 38 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 38: Nest one Array within Another Array</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var myArrayT38 = [["Nested Array", 0]];<br>
+                              <br>
+                              <strong>Debug will show values of myArrayT38[0][0] and myArrayT38[0][1].</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-38" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-38"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 39 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 39: Access Array Data with Indexes</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var myArrayT39 = [50,60,70];<br>
+                              var myDataT39 = myArrayT37[0]; // 50<br>
+                              <br>
+                              <strong>Debug will show value of myDataT39.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-39" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-39"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 40 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 40: Modify Array Data With Indexes</h4>
+                            <p class="single-item__paragraph">
+                              <strong>In example:</strong><br><br>
+                              var myArrayT40 = [18,64,99];<br>
+                              myArrayT40[0] = 45; // now index 0 is 45 instead of 18<br>
+                              <br>
+                              <strong>Debug will show value of myArrayT40[0].</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-40" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-40"></span></p>
                               </div>
                             </div>
                           </div>
@@ -764,16 +962,16 @@
       <aside class="sidebar">
         <nav class="navbar">
           <div class="navbar__item">
-            <a href="/index.html"><i><img src="/media/nav-home-icon.svg" width="35" height="35"></i></a>
+            <a href="index.html"><i><img src="/media/nav-home-icon.svg" width="35" height="35"></i></a>
           </div>
           <div class="navbar__item">
-            <a href="/index.html"><i><img src="/media/nav-share-icon.svg" width="35" height="36"></i></a>
+            <a href="index.html"><i><img src="/media/nav-share-icon.svg" width="35" height="36"></i></a>
           </div>
           <div class="navbar__item">
-            <a href="/index.html"><i><img src="/media/nav-info-icon.svg" width="20" height="33"></i></a>
+            <a href="index.html"><i><img src="/media/nav-info-icon.svg" width="20" height="33"></i></a>
           </div>
           <div class="navbar__item">
-            <a href="/index.html"><i><img src="/media/nav-envelope-icon.svg" width="35" height="28"></i></a>
+            <a href="index.html"><i><img src="/media/nav-envelope-icon.svg" width="35" height="28"></i></a>
           </div>
         </nav>
         <footer class="copyright">
