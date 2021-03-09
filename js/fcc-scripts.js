@@ -638,12 +638,41 @@ var lastNameLengthT30 = 0;
 var lastNameT30 = "Lovelace";
 lastNameLengthT30 = lastNameT30.length;
 
+/* OUTPUT CODE */
+
+const btnFCC30 = document.getElementById('run-fcc-task-30');
+const scopeFCC30 = document.getElementById('fcc-task-30');
+
+function debugFCC30() {
+  scopeFCC30.innerHTML = outputResponse + lastNameLengthT30;
+}
+
+if (btnFCC30 !== null && scopeFCC30 !== null) {
+  btnFCC30.addEventListener('click', debugFCC30);
+} else {
+  scopeFCC30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 31: Basic JavaScript: Use Bracket Notation to Find the First Character in a String */
 
 var firstLetterOfLastNameT31 = "";
 var lastNameT31 = "Lovelace";
 firstLetterOfLastNameT31 = lastNameT31[0]; // L
-console.log("Task 31: " + lastNameT31[0]);
+
+/* OUTPUT CODE */
+
+const btnFCC31 = document.getElementById('run-fcc-task-31');
+const scopeFCC31 = document.getElementById('fcc-task-31');
+
+function debugFCC31() {
+  scopeFCC31.innerHTML = outputResponse + firstLetterOfLastNameT31;
+}
+
+if (btnFCC31 !== null && scopeFCC31 !== null) {
+  btnFCC31.addEventListener('click', debugFCC31);
+} else {
+  scopeFCC31.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 
 /* Task 32: Basic JavaScript: Understand String Immutability */
@@ -653,19 +682,79 @@ myStrT32[0] = "H";
 // ^It can't be done, strings are immutable. Proper way is below.
 myStrT32 = "Hello World";
 
+/* OUTPUT CODE */
+
+const btnFCC32 = document.getElementById('run-fcc-task-32');
+const scopeFCC32 = document.getElementById('fcc-task-32');
+
+function debugFCC32() {
+  scopeFCC32.innerHTML = outputResponse + myStrT32;
+}
+
+if (btnFCC32 !== null && scopeFCC32 !== null) {
+  btnFCC32.addEventListener('click', debugFCC32);
+} else {
+  scopeFCC32.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 33: Basic JavaScript: Use Bracket Notation to Find the Nth Character in a String */
 
 var lastNameT33 = "Kowalsky";
 
-var thirdLetterOfLastNameT33 = lastNameT33[2]; // third letter - v
+var thirdLetterOfLastNameT33 = lastNameT33[2]; // third letter - w
+
+/* OUTPUT CODE */
+
+const btnFCC33 = document.getElementById('run-fcc-task-33');
+const scopeFCC33 = document.getElementById('fcc-task-33');
+
+function debugFCC33() {
+  scopeFCC33.innerHTML = outputResponse + thirdLetterOfLastNameT33;
+}
+
+if (btnFCC33 !== null && scopeFCC33 !== null) {
+  btnFCC33.addEventListener('click', debugFCC33);
+} else {
+  scopeFCC33.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 34: Basic JavaScript: Use Bracket Notation to Find the Last Character in a String */
 
 var lastLetterOfLastNameT34 = lastNameT33[lastNameT33.length - 1];
 
+/* OUTPUT CODE */
+
+const btnFCC34 = document.getElementById('run-fcc-task-34');
+const scopeFCC34 = document.getElementById('fcc-task-34');
+
+function debugFCC34() {
+  scopeFCC34.innerHTML = outputResponse + lastLetterOfLastNameT34;
+}
+
+if (btnFCC34 !== null && scopeFCC34 !== null) {
+  btnFCC34.addEventListener('click', debugFCC34);
+} else {
+  scopeFCC34.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 35: Basic JavaScript: Use Bracket Notation to Find the Nth-to-Last Character in a String */
 
 var secondToLastLetterOfLastNameT33 = lastNameT33[lastNameT33.length - 2];
+
+/* OUTPUT CODE */
+
+const btnFCC35 = document.getElementById('run-fcc-task-35');
+const scopeFCC35 = document.getElementById('fcc-task-35');
+
+function debugFCC35() {
+  scopeFCC35.innerHTML = outputResponse + secondToLastLetterOfLastNameT33;
+}
+
+if (btnFCC35 !== null && scopeFCC35 !== null) {
+  btnFCC35.addEventListener('click', debugFCC35);
+} else {
+  scopeFCC35.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 36: Basic JavaScript: Word Blanks */
 
@@ -676,24 +765,98 @@ var myAdverbT36 = "quickly";
 
 var wordBlanksT36 = "The " + myNounT36 + " was " + myAdjectiveT36 + " and he just " + myVerbT36 + " very " + myAdverbT36;
 
+/* OUTPUT CODE */
+
+const btnFCC36 = document.getElementById('run-fcc-task-36');
+const scopeFCC36 = document.getElementById('fcc-task-36');
+
+function debugFCC36() {
+  scopeFCC36.innerHTML = outputResponse + wordBlanksT36;
+}
+
+if (btnFCC36 !== null && scopeFCC36 !== null) {
+  btnFCC36.addEventListener('click', debugFCC36);
+} else {
+  scopeFCC36.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 37: Basic JavaScript: Store Multiple Values in one Variable using JavaScript Arrays */
 
 var myArrayT37 = ["LeMoiJelly", 0];
 
+/* OUTPUT CODE */
+
+const btnFCC37 = document.getElementById('run-fcc-task-37');
+const scopeFCC37 = document.getElementById('fcc-task-37');
+
+function debugFCC37() {
+  scopeFCC37.innerHTML = outputResponse + myArrayT37[0] + ', ' + myArrayT37[1];
+}
+
+if (btnFCC37 !== null && scopeFCC37 !== null) {
+  btnFCC37.addEventListener('click', debugFCC37);
+} else {
+  scopeFCC37.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 38: Basic JavaScript: Nest one Array within Another Array */
 
-var myArrayT37 = [["Nested Array, 0"]];
+var myArrayT38 = [["Nested Array", 0]];
+
+/* OUTPUT CODE */
+
+const btnFCC38 = document.getElementById('run-fcc-task-38');
+const scopeFCC38 = document.getElementById('fcc-task-38');
+
+function debugFCC38() {
+  scopeFCC38.innerHTML = outputResponse + myArrayT38[0][0] + ', ' + myArrayT38[0][1];
+}
+
+if (btnFCC38 !== null && scopeFCC38 !== null) {
+  btnFCC38.addEventListener('click', debugFCC38);
+} else {
+  scopeFCC38.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 39: Basic JavaScript: Access Array Data with Indexes */
 
-var myArrayT37 = [50,60,70];
-var myDataT37 = myArrayT37[0]; // 50
+var myArrayT39 = [50,60,70];
+var myDataT39 = myArrayT39[0]; // 50
+
+/* OUTPUT CODE */
+
+const btnFCC39 = document.getElementById('run-fcc-task-39');
+const scopeFCC39 = document.getElementById('fcc-task-39');
+
+function debugFCC39() {
+  scopeFCC39.innerHTML = outputResponse + myDataT39;
+}
+
+if (btnFCC39 !== null && scopeFCC39 !== null) {
+  btnFCC39.addEventListener('click', debugFCC39);
+} else {
+  scopeFCC39.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 40: Basic JavaScript: Modify Array Data With Indexes */
 
-var myArray = [18,64,99];
-myArray[0] = 45; // now index 0 is 45 instead of 18
+var myArrayT40 = [18,64,99];
+myArrayT40[0] = 45; // now index 0 is 45 instead of 18
+
+/* OUTPUT CODE */
+
+const btnFCC40 = document.getElementById('run-fcc-task-40');
+const scopeFCC40 = document.getElementById('fcc-task-40');
+
+function debugFCC40() {
+  scopeFCC40.innerHTML = outputResponse + myArrayT40[0];
+}
+
+if (btnFCC40 !== null && scopeFCC40 !== null) {
+  btnFCC40.addEventListener('click', debugFCC40);
+} else {
+  scopeFCC40.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 41: Basic JavaScript: Access Multi-Dimensional Arrays With Indexes */
 
