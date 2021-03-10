@@ -1380,7 +1380,20 @@ function testNotEqual(testNotEqualVal) {
   return "TNEV is equal."
 }
 
-console.log("Task 61: " + testNotEqual(98));
+/* OUTPUT CODE */
+
+const btnFCC61 = document.getElementById('run-fcc-task-61');
+const scopeFCC61 = document.getElementById('fcc-task-61');
+
+function debugFCC61() {
+  scopeFCC61.innerHTML = outputResponse + testNotEqual(98);
+}
+
+if (btnFCC61 !== null && scopeFCC61 !== null) {
+  btnFCC61.addEventListener('click', debugFCC61);
+} else {
+  scopeFCC61.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 62: Comparison with Strict Inequality Operator */
 
@@ -1393,7 +1406,20 @@ function testStrictNotEqual(testStrictNotEqualVal) {
   return "testStrictNotEqualVal is equal 564.";
 }
 
-console.log("Task 62: " + testStrictNotEqual(563));
+/* OUTPUT CODE */
+
+const btnFCC62 = document.getElementById('run-fcc-task-62');
+const scopeFCC62 = document.getElementById('fcc-task-62');
+
+function debugFCC62() {
+  scopeFCC62.innerHTML = outputResponse + testStrictNotEqual(563);
+}
+
+if (btnFCC62 !== null && scopeFCC62 !== null) {
+  btnFCC62.addEventListener('click', debugFCC62);
+} else {
+  scopeFCC62.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 63: Comparison with the Greater Than Operator */
 
@@ -1411,6 +1437,21 @@ function testGreaterThan(testGreaterThanVal) {
 
 console.log("Task 63: " + testGreaterThan(301));
 
+/* OUTPUT CODE */
+
+const btnFCC63 = document.getElementById('run-fcc-task-63');
+const scopeFCC63 = document.getElementById('fcc-task-63');
+
+function debugFCC63() {
+  scopeFCC63.innerHTML = outputResponse + testGreaterThan(301);
+}
+
+if (btnFCC63 !== null && scopeFCC63 !== null) {
+  btnFCC63.addEventListener('click', debugFCC63);
+} else {
+  scopeFCC63.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 /* Task 64: Comparison with the Greater Than or Equal To Operator */
 
 /* The greater than (>=) operator compares the values of two numbers and returns true if number to the left is greater than the number to the right. Otherwise it returns FALSE. It will convert data types of values while comparing. */
@@ -1425,7 +1466,20 @@ function testGreaterOrEqual(testGreaterOrEqualVal) {
   return "It's less than 33.";
 }
 
-console.log("Task 64: " + testGreaterOrEqual(20));
+/* OUTPUT CODE */
+
+const btnFCC64 = document.getElementById('run-fcc-task-64');
+const scopeFCC64 = document.getElementById('fcc-task-64');
+
+function debugFCC64() {
+  scopeFCC64.innerHTML = outputResponse + testGreaterOrEqual(20);
+}
+
+if (btnFCC64 !== null && scopeFCC64 !== null) {
+  btnFCC64.addEventListener('click', debugFCC64);
+} else {
+  scopeFCC64.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 65: Comparison with the Less Than Operator */
 
@@ -1441,7 +1495,20 @@ function testLessThan(testLessThanVal) {
   return "It's 99 or over.";
 }
 
-console.log("Task 65: " + testLessThan(68));
+/* OUTPUT CODE */
+
+const btnFCC65 = document.getElementById('run-fcc-task-65');
+const scopeFCC65 = document.getElementById('fcc-task-65');
+
+function debugFCC65() {
+  scopeFCC65.innerHTML = outputResponse + testLessThan(68);
+}
+
+if (btnFCC65 !== null && scopeFCC65 !== null) {
+  btnFCC65.addEventListener('click', debugFCC65);
+} else {
+  scopeFCC65.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 66: Comparison with Less Than or Equal To Operator */
 
@@ -1457,7 +1524,20 @@ function testLessThanOrEqual(testLessThanOrEqualVal) {
   return "More than 29.";
 }
 
-console.log("Task 66: " + testLessThanOrEqual(68));
+/* OUTPUT CODE */
+
+const btnFCC66 = document.getElementById('run-fcc-task-66');
+const scopeFCC66 = document.getElementById('fcc-task-66');
+
+function debugFCC66() {
+  scopeFCC66.innerHTML = outputResponse + testLessThanOrEqual(68);
+}
+
+if (btnFCC66 !== null && scopeFCC66 !== null) {
+  btnFCC66.addEventListener('click', debugFCC66);
+} else {
+  scopeFCC66.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 67: Comparisons with the Logical And Operator */
 
@@ -1486,7 +1566,20 @@ function testLogicalAnd(testLogicalAndVal) {
   return "Smaller than 10 or bigger than 50.";
 }
 
-console.log("Task 67: " + testLogicalAnd(60));
+/* OUTPUT CODE */
+
+const btnFCC67 = document.getElementById('run-fcc-task-67');
+const scopeFCC67 = document.getElementById('fcc-task-67');
+
+function debugFCC67() {
+  scopeFCC67.innerHTML = outputResponse + testLogicalAnd(60);
+}
+
+if (btnFCC67 !== null && scopeFCC67 !== null) {
+  btnFCC67.addEventListener('click', debugFCC67);
+} else {
+  scopeFCC67.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 68: Comparisons with the Logical OR Operator */
 
@@ -1501,7 +1594,20 @@ function testLogicalOr(testLogicalOrVal) {
   return "Unfortunately, your number is between 1 and 100.";
 }
 
-console.log("Task 68: " + testLogicalOr(101));
+/* OUTPUT CODE */
+
+const btnFCC68 = document.getElementById('run-fcc-task-68');
+const scopeFCC68 = document.getElementById('fcc-task-68');
+
+function debugFCC68() {
+  scopeFCC68.innerHTML = outputResponse + testLogicalOr(101);
+}
+
+if (btnFCC68 !== null && scopeFCC68 !== null) {
+  btnFCC68.addEventListener('click', debugFCC68);
+} else {
+  scopeFCC68.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 69: Introducing Else Statements */
 
@@ -1515,7 +1621,20 @@ function testIfElse(testIfElseVal) {
   }
 }
 
-console.log("Task 69: " + testIfElse("harry"));
+/* OUTPUT CODE */
+
+const btnFCC69 = document.getElementById('run-fcc-task-69');
+const scopeFCC69 = document.getElementById('fcc-task-69');
+
+function debugFCC69() {
+  scopeFCC69.innerHTML = outputResponse + testIfElse("harry");
+}
+
+if (btnFCC69 !== null && scopeFCC69 !== null) {
+  btnFCC69.addEventListener('click', debugFCC69);
+} else {
+  scopeFCC69.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 70: Introducint Else If Statements */
 
@@ -1531,7 +1650,20 @@ function testElseIf(testElseIfVal) {
   }
 }
 
-console.log("Task 70: " + testElseIf("email@mailorg"));
+/* OUTPUT CODE */
+
+const btnFCC70 = document.getElementById('run-fcc-task-70');
+const scopeFCC70 = document.getElementById('fcc-task-70');
+
+function debugFCC70() {
+  scopeFCC70.innerHTML = outputResponse + testElseIf("email@mailorg");
+}
+
+if (btnFCC70 !== null && scopeFCC70 !== null) {
+  btnFCC70.addEventListener('click', debugFCC70);
+} else {
+  scopeFCC70.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 71: Logical Orded in If Else Statements */
 
