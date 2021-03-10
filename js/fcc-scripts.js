@@ -1101,7 +1101,20 @@ function locTest() {
   return globalOne;
 }
 
-console.log("Task 51: " + globalOne);
+/* OUTPUT CODE */
+
+const btnFCC51 = document.getElementById('run-fcc-task-51');
+const scopeFCC51 = document.getElementById('fcc-task-51');
+
+function debugFCC51() {
+  scopeFCC51.innerHTML = outputResponse + locTest();
+}
+
+if (btnFCC51 !== null && scopeFCC51 !== null) {
+  btnFCC51.addEventListener('click', debugFCC51);
+} else {
+  scopeFCC51.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* But as far as I see, in ES6+ now the local one just doesn't work and the final value is „What". */
 
@@ -1114,7 +1127,21 @@ function plusVal52(pv52Arg) {
 }
 
 const pv52Answer = plusVal52(10);
-console.log("Task 52: " + pv52Answer);
+
+/* OUTPUT CODE */
+
+const btnFCC52 = document.getElementById('run-fcc-task-52');
+const scopeFCC52 = document.getElementById('fcc-task-52');
+
+function debugFCC52() {
+  scopeFCC52.innerHTML = outputResponse + pv52Answer;
+}
+
+if (btnFCC52 !== null && scopeFCC52 !== null) {
+  btnFCC52.addEventListener('click', debugFCC52);
+} else {
+  scopeFCC52.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 53: Understanding Undefined Value returned from a Function */
 
@@ -1127,7 +1154,21 @@ function notDefined(sumNum) {
 }
 
 notDefined(5);
-console.log("Task 53: " + checkSum);
+
+/* OUTPUT CODE */
+
+const btnFCC53 = document.getElementById('run-fcc-task-53');
+const scopeFCC53 = document.getElementById('fcc-task-53');
+
+function debugFCC53() {
+  scopeFCC53.innerHTML = outputResponse + checkSum;
+}
+
+if (btnFCC53 !== null && scopeFCC53 !== null) {
+  btnFCC53.addEventListener('click', debugFCC53);
+} else {
+  scopeFCC53.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* But as far as I see, in ES6+ now it can not return anything so the output of checkSum would be 5. */
 
@@ -1144,11 +1185,25 @@ function passProcess(number) {
 process = passProcess(100);
 //We are assigning returned value to variable.
 
-console.log("Task 54: " + process);
+/* OUTPUT CODE */
+
+const btnFCC54 = document.getElementById('run-fcc-task-54');
+const scopeFCC54 = document.getElementById('fcc-task-54');
+
+function debugFCC54() {
+  scopeFCC54.innerHTML = outputResponse + process;
+}
+
+if (btnFCC54 !== null && scopeFCC54 !== null) {
+  btnFCC54.addEventListener('click', debugFCC54);
+} else {
+  scopeFCC54.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
 
 /* Task 55: Stand in Line (QUEUE) */
 
-/* in Computer Science a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue. */
+/* In Computer Science a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue. */
 
 /* First of all, we want to add the number to the end of array, then remove the first element of the array. */
 
@@ -1160,9 +1215,20 @@ function pushArray(arr, arrItem) {
 
 var testArray = [1,2,3,4,5];
 
-console.log("Task 55: Before: " + JSON.stringify(testArray));
-console.log("Task 55: Pushing array with: " + pushArray(testArray, 6));
-console.log("Task 55: After: " + JSON.stringify(testArray));
+/* OUTPUT CODE */
+
+const btnFCC55 = document.getElementById('run-fcc-task-55');
+const scopeFCC55 = document.getElementById('fcc-task-55');
+
+function debugFCC55() {
+  scopeFCC55.innerHTML = outputResponse + JSON.stringify(testArray) + ', ' + pushArray(testArray, 6) + ', ' + JSON.stringify(testArray);
+}
+
+if (btnFCC55 !== null && scopeFCC55 !== null) {
+  btnFCC55.addEventListener('click', debugFCC55);
+} else {
+  scopeFCC55.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 56: Understanding Boolean Values */
 
@@ -1175,7 +1241,20 @@ function booleanTest() {
 
 var bT = booleanTest();
 
-console.log("Task 56: Value of bT is (booleanTest): " + bT);
+/* OUTPUT CODE */
+
+const btnFCC56 = document.getElementById('run-fcc-task-56');
+const scopeFCC56 = document.getElementById('fcc-task-56');
+
+function debugFCC56() {
+  scopeFCC56.innerHTML = outputResponse + bT;
+}
+
+if (btnFCC56 !== null && scopeFCC56 !== null) {
+  btnFCC56.addEventListener('click', debugFCC56);
+} else {
+  scopeFCC56.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 57: Use Conditional Logic with If Statements */
 
@@ -1189,8 +1268,20 @@ function testIfs(testIfsCondition) {
   return "This condition was false";
 }
 
-console.log("Task 57: " + testIfs(true));
-console.log("Task 57: " + testIfs(false));
+/* OUTPUT CODE */
+
+const btnFCC57 = document.getElementById('run-fcc-task-57');
+const scopeFCC57 = document.getElementById('fcc-task-57');
+
+function debugFCC57() {
+  scopeFCC57.innerHTML = outputResponse + testIfs(true) + ', ' + testIfs(false);
+}
+
+if (btnFCC57 !== null && scopeFCC57 !== null) {
+  btnFCC57.addEventListener('click', debugFCC57);
+} else {
+  scopeFCC57.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 58: Comparison with the Equality Operator */
 
@@ -1203,7 +1294,20 @@ function testEqual(testEqualVal) {
   return "Your testEqualVal isn't equivalent to value of 50.";
 }
 
-console.log("Task 58: " + testEqual(50));
+/* OUTPUT CODE */
+
+const btnFCC58 = document.getElementById('run-fcc-task-58');
+const scopeFCC58 = document.getElementById('fcc-task-58');
+
+function debugFCC58() {
+  scopeFCC58.innerHTML = outputResponse + testEqual(50);
+}
+
+if (btnFCC58 !== null && scopeFCC58 !== null) {
+  btnFCC58.addEventListener('click', debugFCC58);
+} else {
+  scopeFCC58.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 59: Comparison with the Strict Equality Operator */
 
@@ -1217,6 +1321,21 @@ function testStrict(testStrictVal) {
 }
 
 console.log("Task 59: " + testStrict("XD"));
+
+/* OUTPUT CODE */
+
+const btnFCC59 = document.getElementById('run-fcc-task-59');
+const scopeFCC59 = document.getElementById('fcc-task-59');
+
+function debugFCC59() {
+  scopeFCC59.innerHTML = outputResponse + testStrict("XD");
+}
+
+if (btnFCC59 !== null && scopeFCC59 !== null) {
+  btnFCC59.addEventListener('click', debugFCC59);
+} else {
+  scopeFCC59.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 60: Practice comparing different values */
 
@@ -1235,7 +1354,20 @@ function compareComps(comp1, comp2) {
   return "comp1 and comp2 are not equal";
 }
 
-console.log("Task 60: " + compareComps(5, '5'));
+/* OUTPUT CODE */
+
+const btnFCC60 = document.getElementById('run-fcc-task-60');
+const scopeFCC60 = document.getElementById('fcc-task-60');
+
+function debugFCC60() {
+  scopeFCC60.innerHTML = outputResponse + compareComps(5, '5');
+}
+
+if (btnFCC60 !== null && scopeFCC60 !== null) {
+  btnFCC60.addEventListener('click', debugFCC60);
+} else {
+  scopeFCC60.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 61: Comparison with inqeuality operator */
 

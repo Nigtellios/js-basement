@@ -1111,21 +1111,20 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 51 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 51: Global vs. Local Scope in Functions</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
+                              However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precendence over the global variable.<br><br>
+                              const globalOne = "What";<br>
+                              function locTest() {<br>
+                              &nbsp;var globalOne = "World";<br>
+                              &nbsp;return globalOne;<br>
                               }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              <strong>Debug will show execution of locTest().</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-51" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-51"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1134,21 +1133,20 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 52 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 52: Return a Value from a Function with Return</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
-                              }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.<br><br>
+                              function plusVal52(pv52Arg) {<br>
+                              &nbsp;return pv52Arg + 3;<br>
+                              }<br>
+                              <br>
+                              const pv52Answer = plusVal52(10);<br><br>
+                              <strong>Debug will show value of pv52Answer.</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-52" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-52"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1157,21 +1155,21 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 53 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 53: Understanding Undefined Value returned from a Function</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
+                              Function can include the return statement but it does not have to. In this case when you call this function it would process inner code but returned value would be undefined. <br><br>
+                              var checkSum = 0;<br>
+                              <br><br>
+                              function notDefined(sumNum) {<br>
+                                checkSum = checkSum + sumNum;<br>
                               }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              notDefined(5);<br><br>
+                              <strong>Debug will show value of checkSum.</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-53" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-53"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1180,21 +1178,23 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 54 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 54: Assignment with a Returned Value</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
-                              }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              In JS everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable. <br><br>
+                              var process = 0;<br>
+                              <br>
+                              function passProcess(number) {<br>
+                              &nbsp;return (number + 10)/5;<br>
+                              }<br>
+                              <br>
+                              process = passProcess(100);<br>
+                              ^We are assigning returned value to variable.<br><br>
+                              <strong>Debug will show value of process.</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-54" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-54"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1203,21 +1203,23 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 55 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 55: Stand in Line (QUEUE)</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
-                              }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              In Computer Science a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.<br><br>
+                              First of all, we want to add the number to the end of array, then remove the first element of the array.<br><br>
+                              function pushArray(arr, arrItem) {<br>
+                              &nbsp;testArray.push(arrItem);<br>
+                              &nbsp;var arrItem = testArray.shift();<br>
+                              &nbsp;return arrItem;<br>
+                              }<br>
+                              <br>
+                              var testArray = [1,2,3,4,5];<br>
+                              <strong>Debug will show execution of JSON.stringify(testArray), pushArray(testArray, 6) and JSON.stringify(testArray).</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-55" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-55"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1226,21 +1228,21 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 56 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 56: Understanding Boolean Values</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
-                              }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              Boolean is another data type. They may only be one of two values: true or false. They are basically little on-off switches, there TRUE is ON, and FALSE is OFF. These two states are mutually exclusive. Booleans are never written with QUOTES!<br><br>
+                              function booleanTest() {<br>
+                              &nbsp;return true;<br>
+                              &nbsp;^Only thing that we want is to return TRUE.<br>
+                              }<br>
+                              <br>
+                              var bT = booleanTest();<br><br>
+                              <strong>Debug will show value of bT.</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-56" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-56"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1249,21 +1251,23 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 57 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 57: Use Conditional Logic with If Statements</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
-                              }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              If statements are used to make decisions in code. The keyword If tells JavaScript to execute the code in curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false. When condition will be true -> code in curly brackets will execute statements inside them, while FALSE -> they will not.<br><br>
+                              function testIfs(testIfsCondition) {<br>
+                              &nbsp;if(testIfsCondition) {<br>
+                              &nbsp;&nbsp;return "This condition was true";<br>
+                              &nbsp;}<br>
+                              &nbsp;//Otherwise<br>
+                              &nbsp;return "This condition was false";<br>
+                              }<br>
+                              <br>
+                              <strong>Debug will show execution of testIfs(true) and then testIfs(false).</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-57" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-57"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1272,21 +1276,21 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 58 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 58: Comparison with the Equality Operator</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
+                              There are many comparison operators in JS. All of these operators return a boolean true or false. The most basic operator is equality == and it compares two values and returns true if they're equivalent or false if they are not.<br><br>
+                              function testEqual(testEqualVal) {<br>
+                              &nbsp;if (testEqualVal == 50) {<br>
+                              &nbsp;&nbsp;return "Your testEqualVal is equivalent to value of 50.";<br>
+                              &nbsp;}<br>
+                              &nbsp;return "Your testEqualVal isn't equivalent to value of 50.";<br>
                               }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              <strong>Debug will show execution of testEqual(50).</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-58" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-58"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1295,21 +1299,21 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 59 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 50: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 59: Comparison with the Strict Equality Operator</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
+                              Strict equality === is the counterpart to the equality operator ==. However, unlike the equality operator which attempts to convert both values being compared to a common type, the strict equality operator DOES NOT perform a type conversion.<br><br>
+                              function testStrict(testStrictVal) {<br>
+                              &nbsp;if(testStrictVal === "XD") {<br>
+                              &nbsp;&nbsp;return "Your testStrictVal is equal and the same type of XD String";<br>
+                              &nbsp;}<br>
+                              &nbsp;return "Your testStrictVal is NOT EQUAL and the NOT same type of XD String";<br>
                               }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              <strong>Debug will show execution of testStrict("XD").</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-59" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-59"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1318,21 +1322,27 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 60 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 60: Local Scope and Functions</h4>
+                            <h4 class="single-item__header">Task 60: Practice comparing different values</h4>
                             <p class="single-item__paragraph">
-                              Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. <br><br>
-                              function letsTestIt() {<br>
-                              &nbsp;var loc = "foo";<br>
-                              &nbsp;return "Task 50: " + loc;<br>
+                              In JS you can determine the type of a variable or a value with TYPEOF operator.<br><br>
+                              var comp1 = 5;<br>
+                              var comp2 = '5';<br>
+                              <br>
+                              console.log("Task 60: comp1 is: " + typeof comp1);<br>
+                              console.log("Task 60: comp2 is: " + typeof comp2);<br>
+                              <br>
+                              function compareComps(comp1, comp2) {<br>
+                              &nbsp;if (comp1 === comp2) {<br>
+                              &nbsp;&nbsp;return "comp1 and comp2 are equal";<br>
+                              &nbsp;}<br>
+                              &nbsp;return "comp1 and comp2 are not equal";<br>
                               }<br><br>
-                              letsTestIt(); //log "foo"<br>
-                              return "Task 50: " + loc; // is not defined because of local scope<br><br>
-                              <strong>Debug will show execution of letsTestIt().</strong>
+                              <strong>Debug will show execution of compareComps(5, '5').</strong>
                             </p>
                             <div class="single-item__debug-box">
-                              <button id="run-fcc-task-50" class="button button--debug">RUN DEBUG</button>
+                              <button id="run-fcc-task-60" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-50"></span></p>
+                                <p class="single-item__paragraph"><span id="fcc-task-60"></span></p>
                               </div>
                             </div>
                           </div>
