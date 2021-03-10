@@ -1679,7 +1679,20 @@ function testIfOrder(testIfOrderVal) {
   }
 }
 
-console.log("Task 71: " + testIfOrder(44));
+/* OUTPUT CODE */
+
+const btnFCC71 = document.getElementById('run-fcc-task-71');
+const scopeFCC71 = document.getElementById('fcc-task-71');
+
+function debugFCC71() {
+  scopeFCC71.innerHTML = outputResponse + testIfOrder(44);
+}
+
+if (btnFCC71 !== null && scopeFCC71 !== null) {
+  btnFCC71.addEventListener('click', debugFCC71);
+} else {
+  scopeFCC71.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 72: Chaining If Else Statements */
 
@@ -1701,7 +1714,20 @@ function testIfChain(testIfChainVal) {
   }
 }
 
-console.log("Task 72: " + testIfChain(18));
+/* OUTPUT CODE */
+
+const btnFCC72 = document.getElementById('run-fcc-task-72');
+const scopeFCC72 = document.getElementById('fcc-task-72');
+
+function debugFCC72() {
+  scopeFCC72.innerHTML = outputResponse + testIfChain(18);
+}
+
+if (btnFCC72 !== null && scopeFCC72 !== null) {
+  btnFCC72.addEventListener('click', debugFCC72);
+} else {
+  scopeFCC72.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 73: Golf Game */
 
@@ -1725,7 +1751,20 @@ function golfScore(par, strokes) {
   }
 }
 
-console.log("Task 73: " + golfScore(5, 4));
+/* OUTPUT CODE */
+
+const btnFCC73 = document.getElementById('run-fcc-task-73');
+const scopeFCC73 = document.getElementById('fcc-task-73');
+
+function debugFCC73() {
+  scopeFCC73.innerHTML = outputResponse + golfScore(5, 4);
+}
+
+if (btnFCC73 !== null && scopeFCC73 !== null) {
+  btnFCC73.addEventListener('click', debugFCC73);
+} else {
+  scopeFCC73.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 74: Selecting from Many Options with Switch Statements */
 
@@ -1733,7 +1772,6 @@ console.log("Task 73: " + golfScore(5, 4));
 
 function testSwitch(testSwitchVal) {
   var testSwitchResponse = "";
-
   switch(testSwitchVal) {
     case 'a1':
       testSwitchResponse = "Correct, Ferraris usually are red!"
@@ -1752,8 +1790,20 @@ function testSwitch(testSwitchVal) {
   //^because we want to return full case response which is stored in testSwitchResponse Variable.
 }
 
-console.log("Task 74: Which colour has Ferrari car?\na. Red\nb. Blue\nc. Green\nd. Yellow");
-console.log("Task 74: " + testSwitch('d4'));
+/* OUTPUT CODE */
+
+const btnFCC74 = document.getElementById('run-fcc-task-74');
+const scopeFCC74 = document.getElementById('fcc-task-74');
+
+function debugFCC74() {
+  scopeFCC74.innerHTML = outputResponse + "Which colour has Ferrari car? a. Red b. Blue c. Green d. Yellow? " + testSwitch('d4');
+}
+
+if (btnFCC74 !== null && scopeFCC74 !== null) {
+  btnFCC74.addEventListener('click', debugFCC74);
+} else {
+  scopeFCC74.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 75: Adding a Default Option in Switch Statements */
 
@@ -1762,8 +1812,6 @@ console.log("Task 74: " + testSwitch('d4'));
 
 function testSwitchDefault(testSwitchDefaultVal) {
   var testSwitchDefaultResponse = "";
-  
-  
   switch(testSwitchDefaultVal) {
   case 1: 
     testSwitchDefaultResponse =  "We are going North.";
@@ -1777,9 +1825,21 @@ function testSwitchDefault(testSwitchDefaultVal) {
   }
   return testSwitchDefaultResponse;
 }
-  
-console.log("Task 75: Where are we going?");
-console.log("Task 75: " + testSwitchDefault(3));
+
+/* OUTPUT CODE */
+
+const btnFCC75 = document.getElementById('run-fcc-task-75');
+const scopeFCC75 = document.getElementById('fcc-task-75');
+
+function debugFCC75() {
+  scopeFCC75.innerHTML = outputResponse + "Where are we going? " + testSwitchDefault(3);
+}
+
+if (btnFCC75 !== null && scopeFCC75 !== null) {
+  btnFCC75.addEventListener('click', debugFCC75);
+} else {
+  scopeFCC75.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 76: Multiple Identical Options in Switch Statements */
 
@@ -1787,7 +1847,6 @@ console.log("Task 75: " + testSwitchDefault(3));
 
 function testMultipleSwitch(testMultipleSwitchVal) {
   var testMultipleSwitchResult = "";
-
   switch (testMultipleSwitchVal) {
     case 1:
     case 2:
@@ -1801,11 +1860,23 @@ function testMultipleSwitch(testMultipleSwitchVal) {
       testMultipleSwitchResult = "Please, choose something first.";
       break;
   }
-
   return testMultipleSwitchResult;
 }
 
-console.log("Task 76: " + testMultipleSwitch(2));
+/* OUTPUT CODE */
+
+const btnFCC76 = document.getElementById('run-fcc-task-76');
+const scopeFCC76 = document.getElementById('fcc-task-76');
+
+function debugFCC76() {
+  scopeFCC76.innerHTML = outputResponse + "Where are we going? " + testMultipleSwitch(2);
+}
+
+if (btnFCC76 !== null && scopeFCC76 !== null) {
+  btnFCC76.addEventListener('click', debugFCC76);
+} else {
+  scopeFCC76.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 77: Replacing If Else Chains with Switch */
 
@@ -1833,11 +1904,25 @@ function replaceSwitch(replaceSwitchVal) {
       replaceSwitchAnswer = "Ok.";
       break;
   }
-
   return replaceSwitchAnswer;
 }
 
 console.log("Task 77: " + replaceSwitch(2));
+
+/* OUTPUT CODE */
+
+const btnFCC77 = document.getElementById('run-fcc-task-77');
+const scopeFCC77 = document.getElementById('fcc-task-77');
+
+function debugFCC77() {
+  scopeFCC77.innerHTML = outputResponse + replaceSwitch(2);
+}
+
+if (btnFCC77 !== null && scopeFCC77 !== null) {
+  btnFCC77.addEventListener('click', debugFCC77);
+} else {
+  scopeFCC77.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 78: Returning Boolean Values From Functions */
 
@@ -1851,17 +1936,28 @@ function booleanIsEqual(a1, b1) {
   }
 }
 
-console.log('Task 78: ' + booleanIsEqual(1, 2));
-
 /* But the more proper, and better way is to do this via: */
 
 function booleanIsEqualVariant(aa1, bb1) {
   return aa1 === bb1;
 }
 
-console.log('Task 78: ' + booleanIsEqualVariant(1, 2));
-
 /* It would give us False, because === returns TRUE or FALSE. */
+
+/* OUTPUT CODE */
+
+const btnFCC78 = document.getElementById('run-fcc-task-78');
+const scopeFCC78 = document.getElementById('fcc-task-78');
+
+function debugFCC78() {
+  scopeFCC78.innerHTML = outputResponse + booleanIsEqual(1, 2) + ', ' + booleanIsEqualVariant(1, 2);
+}
+
+if (btnFCC78 !== null && scopeFCC78 !== null) {
+  btnFCC78.addEventListener('click', debugFCC78);
+} else {
+  scopeFCC78.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 
 /* Task 79: Return Early Pattern for Functions */
@@ -1869,12 +1965,27 @@ console.log('Task 78: ' + booleanIsEqualVariant(1, 2));
 /* When a return statement is reached, the execution of the current function stops and control returns to the calling location. */
 
 function earlyPattern() {
-  console.log("Task 79: Early Pattern 1/2 Stage. ");
-  return "Task 79: Early Pattern 2/2 Stage - from RETURN statement.";
-  console.log("Task 79: Early Pattern - Statement never used.");
+  return "Task 79: Early Pattern 1/2 Stage. ";
+  return "Task 79: Early Pattern 2/2 Stage - from RETURN statement. ";
+  return "Task 79: Early Pattern - Statement never used. ";
 }
 
 console.log('### FOLLOW UP ###' + ' ' + earlyPattern());
+
+/* OUTPUT CODE */
+
+const btnFCC79 = document.getElementById('run-fcc-task-79');
+const scopeFCC79 = document.getElementById('fcc-task-79');
+
+function debugFCC79() {
+  scopeFCC79.innerHTML = outputResponse + '### FOLLOW UP ###' + earlyPattern();
+}
+
+if (btnFCC79 !== null && scopeFCC79 !== null) {
+  btnFCC79.addEventListener('click', debugFCC79);
+} else {
+  scopeFCC79.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 80: Counting Cards */
 
@@ -1883,7 +1994,6 @@ console.log('### FOLLOW UP ###' + ' ' + earlyPattern());
 /* First of all, I tried to  do it only via ifs, so I put everything in a dunction and forgot that it would not properly display my output with „Bet" and „Hold" because it would output every step instead of only calculated output. So the solution for this is to create switch inside function. */
 
 var cardCount = 0;
-
 function cardCounter(cardItems){
   switch(cardItems){
     case 2:
@@ -1910,6 +2020,20 @@ function cardCounter(cardItems){
 
 console.log("Task 80: " + cardCounter(2) + " " + cardCounter(6) + " " + cardCounter(7) + " " + cardCounter('A'));
 
+/* OUTPUT CODE */
+
+const btnFCC80 = document.getElementById('run-fcc-task-80');
+const scopeFCC80 = document.getElementById('fcc-task-80');
+
+function debugFCC80() {
+  scopeFCC80.innerHTML = outputResponse + cardCounter(2) + " " + cardCounter(6) + " " + cardCounter(7) + " " + cardCounter('A');
+}
+
+if (btnFCC80 !== null && scopeFCC80 !== null) {
+  btnFCC80.addEventListener('click', debugFCC80);
+} else {
+  scopeFCC80.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
 /* Task 81: Build JavaScript Objects */
 
