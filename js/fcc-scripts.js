@@ -2037,7 +2037,7 @@ if (btnFCC80 !== null && scopeFCC80 !== null) {
 
 /* Task 81: Build JavaScript Objects */
 
-/* 03.03.2021 - IT'S REWORK TIME! <3 */
+/* 11.03.2021 - IT'S FINISHING TIME! <3 */
 
 console.log("");
 console.log("");
