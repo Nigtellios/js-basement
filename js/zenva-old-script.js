@@ -1,6 +1,6 @@
 /* This is from ZENVA JS Foundations */
 
-let outputResponse = "Output: ";
+let outputResponseZ = "Output: ";
 
 /* 1st Task - Beginning */
 
@@ -10,19 +10,18 @@ var hello_Z1 = "#Task 1: Hello, World";
 
 /* OUTPUT CODE */
 
-const btn_Z1 = document.getElementById('run-zenva-task-1');
-const scope_Z1 = document.getElementById('zenva-task-1');
+const btnZ1 = document.getElementById('run-zenva-task-1');
+const scopeZ1 = document.getElementById('zenva-task-1');
 
-function debug_Z1() {
-  scope_Z1.innerHTML = outputResponse + hello_Z1;
+function debugZ1() {
+  scopeZ1.innerHTML = outputResponseZ + hello_Z1;
 }
 
-if (btn_Z1 !== null && scope_Z1 !== null) {
-  btn_Z1.addEventListener('click', debug_Z1);
+if (btnZ1 !== null && scopeZ1 !== null) {
+  btnZ1.addEventListener('click', debugZ1);
 } else {
-  scope_Z1.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+  scopeZ1.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
-
 
 /* Task 2 - Variables */
 
@@ -401,35 +400,35 @@ console.log(task9 + "Test of a nested function: " + t3_Z9);
 
 var task10 = "#Task 10: ";
 
-let currentSanity = 0;
+let currentSanity_Z10 = 0;
 
 // Now we would create some inputs to change the behavior of our function.
 // It is bad practice to declare other variable which can be used as an Input,
 // instead of this we can make it as a parameter.
 
-function sanity(recoverSanity) {
-  currentSanity += recoverSanity;
+function sanity_Z10(recoverSanity_Z10) {
+  currentSanity_Z10 += recoverSanity_Z10;
 }
 
-sanity(100); //currentSanity will be 100.
+sanity_Z10(100); //currentSanity will be 100.
 
 // Sometimes we just want to pass some default value. However, if we then call another
 // value while calling an function, we will override this.
 
 
-let currentMana = 55.5;
+let currentMana_Z10 = 55.5;
 
-function manaRecover(manaRecoverAmount = 25) {
-  currentMana += manaRecoverAmount;
+function manaRecover_Z10(manaRecoverAmount_Z10 = 25) {
+  currentMana_Z10 += manaRecoverAmount_Z10;
 }
 
-manaRecover(30.5);
+manaRecover_Z10(30.5);
 
 //Now our 30.5 will override the default value of 25.
 //It is very good to have default value of parameter.
 
-console.log(task10 + "Sanity after function call: " + currentSanity);
-console.log(task10 + "Mana after function call: " + currentMana);
+console.log(task10 + "Sanity after function call: " + currentSanity_Z10);
+console.log(task10 + "Mana after function call: " + currentMana_Z10);
 
 /* End of Task 10 --------- */
 
@@ -437,23 +436,23 @@ console.log(task10 + "Mana after function call: " + currentMana);
 
 var task11 = "#Task 11: ";
 
-let maxBalance = 200.0;
-let currentBalance = 198.1;
+let maxBalance_Z11 = 200.0;
+let currentBalance_Z11 = 198.1;
 
 //Now we want to calculate a precentage of our balance, during this we would 
 //learn how to return something from a function to make some calculations.
 
-function transaction(transValue = 1.0) {
-  let calcValue = currentBalance + transValue;
-  currentBalance = calcValue > 200 ? maxBalance : calcValue;
-  currentBalance -= transValue;
-  return (currentBalance / maxBalance) * 100; //Calculating the precentage.
+function transaction(transValue_Z11 = 1.0) {
+  let calcValue_Z11 = currentBalance_Z11 + transValue_Z11;
+  currentBalance_Z11 = calcValue_Z11 > 200 ? maxBalance_Z11 : calcValue_Z11;
+  currentBalance_Z10 -= transValue_Z11;
+  return (currentBalance_Z11 / maxBalance_Z11) * 100; //Calculating the precentage.
 }
 
-let result = transaction();
-result = transaction(20.9);
+let result_Z11 = transaction();
+result_Z11 = transaction(20.9);
 
-console.log(task11 + "Current Balance after transaction: " + currentBalance);
+console.log(task11 + "Current Balance after transaction: " + currentBalance_Z11);
 
 /* End of Task 11 --------- */
 
@@ -461,17 +460,17 @@ console.log(task11 + "Current Balance after transaction: " + currentBalance);
 
 var task12 = "#Task 12: ";
 
-let keyPress = "r";
-let xPos = 0;
+let keyPress_Z12 = "r";
+let xPos_Z12 = 0;
 
 // We are going to create something like test for moving object
 
-if (keyPress == "l") {
-  xPos -= 1; //xPos = -1;
-} else if (keyPress == "r") {
-  xPos += 1; //xPos = -1;
+if (keyPress_Z12 == "l") {
+  xPos_Z12 -= 1; //xPos = -1;
+} else if (keyPress_Z12 == "r") {
+  xPos_Z12 += 1; //xPos = -1;
 } else {
-  xPos = 0;
+  xPos_Z12 = 0;
 }
 
 // This code is comparing the value of variable keyPress
@@ -481,7 +480,7 @@ if (keyPress == "l") {
 // If any of requirements fails (returns false), then code is going to another one
 
 
-console.log(task12 + "xPos value after debug: " + xPos);
+console.log(task12 + "xPos value after debug: " + xPos_Z12);
 
 /* End of Task 12 --------- */
 
@@ -491,14 +490,14 @@ var task13 = "#Task 13: ";
 
 // Let's talk about nested Ifs, imagine if we have:
 
-let someNumber = 99;
-let doLMAO = 0;
+let someNumber_Z13 = 99;
+let doLMAO_Z13 = 0;
 
-if (someNumber > 10 ) {
-  doLMAO += 25;
+if (someNumber_Z13 > 10 ) {
+  doLMAO_Z13 += 25;
 }
-if (someNumber < 5 ) {
-  doLMAO *= 2;
+if (someNumber_Z13 < 5 ) {
+  doLMAO_Z13 *= 2;
 }
 
 // We can use something above if we want to execute only one test of code at a time without
@@ -506,30 +505,30 @@ if (someNumber < 5 ) {
 
 // Now we are going to create nested If
 
-let keyPressed = "d";
-let endPos = 200;
-let actualPos = 50;
+let keyPressed_Z13 = "d";
+let endPos_Z13 = 200;
+let actualPos_Z13 = 50;
 
-if (keyPressed == "d") {
-  if (actualPos < endPos) {
-    actualPos += 1;
+if (keyPressed_Z13 == "d") {
+  if (actualPos_Z13 < endPos_Z13) {
+    actualPos_Z13 += 1;
   }
-  actualPos += 1;
-} else if (keyPressed == "a") {
-  actualPos -= 1;
+  actualPos_Z13 += 1;
+} else if (keyPressed_Z13 == "a") {
+  actualPos_Z13 -= 1;
 } else {
-  actualPos = 0;
+  actualPos_Z13 = 0;
 }
 
 // However, there are scenarios when we shouldn't do that, instead of it we 
 // should add logical expression to it. Properly it would look like this:
 
-if (keyPressed == "d" && actualPos < endPos) {
-  actualPos += 1;
-} else if (keyPressed == "a") {
-  actualPos -= 1;
+if (keyPressed_Z13 == "d" && actualPos_Z13 < endPos_Z13) {
+  actualPos_Z13 += 1;
+} else if (keyPressed_Z13 == "a") {
+  actualPos_Z13 -= 1;
 } else {
-  actualPos = 0;
+  actualPos_Z13 = 0;
 }
 
 // but in the example above, the code would run only if both statements are
@@ -538,16 +537,16 @@ if (keyPressed == "d" && actualPos < endPos) {
 
 /* Homework - Do the same on the left side of map */
 
-if (keyPressed == "d" && actualPos < endPos) {
-  actualPos += 1;
-} else if (keyPressed == "a" && actualPos >= 0) {
-  actualPos -= 1;
+if (keyPressed_Z13 == "d" && actualPos_Z13 < endPos_Z13) {
+  actualPos_Z13 += 1;
+} else if (keyPressed_Z13 == "a" && actualPos_Z13 >= 0) {
+  actualPos_Z13 -= 1;
 } else {
-  actualPos = 0;
+  actualPos_Z13 = 0;
 }
 
-console.log(task13 + "Value after debug: " + doLMAO);
-console.log(task13 + "Actual position: " + actualPos);
+console.log(task13 + "Value after debug: " + doLMAO_Z13);
+console.log(task13 + "Actual position: " + actualPos_Z13);
 
 /* End of Task 13 --------- */
 
@@ -558,36 +557,36 @@ var task14 = "#Task 14: ";
 // Ye let's do the same another time (oof), now we are going to move foward
 // continously by 50 until we met end of our „map" (at least in math)
 
-let endOfMap = 500;
-let aPos = 0;
-let enemyPos = 450;
-let isGameOver = false;
+let endOfMap_Z14 = 500;
+let aPos_Z14 = 0;
+let enemyPos_Z14 = 450;
+let isGameOver_Z14 = false;
 
-// while(aPos < endOfMap) {
-//   console.log(aPos); // To look forward if it is working in console.
-//   aPos += 50;
-//   if (aPos == enemyPos) {
+// while(aPos_Z14 < endOfMap_Z14) {
+//   console.log(aPos_Z14); // To look forward if it is working in console.
+//   aPo_Z14s += 50;
+//   if (aPos_Z14 == enemyPos_Z14) {
 //     console.log('Game Over!');
 //   }
 // }
 
-while(!isGameOver) {
-  console.log("Current Position: " + aPos);
-  if(aPos == enemyPos){
-    isGameOver = true;
-    console.log("You've met enemy! Game is over on: " + aPos);
-  } else if (aPos == endOfMap) {
-    isGameOver = true;
-    console.log("You've met end of the map! Game is over on: " + aPos);
+while(!isGameOver_Z14) {
+  console.log("Current Position: " + aPos_Z14);
+  if(aPos == enemyPos_Z14){
+    isGameOver_Z14 = true;
+    console.log("You've met enemy! Game is over on: " + aPos_Z14);
+  } else if (aPos_Z14 == endOfMap_Z14) {
+    isGameOver_Z14 = true;
+    console.log("You've met end of the map! Game is over on: " + aPos_Z14);
   } else {
-    aPos += 50;
+    aPos_Z14 += 50;
   }
 }
 
 // ^ This is also a homework, we've made a code when game would end if we met
 // end of the map or our enemy.
 
-console.log(task14 + "Our actual position: " + aPos);
+console.log(task14 + "Our actual position: " + aPos_Z14);
 
 /* End of Task 14 --------- */
 
@@ -595,15 +594,15 @@ console.log(task14 + "Our actual position: " + aPos);
 
 var task15 = "#Task 15: ";
 
-let endOfMap = 500;
-let aPos = 0;
-let enemyPos = 250;
-let isGameOver = false;
+let endOfMap_Z15 = 500;
+let aPos_Z15 = 0;
+let enemyPos_Z15 = 250;
+let isGameOver_Z15 = false;
 
-// while(aPos < endOfMap) {
-//   aPos +=50;
-//   console.log("I'm moving, my position: " + aPos);
-//   if(aPos == enemyPos) {
+// while(aPos_Z15 < endOfMap_Z15) {
+//   aPos_Z15 +=50;
+//   console.log("I'm moving, my position: " + aPos_Z15);
+//   if(aPos_Z15 == enemyPos_Z15) {
 //     console.log("You've met enemy! Game is lost!");
 //     break;
 //   }
@@ -614,19 +613,19 @@ let isGameOver = false;
 
 // Let's say that we want to skip every odd number right now:
 
-endOfMap = 20;
+endOfMap_Z15 = 20;
 
-// while(aPos < endOfMap) {
-//   if (xPos % 2 == 1) {
-//     xPos += 2;
+// while(aPos_Z15 < endOfMap_Z15) {
+//   if (xPos_Z15 % 2 == 1) {
+//     xPos_Z15 += 2;
 //     continue;
 //   }
-//   aPos++;
-//   if(aPos == enemyPos) {
+//   aPos_Z15++;
+//   if(aPos_Z15 == enemyPos_Z15) {
 //     console.log("You've met enemy! Game is lost!");
 //     break;
 //   }
-//   console.log("I'm moving, my position: " + aPos);
+//   console.log("I'm moving, my position: " + aPos_Z15);
 // }
 
 // This seems like kinda broken logic, but if we hit continue with our statements,
@@ -634,10 +633,10 @@ endOfMap = 20;
 // jump between boolean condition inside while till our continue, so actually our break
 // would never happen (in the example above);
 
-function movePlayer() {
-  while(aPos < endOfMap) {
-   aPos ++;
-   if(aPos == enemyPos) {
+function movePlayer_Z15() {
+  while(aPos_Z15 < endOfMap_Z15) {
+   aPos_Z15 ++;
+   if(aPos_Z15 == enemyPos_Z15) {
      console.log("You've met enemy! Game is lost!");
      return;
    }
@@ -647,7 +646,7 @@ function movePlayer() {
 // So actually we can move out the entire function with our „return" instead of breaking
 // iterations of whole loop.
 
-console.log(task15 + "Our return function: " + aPos);
+console.log(task15 + "Our return function: " + aPos_Z15);
 
 /* End of Task 15 --------- */
 
@@ -896,7 +895,7 @@ console.log(task20 + "Our function after using prototype on 2nd instance: " + cr
 
 var task21 = "#Task 21: ";
 
-class gameCharacter {
+class gameCharacter2 {
   constructor(id, name, title, health, mana, xPosition) {
     this.id = id;
     this.name = name;
@@ -910,7 +909,7 @@ class gameCharacter {
   }
 }
 
-let warrior = new gameCharacter(1, "Dave", "Barbarian", 150, 100, 200);
+let warrior = new gameCharacter2(1, "Dave", "Barbarian", 150, 100, 200);
 
 warrior.move(50);
 
@@ -919,7 +918,7 @@ warrior.move(50);
 // also if we want to add something that doesn't exist in parent class
 // we can easily do so. 
 
-class elfCharacter extends gameCharacter {
+class elfCharacter extends gameCharacter2 {
   constructor(id, name, title, health, mana, xPosition){
     super(id, name, title, health, mana, xPosition);
     this.fishingSkillLevel = 0;
