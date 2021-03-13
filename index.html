@@ -79,7 +79,7 @@
                             <h4 class="single-item__header">Standarization Info:</h4>
                             <p class="single-item__paragraph">
                               The same standarization is used in every file and would not change.</br></br>
-                              <strong>IN JS FILES:</strong> If some values has many duplicates in different tasks, their names has been changed with something that is sugar-like ID. In example, if I have variable "a" duplicated 3-4 times, in each task duplicated variables has other ID at the end of their name. Variable "a" in #Task 4 would stand for "aT4" (T4 is ID of Task 4).<br><br>
+                              <strong>IN JS FILES:</strong> If some values has many duplicates in different tasks, their names has been changed with something that is sugar-like ID. In example, if I have variable "a" duplicated 3-4 times, in each task duplicated variables has other ID at the end of their name. Variable "a" in #Task 4 would stand for "a_T4" (_T4 is ID of Task 4).<br><br>
                               <strong>IN HTML FILES:</strong> Task IDs has always the same construction, they are started with name of parent div (for FreeCodeCamp ID shortcut would be "fcc". And so on: buttons attached to tasks has the same constructions but they are preceded by "run-". In example: for #Task 2, debug button ID would be "run-fcc-task-2", and span id inside debug box (from JS FILES -> debug scope) would be "fcc-task-2", which stands for Standard Task.<br><br>
                               <strong>Debug functions</strong> are based on <strong>debug buttons</strong> (with task ID, in ex. "run-fcc-task-2") and <strong>debug scopes</strong> (spans with task IDs, in ex. "fcc-task-2"), and their functionalities are all <strong>located inside JS files associated with tasks that are completed there</strong>. For better functionality, I left them all under the tasks instead of creating arrays or big lists, which simply would not be good idea while scopes still have to be defined, so Array would simply not change much instead of creating more code.<br><br>
                               <strong>In order to leave proper learning curve, constructions with old standards (ES5 etc.) hasn't been changed. That's why you may find some VARs inside JS files. (In example - there are some local/global scopes examples which need specific constructions)</strong>
@@ -105,9 +105,9 @@
                             <h4 class="single-item__header">Task 2: Declare JavaScript Variables</h4>
                             <p class="single-item__paragraph">
                               There are 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.<br><br>
-                              var myNameT2;<br>
-                              myNameT2 = "Jakub";<br><br>
-                              <strong>Debug will show value of myNameT2.</strong>
+                              var myName_T2;<br>
+                              myName_T2 = "Jakub";<br><br>
+                              <strong>Debug will show value of myName_T2.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-2" class="button button--debug">RUN DEBUG</button>
@@ -123,10 +123,10 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 3: Storing Values with the Assignment Operator</h4>
                             <p class="single-item__paragraph">
-                              Variable aT3 stores value of 7. Any calculations to the right of = operator are performed on the left of the operator. Like +=, -= etc.<br><br>
-                              var aT3;<br>
-                              aT3 = 7;<br><br>
-                              <strong>Debug will show value of aT3.</strong>
+                              Variable a_T3 stores value of 7. Any calculations to the right of = operator are performed on the left of the operator. Like +=, -= etc.<br><br>
+                              var a_T3;<br>
+                              a_T3 = 7;<br><br>
+                              <strong>Debug will show value of a_T3.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-3" class="button button--debug">RUN DEBUG</button>
@@ -143,11 +143,11 @@
                             <h4 class="single-item__header">Task 4: Assigning the Value of One Variable to Another</h4>
                             <p class="single-item__paragraph">
                               Assigning the Value of One Variable to Another. Remeber that they are just a copy of memory instead of scope.<br><br>
-                              var aT4;<br>
-                              aT4 = 7;<br>
-                              var bT4;<br>
-                              bT4 = aT4;<br><br>
-                              <strong>Debug will show value of aT4 and then bT4.</strong>
+                              var a_T4;<br>
+                              a_T4 = 7;<br>
+                              var b_T4;<br>
+                              b_T4 = a_T4;<br><br>
+                              <strong>Debug will show value of a_T4 and then b_T4.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-4" class="button button--debug">RUN DEBUG</button>
@@ -163,9 +163,9 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 5: Initializing Variables with the Assignment Operator</h4>
                             <p class="single-item__paragraph">
-                              var aT5 = 9;<br><br>
-                              Now it's the inital value of variable aT5.<br><br>
-                              <strong>Debug will show value of aT5.</strong>
+                              var a_T5 = 9;<br><br>
+                              Now it's the inital value of variable a_T5.<br><br>
+                              <strong>Debug will show value of a_T5.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-5" class="button button--debug">RUN DEBUG</button>
@@ -182,14 +182,14 @@
                             <h4 class="single-item__header">Task 6: Understanding Uninitialized Variables</h4>
                             <p class="single-item__paragraph">
                               When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a literal string of "undefined".<br><br>
-                              var aT6;<br>
-                              var bT6;<br>
-                              var cT6;<br>
+                              var a_T6;<br>
+                              var b_T6;<br>
+                              var c_T6;<br>
                               <br>
-                              aT6 = 5;<br>
-                              bT6 = 10;<br>
-                              cT6 = "I am a";<br><br>
-                              <strong>Debug will show values of aT6, bT6 and cT6.</strong>
+                              a_T6 = 5;<br>
+                              b_T6 = 10;<br>
+                              c_T6 = "I am a";<br><br>
+                              <strong>Debug will show values of a_T6, b_T6 and c_T6.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-6" class="button button--debug">RUN DEBUG</button>
@@ -232,8 +232,8 @@
                             <h4 class="single-item__header">Task 8: Add Two Numbers with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var sumT8 = 10 + 10;<br><br>
-                              <strong>Debug will show value of sumT8.</strong>
+                              var sum_T8 = 10 + 10;<br><br>
+                              <strong>Debug will show value of sum_T8.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-8" class="button button--debug">RUN DEBUG</button>
@@ -250,8 +250,8 @@
                             <h4 class="single-item__header">Task 9: Subtract One Number from Another with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var differenceT9 = 45 - 33;<br><br>
-                              <strong>Debug will show value of differenceT9.</strong>
+                              var difference_T9 = 45 - 33;<br><br>
+                              <strong>Debug will show value of difference_T9.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-9" class="button button--debug">RUN DEBUG</button>
@@ -268,8 +268,8 @@
                             <h4 class="single-item__header">Task 10: Multiply Two Numbers with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var productT10 = 8 * 10;<br><br>
-                              <strong>Debug will show values of productT10.</strong>
+                              var product_T10 = 8 * 10;<br><br>
+                              <strong>Debug will show values of product_T10.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-10" class="button button--debug">RUN DEBUG</button>
@@ -286,8 +286,8 @@
                             <h4 class="single-item__header">Task 11: Divide One Number by Another with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br> 
-                              var quotientT11 = 66 / 33; // 2<br><br>
-                              <strong>Debug will show value of quotientT11.</strong>
+                              var quotient_T11 = 66 / 33; // 2<br><br>
+                              <strong>Debug will show value of quotient_T11.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-11" class="button button--debug">RUN DEBUG</button>
@@ -304,8 +304,8 @@
                             <h4 class="single-item__header">Task 12: Increment a Number with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br> 
-                              var myVarT12 = 87; <br> myVarT12++;<br><br>
-                              <strong>Debug will show value of myVarT12.</strong>
+                              var myVar_T12 = 87; <br> myVar_T12++;<br><br>
+                              <strong>Debug will show value of myVar_T12.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-12" class="button button--debug">RUN DEBUG</button>
@@ -322,8 +322,8 @@
                             <h4 class="single-item__header">Task 13: Decrement a Number with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myVarT13 = 11; myVarT13--; // 10<br><br>
-                              <strong>Debug will show value of myVarT13.</strong>
+                              var myVar_T13 = 11; myVar_T13--; // 10<br><br>
+                              <strong>Debug will show value of myVar_T13.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-13" class="button button--debug">RUN DEBUG</button>
@@ -340,8 +340,8 @@
                             <h4 class="single-item__header">Task 14: Create Decimal Numbers with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br> 
-                              var myDecimalT14 = 5.8;<br><br>
-                              <strong>Debug will show value of myDecimalT14.</strong>
+                              var myDecimal_T14 = 5.8;<br><br>
+                              <strong>Debug will show value of myDecimal_T14.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-14" class="button button--debug">RUN DEBUG</button>
@@ -358,8 +358,8 @@
                             <h4 class="single-item__header">Task 15: Multiply Two Decimals with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                                var productT15 = 2.0 * 2.5; // 5<br><br>
-                                <strong>Debug will show value of productT15.</strong>
+                                var product_T15 = 2.0 * 2.5; // 5<br><br>
+                                <strong>Debug will show value of product_T15.</strong>
                               </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-15" class="button button--debug">RUN DEBUG</button>
@@ -376,8 +376,8 @@
                             <h4 class="single-item__header">Task 16: Divide One Decimal by Another with JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var quotientT16 = 4.4 / 2.0; // 2.2<br><br>
-                              <strong>Debug will show value of quotientT16</strong>
+                              var quotient_T16 = 4.4 / 2.0; // 2.2<br><br>
+                              <strong>Debug will show value of quotient_T16</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-16" class="button button--debug">RUN DEBUG</button>
@@ -394,10 +394,10 @@
                             <h4 class="single-item__header">Task 17: Finding a Remainder in JavaScript</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var remainderT17;<br>
-                              remainderT17 = 11;<br>
-                              remainderT17 = remainderT17 % 3; // 2<br><br>
-                              <strong>Debug will show value of remainderT17.</strong>
+                              var remainder_T17;<br>
+                              remainder_T17 = 11;<br>
+                              remainder_T17 = remainder_T17 % 3; // 2<br><br>
+                              <strong>Debug will show value of remainder_T17.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-17" class="button button--debug">RUN DEBUG</button>
@@ -414,14 +414,14 @@
                             <h4 class="single-item__header">Task 18: Compound Assignment With Augmented Addition</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var aT18 = 3;<br>
-                              var bT18 = 17;<br>
-                              var cT18 = 12;<br>
+                              var a_T18 = 3;<br>
+                              var b_T18 = 17;<br>
+                              var c_T18 = 12;<br>
                               <br>
-                              aT18 += 12;<br>
-                              bT18 += 9;<br>
-                              cT18 += 7;<br><br>
-                              <strong>Debug will show values of aT18, bT18 and cT18.</strong>
+                              a_T18 += 12;<br>
+                              b_T18 += 9;<br>
+                              c_T18 += 7;<br><br>
+                              <strong>Debug will show values of a_T18, b_T18 and c_T18.</strong>
                              </p>
 
                             <div class="single-item__debug-box">
@@ -439,14 +439,14 @@
                             <h4 class="single-item__header">Task 19: Compound Assignment With Augmented Subtraction</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var aT19 = 11;<br>
-                              var bT19 = 9;<br>
-                              var cT19 = 3;<br>
+                              var a_T19 = 11;<br>
+                              var b_T19 = 9;<br>
+                              var c_T19 = 3;<br>
                               <br>
-                              aT19 -= 6;<br>
-                              bT19 -= 15;<br>
-                              cT19 -= 1;<br><br>
-                              <strong>Debug will show values of aT19, bT19 and cT19.</strong>
+                              a_T19 -= 6;<br>
+                              b_T19 -= 15;<br>
+                              c_T19 -= 1;<br><br>
+                              <strong>Debug will show values of a_T19, b_T19 and c_T19.</strong>
                             
                             </p>
                             <div class="single-item__debug-box">
@@ -464,14 +464,14 @@
                             <h4 class="single-item__header">Task 20: Compound Assignment With Augmented Multiplication</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var aT20 = 5;<br>
-                              var bT20 = 12;<br>
-                              var cT20 = 4.6;<br>
+                              var a_T20 = 5;<br>
+                              var b_T20 = 12;<br>
+                              var c_T20 = 4.6;<br>
                               <br>
-                              aT20 *= 5;<br>
-                              bT20 *= 3;<br>
-                              cT20 *= 10;<br><br>
-                              <strong>Debug will show values of aT20, bT20 and cT20.</strong>
+                              a_T20 *= 5;<br>
+                              b_T20 *= 3;<br>
+                              c_T20 *= 10;<br><br>
+                              <strong>Debug will show values of a_T20, b_T20 and c_T20.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-20" class="button button--debug">RUN DEBUG</button>
@@ -488,14 +488,14 @@
                             <h4 class="single-item__header">Task 21: Compound Assignment With Augmented Division</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var aT21 = 48;<br>
-                              var bT21 = 108;<br>
-                              var cT21 = 33;<br>
+                              var a_T21 = 48;<br>
+                              var b_T21 = 108;<br>
+                              var c_T21 = 33;<br>
                               <br>
-                              aT21 /= 12;<br>
-                              bT21 /= 4;<br>
-                              cT21 /= 11;<br><br>
-                              <strong>Debug will show values of aT21, bT21 and cT21.</strong>
+                              a_T21 /= 12;<br>
+                              b_T21 /= 4;<br>
+                              c_T21 /= 11;<br><br>
+                              <strong>Debug will show values of a_T21, b_T21 and c_T21.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-21" class="button button--debug">RUN DEBUG</button>
@@ -512,12 +512,12 @@
                             <h4 class="single-item__header">Task 22: Declare String Variables</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myFirstNameT22;<br>
-                              var myLastNameT22;<br>
+                              var myFirstName_T22;<br>
+                              var myLastName_T22;<br>
                               <br>
-                              myFirstNameT22 = "Jakub";<br>
-                              myLastNameT22 = "Kowalski";<br><br>
-                              <strong>Debug will show values of myFirstNameT22 and myLastNameT22.</strong>
+                              myFirstName_T22 = "Jakub";<br>
+                              myLastName_T22 = "Kowalski";<br><br>
+                              <strong>Debug will show values of myFirstName_T22 and myLastName_T22.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-22" class="button button--debug">RUN DEBUG</button>
@@ -535,9 +535,9 @@
                             <p class="single-item__paragraph">
                             In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.<br><br>
                             <strong>In example: </strong><br>
-                            var myStrT23 = "I am a \"double quoted\" string inside \"double quotes\".";
+                            var myStr_T23 = "I am a \"double quoted\" string inside \"double quotes\".";
                             <br><br>
-                            <strong>Debug will show value of myStrT23.</strong>
+                            <strong>Debug will show value of myStr_T23.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-23" class="button button--debug">RUN DEBUG</button>
@@ -555,8 +555,8 @@
                             <p class="single-item__paragraph">
                               Remember, a string has the same kind of quote at the beginning and end. But if you have that same quote somewhere in the middle, the string will stop early and throw an error. That's why we can use single quotes in strings too.<br><br>
                               <strong>In example:</strong>
-                              var myStrT24 = '< a href="http://www.example.com" target="_blank">Link< a >';<br><br>
-                              <strong>Debug will show value of myStrT24.</strong>
+                              var myStr_T24 = '< a href="http://www.example.com" target="_blank">Link< a >';<br><br>
+                              <strong>Debug will show value of myStr_T24.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-24" class="button button--debug">RUN DEBUG</button>
@@ -573,8 +573,8 @@
                             <h4 class="single-item__header">Task 25: Escape Sequences in Strings</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myStrT25 = "FirstLine\n\t\\SecondLine\nThirdLine";<br><br>
-                              <strong>Debug will show value of myStrT25.</strong>
+                              var myStr_T25 = "FirstLine\n\t\\SecondLine\nThirdLine";<br><br>
+                              <strong>Debug will show value of myStr_T25.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-25" class="button button--debug">RUN DEBUG</button>
@@ -591,8 +591,8 @@
                             <h4 class="single-item__header">Task 26: Concatenating Strings with Plus Operator</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myStrT26 = "This is the start. " + "This is the end.";<br><br>
-                              <strong>Debug will show value of myStrT26.</strong>
+                              var myStr_T26 = "This is the start. " + "This is the end.";<br><br>
+                              <strong>Debug will show value of myStr_T26.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-26" class="button button--debug">RUN DEBUG</button>
@@ -609,9 +609,9 @@
                             <h4 class="single-item__header">Task 27: Concatenating Strings with the Plus Equals Operator</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myStrT27 = "This is the first sentence. ";><br>
-                              myStrT27 += "This is the second sentence.";<br><br>
-                              <strong>Debug will show value of myStrT27.</strong>
+                              var myStr_T27 = "This is the first sentence. ";><br>
+                              myStr_T27 += "This is the second sentence.";<br><br>
+                              <strong>Debug will show value of myStr_T27.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-27" class="button button--debug">RUN DEBUG</button>
@@ -628,9 +628,9 @@
                             <h4 class="single-item__header">Task 28: Constructing Strings with Variables</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myNameT28 = "Jakub";<br>
-                              var myStrT28 = "My name is " + myNameT28 + " and I am well!";<br><br>
-                              <strong>Debug will show values of myNameT28 and myStrT28 connected together.</strong>
+                              var myName_T28 = "Jakub";<br>
+                              var myStr_T28 = "My name is " + myName_T28 + " and I am well!";<br><br>
+                              <strong>Debug will show values of myName_T28 and myStr_T28 connected together.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-28" class="button button--debug">RUN DEBUG</button>
@@ -647,10 +647,10 @@
                             <h4 class="single-item__header">Task 29: Appending Variables to Strings</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var someAdjectiveT29 = "Okay";<br>
-                              var myStrT29 = "Learning to code is ";<br>
-                              var T29response = myStrT29 += someAdjectiveT29;<br><br>
-                              <strong>Debug will show values of someAdjectiveT29 added to myStrT29.</strong>
+                              var someAdjective_T29 = "Okay";<br>
+                              var myStr_T29 = "Learning to code is ";<br>
+                              var _T29response = myStr_T29 += someAdjective_T29;<br><br>
+                              <strong>Debug will show values of someAdjective_T29 added to myStr_T29.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-29" class="button button--debug">RUN DEBUG</button>
@@ -667,11 +667,11 @@
                             <h4 class="single-item__header">Task 30: Find the Length of a String</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var lastNameLengthT30 = 0;<br>
-                              var lastNameT30 = "Lovelace";<br>
-                              lastNameLengthT30 = lastNameT30.length;<br>
+                              var lastNameLength_T30 = 0;<br>
+                              var lastName_T30 = "Lovelace";<br>
+                              lastNameLength_T30 = lastName_T30.length;<br>
                               <br>
-                              <strong>Debug will show value of lastNameLengthT30.</strong>
+                              <strong>Debug will show value of lastNameLength_T30.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-30" class="button button--debug">RUN DEBUG</button>
@@ -688,11 +688,11 @@
                             <h4 class="single-item__header">Task 31: Use Bracket Notation to Find the First Character in a String</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var firstLetterOfLastNameT31 = "";<br>
-                              var lastNameT31 = "Lovelace";<br>
-                              firstLetterOfLastNameT31 = lastNameT31[0]; // L<br>
+                              var firstLetterOfLastName_T31 = "";<br>
+                              var lastName_T31 = "Lovelace";<br>
+                              firstLetterOfLastName_T31 = lastName_T31[0]; // L<br>
                               <br>
-                              <strong>Debug will show value of firstLetterOfLastNameT31.</strong>
+                              <strong>Debug will show value of firstLetterOfLastName_T31.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-31" class="button button--debug">RUN DEBUG</button>
@@ -709,11 +709,11 @@
                             <h4 class="single-item__header">Task 32: Understand String Immutability</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myStrT32 = "Jello World";<br>
-                              myStrT32[0] = "H"; <br><br>
+                              var myStr_T32 = "Jello World";<br>
+                              myStr_T32[0] = "H"; <br><br>
                               ^It can't be done, strings are immutable. Proper way below:<br><br>
-                              myStrT32 = "Hello World";<br><br>
-                              <strong>Debug will show value of myStrT32.</strong>
+                              myStr_T32 = "Hello World";<br><br>
+                              <strong>Debug will show value of myStr_T32.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-32" class="button button--debug">RUN DEBUG</button>
@@ -730,10 +730,10 @@
                             <h4 class="single-item__header">Task 33: Use Bracket Notation to Find the Nth Character in a String</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var lastNameT33 = "Kowalsky";<br>
-                              var thirdLetterOfLastNameT33 = lastNameT33[2]; // third letter - w<br>
+                              var lastName_T33 = "Kowalsky";<br>
+                              var thirdLetterOfLastName_T33 = lastName_T33[2]; // third letter - w<br>
                               <br>
-                              <strong>Debug will show value of thirdLetterOfLastNameT33.</strong>
+                              <strong>Debug will show value of thirdLetterOfLastName_T33.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-33" class="button button--debug">RUN DEBUG</button>
@@ -750,9 +750,9 @@
                             <h4 class="single-item__header">Task 34: Use Bracket Notation to Find the Last Character in a String</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var lastLetterOfLastNameT34 = lastNameT33[lastNameT33.length - 1];<br>
+                              var lastLetterOfLastName_T34 = lastName_T33[lastName_T33.length - 1];<br>
                               <br>
-                              <strong>Debug will show value of lastLetterOfLastNameT34.</strong>
+                              <strong>Debug will show value of lastLetterOfLastName_T34.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-34" class="button button--debug">RUN DEBUG</button>
@@ -769,9 +769,9 @@
                             <h4 class="single-item__header">Task 35: Use Bracket Notation to Find the Nth-to-Last Character in a String</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var secondToLastLetterOfLastNameT33 = lastNameT33[lastNameT33.length - 2];<br>
+                              var secondToLastLetterOfLastName_T33 = lastName_T33[lastName_T33.length - 2];<br>
                               <br>
-                              <strong>Debug will show value of secondToLastLetterOfLastNameT33.</strong>
+                              <strong>Debug will show value of secondToLastLetterOfLastName_T33.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-35" class="button button--debug">RUN DEBUG</button>
@@ -788,13 +788,13 @@
                             <h4 class="single-item__header">Task 36: Word Blanks</h4>
                             <p class="single-item__paragraph">
                               <strong>Quiz-like Task.</strong><br><br>
-                              var myNounT36 = "dog";<br>
-                              var myAdjectiveT36 = "big";<br>
-                              var myVerbT36 = "ran";<br>
-                              var myAdverbT36 = "quickly";<br><br>
-                              var wordBlanksT36 = "The " + myNounT36 + " was " + myAdjectiveT36 + " and he just " + myVerbT36 + " very " + myAdverbT36;<br>
+                              var myNoun_T36 = "dog";<br>
+                              var myAdjective_T36 = "big";<br>
+                              var myVerb_T36 = "ran";<br>
+                              var myAdverb_T36 = "quickly";<br><br>
+                              var wordBlanks_T36 = "The " + myNoun_T36 + " was " + myAdjective_T36 + " and he just " + myVerb_T36 + " very " + myAdverb_T36;<br>
                               <br>
-                              <strong>Debug will show value of wordBlanksT36.</strong>
+                              <strong>Debug will show value of wordBlanks_T36.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-36" class="button button--debug">RUN DEBUG</button>
@@ -811,9 +811,9 @@
                             <h4 class="single-item__header">Task 37: Store Multiple Values in one Variable using JavaScript Arrays</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT37 = ["LeMoiJelly", 0];<br>
+                              var myArray_T37 = ["LeMoiJelly", 0];<br>
                               <br>
-                              <strong>Debug will show values of myArrayT37[0] and myArrayT37[1].</strong>
+                              <strong>Debug will show values of myArray_T37[0] and myArray_T37[1].</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-37" class="button button--debug">RUN DEBUG</button>
@@ -830,9 +830,9 @@
                             <h4 class="single-item__header">Task 38: Nest one Array within Another Array</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT38 = [["Nested Array", 0]];<br>
+                              var myArray_T38 = [["Nested Array", 0]];<br>
                               <br>
-                              <strong>Debug will show values of myArrayT38[0][0] and myArrayT38[0][1].</strong>
+                              <strong>Debug will show values of myArray_T38[0][0] and myArray_T38[0][1].</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-38" class="button button--debug">RUN DEBUG</button>
@@ -849,10 +849,10 @@
                             <h4 class="single-item__header">Task 39: Access Array Data with Indexes</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT39 = [50,60,70];<br>
-                              var myDataT39 = myArrayT37[0]; // 50<br>
+                              var myArray_T39 = [50,60,70];<br>
+                              var myData_T39 = myArray_T37[0]; // 50<br>
                               <br>
-                              <strong>Debug will show value of myDataT39.</strong>
+                              <strong>Debug will show value of myData_T39.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-39" class="button button--debug">RUN DEBUG</button>
@@ -869,10 +869,10 @@
                             <h4 class="single-item__header">Task 40: Modify Array Data With Indexes</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT40 = [18,64,99];<br>
-                              myArrayT40[0] = 45; // now index 0 is 45 instead of 18<br>
+                              var myArray_T40 = [18,64,99];<br>
+                              myArray_T40[0] = 45; // now index 0 is 45 instead of 18<br>
                               <br>
-                              <strong>Debug will show value of myArrayT40[0].</strong>
+                              <strong>Debug will show value of myArray_T40[0].</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-40" class="button button--debug">RUN DEBUG</button>
@@ -889,11 +889,11 @@
                             <h4 class="single-item__header">Task 41: Access Multi-Dimensional Arrays With Indexes</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT41 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];<br><br>
+                              var myArray_T41 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];<br><br>
                               We are going for item with value 8, so:<br><br>
-                              var myDataT41 = myArrayT41[2][1];<br>
+                              var myData_T41 = myArray_T41[2][1];<br>
                               <br>
-                              <strong>Debug will show value of myDataT41.</strong>
+                              <strong>Debug will show value of myData_T41.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-41" class="button button--debug">RUN DEBUG</button>
@@ -910,10 +910,10 @@
                             <h4 class="single-item__header">Task 42: Manipulate Arrays With push()</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT42 = [["John", 23], ["cat", 2]];<br>
-                              myArrayT42.push(["dog", 3]);<br>
+                              var myArray_T42 = [["John", 23], ["cat", 2]];<br>
+                              myArray_T42.push(["dog", 3]);<br>
                               <br>
-                              <strong>Debug will show value of myArrayT42.</strong>
+                              <strong>Debug will show value of myArray_T42.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-42" class="button button--debug">RUN DEBUG</button>
@@ -930,11 +930,11 @@
                             <h4 class="single-item__header">Task 43: Manipulate Arrays With pop()</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT43 = [["John", 23], ["cat", 2]];
-                              var removedFromMyArrayT43 = myArrayT43.pop();<br><br>
-                              So now we assigned .poped value to variable removedFromMyArrayT43<br>
+                              var myArray_T43 = [["John", 23], ["cat", 2]];
+                              var removedFromMyArray_T43 = myArray_T43.pop();<br><br>
+                              So now we assigned .poped value to variable removedFromMyArray_T43<br>
                               <br>
-                              <strong>Debug will show value of removedFromMyArrayT43.</strong>
+                              <strong>Debug will show value of removedFromMyArray_T43.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-43" class="button button--debug">RUN DEBUG</button>
@@ -951,10 +951,10 @@
                             <h4 class="single-item__header">Task 44: Manipulate Arrays With shift()</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT44 = [["John", 23], ["dog", 3]];<br>
-                              var removedFromMyArrayT44 = myArrayT44.shift();<br><br>
-                              Now removedFromMyArrayT44 has ["John", 23]<br><br>
-                              <strong>Debug will show value of removedFromMyArrayT44.</strong>
+                              var myArray_T44 = [["John", 23], ["dog", 3]];<br>
+                              var removedFromMyArray_T44 = myArray_T44.shift();<br><br>
+                              Now removedFromMyArray_T44 has ["John", 23]<br><br>
+                              <strong>Debug will show value of removedFromMyArray_T44.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-44" class="button button--debug">RUN DEBUG</button>
@@ -971,11 +971,11 @@
                             <h4 class="single-item__header">Task 45: Manipulate Arrays With unshift()</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myArrayT45 = [["John", 23], ["dog", 3]];<br>
-                              myArrayT45.shift();<br>
-                              myArrayT45.unshift(["Paul", 35]); <br><br>
-                              Now we have also ["Paul", 35] at the beginning of array myArrayT45.<br><br>
-                              <strong>Debug will show value of myArrayT45.</strong>
+                              var myArray_T45 = [["John", 23], ["dog", 3]];<br>
+                              myArray_T45.shift();<br>
+                              myArray_T45.unshift(["Paul", 35]); <br><br>
+                              Now we have also ["Paul", 35] at the beginning of array myArray_T45.<br><br>
+                              <strong>Debug will show value of myArray_T45.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-45" class="button button--debug">RUN DEBUG</button>
@@ -992,9 +992,9 @@
                             <h4 class="single-item__header">Task 46: Shopping List</h4>
                             <p class="single-item__paragraph">
                               <strong>Quiz-like Task:</strong><br><br>
-                              var myListT46 = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];<br>
+                              var myList_T46 = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];<br>
                               <br>
-                              <strong>Debug will show values of myListT46[0][0] and then myListT46[0][1].</strong>
+                              <strong>Debug will show values of myList_T46[0][0] and then myList_T46[0][1].</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-46" class="button button--debug">RUN DEBUG</button>
@@ -1011,11 +1011,11 @@
                             <h4 class="single-item__header">Task 47: Write Reusable JavaScript with Functions</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              function reusableFunctionT47() {<br>
+                              function reusableFunction_T47() {<br>
                               &nbsp; return "Hi World";<br>
                               }<br><br>
-                              reusableFunctionT47(); // We need to call the function<br><br>
-                              <strong>Debug will show execution of reusableFunctionT47().</strong>
+                              reusableFunction_T47(); // We need to call the function<br><br>
+                              <strong>Debug will show execution of reusableFunction_T47().</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-47" class="button button--debug">RUN DEBUG</button>
@@ -1032,12 +1032,12 @@
                             <h4 class="single-item__header">Task 48: Passing Values to Functions with Arguments</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              function functionWithArgsT48(arg1T48, arg2T48) {<br>
-                                &nbsp; return arg1T48 + arg2T48; // It outputs sum of arg1 and arg2<br>
+                              function functionWithArgs_T48(arg1_T48, arg2_T48) {<br>
+                                &nbsp; return arg1_T48 + arg2_T48; // It outputs sum of arg1 and arg2<br>
                               }<br>
                               <br>
-                              functionWithArgsT48(3, 16);<br><br>
-                              <strong>Debug will show execution of functionWithArgsT48(8, 12);.</strong>
+                              functionWithArgs_T48(3, 16);<br><br>
+                              <strong>Debug will show execution of functionWithArgs_T48(8, 12);.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-48" class="button button--debug">RUN DEBUG</button>
@@ -1054,24 +1054,24 @@
                             <h4 class="single-item__header">Task 49: Global Scope and Functions</h4>
                             <p class="single-item__paragraph">
                               <strong>In example:</strong><br><br>
-                              var myGlobalT49 = 10;<br>
+                              var myGlobal_T49 = 10;<br>
                               <br>
-                              function funT49() {<br>
-                                &nbsp;oopsGlobalT49 = 5; // oopsGlobal is defined without var so it has Global scope.
+                              function fun_T49() {<br>
+                                &nbsp;oopsGlobal_T49 = 5; // oopsGlobal is defined without var so it has Global scope.
                               }<br><br>
-                              function fun2T49() {<br>
-                                &nbsp;var outputT49 = "";<br>
-                                &nbsp;if (typeof myGlobalT49 != "undefined") {<br>
-                                  &nbsp;&nbsp;outputT49 += "myGlobal: " + myGlobalT49;<br>
+                              function fun2_T49() {<br>
+                                &nbsp;var output_T49 = "";<br>
+                                &nbsp;if (typeof myGlobal_T49 != "undefined") {<br>
+                                  &nbsp;&nbsp;output_T49 += "myGlobal: " + myGlobal_T49;<br>
                                   &nbsp;}<br>
-                                &nbsp;if (typeof oopsGlobalT49 != "undefined") {<br>
-                                  &nbsp;&nbsp;outputT49 += " oopsGlobal: " + oopsGlobalT49;<br>
+                                &nbsp;if (typeof oopsGlobal_T49 != "undefined") {<br>
+                                  &nbsp;&nbsp;output_T49 += " oopsGlobal: " + oopsGlobal_T49;<br>
                                   &nbsp;}<br>
-                                  &nbsp;return "Task 49: " + outputT49;<br>
+                                  &nbsp;return "Task 49: " + output_T49;<br>
                               }<br><br>
                               
-                              fun2T49();<br><br>
-                              <strong>Debug will show execution of fun2T49().</strong>
+                              fun2_T49();<br><br>
+                              <strong>Debug will show execution of fun2_T49().</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-49" class="button button--debug">RUN DEBUG</button>
@@ -1945,7 +1945,7 @@
                   </div>
 
                 </div>
-            </div> <!-- /single slide DYNAMIC - FCC -->
+            </div> <!-- /single slide - FCC -->
 
             <div class="single-slide">
                 <div class="single-slide--layout">
@@ -1977,16 +1977,17 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
                           <span class="marker--yellow"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 1: Basic JavaScript: Comment Your  JavaScript Code</h4>
+                            <h4 class="single-item__header">Task 1: Beginning</h4>
                             <p class="single-item__paragraph">
-                              We can comment code inside our *.js files via:<br>
-                              // in-line comment<br>
-                              /* multi line<br>
-                              comment */</p>
+                              <p class="single-item__paragraph">
+                                We are assigning value to variable HELLO.<br><br>
+                                var hello = "#Task 1: Hello, World";<br><br>
+                                <strong>Debug will show execution of DUMMY.</strong>
+                              </p>
                             <div class="single-item__debug-box">
-                              <button class="button button--debug">RUN DEBUG</button>
+                              <button id="run-zenva-task-1" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
-                                <p class="single-item__paragraph"><span id="fcc-task-1"></span></p>
+                                <p class="single-item__paragraph"><span id="zenva-task-1"></span></p>
                               </div>
                             </div>
                           </div>
@@ -1995,7 +1996,7 @@
                     </div> <!-- /Course notes content -->
                   </div>
                 </div>
-            </div> <!-- /single slide DYNAMIC - ZENVA -->
+            </div> <!-- /single slide - ZENVA -->
 
             <div class="single-slide">
                 <div class="single-slide--layout">
@@ -2045,7 +2046,7 @@
                     </div> <!-- /Course notes content -->
                   </div>
                 </div>
-            </div> <!-- /single slide DYNAMIC - MY OWN -->
+            </div> <!-- /single slide - MY OWN -->
 
           </div> <!-- /slides content -->
           <div class="slide-container__controls">
@@ -2091,6 +2092,7 @@
   <script src="/js/slider-tiny-slider.js"></script>
   <script src="/js/layout-scripts.js"></script>
   <script src="/js/fcc-scripts.js"></script>
+  <script src="/js/zenva-old-script.js"></script>
 </body>
 
 </html>
