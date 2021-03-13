@@ -28,8 +28,8 @@ comment */
 
 // 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.
 
-var myNameT2;
-myNameT2 = "Jakub";
+var myName_T2;
+myName_T2 = "Jakub";
 
 /* OUTPUT CODE */
 
@@ -37,7 +37,7 @@ const btnFCC2 = document.getElementById('run-fcc-task-2');
 const scopeFCC2 = document.getElementById('fcc-task-2');
 
 function debugFCC2() {
-  scopeFCC2.innerHTML = outputResponse + myNameT2;
+  scopeFCC2.innerHTML = outputResponse + myName_T2;
 }
 
 if (btnFCC2 !== null && scopeFCC2 !== null) {
@@ -49,8 +49,8 @@ if (btnFCC2 !== null && scopeFCC2 !== null) {
 
 /* Task 3: Basic JavaScript: Storing Values with the Assignment Operator */
 
-var aT3;
-aT3 = 7; // Now a stores value of 7. Any calculations to the right of = operator are performed
+var a_T3;
+a_T3 = 7; // Now a stores value of 7. Any calculations to the right of = operator are performed
 // on the left of the operator. Like +=, -= etc.
 
 /* OUTPUT CODE */
@@ -59,7 +59,7 @@ const btnFCC3 = document.getElementById('run-fcc-task-3');
 const scopeFCC3 = document.getElementById('fcc-task-3');
 
 function debugFCC3() {
-  scopeFCC3.innerHTML = outputResponse + aT3;
+  scopeFCC3.innerHTML = outputResponse + a_T3;
 }
 
 if (btnFCC3 !== null && scopeFCC3 !== null) {
@@ -70,10 +70,10 @@ if (btnFCC3 !== null && scopeFCC3 !== null) {
 
 /* Task 4: Basic JavaScript: Assigning the Value of One Variable to Another */
 
-var aT4;
-aT4 = 7;
-var bT4;
-bT4 = aT4;
+var a_T4;
+a_T4 = 7;
+var b_T4;
+b_T4 = a_T4;
 
 /* OUTPUT CODE */
 
@@ -81,7 +81,7 @@ const btnFCC4 = document.getElementById('run-fcc-task-4');
 const scopeFCC4 = document.getElementById('fcc-task-4');
 
 function debugFCC4() {
-  scopeFCC4.innerHTML = outputResponse + aT4 + ', ' + bT4;
+  scopeFCC4.innerHTML = outputResponse + a_T4 + ', ' + b_T4;
 }
 
 if (btnFCC4 !== null && scopeFCC4 !== null) {
@@ -92,7 +92,7 @@ if (btnFCC4 !== null && scopeFCC4 !== null) {
 
 /* Task 5: Basic JavaScript: Initializing Variables with the Assignment Operator */
 
-var aT5 = 9; //Now it's the inital value of variable a.
+var a_T5 = 9; //Now it's the inital value of variable a.
 
 /* OUTPUT CODE */
 
@@ -100,7 +100,7 @@ const btnFCC5 = document.getElementById('run-fcc-task-5');
 const scopeFCC5 = document.getElementById('fcc-task-5');
 
 function debugFCC5() {
-  scopeFCC5.innerHTML = outputResponse + aT5;
+  scopeFCC5.innerHTML = outputResponse + a_T5;
 }
 
 if (btnFCC5 !== null && scopeFCC5 !== null) {
@@ -116,13 +116,13 @@ if (btnFCC5 !== null && scopeFCC5 !== null) {
 // be NaN which means "Not a Number". If you concatenate a string with an undefined 
 // variable, you will get a literal string of "undefined".
 
-var aT6;
-var bT6;
-var cT6;
+var a_T6;
+var b_T6;
+var c_T6;
 
-aT6 = 5;
-bT6 = 10;
-cT6 = "I am a";
+a_T6 = 5;
+b_T6 = 10;
+c_T6 = "I am a";
 
 /* OUTPUT CODE */
 
@@ -130,7 +130,7 @@ const btnFCC6 = document.getElementById('run-fcc-task-6');
 const scopeFCC6 = document.getElementById('fcc-task-6');
 
 function debugFCC6() {
-  scopeFCC6.innerHTML = outputResponse + aT6 + ', ' + bT6 + ', ' + cT6;
+  scopeFCC6.innerHTML = outputResponse + a_T6 + ', ' + b_T6 + ', ' + c_T6;
 }
 
 if (btnFCC6 !== null && scopeFCC6 !== null) {
@@ -171,7 +171,7 @@ if (btnFCC7 !== null && scopeFCC7 !== null) {
 
 /* Task 8: Basic JavaScript: Add Two Numbers with JavaScript */
 
-var sumT8 = 10 + 10; // 20
+var sum_T8 = 10 + 10; // 20
 
 /* OUTPUT CODE */
 
@@ -179,7 +179,7 @@ const btnFCC8 = document.getElementById('run-fcc-task-8');
 const scopeFCC8 = document.getElementById('fcc-task-8');
 
 function debugFCC8() {
-  scopeFCC8.innerHTML = outputResponse + sumT8;
+  scopeFCC8.innerHTML = outputResponse + sum_T8;
 }
 
 if (btnFCC8 !== null && scopeFCC8 !== null) {
@@ -190,7 +190,7 @@ if (btnFCC8 !== null && scopeFCC8 !== null) {
 
 /* Task 9: Basic JavaScript: Subtract One Number from Another with JavaScript */
 
-var differenceT9 = 45 - 33; // 12
+var difference_T9 = 45 - 33; // 12
 
 /* OUTPUT CODE */
 
@@ -198,7 +198,7 @@ const btnFCC9 = document.getElementById('run-fcc-task-9');
 const scopeFCC9 = document.getElementById('fcc-task-9');
 
 function debugFCC9() {
-  scopeFCC9.innerHTML = outputResponse + differenceT9;
+  scopeFCC9.innerHTML = outputResponse + difference_T9;
 }
 
 if (btnFCC9 !== null && scopeFCC9 !== null) {
@@ -209,7 +209,7 @@ if (btnFCC9 !== null && scopeFCC9 !== null) {
 
 /* Task 10: Basic JavaScript: Multiply Two Numbers with JavaScript */
 
-var productT10 = 8 * 10; // 80
+var product_T10 = 8 * 10; // 80
 
 /* OUTPUT CODE */
 
@@ -217,7 +217,7 @@ const btnFCC10 = document.getElementById('run-fcc-task-10');
 const scopeFCC10 = document.getElementById('fcc-task-10');
 
 function debugFCC10() {
-  scopeFCC10.innerHTML = outputResponse + productT10;
+  scopeFCC10.innerHTML = outputResponse + product_T10;
 }
 
 if (btnFCC10 !== null && scopeFCC10 !== null) {
@@ -229,7 +229,7 @@ if (btnFCC10 !== null && scopeFCC10 !== null) {
 
 /* Task 11: Basic JavaScript: Divide One Number by Another with JavaScript */
 
-var quotientT11 = 66 / 33; // 2
+var quotient_T11 = 66 / 33; // 2
 
 /* OUTPUT CODE */
 
@@ -237,7 +237,7 @@ const btnFCC11 = document.getElementById('run-fcc-task-11');
 const scopeFCC11 = document.getElementById('fcc-task-11');
 
 function debugFCC11() {
-  scopeFCC11.innerHTML = outputResponse + quotientT11;
+  scopeFCC11.innerHTML = outputResponse + quotient_T11;
 }
 
 if (btnFCC11 !== null && scopeFCC11 !== null) {
@@ -248,8 +248,8 @@ if (btnFCC11 !== null && scopeFCC11 !== null) {
 
 /* Task 12: Basic JavaScript: Increment a Number with JavaScript */
 
-var myVarT12 = 87;
-myVarT12++;
+var myVar_T12 = 87;
+myVar_T12++;
 
 /* OUTPUT CODE */
 
@@ -257,7 +257,7 @@ const btnFCC12 = document.getElementById('run-fcc-task-12');
 const scopeFCC12 = document.getElementById('fcc-task-12');
 
 function debugFCC12() {
-  scopeFCC12.innerHTML = outputResponse + myVarT12;
+  scopeFCC12.innerHTML = outputResponse + myVar_T12;
 }
 
 if (btnFCC12 !== null && scopeFCC12 !== null) {
@@ -268,8 +268,8 @@ if (btnFCC12 !== null && scopeFCC12 !== null) {
 
 /* Task 13: Basic JavaScript: Decrement a Number with JavaScript */
 
-var myVarT13 = 11;
-myVarT13--; // 10
+var myVar_T13 = 11;
+myVar_T13--; // 10
 
 /* OUTPUT CODE */
 
@@ -277,7 +277,7 @@ const btnFCC13 = document.getElementById('run-fcc-task-13');
 const scopeFCC13 = document.getElementById('fcc-task-13');
 
 function debugFCC13() {
-  scopeFCC13.innerHTML = outputResponse + myVarT13;
+  scopeFCC13.innerHTML = outputResponse + myVar_T13;
 }
 
 if (btnFCC13 !== null && scopeFCC13 !== null) {
@@ -288,7 +288,7 @@ if (btnFCC13 !== null && scopeFCC13 !== null) {
 
 /* Task 14: Basic JavaScript: Create Decimal Numbers with JavaScript */
 
-var myDecimalT14 = 5.8;
+var myDecimal_T14 = 5.8;
 
 /* OUTPUT CODE */
 
@@ -296,7 +296,7 @@ const btnFCC14 = document.getElementById('run-fcc-task-14');
 const scopeFCC14 = document.getElementById('fcc-task-14');
 
 function debugFCC14() {
-  scopeFCC14.innerHTML = outputResponse + myDecimalT14;
+  scopeFCC14.innerHTML = outputResponse + myDecimal_T14;
 }
 
 if (btnFCC14 !== null && scopeFCC14 !== null) {
@@ -307,7 +307,7 @@ if (btnFCC14 !== null && scopeFCC14 !== null) {
 
 /* Task 15: Basic JavaScript: Multiply Two Decimals with JavaScript */
 
-var productT15 = 2.0 * 2.5; // 5
+var product_T15 = 2.0 * 2.5; // 5
 
 /* OUTPUT CODE */
 
@@ -315,7 +315,7 @@ const btnFCC15 = document.getElementById('run-fcc-task-15');
 const scopeFCC15 = document.getElementById('fcc-task-15');
 
 function debugFCC15() {
-  scopeFCC15.innerHTML = outputResponse + productT15;
+  scopeFCC15.innerHTML = outputResponse + product_T15;
 }
 
 if (btnFCC15 !== null && scopeFCC15 !== null) {
@@ -326,7 +326,7 @@ if (btnFCC15 !== null && scopeFCC15 !== null) {
 
 /* Task 16: Basic JavaScript: Divide One Decimal by Another with JavaScript */
 
-var quotientT16 = 4.4 / 2.0; // 2.2
+var quotient_T16 = 4.4 / 2.0; // 2.2
 
 /* OUTPUT CODE */
 
@@ -334,7 +334,7 @@ const btnFCC16 = document.getElementById('run-fcc-task-16');
 const scopeFCC16 = document.getElementById('fcc-task-16');
 
 function debugFCC16() {
-  scopeFCC16.innerHTML = outputResponse + quotientT16;
+  scopeFCC16.innerHTML = outputResponse + quotient_T16;
 }
 
 if (btnFCC16 !== null && scopeFCC16 !== null) {
@@ -345,9 +345,9 @@ if (btnFCC16 !== null && scopeFCC16 !== null) {
 
 /* Task 17: Basic JavaScript: Finding a Remainder in JavaScript */
 
-var remainderT17;
-remainderT17 = 11;
-remainderT17 = remainderT17 % 3; // 2
+var remainder_T17;
+remainder_T17 = 11;
+remainder_T17 = remainder_T17 % 3; // 2
 
 /* OUTPUT CODE */
 
@@ -355,7 +355,7 @@ const btnFCC17 = document.getElementById('run-fcc-task-17');
 const scopeFCC17 = document.getElementById('fcc-task-17');
 
 function debugFCC17() {
-  scopeFCC17.innerHTML = outputResponse + remainderT17;
+  scopeFCC17.innerHTML = outputResponse + remainder_T17;
 }
 
 if (btnFCC17 !== null && scopeFCC17 !== null) {
@@ -366,13 +366,13 @@ if (btnFCC17 !== null && scopeFCC17 !== null) {
 
 /* Task 18: Basic JavaScript: Compound Assignment With Augmented Addition */
 
-var aT18 = 3;
-var bT18 = 17;
-var cT18 = 12;
+var a_T18 = 3;
+var b_T18 = 17;
+var c_T18 = 12;
 
-aT18 += 12;
-bT18 += 9;
-cT18 += 7;
+a_T18 += 12;
+b_T18 += 9;
+c_T18 += 7;
 
 /* OUTPUT CODE */
 
@@ -380,7 +380,7 @@ const btnFCC18 = document.getElementById('run-fcc-task-18');
 const scopeFCC18 = document.getElementById('fcc-task-18');
 
 function debugFCC18() {
-  scopeFCC18.innerHTML = outputResponse + aT18 + ', ' + bT18 + ', ' + cT18;
+  scopeFCC18.innerHTML = outputResponse + a_T18 + ', ' + b_T18 + ', ' + c_T18;
 }
 
 if (btnFCC18 !== null && scopeFCC18 !== null) {
@@ -391,13 +391,13 @@ if (btnFCC18 !== null && scopeFCC18 !== null) {
 
 /* Task 19: Basic JavaScript: Compound Assignment With Augmented Subtraction */
 
-var aT19 = 11;
-var bT19 = 9;
-var cT19 = 3;
+var a_T19 = 11;
+var b_T19 = 9;
+var c_T19 = 3;
 
-aT19 -= 6;
-bT19 -= 15;
-cT19 -= 1;
+a_T19 -= 6;
+b_T19 -= 15;
+c_T19 -= 1;
 
 /* OUTPUT CODE */
 
@@ -405,7 +405,7 @@ const btnFCC19 = document.getElementById('run-fcc-task-19');
 const scopeFCC19 = document.getElementById('fcc-task-19');
 
 function debugFCC19() {
-  scopeFCC19.innerHTML = outputResponse + aT19 + ', ' + bT19 + ', ' + cT19;
+  scopeFCC19.innerHTML = outputResponse + a_T19 + ', ' + b_T19 + ', ' + c_T19;
 }
 
 if (btnFCC19 !== null && scopeFCC19 !== null) {
@@ -416,13 +416,13 @@ if (btnFCC19 !== null && scopeFCC19 !== null) {
 
 /* Task 20: Basic JavaScript: Compound Assignment With Augmented Multiplication */
 
-var aT20 = 5;
-var bT20 = 12;
-var cT20 = 4.6;
+var a_T20 = 5;
+var b_T20 = 12;
+var c_T20 = 4.6;
 
-aT20 *= 5;
-bT20 *= 3;
-cT20 *= 10;
+a_T20 *= 5;
+b_T20 *= 3;
+c_T20 *= 10;
 
 /* OUTPUT CODE */
 
@@ -430,7 +430,7 @@ const btnFCC20 = document.getElementById('run-fcc-task-20');
 const scopeFCC20 = document.getElementById('fcc-task-20');
 
 function debugFCC20() {
-  scopeFCC20.innerHTML = outputResponse + aT20 + ', ' + bT20 + ', ' + cT20;
+  scopeFCC20.innerHTML = outputResponse + a_T20 + ', ' + b_T20 + ', ' + c_T20;
 }
 
 if (btnFCC20 !== null && scopeFCC20 !== null) {
@@ -441,13 +441,13 @@ if (btnFCC20 !== null && scopeFCC20 !== null) {
 
 /* Task 21: Basic JavaScript: Compound Assignment With Augmented Division */
 
-var aT21 = 48;
-var bT21 = 108;
-var cT21 = 33;
+var a_T21 = 48;
+var b_T21 = 108;
+var c_T21 = 33;
 
-aT21 /= 12;
-bT21 /= 4;
-cT21 /= 11;
+a_T21 /= 12;
+b_T21 /= 4;
+c_T21 /= 11;
 
 
 /* OUTPUT CODE */
@@ -456,7 +456,7 @@ const btnFCC21 = document.getElementById('run-fcc-task-21');
 const scopeFCC21 = document.getElementById('fcc-task-21');
 
 function debugFCC21() {
-  scopeFCC21.innerHTML = outputResponse + aT21 + ', ' + bT21 + ', ' + cT21;
+  scopeFCC21.innerHTML = outputResponse + a_T21 + ', ' + b_T21 + ', ' + c_T21;
 }
 
 if (btnFCC21 !== null && scopeFCC21 !== null) {
@@ -467,11 +467,11 @@ if (btnFCC21 !== null && scopeFCC21 !== null) {
 
 /* Task 22: Basic JavaScript: Declare String Variables */
 
-var myFirstNameT22;
-var myLastNameT22;
+var myFirstName_T22;
+var myLastName_T22;
 
-myFirstNameT22 = "Jakub";
-myLastNameT22 = "Kowalski";
+myFirstName_T22 = "Jakub";
+myLastName_T22 = "Kowalski";
 
 /* OUTPUT CODE */
 
@@ -479,7 +479,7 @@ const btnFCC22 = document.getElementById('run-fcc-task-22');
 const scopeFCC22 = document.getElementById('fcc-task-22');
 
 function debugFCC22() {
-  scopeFCC22.innerHTML = outputResponse + myFirstNameT22 + myLastNameT22;
+  scopeFCC22.innerHTML = outputResponse + myFirstName_T22 + myLastName_T22;
 }
 
 if (btnFCC22 !== null && scopeFCC22 !== null) {
@@ -493,7 +493,7 @@ if (btnFCC22 !== null && scopeFCC22 !== null) {
 // In JavaScript, you can escape a quote from considering it as an end of string quote by 
 // placing a backslash (\) in front of the quote.
 
-var myStrT23 = "I am a \"double quoted\" string inside \"double quotes\".";
+var myStr_T23 = "I am a \"double quoted\" string inside \"double quotes\".";
 
 /* OUTPUT CODE */
 
@@ -501,7 +501,7 @@ const btnFCC23 = document.getElementById('run-fcc-task-23');
 const scopeFCC23 = document.getElementById('fcc-task-23');
 
 function debugFCC23() {
-  scopeFCC23.innerHTML = outputResponse + myStrT23;
+  scopeFCC23.innerHTML = outputResponse + myStr_T23;
 }
 
 if (btnFCC23 !== null && scopeFCC23 !== null) {
@@ -516,7 +516,7 @@ if (btnFCC23 !== null && scopeFCC23 !== null) {
 // But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
 // That's why we can use single quotes in strings too.
 
-var myStrT24 = '<a href="http://www.example.com" target="_blank">Link</a>';
+var myStr_T24 = '<a href="http://www.example.com" target="_blank">Link</a>';
 
 /* OUTPUT CODE */
 
@@ -524,7 +524,7 @@ const btnFCC24 = document.getElementById('run-fcc-task-24');
 const scopeFCC24 = document.getElementById('fcc-task-24');
 
 function debugFCC24() {
-  scopeFCC24.innerHTML = outputResponse + myStrT24;
+  scopeFCC24.innerHTML = outputResponse + myStr_T24;
 }
 
 if (btnFCC24 !== null && scopeFCC24 !== null) {
@@ -535,7 +535,7 @@ if (btnFCC24 !== null && scopeFCC24 !== null) {
 
 /* Task 25: Basic JavaScript: Escape Sequences in Strings */
 
-var myStrT25 = "FirstLine\n\t\\SecondLine\nThirdLine";
+var myStr_T25 = "FirstLine\n\t\\SecondLine\nThirdLine";
 
 /* OUTPUT CODE */
 
@@ -543,7 +543,7 @@ const btnFCC25 = document.getElementById('run-fcc-task-25');
 const scopeFCC25 = document.getElementById('fcc-task-25');
 
 function debugFCC25() {
-  scopeFCC25.innerHTML = outputResponse + myStrT25;
+  scopeFCC25.innerHTML = outputResponse + myStr_T25;
 }
 
 if (btnFCC25 !== null && scopeFCC25 !== null) {
@@ -554,7 +554,7 @@ if (btnFCC25 !== null && scopeFCC25 !== null) {
 
 /* Task 26: Basic JavaScript: Concatenating Strings with Plus Operator */
 
-var myStrT26 = "This is the start. " + "This is the end.";
+var myStr_T26 = "This is the start. " + "This is the end.";
 
 /* OUTPUT CODE */
 
@@ -562,7 +562,7 @@ const btnFCC26 = document.getElementById('run-fcc-task-26');
 const scopeFCC26 = document.getElementById('fcc-task-26');
 
 function debugFCC26() {
-  scopeFCC26.innerHTML = outputResponse + myStrT26;
+  scopeFCC26.innerHTML = outputResponse + myStr_T26;
 }
 
 if (btnFCC26 !== null && scopeFCC26 !== null) {
@@ -573,8 +573,8 @@ if (btnFCC26 !== null && scopeFCC26 !== null) {
 
 /* Task 27: Basic JavaScript: Concatenating Strings with the Plus Equals Operator */
 
-var myStrT27 = "This is the first sentence. ";
-myStrT27 += "This is the second sentence.";
+var myStr_T27 = "This is the first sentence. ";
+myStr_T27 += "This is the second sentence.";
 
 /* OUTPUT CODE */
 
@@ -582,7 +582,7 @@ const btnFCC27 = document.getElementById('run-fcc-task-27');
 const scopeFCC27 = document.getElementById('fcc-task-27');
 
 function debugFCC27() {
-  scopeFCC27.innerHTML = outputResponse + myStrT27;
+  scopeFCC27.innerHTML = outputResponse + myStr_T27;
 }
 
 if (btnFCC27 !== null && scopeFCC27 !== null) {
@@ -593,8 +593,8 @@ if (btnFCC27 !== null && scopeFCC27 !== null) {
 
 /* Task 28: Basic JavaScript: Constructing Strings with Variables */
 
-var myNameT28 = "Jakub";
-var myStrT28 = "My name is " + myNameT28 + " and I am well!";
+var myName_T28 = "Jakub";
+var myStr_T28 = "My name is " + myName_T28 + " and I am well!";
 
 /* OUTPUT CODE */
 
@@ -602,7 +602,7 @@ const btnFCC28 = document.getElementById('run-fcc-task-28');
 const scopeFCC28 = document.getElementById('fcc-task-28');
 
 function debugFCC28() {
-  scopeFCC28.innerHTML = outputResponse + myStrT28;
+  scopeFCC28.innerHTML = outputResponse + myStr_T28;
 }
 
 if (btnFCC28 !== null && scopeFCC28 !== null) {
@@ -613,9 +613,9 @@ if (btnFCC28 !== null && scopeFCC28 !== null) {
 
 /* Task 29: Basic JavaScript: Appending Variables to Strings */
 
-var someAdjectiveT29 = "Okay";
-var myStrT29 = "Learning to code is ";
-var T29response = myStrT29 += someAdjectiveT29;
+var someAdjective_T29 = "Okay";
+var myStr_T29 = "Learning to code is ";
+var _T29response = myStr_T29 += someAdjective_T29;
 
 /* OUTPUT CODE */
 
@@ -623,7 +623,7 @@ const btnFCC29 = document.getElementById('run-fcc-task-29');
 const scopeFCC29 = document.getElementById('fcc-task-29');
 
 function debugFCC29() {
-  scopeFCC29.innerHTML = outputResponse + T29response;
+  scopeFCC29.innerHTML = outputResponse + _T29response;
 }
 
 if (btnFCC29 !== null && scopeFCC29 !== null) {
@@ -634,9 +634,9 @@ if (btnFCC29 !== null && scopeFCC29 !== null) {
 
 /* Task 30: Basic JavaScript: Find the Length of a String */
 
-var lastNameLengthT30 = 0;
-var lastNameT30 = "Lovelace";
-lastNameLengthT30 = lastNameT30.length;
+var lastNameLength_T30 = 0;
+var lastName_T30 = "Lovelace";
+lastNameLength_T30 = lastName_T30.length;
 
 /* OUTPUT CODE */
 
@@ -644,7 +644,7 @@ const btnFCC30 = document.getElementById('run-fcc-task-30');
 const scopeFCC30 = document.getElementById('fcc-task-30');
 
 function debugFCC30() {
-  scopeFCC30.innerHTML = outputResponse + lastNameLengthT30;
+  scopeFCC30.innerHTML = outputResponse + lastNameLength_T30;
 }
 
 if (btnFCC30 !== null && scopeFCC30 !== null) {
@@ -655,9 +655,9 @@ if (btnFCC30 !== null && scopeFCC30 !== null) {
 
 /* Task 31: Basic JavaScript: Use Bracket Notation to Find the First Character in a String */
 
-var firstLetterOfLastNameT31 = "";
-var lastNameT31 = "Lovelace";
-firstLetterOfLastNameT31 = lastNameT31[0]; // L
+var firstLetterOfLastName_T31 = "";
+var lastName_T31 = "Lovelace";
+firstLetterOfLastName_T31 = lastName_T31[0]; // L
 
 /* OUTPUT CODE */
 
@@ -665,7 +665,7 @@ const btnFCC31 = document.getElementById('run-fcc-task-31');
 const scopeFCC31 = document.getElementById('fcc-task-31');
 
 function debugFCC31() {
-  scopeFCC31.innerHTML = outputResponse + firstLetterOfLastNameT31;
+  scopeFCC31.innerHTML = outputResponse + firstLetterOfLastName_T31;
 }
 
 if (btnFCC31 !== null && scopeFCC31 !== null) {
@@ -677,10 +677,10 @@ if (btnFCC31 !== null && scopeFCC31 !== null) {
 
 /* Task 32: Basic JavaScript: Understand String Immutability */
 
-var myStrT32 = "Jello World";
-myStrT32[0] = "H"; 
+var myStr_T32 = "Jello World";
+myStr_T32[0] = "H"; 
 // ^It can't be done, strings are immutable. Proper way is below.
-myStrT32 = "Hello World";
+myStr_T32 = "Hello World";
 
 /* OUTPUT CODE */
 
@@ -688,7 +688,7 @@ const btnFCC32 = document.getElementById('run-fcc-task-32');
 const scopeFCC32 = document.getElementById('fcc-task-32');
 
 function debugFCC32() {
-  scopeFCC32.innerHTML = outputResponse + myStrT32;
+  scopeFCC32.innerHTML = outputResponse + myStr_T32;
 }
 
 if (btnFCC32 !== null && scopeFCC32 !== null) {
@@ -699,9 +699,9 @@ if (btnFCC32 !== null && scopeFCC32 !== null) {
 
 /* Task 33: Basic JavaScript: Use Bracket Notation to Find the Nth Character in a String */
 
-var lastNameT33 = "Kowalsky";
+var lastName_T33 = "Kowalsky";
 
-var thirdLetterOfLastNameT33 = lastNameT33[2]; // third letter - w
+var thirdLetterOfLastName_T33 = lastName_T33[2]; // third letter - w
 
 /* OUTPUT CODE */
 
@@ -709,7 +709,7 @@ const btnFCC33 = document.getElementById('run-fcc-task-33');
 const scopeFCC33 = document.getElementById('fcc-task-33');
 
 function debugFCC33() {
-  scopeFCC33.innerHTML = outputResponse + thirdLetterOfLastNameT33;
+  scopeFCC33.innerHTML = outputResponse + thirdLetterOfLastName_T33;
 }
 
 if (btnFCC33 !== null && scopeFCC33 !== null) {
@@ -720,7 +720,7 @@ if (btnFCC33 !== null && scopeFCC33 !== null) {
 
 /* Task 34: Basic JavaScript: Use Bracket Notation to Find the Last Character in a String */
 
-var lastLetterOfLastNameT34 = lastNameT33[lastNameT33.length - 1];
+var lastLetterOfLastName_T34 = lastName_T33[lastName_T33.length - 1];
 
 /* OUTPUT CODE */
 
@@ -728,7 +728,7 @@ const btnFCC34 = document.getElementById('run-fcc-task-34');
 const scopeFCC34 = document.getElementById('fcc-task-34');
 
 function debugFCC34() {
-  scopeFCC34.innerHTML = outputResponse + lastLetterOfLastNameT34;
+  scopeFCC34.innerHTML = outputResponse + lastLetterOfLastName_T34;
 }
 
 if (btnFCC34 !== null && scopeFCC34 !== null) {
@@ -739,7 +739,7 @@ if (btnFCC34 !== null && scopeFCC34 !== null) {
 
 /* Task 35: Basic JavaScript: Use Bracket Notation to Find the Nth-to-Last Character in a String */
 
-var secondToLastLetterOfLastNameT33 = lastNameT33[lastNameT33.length - 2];
+var secondToLastLetterOfLastName_T33 = lastName_T33[lastName_T33.length - 2];
 
 /* OUTPUT CODE */
 
@@ -747,7 +747,7 @@ const btnFCC35 = document.getElementById('run-fcc-task-35');
 const scopeFCC35 = document.getElementById('fcc-task-35');
 
 function debugFCC35() {
-  scopeFCC35.innerHTML = outputResponse + secondToLastLetterOfLastNameT33;
+  scopeFCC35.innerHTML = outputResponse + secondToLastLetterOfLastName_T33;
 }
 
 if (btnFCC35 !== null && scopeFCC35 !== null) {
@@ -758,12 +758,12 @@ if (btnFCC35 !== null && scopeFCC35 !== null) {
 
 /* Task 36: Basic JavaScript: Word Blanks */
 
-var myNounT36 = "dog";
-var myAdjectiveT36 = "big";
-var myVerbT36 = "ran";
-var myAdverbT36 = "quickly";
+var myNoun_T36 = "dog";
+var myAdjective_T36 = "big";
+var myVerb_T36 = "ran";
+var myAdverb_T36 = "quickly";
 
-var wordBlanksT36 = "The " + myNounT36 + " was " + myAdjectiveT36 + " and he just " + myVerbT36 + " very " + myAdverbT36;
+var wordBlanks_T36 = "The " + myNoun_T36 + " was " + myAdjective_T36 + " and he just " + myVerb_T36 + " very " + myAdverb_T36;
 
 /* OUTPUT CODE */
 
@@ -771,7 +771,7 @@ const btnFCC36 = document.getElementById('run-fcc-task-36');
 const scopeFCC36 = document.getElementById('fcc-task-36');
 
 function debugFCC36() {
-  scopeFCC36.innerHTML = outputResponse + wordBlanksT36;
+  scopeFCC36.innerHTML = outputResponse + wordBlanks_T36;
 }
 
 if (btnFCC36 !== null && scopeFCC36 !== null) {
@@ -782,7 +782,7 @@ if (btnFCC36 !== null && scopeFCC36 !== null) {
 
 /* Task 37: Basic JavaScript: Store Multiple Values in one Variable using JavaScript Arrays */
 
-var myArrayT37 = ["LeMoiJelly", 0];
+var myArray_T37 = ["LeMoiJelly", 0];
 
 /* OUTPUT CODE */
 
@@ -790,7 +790,7 @@ const btnFCC37 = document.getElementById('run-fcc-task-37');
 const scopeFCC37 = document.getElementById('fcc-task-37');
 
 function debugFCC37() {
-  scopeFCC37.innerHTML = outputResponse + myArrayT37[0] + ', ' + myArrayT37[1];
+  scopeFCC37.innerHTML = outputResponse + myArray_T37[0] + ', ' + myArray_T37[1];
 }
 
 if (btnFCC37 !== null && scopeFCC37 !== null) {
@@ -801,7 +801,7 @@ if (btnFCC37 !== null && scopeFCC37 !== null) {
 
 /* Task 38: Basic JavaScript: Nest one Array within Another Array */
 
-var myArrayT38 = [["Nested Array", 0]];
+var myArray_T38 = [["Nested Array", 0]];
 
 /* OUTPUT CODE */
 
@@ -809,7 +809,7 @@ const btnFCC38 = document.getElementById('run-fcc-task-38');
 const scopeFCC38 = document.getElementById('fcc-task-38');
 
 function debugFCC38() {
-  scopeFCC38.innerHTML = outputResponse + myArrayT38[0][0] + ', ' + myArrayT38[0][1];
+  scopeFCC38.innerHTML = outputResponse + myArray_T38[0][0] + ', ' + myArray_T38[0][1];
 }
 
 if (btnFCC38 !== null && scopeFCC38 !== null) {
@@ -820,8 +820,8 @@ if (btnFCC38 !== null && scopeFCC38 !== null) {
 
 /* Task 39: Basic JavaScript: Access Array Data with Indexes */
 
-var myArrayT39 = [50,60,70];
-var myDataT39 = myArrayT39[0]; // 50
+var myArray_T39 = [50,60,70];
+var myData_T39 = myArray_T39[0]; // 50
 
 /* OUTPUT CODE */
 
@@ -829,7 +829,7 @@ const btnFCC39 = document.getElementById('run-fcc-task-39');
 const scopeFCC39 = document.getElementById('fcc-task-39');
 
 function debugFCC39() {
-  scopeFCC39.innerHTML = outputResponse + myDataT39;
+  scopeFCC39.innerHTML = outputResponse + myData_T39;
 }
 
 if (btnFCC39 !== null && scopeFCC39 !== null) {
@@ -840,8 +840,8 @@ if (btnFCC39 !== null && scopeFCC39 !== null) {
 
 /* Task 40: Basic JavaScript: Modify Array Data With Indexes */
 
-var myArrayT40 = [18,64,99];
-myArrayT40[0] = 45; // now index 0 is 45 instead of 18
+var myArray_T40 = [18,64,99];
+myArray_T40[0] = 45; // now index 0 is 45 instead of 18
 
 /* OUTPUT CODE */
 
@@ -849,7 +849,7 @@ const btnFCC40 = document.getElementById('run-fcc-task-40');
 const scopeFCC40 = document.getElementById('fcc-task-40');
 
 function debugFCC40() {
-  scopeFCC40.innerHTML = outputResponse + myArrayT40[0];
+  scopeFCC40.innerHTML = outputResponse + myArray_T40[0];
 }
 
 if (btnFCC40 !== null && scopeFCC40 !== null) {
@@ -860,9 +860,9 @@ if (btnFCC40 !== null && scopeFCC40 !== null) {
 
 /* Task 41: Basic JavaScript: Access Multi-Dimensional Arrays With Indexes */
 
-var myArrayT41 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
+var myArray_T41 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 // We are going for item with value 8, so:
-var myDataT41 = myArrayT41[2][1];
+var myData_T41 = myArray_T41[2][1];
 
 /* OUTPUT CODE */
 
@@ -870,7 +870,7 @@ const btnFCC41 = document.getElementById('run-fcc-task-41');
 const scopeFCC41 = document.getElementById('fcc-task-41');
 
 function debugFCC41() {
-  scopeFCC41.innerHTML = outputResponse + myDataT41;
+  scopeFCC41.innerHTML = outputResponse + myData_T41;
 }
 
 if (btnFCC41 !== null && scopeFCC41 !== null) {
@@ -881,8 +881,8 @@ if (btnFCC41 !== null && scopeFCC41 !== null) {
 
 /* Task 42: Basic JavaScript: Manipulate Arrays With push() */
 
-var myArrayT42 = [["John", 23], ["cat", 2]];
-myArrayT42.push(["dog", 3]);
+var myArray_T42 = [["John", 23], ["cat", 2]];
+myArray_T42.push(["dog", 3]);
 
 /* OUTPUT CODE */
 
@@ -890,7 +890,7 @@ const btnFCC42 = document.getElementById('run-fcc-task-42');
 const scopeFCC42 = document.getElementById('fcc-task-42');
 
 function debugFCC42() {
-  scopeFCC42.innerHTML = outputResponse + myArrayT42;
+  scopeFCC42.innerHTML = outputResponse + myArray_T42;
 }
 
 if (btnFCC42 !== null && scopeFCC42 !== null) {
@@ -901,8 +901,8 @@ if (btnFCC42 !== null && scopeFCC42 !== null) {
 
 /* Task 43: Basic JavaScript: Manipulate Arrays With pop() */
 
-var myArrayT43 = [["John", 23], ["cat", 2]];
-var removedFromMyArrayT43 = myArrayT43.pop(); 
+var myArray_T43 = [["John", 23], ["cat", 2]];
+var removedFromMyArray_T43 = myArray_T43.pop(); 
 // So now we assigned .poped value to variable removedFromMyArray
 
 /* OUTPUT CODE */
@@ -911,7 +911,7 @@ const btnFCC43 = document.getElementById('run-fcc-task-43');
 const scopeFCC43 = document.getElementById('fcc-task-43');
 
 function debugFCC43() {
-  scopeFCC43.innerHTML = outputResponse + removedFromMyArrayT43;
+  scopeFCC43.innerHTML = outputResponse + removedFromMyArray_T43;
 }
 
 if (btnFCC43 !== null && scopeFCC43 !== null) {
@@ -922,9 +922,9 @@ if (btnFCC43 !== null && scopeFCC43 !== null) {
 
 /* Task 44: Basic JavaScript: Manipulate Arrays With shift() */
 
-var myArrayT44 = [["John", 23], ["dog", 3]];
-var removedFromMyArrayT44 = myArrayT44.shift(); 
-// Now removedFromMyArrayT44 has ["John", 23]
+var myArray_T44 = [["John", 23], ["dog", 3]];
+var removedFromMyArray_T44 = myArray_T44.shift(); 
+// Now removedFromMyArray_T44 has ["John", 23]
 
 /* OUTPUT CODE */
 
@@ -932,7 +932,7 @@ const btnFCC44 = document.getElementById('run-fcc-task-44');
 const scopeFCC44 = document.getElementById('fcc-task-44');
 
 function debugFCC44() {
-  scopeFCC44.innerHTML = outputResponse + removedFromMyArrayT44;
+  scopeFCC44.innerHTML = outputResponse + removedFromMyArray_T44;
 }
 
 if (btnFCC44 !== null && scopeFCC44 !== null) {
@@ -943,9 +943,9 @@ if (btnFCC44 !== null && scopeFCC44 !== null) {
 
 /* Task 45: Basic JavaScript: Manipulate Arrays With unshift() */
 
-var myArrayT45 = [["John", 23], ["dog", 3]];
-myArrayT45.shift();
-myArrayT45.unshift(["Paul", 35]); 
+var myArray_T45 = [["John", 23], ["dog", 3]];
+myArray_T45.shift();
+myArray_T45.unshift(["Paul", 35]); 
 // Now we have also ["Paul", 35] at the beginning of array myArray
 
 /* OUTPUT CODE */
@@ -954,7 +954,7 @@ const btnFCC45 = document.getElementById('run-fcc-task-45');
 const scopeFCC45 = document.getElementById('fcc-task-45');
 
 function debugFCC45() {
-  scopeFCC45.innerHTML = outputResponse + myArrayT45;
+  scopeFCC45.innerHTML = outputResponse + myArray_T45;
 }
 
 if (btnFCC45 !== null && scopeFCC45 !== null) {
@@ -965,7 +965,7 @@ if (btnFCC45 !== null && scopeFCC45 !== null) {
 
 /* Task 46: Basic JavaScript: Shopping List */
 
-var myListT46 = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];
+var myList_T46 = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];
 
 /* OUTPUT CODE */
 
@@ -973,7 +973,7 @@ const btnFCC46 = document.getElementById('run-fcc-task-46');
 const scopeFCC46 = document.getElementById('fcc-task-46');
 
 function debugFCC46() {
-  scopeFCC46.innerHTML = outputResponse + "First position is: " + myListT46[0][0] + ', and its price is ' + myListT46[0][1] + 'zl.';
+  scopeFCC46.innerHTML = outputResponse + "First position is: " + myList_T46[0][0] + ', and its price is ' + myList_T46[0][1] + 'zl.';
 }
 
 if (btnFCC46 !== null && scopeFCC46 !== null) {
@@ -984,11 +984,11 @@ if (btnFCC46 !== null && scopeFCC46 !== null) {
 
 /* Task 47: Basic JavaScript: Write Reusable JavaScript with Functions */
 
-function reusableFunctionT47() {
+function reusableFunction_T47() {
   return "Hi World";
 }
 
-reusableFunctionT47(); // We need to call the function
+reusableFunction_T47(); // We need to call the function
 
 /* OUTPUT CODE */
 
@@ -996,7 +996,7 @@ const btnFCC47 = document.getElementById('run-fcc-task-47');
 const scopeFCC47 = document.getElementById('fcc-task-47');
 
 function debugFCC47() {
-  scopeFCC47.innerHTML = outputResponse + reusableFunctionT47();
+  scopeFCC47.innerHTML = outputResponse + reusableFunction_T47();
 }
 
 if (btnFCC47 !== null && scopeFCC47 !== null) {
@@ -1007,11 +1007,11 @@ if (btnFCC47 !== null && scopeFCC47 !== null) {
 
 /* Task 48: Basic JavaScript: Passing Values to Functions with Arguments */
 
-function functionWithArgsT48(arg1T48, arg2T48) {
-  return arg1T48 + arg2T48; // It outputs sum of arg1 and arg2
+function functionWithArgs_T48(arg1_T48, arg2_T48) {
+  return arg1_T48 + arg2_T48; // It outputs sum of arg1 and arg2
 }
 
-functionWithArgsT48(3, 16);
+functionWithArgs_T48(3, 16);
 
 /* OUTPUT CODE */
 
@@ -1019,7 +1019,7 @@ const btnFCC48 = document.getElementById('run-fcc-task-48');
 const scopeFCC48 = document.getElementById('fcc-task-48');
 
 function debugFCC48() {
-  scopeFCC48.innerHTML = outputResponse + functionWithArgsT48(8, 12);
+  scopeFCC48.innerHTML = outputResponse + functionWithArgs_T48(8, 12);
 }
 
 if (btnFCC48 !== null && scopeFCC48 !== null) {
@@ -1030,24 +1030,24 @@ if (btnFCC48 !== null && scopeFCC48 !== null) {
 
 /* Task 49: Basic JavaScript: Global Scope and Functions */
 
-var myGlobalT49 = 10;
+var myGlobal_T49 = 10;
 
-function funT49() {
-  oopsGlobalT49 = 5; // oopsGlobal is defined without var so it has Global scope.
+function fun_T49() {
+  oopsGlobal_T49 = 5; // oopsGlobal is defined without var so it has Global scope.
 }
 
-function fun2T49() {
-  var outputT49 = "";
-  if (typeof myGlobalT49 != "undefined") {
-    outputT49 += "myGlobal: " + myGlobalT49;
+function fun2_T49() {
+  var output_T49 = "";
+  if (typeof myGlobal_T49 != "undefined") {
+    output_T49 += "myGlobal: " + myGlobal_T49;
   }
-  if (typeof oopsGlobalT49 != "undefined") {
-    outputT49 += " oopsGlobal: " + oopsGlobalT49;
+  if (typeof oopsGlobal_T49 != "undefined") {
+    output_T49 += " oopsGlobal: " + oopsGlobal_T49;
   }
-  return "Task 49: " + outputT49;
+  return "Task 49: " + output_T49;
 }
 
-fun2T49();
+fun2_T49();
 
 /* OUTPUT CODE */
 
@@ -1055,7 +1055,7 @@ const btnFCC49 = document.getElementById('run-fcc-task-49');
 const scopeFCC49 = document.getElementById('fcc-task-49');
 
 function debugFCC49() {
-  scopeFCC49.innerHTML = outputResponse + fun2T49();
+  scopeFCC49.innerHTML = outputResponse + fun2_T49();
 }
 
 if (btnFCC49 !== null && scopeFCC49 !== null) {
@@ -1320,8 +1320,6 @@ function testStrict(testStrictVal) {
   return "Your testStrictVal is NOT EQUAL and the NOT same type of XD String";
 }
 
-console.log("Task 59: " + testStrict("XD"));
-
 /* OUTPUT CODE */
 
 const btnFCC59 = document.getElementById('run-fcc-task-59');
@@ -1343,9 +1341,6 @@ if (btnFCC59 !== null && scopeFCC59 !== null) {
 
 var comp1 = 5;
 var comp2 = '5';
-
-console.log("Task 60: comp1 is: " + typeof comp1);
-console.log("Task 60: comp2 is: " + typeof comp2);
 
 function compareComps(comp1, comp2) {
   if (comp1 === comp2) {
@@ -1434,8 +1429,6 @@ function testGreaterThan(testGreaterThanVal) {
   }
   return "It's 100 or below.";
 }
-
-console.log("Task 63: " + testGreaterThan(301));
 
 /* OUTPUT CODE */
 
@@ -1907,8 +1900,6 @@ function replaceSwitch(replaceSwitchVal) {
   return replaceSwitchAnswer;
 }
 
-console.log("Task 77: " + replaceSwitch(2));
-
 /* OUTPUT CODE */
 
 const btnFCC77 = document.getElementById('run-fcc-task-77');
@@ -1970,8 +1961,6 @@ function earlyPattern() {
   return "Task 79: Early Pattern - Statement never used. ";
 }
 
-console.log('### FOLLOW UP ###' + ' ' + earlyPattern());
-
 /* OUTPUT CODE */
 
 const btnFCC79 = document.getElementById('run-fcc-task-79');
@@ -2018,8 +2007,6 @@ function cardCounter(cardItems){
   }
 }
 
-console.log("Task 80: " + cardCounter(2) + " " + cardCounter(6) + " " + cardCounter(7) + " " + cardCounter('A'));
-
 /* OUTPUT CODE */
 
 const btnFCC80 = document.getElementById('run-fcc-task-80');
@@ -2038,6 +2025,3 @@ if (btnFCC80 !== null && scopeFCC80 !== null) {
 /* Task 81: Build JavaScript Objects */
 
 /* 11.03.2021 - IT'S FINISHING TIME! <3 */
-
-console.log("");
-console.log("");
