@@ -1,7 +1,3 @@
-/* Yes, I perfectly know that all of these should be different GIT branches,
-But right now I'm just too lazy to do that so it is much easier to just copy
-and paste every single task. */
-
 /* This is from ZENVA JS Foundations */
 
 /* 1st Task - Beginning */
@@ -11,7 +7,6 @@ var hello = "#Task 1: Hello, World"
 console.log(hello)
 
 /* END OF TASK 1 */
-
 
 
 /* Task 2 - Variables */

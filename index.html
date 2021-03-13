@@ -20,12 +20,11 @@
 
 <body class="main-wrapper"> <!-- body class -->
 
+  <main class="main-container">
+    <section class="main-container__content">
+      <div class="main-container__content__wrap">
 
-    <main class="main-container"> <!-- main-tile -->
-      <section class="main-container__content">
-        <div class="main-container__content__wrap">
-
-          <header class="promo-bar"> <!-- top bar -->
+        <header class="promo-bar">
             <div class="promo-bar__logotype">
               <img src="/media/js-logo.png" width="56" height="56">
               <h1>Basement</h1>
@@ -38,12 +37,12 @@
                 <a href="https://www.linkedin.com/in/jakub-kowalski-209248170/" target="_blank"><i><img src="/media/linkedin-icon.svg" width="36" height="36"></i></a>
               </span>
             </div>
-          </header><!-- /top bar -->
+        </header><!-- /top bar -->
 
-          <div class="slide-container"> <!-- slider + toolbar -->
-            <div class="slide-container__content">
+        <div class="slide-container">
+          <div class="slide-container__content">
 
-              <div class="single-slide"> <!-- single slide DYNAMIC -->
+            <div class="single-slide">
                 <div class="single-slide--layout">
                   <aside class="single-slide__toolbar"> <!-- Course notes TOOLBAR -->
                     <div class="toolbar__item">
@@ -1946,10 +1945,9 @@
                   </div>
 
                 </div>
-              </div> <!-- /single slide DYNAMIC -->
+            </div> <!-- /single slide DYNAMIC - FCC -->
 
-
-              <div class="single-slide"> <!-- single slide DYNAMIC -->
+            <div class="single-slide">
                 <div class="single-slide--layout">
                   <aside class="single-slide__toolbar"> <!-- Course notes TOOLBAR -->
                     <div class="toolbar__item">
@@ -1997,44 +1995,95 @@
                     </div> <!-- /Course notes content -->
                   </div>
                 </div>
-              </div> <!-- /single slide DYNAMIC -->
+            </div> <!-- /single slide DYNAMIC - ZENVA -->
 
+            <div class="single-slide">
+                <div class="single-slide--layout">
+                  <aside class="single-slide__toolbar"> <!-- Course notes TOOLBAR -->
+                    <div class="toolbar__item">
+                      <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
+                    </div>
+                    <div class="toolbar__item">
+                      <a><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                    </div>
+                    <div class="toolbar__item">
+                      <a><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                    </div>
+                    <div class="toolbar__item">
+                      <a><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                    </div>
+                  </aside> <!-- /Course notes TOOLBAR -->
+
+                  <div class="slide-container__content-single">
+                    <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
+                      <img src="/media/js-logo.png" width="auto" height="60"> <h2>My Own Experiments</h2>
+                    </div> <!-- /Course notes HEADER -->
+                    <div class="slide-container__content-single__wrap"> <!-- Course notes content -->
+                      <ul class="wrap__list">
+                        <li class="wrap__list__module__header">
+                          <span class="marker--cyan"></span>
+                          <h3>#1: JavaScript ES5+</h3>
+                        </li>
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
+                          <span class="marker--yellow"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 1: Basic JavaScript: Comment Your  JavaScript Code</h4>
+                            <p class="single-item__paragraph">
+                              We can comment code inside our *.js files via:<br>
+                              // in-line comment<br>
+                              /* multi line<br>
+                              comment */</p>
+                            <div class="single-item__debug-box">
+                              <button class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-1"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+                      </ul>
+                    </div> <!-- /Course notes content -->
+                  </div>
+                </div>
+            </div> <!-- /single slide DYNAMIC - MY OWN -->
+
+          </div> <!-- /slides content -->
+          <div class="slide-container__controls">
+            <div class="slide-container__controls__arrows">
+              <button class="button prev"><img src="/media/arrow-left.svg" width="15" height="25"></button>
+              <button class="button next"><img src="/media/arrow-right.svg" width="15" height="25"></button>
             </div>
-            <div class="slide-container__controls"> <!-- slide controls -> STATIC -->
-              <div class="slide-container__controls__arrows">
-                <button class="button prev"><img src="/media/arrow-left.svg" width="15" height="25"></button>
-                <button class="button next"><img src="/media/arrow-right.svg" width="15" height="25"></button>
-              </div>
-              <div class="slide-container__controls__nav">
-                <li class="nav__dot"></li>
-                <li class="nav__dot"></li>
-              </div>
-            </div> <!-- /slide controls -> STATIC -->
-          </div> <!-- /slider + toolbar -->
+            <div class="slide-container__controls__nav">
+              <li class="nav__dot"></li>
+              <li class="nav__dot"></li>
+              <li class="nav__dot"></li>
+            </div>
+          </div> <!-- /slide controls -->
+        </div> <!-- /slider + toolbar -->
 
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <nav class="navbar">
+        <div class="navbar__item">
+          <a href="index.html"><i><img src="/media/nav-home-icon.svg" width="35" height="35"></i></a>
         </div>
-      </section>
-
-      <aside class="sidebar">
-        <nav class="navbar">
-          <div class="navbar__item">
-            <a href="index.html"><i><img src="/media/nav-home-icon.svg" width="35" height="35"></i></a>
-          </div>
-          <div class="navbar__item">
-            <a href="index.html"><i><img src="/media/nav-share-icon.svg" width="35" height="36"></i></a>
-          </div>
-          <div class="navbar__item">
-            <a href="index.html"><i><img src="/media/nav-info-icon.svg" width="20" height="33"></i></a>
-          </div>
-          <div class="navbar__item">
-            <a href="index.html"><i><img src="/media/nav-envelope-icon.svg" width="35" height="28"></i></a>
-          </div>
-        </nav>
-        <footer class="copyright">
-          <p>Made with <span class="font--pink font--bolded">love </span>by <a href="https://jakubkowalski.dev"><span class="font--bolded">jakubkowalski.dev</span></a></p>
-        </footer>
-      </aside>
-    </main> <!-- /main-tile -->
+        <div class="navbar__item">
+          <a href="index.html"><i><img src="/media/nav-share-icon.svg" width="35" height="36"></i></a>
+        </div>
+        <div class="navbar__item">
+          <a href="index.html"><i><img src="/media/nav-info-icon.svg" width="20" height="33"></i></a>
+        </div>
+        <div class="navbar__item">
+          <a href="index.html"><i><img src="/media/nav-envelope-icon.svg" width="35" height="28"></i></a>
+        </div>
+      </nav>
+      <footer class="copyright">
+        <p>Made with <span class="font--pink font--bolded">love </span>by <a href="https://jakubkowalski.dev"><span class="font--bolded">jakubkowalski.dev</span></a></p>
+      </footer>
+    </aside>
+  </main> <!-- /main-tile -->
 
 
   <!-- Script Includes -->
