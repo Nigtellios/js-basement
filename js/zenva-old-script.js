@@ -85,7 +85,7 @@ const btnZ3 = document.getElementById('run-zenva-task-3');
 const scopeZ3 = document.getElementById('zenva-task-3');
 
 function debugZ3() {
-  scopeZ3.innerHTML = outputResponseZ + maxMoves_Z3 + ', ' + currentMove_Z3 + ', ' + isGameRunning_Z3 + ', ' + hasGameCrashed_Z3;
+  scopeZ3.innerHTML = outputResponseZ + maxMoves_Z3 + ', ' + currentMove_Z3 + ', ' + question_Z3 + isGameRunning_Z3;
 }
 
 if (btnZ3 !== null && scopeZ3 !== null) {
@@ -181,7 +181,7 @@ hp_Z5 = (hp_Z5 * 2) - 20; //Value: 162 and THIS IS BETTER than: hp = hp * 2 - 20
 
 //Homework
 
-hp_Z5 = hp + 1; //163
+hp_Z5 = hp_Z5 + 1; //163
 hp_Z5++; //164
 hp_Z5 += 1; //165
 
@@ -195,7 +195,7 @@ const btnZ5 = document.getElementById('run-zenva-task-5');
 const scopeZ5 = document.getElementById('zenva-task-5');
 
 function debugZ5() {
-  scopeZ4.innerHTML = outputResponseZ + currentValue_Z5;
+  scopeZ5.innerHTML = outputResponseZ + currentValue_Z5;
 }
 
 if (btnZ5 !== null && scopeZ5 !== null) {
@@ -317,8 +317,6 @@ if (btnZ7 !== null && scopeZ7 !== null) {
 
 /* Task 8 - Multidimensional Arrays */
 
-var task8 = "#Task 8: ";
-
 let levels_Z8 = [
   [1.1, 1.2, 1.3, 1.4], //Array 1
   [2.1, 2.2], //Array 2
@@ -359,8 +357,6 @@ if (btnZ8 !== null && scopeZ8 !== null) {
 }
 
 /* Task 9 - Functions */ /* */
-
-var task9 = "#Task 9: ";
 
 /*
 function name(inputs) {
@@ -479,7 +475,7 @@ let currentBalance_Z11 = 198.1;
 function transaction(transValue_Z11 = 1.0) {
   let calcValue_Z11 = currentBalance_Z11 + transValue_Z11;
   currentBalance_Z11 = calcValue_Z11 > 200 ? maxBalance_Z11 : calcValue_Z11;
-  currentBalance_Z10 -= transValue_Z11;
+  currentBalance_Z11 -= transValue_Z11;
   return (currentBalance_Z11 / maxBalance_Z11) * 100; //Calculating the precentage.
 }
 
@@ -620,7 +616,7 @@ let isGameOver_Z14 = false;
 
 // while(aPos_Z14 < endOfMap_Z14) {
 //   console.log(aPos_Z14); // To look forward if it is working in console.
-//   aPo_Z14s += 50;
+//   aPos_Z14 += 50;
 //   if (aPos_Z14 == enemyPos_Z14) {
 //     console.log('Game Over!');
 //   }
@@ -628,7 +624,7 @@ let isGameOver_Z14 = false;
 
 while(!isGameOver_Z14) {
   console.log("Current Position: " + aPos_Z14);
-  if(aPos == enemyPos_Z14){
+  if(aPos_Z14 == enemyPos_Z14){
     isGameOver_Z14 = true;
     console.log("You've met enemy! Game is over on: " + aPos_Z14);
   } else if (aPos_Z14 == endOfMap_Z14) {
@@ -659,8 +655,6 @@ if (btnZ14 !== null && scopeZ14 !== null) {
 }
 
 /* Task 15 - Control Statements */ 
-
-var task15 = "#Task 15: ";
 
 let endOfMap_Z15 = 500;
 let aPos_Z15 = 0;
@@ -715,7 +709,7 @@ const btnZ15 = document.getElementById('run-zenva-task-15');
 const scopeZ15= document.getElementById('zenva-task-15');
 
 function debugZ15() {
-  scopeZ15.innerHTML = outputResponseZ + aPos_Z15;
+  scopeZ15.innerHTML = outputResponseZ + movePlayer_Z15();
 }
 
 if (btnZ15 !== null && scopeZ15 !== null) {
@@ -913,7 +907,7 @@ function townNPC(id, name, title, pos) {
   // function on every instance of single object type.
 }
 
-// However, this it something like blueprint, now we are going to create instance of this object. To do this, we have to use „new" keyword.
+// However, this it something like blueprint, now we are going to create instance of this object. To do this, we have to use NEW keyword.
 
 let salesman = new townNPC(0, "Maverick", "Salesman", 120); // So now we store those values in salesman.
 

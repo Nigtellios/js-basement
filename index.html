@@ -1980,7 +1980,8 @@
                             </p>
                           </div>
                         </li> <!-- /SINGLE TASK -->
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 1 -->
                           <span class="marker--yellow"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 1: Beginning</h4>
@@ -1998,6 +1999,617 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 2 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 2: Variables</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                Assigning a value to the variable. However, this is an literal value -> it is a notation for representing a fixed value.<br><br>
+                                var currentMana_Z2 = 100;<br><br>
+                                We can do this in different ways, like:<br><br>
+                                var maxStamina_Z2;<br>
+                                maxStamina_Z2 = 100;<br>
+                                var currentStamina_Z2 = 50.2;<br>
+                                currentStamina_Z2 = maxStamina_Z2;<br>
+                                <br>
+                                Right here we are assigning current stamina level to their Maximum avaliable value. We don't want to do it vice versa because we would damage our max allowed value. This the type of boolean value, it holds two statements - true or false.<br><br>
+                                var isGameOver_Z2 = false;
+                                isGameOver_Z2 = true;<br><br>
+                                ^ We just reassigned our value in case of changing statement.<br><br>
+                                <strong>Debug will show values of currentMana_Z2, currentStamina_Z2, maxStamina_Z2 and isGameOver_Z2.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-2" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-2"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 3 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 3: Const vs Let vs Var</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                const maxMoves_Z3 = 50;<br><br>
+                                The value of constant cannot be changed, so it would stay at 50. Now we can't change its value but we can change other variable value to it, like:<br><br>
+                                var currentMove_Z3 = 15;<br>
+                                currentMove_Z3 = maxMoves_Z3;<br>
+                                <br><br>
+                                LET can be used only in some scope, it can be changed or used only in code block where it was declared.
+                                <br><br>
+                                if (true) {<br>
+                                &nbsp;var isGameRunning_Z3 = false;<br>
+                                &nbsp;let hasGameCrashed_Z3 = false;<br>
+                                }<br>
+                                <br>
+                                var question_Z3 = "Is game still running? ";<br><br>
+                                <strong>Debug will show values of maxMoves_Z3, currentMove_Z3 and isGameRunning_Z3.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-3" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-3"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 4 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 4: Strings</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                var characterName_Z4 = "Nebed";<br>
+                                characterName_Z4 = "Miran";<br>
+                                var age_Z4 = 22;<br>
+                                let encourMessage_Z4 = `Hi, my name is ${characterName_Z4}, and I'm ${age_Z4}.`;<br><br>
+                                This string between `` is using interpolation.<br><br>
+                                let nameLength_Z4 = characterName_Z4.length;<br><br>
+                                Now we can use two methods to convert text to Upper and Lower Case:<br><br>
+                                let upperName_Z4 = characterName_Z4.toUpperCase();<br>
+                                let lowerName_Z4 = characterName_Z4.toLowerCase();<br><br>
+                                Actually these two aren't modifying the literal value, we are creating. Something like a copy of them and store them in upperName and lowerName. If we want to change the original value, we have to reassing it using these methods.<br><br>
+                                characterName_Z4 = characterName_Z4.toLowerCase();<br><br>
+                                So this one is geting original value and converts it to lower case.<br><br>
+                                let nameSlice_Z4 = characterName_Z4.slice(0, 3);<br>
+                                let currentLevel_Z4 = 0;<br>
+                                currentLevel_Z4 = 3;<br>
+                                let currentLevelInfo_Z4 = `Currently you are at level ${currentLevel_Z4}`;<br><br>
+                                <strong>Debug will show values of encourMessage_Z4, nameLength_Z4, upperName_Z4, lowerName_Z4, nameSlice_Z4 and currentLevelInfo_Z4.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-4" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-4"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 5 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 5: Operators - part 1</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                Assignment operator, it just assigns a value to a variable.<br>
+                                let hp_Z5 = 50;<br>
+                                hp_Z5 = 250;<br>
+                                Arithmetic operators + - * /<br><br>
+                                hp_Z5 = hp_Z5 + 10; //260<br>
+                                hp_Z5 = hp_Z5 - 20; //240<br>
+                                hp_Z5 = hp_Z5 * 2; //480<br>
+                                hp_Z5 = hp_Z5 / 2; //240<br><br>
+                                Now the modulus, which would return us a remainder of selected number. With this we can check if a number is even or odd. It would look like health % 2 == 0; - if it's 0 then it's even, if not it's odd.<br><br>
+                                hp_Z5 = hp_Z5 % 21; //9<br><br>
+                                Now with exponentiation we can raise first operand to the power of second one.<br><br>
+                                hp_Z5 = hp_Z5 ** 2; //81<br><br>
+                                Or even.. hp = (hp ** 2)**2 ; //43046721<br>
+                                Now we can do the same with combination of arithmetic and assignment operator together.<br><br>
+                                hp_Z5 -= 20; //61<br>
+                                hp_Z5 += 30; //91<br>
+                                hp_Z5 *= 2; //182<br>
+                                hp_Z5 /= 2; //91<br><br>
+                                Yep, we actually raised an 81 to the power of 81 which result is 43 milions. So on now Incrementation and decrementation.<br><br>
+                                hp_Z5++; //92<br>
+                                hp_Z5--; //91<br><br>
+                                And remember the PEMDAS with brackets! It is better to make brackets for higher priority operations in maths even if they are no needed.<br><br>
+                                hp_Z5 = (hp_Z5 * 2) - 20; //Value: 162 and THIS IS BETTER than: hp = hp * 2 - 20;<br><br>
+                                Homework<br><br>
+                                hp_Z5 = hp_Z5 + 1; //163<br>
+                                hp_Z5++; //164<br>
+                                hp_Z5 += 1; //165<br><br>
+                                let currentValue_Z5 = `Current value is: ${hp_Z5}`;<br><br>
+                                <strong>Debug will show value of currentValue_Z5.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-5" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-5"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 6 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 6: Operators - part 2</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let word1_Z6 = "Hello";<br>
+                                let word2_Z6 = "World";<br>
+                                let result_Z6 = word1_Z6 + word2_Z6;<br><br>
+                                Well it is just to said that we can also make a operations on strings which is really useful. Now let's go with comparsion operators.<br><br>
+                                let number1_Z6 = 13;<br>
+                                let number2_Z6 = 17;<br>
+                                let operationResult1_Z6 = number1_Z6 > number2_Z6; //false, not higher than n2.<br><br>
+                                ^it would return false because it is simply not true that number1 is greater than number 2.<br><br>
+                                let operationResult2_Z6 = number1_Z6 == number2_Z6; //false, not equal<br>
+                                let operationResult3_Z6 = number1_Z6 <= number2_Z6; //true<br>
+                                let operationResult4_Z6 = number1_Z6 != number2_Z6; //true, not equal<br>
+                                let ultraOperation_Z6 = number1_Z6 === number2_Z6;<br><br>
+                                ultraOperation_Z6 = !ultraOperation_Z6; //It just changed the value from false to true
+                                //due to the ! (not) logical operator<br><br>
+                                let logOp1_Z6 = number1_Z6 > number2_Z6 && number2_Z6 == number1_Z6;<br>
+                                let logOp2_Z6 = number2_Z6 > number1_Z6 || number2_Z6 == number1_Z6;<br><br>
+                                ^ with OR operator || only one of operands have to be true to return true<br><br>
+                                Ternary ? : something like if else<br><br>
+                                let ternary_Z6 = number1_Z6 > number2_Z6 ? number1_Z6 : number2_Z6;<br><br>
+                                What we did there? We asked the computer about comparsion, is the number 1 bigger than number 2? No, so if the number 2 is bigger then it will store number 2 value, because first sentence after ? stores only true, so if the statement is true then return number1, if not - there comes an : - then store a value of number2.
+                                <br><br>
+                                Homework - Game over or not depending on number of lives.<br><br>
+                                const maxLives_Z6 = 3;<br>
+                                let currentLives_Z6 = 1;<br>
+                                let isTheGameOver_Z6 = currentLives_Z6 <= 0 && currentLives_Z6 < maxLives_Z6;<br><br>
+                                OR THE SOLUTION OF AUTHOR - SIMPLER<br><br>
+                                let numberOfLives_Z6 = 3;<br>
+                                let isTheGameOver2_Z6 = !(numberOfLives_Z6 > 0);<br><br>
+                                So actually the number of lives has to fill two conditions: we have to be at 0 lives to be dead and in the same moment we have to got smaller number than maxLives to don't allow the numbers to override the value.<br><br>
+                                <strong>Debug will show values of result_Z6, operationResult1_Z6, operationResult2_Z6, operationResult3_Z6 , ultraOperation_Z6, logOp1_Z6, logOp2_Z6, ternary_Z6 and TheGameOver_Z6.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-6" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-6"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 7 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 7: Operators - Arrays</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let inventory_Z7 = ["shirt", "axe", "sword"];<br>
+                                inventory = ["water", "pants"]; We can ofc change the values if we want to something different.<br><br>
+                                Let's pretend that we know what is in the array and we want something from it.<br><br>
+                                let shirt_Z7 = inventory_Z7[0];<br><br>
+                                But we can access and modify existing element.<br><br>
+                                inventory_Z7[2] = "bread";<br><br>
+                                We can return a whole length of an array and simply a length of single position in an array.<br><br>
+                                let howLong_Z7 = inventory_Z7.length; // It would return 3.<br><br>
+                                Now let's get length of item with index 2 (so 3rd in a row).<br><br>
+                                let howLongItem_Z7 = inventory_Z7[2].length;<br><br>
+                                We can push item to the end of the array via push() method.<br><br>
+                                let pushArray_Z7 = inventory_Z7.push("potion");<br><br>
+                                We can also delete an item from array using pop() method.<br><br>
+                                let popArray_Z7 = inventory_Z7.pop();<br><br>
+                                Pop is actually removing the last item and then returning it.<br><br>
+                                <strong>Debug will show values of inventory_Z7[2, howLong_Z7, howLongItem_Z7, inventory_Z7 and popArray_Z7.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-7" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-7"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 8 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 8: Multidimensional Arrays</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let levels_Z8 = [<br>
+                                &nbsp;[1.1, 1.2, 1.3, 1.4], //Array 1<br>
+                                &nbsp;[2.1, 2.2], //Array 2<br>
+                                &nbsp;[3.1, 3.2, 3.3], //Array 3<br>
+                                &nbsp;[4.1, 4.2, 4.3, 4.4, 4.5] //Array 4<br>
+                                ];<br><br>
+                                ^Actually we created a 4 arrays inside array, that is called multidimensional arrays. We wanna simulate few levels of our game while every of them has some sub-levels inside. We can assume that they are like rows and columns. In each of inner-array we have some columns, these columns are: 1.1, 1.2, 1.3, 1.4 etc.<br><br>
+                                let firstArea_Z8 = levels_Z8[0]; <br><br>
+                                ^ This is simple access of whole 1 innerArray of our levels Array.<br><br>
+                                let firstLevelArea_Z8 = levels_Z8[0][1]; //It should be 1.2<br><br>
+                                ^ This is simple access of 1st content in 1Inner array. In [0] - This is row, while [1] is column inside inner row 0 (array 1)<br><br>
+                                let firstLevelMod_Z8 = levels_Z8[0][1] = 1.9;<br><br>
+                                Homework - delete 1 item from innerArray 2 and add it to Inner Array 3<br><br>
+                                let secondLevelMod_Z8 = levels_Z8[1].pop();<br>
+                                let secondLevelMod2_Z8 = levels_Z8[2].push(secondLevelMod_Z8);<br><br>
+                                <strong>Debug will show values of firstArea_Z8, firstLevelArea_Z8, firstLevelMod_Z8, levels_Z8[0] and levels_Z8[2].</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-8" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-8"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 9 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 9: Functions</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                function name(inputs) {<br>
+                                &nbsp;function body<br>
+                                &nbsp;return value<br>
+                                }<br><br>
+                                Hovewer, we don't have to return values or scopes any inputs all the time. Our function can work without this and it would be perfectly fair if we just want to do some code without returning anything or scoping any targets.<br><br>
+                                let currentHealth_Z9 = 100;<br>
+                                let healAmount_Z9 = 25;<br><br>
+                                function heal() {<br>
+                                &nbsp;currentHealth_Z9 += healAmount_Z9;<br>
+                                }<br><br>
+                                While designing functions we should think about logic behind it, it is much better to create something reusable or universal over time than just doing some static instructions which would not benefit over time.<br><br>
+                                heal();<br><br>
+                                However, we can create an reference using variable to store the function.<br><br>
+                                let t1_Z9; let t2_Z9;<br>
+                                t1_Z9 = 2; t2_Z9 = 10;<br><br>
+                                let ref = function test1() {<br>
+                                &nbsp;t1_Z9 += t2_Z9;<br>
+                                }<br><br>
+                                ref();<br><br>
+                                We can also nest a function inside other function, like:<br><br>
+                                let t3_Z9; let t4_Z9;<br>
+                                t3_Z9 = 20; t4_Z9 = 5;<br><br>
+                                function nestTest() {<br>
+                                &nbsp;t3_Z9 += t4_Z9;<br>
+                                &nbsp;function nested() {<br>
+                                &nbsp;&nbsp;t3_Z9--;<br>
+                                &nbsp;}<br>
+                                &nbsp;nested();<br>
+                                }<br><br>
+                                nestTest();<br><br>
+                                ^The example above was example of nested function which was declared and called inside another function.<br><br>
+                                <strong>Debug will show values of currentHealth_Z9, t1_Z9 and t3_Z9.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-9" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-9"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 10 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 10: Function Parameters</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let currentSanity_Z10 = 0;<br><br>
+                                Now we would create some inputs to change the behavior of our function. It is bad practice to declare other variable which can be used as an Input, instead of this we can make it as a parameter.<br><br>
+                                function sanity_Z10(recoverSanity_Z10) {<br>
+                                &nbsp;currentSanity_Z10 += recoverSanity_Z10;<br>
+                                }<br><br>
+                                sanity_Z10(100); //currentSanity will be 100.<br><br>
+                                Sometimes we just want to pass some default value. However, if we then call another value while calling an function, we will override this.<br><br>
+                                let currentMana_Z10 = 55.5;<br><br>
+                                function manaRecover_Z10(manaRecoverAmount_Z10 = 25) {<br>
+                                &nbsp;currentMana_Z10 += manaRecoverAmount_Z10;<br>
+                                }<br><br>
+                                manaRecover_Z10(30.5);<br><br>
+                                Now our 30.5 will override the default value of 25. It is very good to have default value of parameter.<br><br>
+                                <strong>Debug will show values of currentSanity_Z10 and currentMana_Z10.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-10" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-10"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 11 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 11: Function Return Statements</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let maxBalance_Z11 = 200.0;<br>
+                                let currentBalance_Z11 = 198.1;<br><br>
+                                Now we want to calculate a precentage of our balance, during this we would learn how to return something from a function to make some calculations.<br><br>
+                                function transaction(transValue_Z11 = 1.0) {<br>
+                                &nbsp;let calcValue_Z11 = currentBalance_Z11 + transValue_Z11;<br>
+                                &nbsp;currentBalance_Z11 = calcValue_Z11 > 200 ? maxBalance_Z11 : calcValue_Z11;<br>
+                                &nbsp;currentBalance_Z10 -= transValue_Z11;<br>
+                                &nbsp;return (currentBalance_Z11 / maxBalance_Z11) * 100; //Calculating the precentage.<br>
+                                }<br><br>
+                                let result_Z11 = transaction();<br>
+                                result_Z11 = transaction(20.9);<br><br>
+                                <strong>Debug will show values of result_Z11 and currentBalance_Z11.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-11" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-11"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 12 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 12: If Statements - part 1</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let keyPress_Z12 = "r";<br>
+                                let xPos_Z12 = 0;<br><br>
+                                We are going to create something like test for moving object<br><br>
+                                if (keyPress_Z12 == "l") {<br>
+                                &nbsp;xPos_Z12 -= 1; //xPos = -1;<br>
+                                } else if (keyPress_Z12 == "r") {<br>
+                                &nbsp;xPos_Z12 += 1; //xPos = -1;<br>
+                                } else {<br>
+                                &nbsp;xPos_Z12 = 0;<br>
+                                }<br><br>
+                                This code is comparing the value of variable keyPress „else" there works as an backup if we want to do something if no any of the values matches the requirements specified in above statements. If any of requirements fails (returns false), then code is going to another one.<br><br>
+                                <strong>Debug will show value of xPos_Z12.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-12" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-12"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 13 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 13: If Statements - part 2</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                Let's talk about nested Ifs, imagine if we have:<br><br>
+                                let someNumber_Z13 = 99;<br>
+                                let doLMAO_Z13 = 0;<br><br>
+                                if (someNumber_Z13 > 10 ) {<br>
+                                &nbsp;doLMAO_Z13 += 25;<br>
+                                }<br>
+                                if (someNumber_Z13 < 5 ) {<br>
+                                &nbsp;doLMAO_Z13 *= 2;<br>
+                                }<br><br>
+                                We can use something above if we want to execute only one test of code at a time without creating else if statement, but right I can't see this any useful.<br><br>
+                                Now we are going to create nested If<br><br>
+                                let keyPressed_Z13 = "d";<br>
+                                let endPos_Z13 = 200;<br>
+                                let actualPos_Z13 = 50;<br><br>
+                                if (keyPressed_Z13 == "d") {<br>
+                                &nbsp;if (actualPos_Z13 < endPos_Z13) {<br>
+                                &nbsp;&nbsp;actualPos_Z13 += 1;<br>
+                                &nbsp;}<br>
+                                &nbsp;actualPos_Z13 += 1;<br>
+                                } else if (keyPressed_Z13 == "a") {<br>
+                                &nbsp;actualPos_Z13 -= 1;<br>
+                                } else {<br>
+                                &nbsp;actualPos_Z13 = 0;<br>
+                                }<br><br>
+                                However, there are scenarios when we shouldn't do that, instead of it we should add logical expression to it. Properly it would look like this:<br><br>
+                                if (keyPressed_Z13 == "d" && actualPos_Z13 < endPos_Z13) {<br>
+                                &nbsp;actualPos_Z13 += 1;<br>
+                                } else if (keyPressed_Z13 == "a") {<br>
+                                &nbsp;actualPos_Z13 -= 1;<br>
+                                } else {<br>
+                                &nbsp;actualPos_Z13 = 0;<br>
+                                }<br><br>
+                                but in the example above, the code would run only if both statements are true, when we still want to do something before matching both of boolean expressions, then we have to use nested if.<br><br>
+                                Homework - Do the same on the left side of map.<br><br>
+                                if (keyPressed_Z13 == "d" && actualPos_Z13 < endPos_Z13) {<br>
+                                &nbsp;actualPos_Z13 += 1;<br>
+                                } else if (keyPressed_Z13 == "a" && actualPos_Z13 >= 0) {<br>
+                                &nbsp;actualPos_Z13 -= 1;<br>
+                                } else {<br>
+                                &nbsp;actualPos_Z13 = 0;<br>
+                                }<br><br>
+                                <strong>Debug will show value of xPos_Z12.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-13" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-13"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 14 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 14: While Loops</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                Ye let's do the same another time (oof), now we are going to move foward continously by 50 until we met end of our „map" (at least in math)<br><br>
+                                let endOfMap_Z14 = 500;<br>
+                                let aPos_Z14 = 0;<br>
+                                let enemyPos_Z14 = 450;<br>
+                                let isGameOver_Z14 = false;<br><br>
+                                //&nbsp;while(aPos_Z14 < endOfMap_Z14) {<br>
+                                //&nbsp;&nbsp;console.log(aPos_Z14); // To look forward if it is working in console.<br>
+                                //&nbsp;&nbsp;aPos_Z14 += 50;<br>
+                                //&nbsp;&nbsp;if (aPos_Z14 == enemyPos_Z14) {<br>
+                                //&nbsp;&nbsp;&nbsp;console.log('Game Over!');<br>
+                                //&nbsp;&nbsp;}<br>
+                                //&nbsp;}<br><br>
+                                while(!isGameOver_Z14) {<br>
+                                &nbsp;console.log("Current Position: " + aPos_Z14);<br>
+                                &nbsp;if(aPos_Z14 == enemyPos_Z14){<br>
+                                &nbsp;&nbsp;isGameOver_Z14 = true;<br>
+                                &nbsp;&nbsp;console.log("You've met enemy! Game is over on: " + aPos_Z14);<br>
+                                &nbsp;} else if (aPos_Z14 == endOfMap_Z14) {<br>
+                                &nbsp;&nbsp;isGameOver_Z14 = true;<br>
+                                &nbsp;&nbsp;console.log("You've met end of the map! Game is over on: " + aPos_Z14);<br>
+                                &nbsp;} else {<br>
+                                &nbsp;&nbsp;aPos_Z14 += 50;<br>
+                                &nbsp;}<br>
+                                }<br><br>
+                                This is also a homework, we've made a code when game would end if we met end of the map or our enemy.<br><br>
+                                <strong>Debug will show value of aPos_Z14;.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-14" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-14"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 15 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 15: Control Statements</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let endOfMap_Z15 = 500;<br>
+                                let aPos_Z15 = 0;<br>
+                                let enemyPos_Z15 = 250;<br>
+                                let isGameOver_Z15 = false;<br><br>
+                                //&nbsp;while(aPos_Z15 < endOfMap_Z15) {<br>
+                                //&nbsp;&nbsp;aPos_Z15 +=50;<br>
+                                //&nbsp;&nbsp;console.log("I'm moving, my position: " + aPos_Z15);<br>
+                                //&nbsp;&nbsp;if(aPos_Z15 == enemyPos_Z15) {<br>
+                                //&nbsp;&nbsp;&nbsp;console.log("You've met enemy! Game is lost!");<br>
+                                //&nbsp;&nbsp;&nbsp;break;<br>
+                                //&nbsp;&nbsp;}<br>
+                                //&nbsp;}<br><br>
+                                We simply want to stop our code like end game mechanics. That's why we used break. We are exiting our loop. Let's say that we want to skip every odd number right now:<br><br>
+                                endOfMap_Z15 = 20;<br><br>
+                                //&nbsp;while(aPos_Z15 < endOfMap_Z15) {<br>
+                                //&nbsp;&nbsp;if (xPos_Z15 % 2 == 1) {<br>
+                                //&nbsp;&nbsp;&nbsp;xPos_Z15 += 2;<br>
+                                //&nbsp;&nbsp;&nbsp;continue;<br>
+                                //&nbsp;&nbsp;}<br>
+                                //&nbsp;&nbsp;aPos_Z15++;<br>
+                                //&nbsp;&nbsp;if(aPos_Z15 == enemyPos_Z15) {<br>
+                                //&nbsp;&nbsp;&nbsp;console.log("You've met enemy! Game is lost!");<br>
+                                //&nbsp;&nbsp;&nbsp;break;<br>
+                                //&nbsp;&nbsp;}<br>
+                                //&nbsp;&nbsp;console.log("I'm moving, my position: " + aPos_Z15);<br>
+                                //&nbsp;}<br><br>
+                                This seems like kinda broken logic, but if we hit continue with our statements, we actually leave behind everything that is after continue, because we will endlessly jump between boolean condition inside while till our continue, so actually our break would never happen (in the example above)<br><br>
+                                function movePlayer_Z15() {<br>
+                                &nbsp;while(aPos_Z15 < endOfMap_Z15) {<br>
+                                &nbsp;&nbsp;aPos_Z15 ++;<br>
+                                &nbsp;&nbsp;if(aPos_Z15 == enemyPos_Z15) {<br>
+                                &nbsp;&nbsp;&nbsp;console.log("You've met enemy! Game is lost!");<br>
+                                &nbsp;&nbsp;&nbsp;return;<br>
+                                &nbsp;&nbsp;}<br>
+                                &nbsp;}<br>
+                                }<br><br>
+                                So actually we can move out the entire function with our „return" instead of breaking iterations of whole loop.<br><br>
+                                <strong>Debug will show execution of movePlayer_Z15().</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-15" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-15"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 16 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 16: For Loops</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                let items = ["Polo", "Gloves", "Wallet"];<br>
+                                let endPointString = "I have: ";<br><br>
+                                //&nbsp;for(let i = 0; i < items.length; i++) {<br>
+                                //&nbsp;&nbsp;//It would run 3 times coz of Array Length<br>
+                                //&nbsp;&nbsp;let itemName = items[i]; //We are parsing index so we would get item<br>
+                                //&nbsp;&nbsp;endPointString += itemName + ", ";<br>
+                                //&nbsp;}<br><br>
+                                ^With this construction of our for loop we want to attach something to every each item. We want to reach every content of our array so our iterator is our array index. We want to finish when our iterator would be equal to length of our Array.<br><br>
+                                items.forEach(function(element) {<br>
+                                &nbsp;endPointString += element + ", ";<br>
+                                });<br><br>
+                                This looks kinda confusing, but we are just doing a function on each element of our array, so it's simpler and much more clear.<br><br>
+                                <strong>Debug will show value of endPointString.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-16" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-16"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 17 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 17: Objects</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                We are going to create object called character.<br><br>
+                                let gameCharacter = {<br>
+                                &nbsp;name: "Bezimienny",<br>
+                                &nbsp;xPosition: 0,<br>
+                                &nbsp;yPosition: 0,<br>
+                                &nbsp;items: ["Sword", "Helmet"],<br>
+                                &nbsp;// They are the properties<br>
+                                &nbsp;// property: value,<br>
+                                &nbsp;move: function(x) {<br>
+                                &nbsp;&nbsp;this.xPosition += x;<br>
+                                &nbsp;&nbsp;// this. means that belongs to this position of this object.<br>
+                                &nbsp;&nbsp;// It says: the property xPos of THIS object (gameCharacter) is<br>
+                                &nbsp;&nbsp;// going to increase by value of our x.<br>
+                                &nbsp;},<br>
+                                };<br><br>
+                                let name = gameCharacter.name;<br><br>
+                                We can also perform the same syntax using: let name = gameCharacter['name']; We can also re-assign any property.<br><br>
+                                gameCharacter.items = ["Axe", "Bread"];<br><br>
+                                Aaaaand use functions<br><br>
+                                gameCharacter.move(5);<br>
+                                var x = gameCharacter.xPosition;<br><br>
+                                And we can add properties to the object on the fly simply using:<br><br>
+                                gameCharacter.surname = "Leon";<br><br>
+                                Aaaaaaaaaaaaaaand we can access our functions on the fly and modify them:<br><br>
+                                gameCharacter.zPosition = 0;<br>
+                                gameCharacter.move = function(x,y) {<br>
+                                &nbsp;this.xPos += x;<br>
+                                &nbsp;this.yPos += y;<br>
+                                };<br><br>
+                                <strong>Debug will show value of endPointString.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-17" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-17"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
                       </ul>
                     </div> <!-- /Course notes content -->
                   </div>
