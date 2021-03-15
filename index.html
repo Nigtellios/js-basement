@@ -2043,6 +2043,175 @@
                           </div>
                         </li> <!-- /SINGLE TASK -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 86 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 86: Add New Properties to a JavaScript Object</h4>
+                            <p class="single-item__paragraph">
+                              You can add new properties to existing JS Objects the same way you would modify them.<br><br>
+                              var propHunt = {<br>
+                              &nbsp;hunter: 'Prop Hunter',<br>
+                              &nbsp;weapon: 'Kukri Knife'<br>
+                              }<br><br>
+                              propHunt.jacket = 'Bomber';<br>
+                              //^ or we can also do propHunt["jacket"] = 'Bomber';<br><br>
+                              <strong>Debug will show value of propHunt.jacket.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-86" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-86"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 87 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 87: Delete Properties from a JavaScript Object</h4>
+                            <p class="single-item__paragraph">
+                              We can also delete properties from objects like this:<br><br>
+                              var shoppingList = {<br>
+                                items: ['Milk ', 'Cheese ', 'Cheese cake '],<br>
+                                prices: 1<br>
+                              }<br><br>
+                              delete shoppingList.items[2];<br>
+                              delete shoppingList.prices;<br><br>
+                              <strong>Debug will show value of shoppingList.items.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-87" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-87"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 88 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 88: Using Objects for Lookups</h4>
+                            <p class="single-item__paragraph">
+                              Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to lookup values rather than a switch or an if/else chain. This is most useful when you know that your input data is limited to a certain range.<br><br>
+                              var customerList = {<br>
+                              &nbsp;1: 'Martin',<br>
+                              &nbsp;2: 'Jacob',<br>
+                              &nbsp;3: 'John',<br>
+                              &nbsp;4: 'Tery',<br>
+                              &nbsp;5: 'Mercedes',<br>
+                              &nbsp;6: 'Ken',<br>
+                              &nbsp;7: 'Lee'<br>
+                              };<br><br>
+                              customerList[1];<br>
+                              customerList[5];<br><br>
+                              var selectedCustomer = 7;<br>
+                              customerList[selectedCustomer];<br><br>
+                              Or something more advanced:<br><br>
+                              function lookForCustomer(customerID) {<br>
+                              &nbsp;var searchResult = "";<br>
+                              &nbsp;var customerLookupList = {<br>
+                              &nbsp;&nbsp;1: 'Martin',<br>
+                              &nbsp;&nbsp;2: 'Jacob',<br>
+                              &nbsp;&nbsp;3: 'John',<br>
+                              &nbsp;&nbsp;4: 'Tery',<br>
+                              &nbsp;&nbsp;5: 'Mercedes',<br>
+                              &nbsp;&nbsp;6: 'Ken',<br>
+                              &nbsp;&nbsp;7: 'Lee'<br>
+                              &nbsp;};<br>
+                              &nbsp;searchResult = customerLookupList[customerID];<br>
+                              &nbsp;return searchResult;<br>
+                              }<br><br>
+                              lookForCustomer(4);<br><br>
+                              <strong>Debug will show values of customerList[1], customerList[5], customerList[selectedCustomer] and lookForCustomer(4);.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-88" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-88"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 89 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 89: Testing Objects for Properties</h4>
+                            <p class="single-item__paragraph">
+                              Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not.<br><br>
+                              We can do so in some ways, two of them:<br><br>
+                              var testObject = {<br>
+                              &nbsp;prop1: 'test value',<br>
+                              &nbsp;prop2: 'test value2'<br>
+                              };<br><br>
+                              testObject.hasOwnProperty('prop1');<br>
+                              testObject.hasOwnProperty('prop2');<br><br>
+                              Or more advanced one (function to test if an object passed to the function (obj) contains a specific property(checkProp). If the property is found, return that property's value. If not, then return "Not Found".<br><br>
+                              function checkObject(objectName, checkProp) {<br>
+                              &nbsp;if(objectName.hasOwnProperty(checkProp)) {<br>
+                              &nbsp;&nbsp;return objectName[checkProp];<br>
+                              &nbsp;} else {<br>
+                              &nbsp;&nbsp;return "Not Found.";<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              checkObject(testObject, 'prop1');<br><br>
+                              <strong>Debug will show execution of testObject.hasOwnProperty('prop1'), testObject.hasOwnProperty('prop2') and checkObject(testObject, 'prop1').</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-89" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-89"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 90 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 90: Manipulating Complex Objects</h4>
+                            <p class="single-item__paragraph">
+                              Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions and objects. Let's create one of examples: <br><br>
+                              var carModels = [<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;'manufacturer': 'Fiat',<br>
+                              &nbsp;&nbsp;'name': 'Punto',<br>
+                              &nbsp;&nbsp;'yearOfProduction': 1998,<br>
+                              &nbsp;&nbsp;'variants': [<br>
+                              &nbsp;&nbsp;&nbsp;'Pink',<br>
+                              &nbsp;&nbsp;&nbsp;'Orange',<br>
+                              &nbsp;&nbsp;&nbsp;'Red',<br>
+                              &nbsp;&nbsp;&nbsp;'Blue'<br>
+                              &nbsp;&nbsp;],<br>
+                              &nbsp;&nbsp;'doors': 5<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;'manufacturer': 'Fiat',<br>
+                              &nbsp;&nbsp;'name': 'Uno',<br>
+                              &nbsp;&nbsp;'yearOfProduction': 2002,<br>
+                              &nbsp;&nbsp;'variants': [<br>
+                              &nbsp;&nbsp;&nbsp;'Black',<br>
+                              &nbsp;&nbsp;&nbsp;'Brown',<br>
+                              &nbsp;&nbsp;&nbsp;'White',<br>
+                              &nbsp;&nbsp;&nbsp;'Violet'<br>
+                              &nbsp;&nbsp;],<br>
+                              &nbsp;&nbsp;'doors': 5<br>
+                              &nbsp;}<br>
+                              ];<br><br>
+                              This is an array which contains one object inside. This object has various pieces of metadata about car models. It also has a nested bariants array. If we want to add more variants, we can do this by adding something to the top level array. Objects hold data in a property, which has a key-value format. In the example above, "manufacturer": "Fiat" is a property that has a key of manufacturer and a value of Fiat. JS Object Notation or JSON is a related data interchange format used to store data. https://www.json.org/json-en.html Also, you would need to place a comma after every object in the array, unless it is the last object in the array.<br><br>
+                              <strong>Debug will show execution of carModels[0].manufacturer and carModels[1].name.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-90" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-90"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
