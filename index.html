@@ -1950,13 +1950,13 @@
                       <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-top-zenva"><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-bot-zenva"><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/zenva-scripts.js"><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
                     </div>
                   </aside> <!-- /Course notes TOOLBAR -->
 
@@ -1964,7 +1964,7 @@
                     <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
                       <img src="/media/zenva-academy.png" width="auto" height="60"> <h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
-                    <div class="slide-container__content-single__wrap"> <!-- Course notes content -->
+                    <div id="zenva" class="slide-container__content-single__wrap"> <!-- Course notes content -->
                       <ul class="wrap__list">
                         <li class="wrap__list__module__header">
                           <span class="marker--cyan"></span>
@@ -2488,7 +2488,7 @@
                             <p class="single-item__paragraph">
                               <p class="single-item__paragraph">
                                 let endOfMap_Z15 = 500;<br>
-                                let aPos_Z15 = 0;<br>
+                                let aPos_Z15 = 15;<br>
                                 let enemyPos_Z15 = 250;<br>
                                 let isGameOver_Z15 = false;<br><br>
                                 //&nbsp;while(aPos_Z15 < endOfMap_Z15) {<br>
@@ -2523,7 +2523,7 @@
                                 &nbsp;&nbsp;}<br>
                                 &nbsp;}<br>
                                 }<br><br>
-                                So actually we can move out the entire function with our „return" instead of breaking iterations of whole loop.<br><br>
+                                So actually we can move out the entire function with our return instead of breaking iterations of whole loop.<br><br>
                                 <strong>Debug will show execution of movePlayer_Z15().</strong>
                               </p>
                             <div class="single-item__debug-box">
@@ -2610,6 +2610,174 @@
                           </div>
                         </li> <!-- /SINGLE TASK -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 18 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 18: References, Object Getters and Setters</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                By general, there are NO POINTERS in JavaScript. Let's have a look but first let's write some simple object.<br><br>
+                                let simpleObject = {<br>
+                                &nbsp;id: 0,<br>
+                                &nbsp;rowName: "null",<br>
+                                &nbsp;columnName: "First",<br>
+                                &nbsp;profession: "magician",<br>
+                                &nbsp;title: "Wizard",<br>
+                                &nbsp;Now we want to get our title and profession from simpleObject and connect them together. We used it inside of an object, now every time we would use that it would just compute our full name.<br>
+                                &nbsp;get connection() {<br>
+                                &nbsp;&nbsp;let fullName = this.title + ", the " + this.profession + ".";<br>
+                                &nbsp;&nbsp;return fullName;<br>
+                                &nbsp;}<br>
+                                };<br><br>
+                                And now, speaking by logic:<br><br>
+                                let i = 5; // variable i is equal to 5, so we assign a value to the variable j<br>
+                                let j = i; // but now, the all it is doing it's copying the value of i into j, i remains the same (5), while j takes new value<br>
+                                i = 10; // now j remains the same, because we change value in previous step, but we are not changing j after that. let's test this out<br><br>
+                                So on, this whole sequence is just copying a value. However, if we create something like:<br><br>
+                                let refName = simpleObject; //This is called reference.<br>
+                                refName.id = 1; <br><br>
+                                So now, refName.id is equal to 1, and the same the simpleObject id property is equal to 1.<br><br>
+                                Now let's create some fancy getters and setters.<br><br>
+                                //&nbsp;get connection() {<br>
+                                //&nbsp;&nbsp;let fullName = this.title + " , the " + this.profession;<br>
+                                //&nbsp;&nbsp;return fullName;<br>
+                                //&nbsp;}<br><br>
+                                simpleObject.connection;<br><br>
+                                Let's create some setter. They are used to modify some properties.<br><br>
+                                let crowd = {<br>
+                                &nbsp;id: 0,<br>
+                                &nbsp;countPeople: 12,<br>
+                                &nbsp;set maxPeople(counter) {<br>
+                                &nbsp;&nbsp;this.countPeople = counter;<br>
+                                &nbsp;&nbsp;// So every time we set max people then we are changing countPeople to it.<br>
+                                &nbsp;}<br>
+                                }<br><br>
+                                crowd.maxPeople = 50;<br><br>
+                                Now it would change our countPeople to 50, but the crowd.maxPeople itself is UNDEFINED.<br><br>
+                                <strong>Debug will show values of  j, i, simpleObject.id, refName.id, simpleObject.connection and crowd.countPeople.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-18" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-18"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 19 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 19: Object Functions</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                We are going to create multiple instances of single object.<br><br>
+                                This kind of abstraction allows us to create multiple, infinite instances of object while we have to copy standard one to create another instances.<br><br>
+                                function townNPC(id, name, title, pos) {<br>
+                                &nbsp;this.id = id;<br>
+                                &nbsp;this.name = name;<br>
+                                &nbsp;this.title = title;<br>
+                                &nbsp;this.pos = pos;<br>
+                                &nbsp;this.move = function(x) {<br>
+                                &nbsp;&nbsp;this.pos += x;<br>
+                                &nbsp;}<br>
+                                &nbsp;this.type = "default"; // If some value is not passed as a parameter, it would be<br>
+                                &nbsp;// default for this whole object type. It is useful when we would use some (the same)<br>
+                                &nbsp;// function on every instance of single object type.<br>
+                                }<br><br>
+                                However, this it something like blueprint, now we are going to create instance of this object. To do this, we have to use NEW keyword.<br><br>
+                                let salesman = new townNPC(0, "Maverick", "Salesman", 120); // So now we store those values in salesman.<br><br>
+                                <strong>Debug will show values of salesman.name, salesman.id , salesman.title and salesman.pos</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-19" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-19"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 20 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 20: Object Prototypes</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                function constructor(id, posX, posY, name, swingPos) {<br>
+                                &nbsp;this.id = id;<br>
+                                &nbsp;this.posX = posX;<br>
+                                &nbsp;this.posY = posY;<br>
+                                &nbsp;this.name = name;<br>
+                                &nbsp;this.swingPos = swingPos;<br>
+                                }<br><br>
+                                And now let's try to create another property on the fly by doing prototype.<br><br>
+                                let crane = new constructor(1, 15, 35, "Meril 1", 0);<br>
+                                crane.title = "Mother Crane";<br><br>
+                                So actually we've added another value to our Obj as a func, but it would not appear in another instance because we've added it on the fly to this one, it is not attached to our „blueprint".<br><br>
+                                let crane2 = new constructor(2, 50, 590, "Meril 2");<br>
+                                crane2.title;<br><br>
+                                So it is undefined, as should be, it is an reference error. We can outsmart it using prototype. Now every instance of Object as a Function would have this property.<br><br>
+                                constructor.prototype.profession = "Blacksmith";<br><br>
+                                Ofc later on, we can reassign these values, just „Blacksmith" is now the default one for whole blueprint. Let's use it more complex. Let's create a function that would heal our character.<br><br>
+                                let swingCrane = function(swingAmount) {<br>
+                                &nbsp;this.swingPos += swingAmount;<br>
+                                }<br><br>
+                                constructor.prototype.swingCrane = swingCrane;<br>
+                                crane.swingCrane(20);<br>
+                                crane2.swingCrane(40);<br><br>
+                                This function done on crane2 would return undefined, because our value was not defines in 2nd object instance assign.<br><br>
+                                <strong>Debug will show values of crane.id, crane.posX, crane.posY, crane.name, crane.title, crane2.title, crane.profession, crane.swingPos and crane2.swingPos.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-20" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-20"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 21 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 21: Classes</h4>
+                            <p class="single-item__paragraph">
+                              <p class="single-item__paragraph">
+                                class gameCharacter2 {<br>
+                                &nbsp;constructor(id, name, title, health, mana, xPosition) {<br>
+                                &nbsp;&nbsp;this.id = id;<br>
+                                &nbsp;&nbsp;this.name = name;<br>
+                                &nbsp;&nbsp;this.title = title;<br>
+                                &nbsp;&nbsp;this.health = health;<br>
+                                &nbsp;&nbsp;this.mana = mana;<br>
+                                &nbsp;&nbsp;this.xPosition = xPosition;<br>
+                                &nbsp;}<br>
+                                &nbsp;move(distance){<br>
+                                &nbsp;&nbsp;this.xPosition += distance;<br>
+                                &nbsp;}<br>
+                                }<br><br>
+                                let warrior = new gameCharacter2(1, "Dave", "Barbarian", 150, 100, 200);<br><br>
+                                warrior.move(50);<br><br>
+                                Now let's talk about inheritance of classes. We want to use keyword super to inherit properties from parent class, also if we want to add something that doesn't exist in parent class, we can easily do so.<br><br>
+                                class elfCharacter extends gameCharacter2 {<br>
+                                &nbsp;constructor(id, name, title, health, mana, xPosition){<br>
+                                &nbsp;&nbsp;super(id, name, title, health, mana, xPosition);<br>
+                                &nbsp;&nbsp;this.fishingSkillLevel = 0;<br>
+                                &nbsp;}<br>
+                                }<br><br>
+                                Right up the fishingSkillLevel only exists in elfCharacter, so in children class that inherit values from parent class. Parent class.<br><br>
+                                <strong>Debug will show value of warrior.name.</strong>
+                              </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-zenva-task-21" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="zenva-task-21"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
                       </ul>
                     </div> <!-- /Course notes content -->
                   </div>
@@ -2623,13 +2791,13 @@
                       <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-top-my-own"><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-bot-my-own"><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/my-own-script.js"><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
                     </div>
                   </aside> <!-- /Course notes TOOLBAR -->
 
@@ -2637,7 +2805,7 @@
                     <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
                       <img src="/media/js-logo.png" width="auto" height="60"> <h2>My Own Experiments</h2>
                     </div> <!-- /Course notes HEADER -->
-                    <div class="slide-container__content-single__wrap"> <!-- Course notes content -->
+                    <div id="my-own" class="slide-container__content-single__wrap"> <!-- Course notes content -->
                       <ul class="wrap__list">
                         <li class="wrap__list__module__header">
                           <span class="marker--cyan"></span>
@@ -2710,7 +2878,8 @@
   <script src="/js/slider-tiny-slider.js"></script>
   <script src="/js/layout-scripts.js"></script>
   <script src="/js/fcc-scripts.js"></script>
-  <script src="/js/zenva-old-script.js"></script>
+  <script src="/js/zenva-scripts.js"></script>
+  <script src="/js/my-own-scripts.js"></script>
 </body>
 
 </html>
