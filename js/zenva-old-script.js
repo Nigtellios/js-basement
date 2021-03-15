@@ -657,7 +657,7 @@ if (btnZ14 !== null && scopeZ14 !== null) {
 /* Task 15 - Control Statements */ 
 
 let endOfMap_Z15 = 500;
-let aPos_Z15 = 0;
+let aPos_Z15 = 15;
 let enemyPos_Z15 = 250;
 let isGameOver_Z15 = false;
 
@@ -691,7 +691,7 @@ endOfMap_Z15 = 20;
 
 function movePlayer_Z15() {
   while(aPos_Z15 < endOfMap_Z15) {
-   aPos_Z15 ++;
+   aPos_Z15++;
    if(aPos_Z15 == enemyPos_Z15) {
      console.log("You've met enemy! Game is lost!");
      return;
