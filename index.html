@@ -1922,16 +1922,122 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 81 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 81: DUMMY</h4>
+                            <h4 class="single-item__header">Task 81: Build JavaScript Objects</h4>
                             <p class="single-item__paragraph">
-                              DUMMY <br><br>
+                              Objects are similar to arrays, but except that instead of using indexes to access and modify their data, you access the data in objects through what are called properties. Objects are useful for storing data in a structured way, and can represent real world objects. You can store all the properties in many different data types, strings, numbers, or even in quotes for single-word string properties. However, if your object has any non-string properties, JavaScript will automatically typecast them as strings.<br><br>
+                              var myDog = {<br>
+                              &nbsp;name: 'Arturro',<br>
+                              &nbsp;legs: 4,<br>
+                              &nbsp;tails: 1,<br>
+                              &nbsp;friends: ['Adan', 'Lovi']<br>
+                              };<br><br>
                               &nbsp;
-                              <strong>Debug will show execution of DUMMY.</strong>
+                              <strong>Debug will show execution of myDog.name .</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-81" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
                                 <p class="single-item__paragraph"><span id="fcc-task-81"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 82 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 82: Accessing Object Properties with Dot Notation</h4>
+                            <p class="single-item__paragraph">
+                              There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array. Dot notation is what you use when you know the name of the property you're trying to access ahead of time.<br><br>
+                              var carShop = {<br>
+                              &nbsp;'cars': ['Ferrari Enzo', 'Fiat Uno', 'Toyota Avensis'],<br>
+                              &nbsp;'prices': ['500000', '15000', '45000'],<br>
+                              &nbsp;'location': ['Gdynia']<br>
+                              };<br><br>
+                              var buyFirstCar = `${carShop.cars[0]}, price: ${carShop.prices[0]}`;<br><br>
+                              &nbsp;
+                              <strong>Debug will show execution of buyFirstCar.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-82" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-82"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+                        
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 83 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 83: Accessing Object Properties with Bracket Notation</h4>
+                            <p class="single-item__paragraph">
+                              The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation. However, you can still use bracket notation on object properties without spaces. Note that property names with spaces in them must be in quotes (single or double).<br><br>
+                              var myPub = {<br>
+                              &nbsp;'beer barrels': ['Barrel of Tyskie', 'Barrel of Harnas', 'Barrel of Perelka'],<br>
+                              &nbsp;'beer prices': ['300zl', '280zl', '310zl']<br>
+                              }<br><br>
+                              var buyFirstBarrel = `${myPub['beer barrels'][0]} With price of: ${myPub['beer prices'][0]}`;<br><br>
+                              <strong>Debug will show execution of buyFirstCar.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-83" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-83"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 84 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 84: Accessing Object Properties with Variables</h4>
+                            <p class="single-item__paragraph">
+                              Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.<br><br>
+                              Another way you can use this concept is when the property's name is collected dynamically during the program execution. Note that we do not use quoter around the variable name when using it to access the property, because we are using the value of the variable, not the name. So:<br><br>
+                              var patData = {<br>
+                              &nbsp;patName: "Marcin Soczynski"<br>
+                              };<br><br>
+                              function patPrefix(str) {<br>
+                              &nbsp;var prefix = "pat";<br>
+                              &nbsp;return prefix + str;<br>
+                              }<br><br>
+                              var downloadPat = patPrefix("Name");<br><br>
+                              You can also do it not-dynamicaly via:<br><br>
+                              var dogList = {<br>
+                              &nbsp;Terrier: "Abel.", Doberman: "Kenie.", Labrador: "Es."<br>
+                              };<br><br>
+                              var myOwnDog = "Doberman";<br>
+                              var myDogBreed = dogList[myOwnDog];<br><br>
+                              <strong>Debug will show execution of patData[downloadPat] and myDogBreed.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-84" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-84"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 85 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 85: Updating Object Properties</h4>
+                            <p class="single-item__paragraph">
+                              After creating JS object, we can update its properties at any time just like we would update any other variable. We can use either dot or bracket notation to update them.<br><br>
+                              var updateObject = {<br>
+                              &nbsp;versions: ['v1.0.0' , 'v1.0.1'],<br>
+                              &nbsp;branches: ['main', 'dev']<br>
+                              }<br><br>
+                              updateObject.versions[0] = 'v0.9.9';<br><br>
+                              <strong>Debug will show value of updateObject.versions[0].</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-85" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-85"></span></p>
                               </div>
                             </div>
                           </div>

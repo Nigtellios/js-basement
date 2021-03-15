@@ -2024,4 +2024,147 @@ if (btnFCC80 !== null && scopeFCC80 !== null) {
 
 /* Task 81: Build JavaScript Objects */
 
-/* 11.03.2021 - IT'S FINISHING TIME! <3 */
+/* Objects are similar to arrays, but except that instead of using indexes to access and modify their data, you access the data in objects through what are called properties. Objects are useful for storing data in a structured way, and can represent real world objects. You can store all the properties in many different data types, strings, numbers, or even in quotes for single-word string properties. However, if your object has any non-string properties, JavaScript will automatically typecast them as strings. */
+
+var myDog = {
+  name: 'Arturro',
+  legs: 4,
+  tails: 1,
+  friends: ['Adan', 'Lovi']
+};
+
+/* OUTPUT CODE */
+
+const btnFCC81 = document.getElementById('run-fcc-task-81');
+const scopeFCC81 = document.getElementById('fcc-task-81');
+
+function debugFCC81() {
+  scopeFCC81.innerHTML = outputResponse + myDog.name;
+}
+
+if (btnFCC81 !== null && scopeFCC81 !== null) {
+  btnFCC81.addEventListener('click', debugFCC81);
+} else {
+  scopeFCC81.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 82: Accessing Object Properties with Dot Notation */
+
+/* There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array. Dot notation is what you use when you know the name of the property you're trying to access ahead of time. */
+
+var carShop = {
+  'cars': ['Ferrari Enzo', 'Fiat Uno', 'Toyota Avensis'],
+  'prices': ['500000', '15000', '45000'],
+  'location': ['Gdynia']
+};
+
+var buyFirstCar = `${carShop.cars[0]}, price: ${carShop.prices[0]}`;
+
+/* OUTPUT CODE */
+
+const btnFCC82 = document.getElementById('run-fcc-task-82');
+const scopeFCC82 = document.getElementById('fcc-task-82');
+
+function debugFCC82() {
+  scopeFCC82.innerHTML = outputResponse + buyFirstCar;
+}
+
+if (btnFCC82 !== null && scopeFCC82 !== null) {
+  btnFCC82.addEventListener('click', debugFCC82);
+} else {
+  scopeFCC82.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 83: Accessing Object Properties with Bracket Notation */
+
+/* The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation. However, you can still use bracket notation on object properties without spaces. Note that property names with spaces in them must be in quotes (single or double). */
+
+var myPub = {
+  'beer barrels': ['Barrel of Tyskie', 'Barrel of Harnas', 'Barrel of Perelka'],
+  'beer prices': ['300zl', '280zl', '310zl']
+}
+
+var buyFirstBarrel = `${myPub['beer barrels'][0]} With price of: ${myPub['beer prices'][0]}`;
+
+
+/* OUTPUT CODE */
+
+const btnFCC83 = document.getElementById('run-fcc-task-83');
+const scopeFCC83 = document.getElementById('fcc-task-83');
+
+function debugFCC83() {
+  scopeFCC83.innerHTML = outputResponse + buyFirstBarrel;
+}
+
+if (btnFCC83 !== null && scopeFCC83 !== null) {
+  btnFCC83.addEventListener('click', debugFCC83);
+} else {
+  scopeFCC83.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 84: Accessing Object Properties with Variables */
+
+/* Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table. */
+
+/* Another way you can use this concept is when the property's name is collected dynamically during the program execution. Note that we do not use quoter around the variable name when using it to access the property, because we are using the value of the variable, not the name. So: */
+
+var patData = {
+  patName: "Marcin Soczynski"
+};
+
+function patPrefix(str) {
+  var prefix = "pat";
+  return prefix + str;
+}
+
+var downloadPat = patPrefix("Name");
+
+/* You can also do it not-dynamicaly via: */
+
+var dogList = {
+  Terrier: "Abel.", Doberman: "Kenie.", Labrador: "Es."
+};
+
+var myOwnDog = "Doberman";
+var myDogBreed = dogList[myOwnDog];
+
+/* OUTPUT CODE */
+
+const btnFCC84 = document.getElementById('run-fcc-task-84');
+const scopeFCC84 = document.getElementById('fcc-task-84');
+
+function debugFCC84() {
+  scopeFCC84.innerHTML = outputResponse + 'Dynamicaly: ' + patData[downloadPat] + '. Non dynamicaly: ' + myDogBreed;
+}
+
+if (btnFCC84 !== null && scopeFCC84 !== null) {
+  btnFCC84.addEventListener('click', debugFCC84);
+} else {
+  scopeFCC84.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 85: Updating Object Properties */
+
+/* After creating JS object, we can update its properties at any time just like we would update any other variable. We can use either dot or bracket notation to update them. */
+
+var updateObject = {
+  versions: ['v1.0.0' , 'v1.0.1'],
+  branches: ['main', 'dev']
+}
+
+updateObject.versions[0] = 'v0.9.9';
+
+/* OUTPUT CODE */
+
+const btnFCC85 = document.getElementById('run-fcc-task-85');
+const scopeFCC85 = document.getElementById('fcc-task-85');
+
+function debugFCC85() {
+  scopeFCC85.innerHTML = outputResponse + updateObject.versions[0];
+}
+
+if (btnFCC85 !== null && scopeFCC85 !== null) {
+  btnFCC85.addEventListener('click', debugFCC85);
+} else {
+  scopeFCC85.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
