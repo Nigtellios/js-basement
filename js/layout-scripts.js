@@ -35,8 +35,8 @@ function buttonsListeners() {
   firstSlideButtonDown.addEventListener('click', function(){scrollToBot(firstSlideTargetDiv)});
   secondSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
   secondSlideButtonDown.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
-  thirdSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
-  thirdSlideTargetDiv.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
+  thirdSlideButtonUp.addEventListener('click', function(){scrollToTop(thirdSlideTargetDiv)});
+  thirdSlideButtonDown.addEventListener('click', function(){scrollToBot(thirdSlideTargetDiv)});
 }
 
 window.onload = buttonsListeners();
