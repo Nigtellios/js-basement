@@ -2366,3 +2366,43 @@ if (btnFCC90 !== null && scopeFCC90 !== null) {
   scopeFCC90.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* Task 91: Accessing Nested Objects */
+
+/* The sub-properties of objects can be accessed by chaining together the dot or bracket notation. */
+
+var myChest = {
+  "inside" : {
+    "top": {
+      "socket": "old shirt"
+    },
+    "bottom": {
+      "sachet": {
+        "first": "old maps",
+        "second": "old poster"
+      }
+    }
+  }
+};
+
+var whatsInsideChest = myChest.inside.top["socket"];
+var whatsInsideChest2 = myChest.inside.bottom["sachet"].second;
+
+/* OUTPUT CODE */
+
+const btnFCC91 = document.getElementById('run-fcc-task-91');
+const scopeFCC91 = document.getElementById('fcc-task-91');
+
+function debugFCC91() {
+  scopeFCC91.innerHTML = outputResponse + whatsInsideChest + ', ' + whatsInsideChest2;
+}
+
+if (btnFCC91 !== null && scopeFCC91 !== null) {
+  btnFCC91.addEventListener('click', debugFCC91);
+} else {
+  scopeFCC91.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 91: Accessing Nested Arrays */
+
+/* As we have seen in earlies examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays. */
+

@@ -2215,15 +2215,62 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 91 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 90: Accessing Nested Objects</h4>
+                            <h4 class="single-item__header">Task 91: Accessing Nested Objects</h4>
                             <p class="single-item__paragraph">
-                              
-                              <strong>Debug will show execution of carModels[0].manufacturer and carModels[1].name.</strong>
+                              The sub-properties of objects can be accessed by chaining together the dot or bracket notation.<br><br>
+                              var myChest = {<br>
+                                "inside" : {<br>
+                                  "top": {<br>
+                                    "socket": "old shirt"<br>
+                                  },<br>
+                                  "bottom": {<br>
+                                    "sachet": {<br>
+                                      "first": "old maps",<br>
+                                      "second": "old poster"<br>
+                                    }<br>
+                                  }<br>
+                                }<br>
+                              };<br><br>
+                              var whatsInsideChest = myChest.inside.top["socket"];<br>
+                              var whatsInsideChest2 = myChest.inside.bottom["sachet"].second;<br><br>
+                              <strong>Debug will show values of whatsInsideChest and whatsInsideChest2.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-91" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
                                 <p class="single-item__paragraph"><span id="fcc-task-91"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 92 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 92: Accessing Nested Arrays</h4>
+                            <p class="single-item__paragraph">
+                              The sub-properties of objects can be accessed by chaining together the dot or bracket notation.<br><br>
+                              var myChest = {<br>
+                                "inside" : {<br>
+                                  "top": {<br>
+                                    "socket": "old shirt"<br>
+                                  },<br>
+                                  "bottom": {<br>
+                                    "sachet": {<br>
+                                      "first": "old maps",<br>
+                                      "second": "old poster"<br>
+                                    }<br>
+                                  }<br>
+                                }<br>
+                              };<br><br>
+                              var whatsInsideChest = myChest.inside.top["socket"];<br>
+                              var whatsInsideChest2 = myChest.inside.bottom["sachet"].second;<br><br>
+                              <strong>Debug will show values of whatsInsideChest and whatsInsideChest2.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-92" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-92"></span></p>
                               </div>
                             </div>
                           </div>
