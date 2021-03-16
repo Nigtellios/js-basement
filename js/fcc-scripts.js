@@ -2516,11 +2516,11 @@ if (btnFCC93 !== null && scopeFCC93 !== null) {
 /* The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true. */
 
 var whileArray = [];
-var i = 0;
+var i_T94 = 0;
 
-while (i < 5) {
-  whileArray.push(i);
-  i++;
+while (i_T94 < 5) {
+  whileArray.push(i_T94);
+  i_T94++;
 }
 
 /* In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.*/
