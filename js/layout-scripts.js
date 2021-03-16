@@ -1,16 +1,20 @@
-/* Assign FreeCodeCamp Toolbar buttons */
-const bttFccTop = document.getElementById('go-to-top-fcc');
-const bttFccBot = document.getElementById('go-to-bot-fcc');
-const bttZTop = document.getElementById('go-to-top-zenva');
-const bttZBot = document.getElementById('go-to-bot-zenva');
-const bttMyOwnTop = document.getElementById('go-to-top-my-own');
-const bttMyOwnBot = document.getElementById('go-to-bot-my-own');
+/* Assign buttons IDs to variables */
+const firstSlideButtonUp = document.getElementById('go-to-top-fcc');
+const firstSlideButtonDown = document.getElementById('go-to-bot-fcc');
 
-/* Assign FreeCodeCamp and Zenva slider divs */
-const fcc = document.getElementById('fcc');
-const zenva = document.getElementById('zenva');
-const myOwn = document.getElementById('my-own');
+const secondSlideButtonUp = document.getElementById('go-to-top-zenva');
+const secondSlideButtonDown = document.getElementById('go-to-bot-zenva');
 
+const thirdSlideButtonUp = document.getElementById('go-to-top-my-own');
+const thirdSlideButtonDown = document.getElementById('go-to-bot-my-own');
+
+
+/* Assign Slider inner-divs */
+const firstSlideTargetDiv = document.getElementById('fcc');
+const secondSlideTargetDiv = document.getElementById('zenva');
+const thirdSlideTargetDiv = document.getElementById('my-own');
+
+/* Re-Usable scroll functions */
 function scrollToTop(targetDivTop) {
   targetDivTop.scrollTo({
     top: 0,
@@ -25,31 +29,32 @@ function scrollToBot(targetDivBot) {
   });
 }
 
-/* Check if buttons exists before listening to it */
+
+/* Check if buttons exists and listen to them */
 
 /* FCC */
-if (bttFccTop !== null) {
-  bttFccTop.addEventListener('click', function(){scrollToTop(fcc)});
+if (firstSlideButtonUp !== null) {
+  firstSlideButtonUp.addEventListener('click', function(){scrollToTop(firstSlideTargetDiv)});
 } 
 
-if (bttFccBot !== null) {
-  bttFccBot.addEventListener('click', function(){scrollToBot(fcc)});
+if (firstSlideButtonDown !== null) {
+  firstSlideButtonDown.addEventListener('click', function(){scrollToBot(firstSlideTargetDiv)});
 } 
 
 /* Zenva */
-if (bttZTop !== null) {
-  bttZTop.addEventListener('click', function(){scrollToTop(zenva)});
+if (secondSlideButtonUp !== null) {
+  secondSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
 } 
 
-if (bttZBot !== null) {
-  bttZBot.addEventListener('click', function(){scrollToBot(zenva)});
+if (secondSlideButtonDown !== null) {
+  secondSlideButtonDown.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
 }
 
 /* My Own */
-if (bttMyOwnTop !== null) {
-  bttMyOwnTop.addEventListener('click', function(){scrollToTop(myOwn)});
+if (thirdSlideButtonUp !== null) {
+  thirdSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
 } 
 
-if (bttMyOwnBot !== null) {
-  bttMyOwnBot.addEventListener('click', function(){scrollToBot(myOwn)});
+if (thirdSlideTargetDiv !== null) {
+  thirdSlideTargetDiv.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
 }
