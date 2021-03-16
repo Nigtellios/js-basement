@@ -2365,3 +2365,4 @@ if (btnFCC90 !== null && scopeFCC90 !== null) {
 } else {
   scopeFCC90.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
