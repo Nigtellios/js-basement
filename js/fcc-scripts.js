@@ -2402,7 +2402,145 @@ if (btnFCC91 !== null && scopeFCC91 !== null) {
   scopeFCC91.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 91: Accessing Nested Arrays */
+/* Task 92: Accessing Nested Arrays */
 
 /* As we have seen in earlies examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays. */
+
+var doorAccessList = [
+  {
+    workerID: 1,
+    name: 'David',
+    position: 'Assistant',
+    entries: [
+      '16.03.2021',
+      '17.03.2021'
+    ]
+  },
+  {
+    workerID: 2,
+    name: 'John',
+    position: 'CTO',
+    entries: [
+      '16.03.2021',
+      '17.03.2021'
+    ]
+  }
+];
+
+doorAccessList[0].name;
+doorAccessList[1].entries[1];
+
+/* OUTPUT CODE */
+
+const btnFCC92 = document.getElementById('run-fcc-task-92');
+const scopeFCC92 = document.getElementById('fcc-task-92');
+
+function debugFCC92() {
+  scopeFCC92.innerHTML = outputResponse + doorAccessList[0].name + ', ' + doorAccessList[1].entries[1];
+}
+
+if (btnFCC92 !== null && scopeFCC92 !== null) {
+  btnFCC92.addEventListener('click', debugFCC92);
+} else {
+  scopeFCC92.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 93: Record Collection */
+
+/* You are given a JSON object representing a part of your musical album collection. Each album has a unique id number as its key and several other properties. Not all albums have complete information.
+
+You start with an updateRecords function that takes an object like collection, an id, a prop (like artist or tracks), and a value. Complete the function using the rules below to modify the object passed to the function.
+
+Your function must always return the entire object.
+If prop isn't tracks and value isn't an empty string, update or set that album's prop to value.
+If prop is tracks but the album doesn't have a tracks property, create an empty array and add value to it.
+If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.
+If value is an empty string, delete the given prop property from the album. */
+
+var collection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+function updateRecords(object, id, prop, value) {
+  if (prop !== 'tracks' && value !== "") {
+    object[id][prop] = value;
+  } else if (prop === "tracks" && object[id].hasOwnProperty("tracks") === false) {
+    object[id][prop] = [value];
+  } else if (prop === "tracks" && value !== "") {
+    object[id][prop].push(value);
+  } else if (value === "") {
+    delete object[id][prop];
+  }
+  return object;
+}
+
+updateRecords(collection, 5439, 'artist', 'John Lemon');
+
+var collectionUpdateOutput = collection['5439'].artist;
+
+/* OUTPUT CODE */
+
+const btnFCC93 = document.getElementById('run-fcc-task-93');
+const scopeFCC93 = document.getElementById('fcc-task-93');
+
+function debugFCC93() {
+  scopeFCC93.innerHTML = outputResponse + collectionUpdateOutput;
+}
+
+if (btnFCC93 !== null && scopeFCC93 !== null) {
+  btnFCC93.addEventListener('click', debugFCC93);
+} else {
+  scopeFCC93.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 94: Iterate with JavaScript While Loops */
+
+/* We can run the same code multiple times by using a loop. */
+
+/* The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true. */
+
+var whileArray = [];
+var i = 0;
+
+while (i < 5) {
+  whileArray.push(i);
+  i++;
+}
+
+/* In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.*/
+
+var whileOutput = whileArray;
+
+/* OUTPUT CODE */
+
+const btnFCC94 = document.getElementById('run-fcc-task-94');
+const scopeFCC94 = document.getElementById('fcc-task-94');
+
+function debugFCC94() {
+  scopeFCC94.innerHTML = outputResponse + whileOutput;
+}
+
+if (btnFCC94 !== null && scopeFCC94 !== null) {
+  btnFCC94.addEventListener('click', debugFCC94);
+} else {
+  scopeFCC94.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 95: Iterate with JavaScript For Loops */
 

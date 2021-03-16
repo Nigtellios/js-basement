@@ -30,31 +30,13 @@ function scrollToBot(targetDivBot) {
 }
 
 
-/* Check if buttons exists and listen to them */
-
-/* FCC */
-if (firstSlideButtonUp !== null) {
+function buttonsListeners() {
   firstSlideButtonUp.addEventListener('click', function(){scrollToTop(firstSlideTargetDiv)});
-} 
-
-if (firstSlideButtonDown !== null) {
   firstSlideButtonDown.addEventListener('click', function(){scrollToBot(firstSlideTargetDiv)});
-} 
-
-/* Zenva */
-if (secondSlideButtonUp !== null) {
   secondSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
-} 
-
-if (secondSlideButtonDown !== null) {
   secondSlideButtonDown.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
-}
-
-/* My Own */
-if (thirdSlideButtonUp !== null) {
   thirdSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
-} 
-
-if (thirdSlideTargetDiv !== null) {
   thirdSlideTargetDiv.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
 }
+
+window.onload = buttonsListeners();
