@@ -170,7 +170,7 @@ img {
   max-height: 100%;
   background: #FFC354;
   box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 0px 100px 100px 0px;
+  border-radius: 0 100px 100px 0px;
   padding: 100px 70px 100px 70px;
   display: flex;
   flex-flow: column;

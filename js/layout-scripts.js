@@ -8,7 +8,6 @@ const secondSlideButtonDown = document.getElementById('go-to-bot-zenva');
 const thirdSlideButtonUp = document.getElementById('go-to-top-my-own');
 const thirdSlideButtonDown = document.getElementById('go-to-bot-my-own');
 
-
 /* Assign Slider inner-divs */
 const firstSlideTargetDiv = document.getElementById('fcc');
 const secondSlideTargetDiv = document.getElementById('zenva');
@@ -29,14 +28,13 @@ function scrollToBot(targetDivBot) {
   });
 }
 
-
 function buttonsListeners() {
   firstSlideButtonUp.addEventListener('click', function(){scrollToTop(firstSlideTargetDiv)});
   firstSlideButtonDown.addEventListener('click', function(){scrollToBot(firstSlideTargetDiv)});
   secondSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
   secondSlideButtonDown.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
-  thirdSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
-  thirdSlideTargetDiv.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
+  thirdSlideButtonUp.addEventListener('click', function(){scrollToTop(thirdSlideTargetDiv)});
+  thirdSlideButtonDown.addEventListener('click', function(){scrollToBot(thirdSlideTargetDiv)});
 }
 
-window.onload = buttonsListeners();
+window.onload = buttonsListeners;
