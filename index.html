@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!--suppress CheckImageSize -->
 <html lang="en">
 <head>
   <!-- Basic SEO Tags -->
   <title>JavaScript Basement - by jakubkowalski.dev</title>
-  <meta name="description" content="JS Basement by jakubkowalski.dev - Created for learning purposes. It's place where I willpost my tasks or courses (which I do on daily routing) related to widely known JavaScript.">
+  <meta name="description" content="JS Basement by jakubkowalski.dev - Created for learning purposes. It's place where I will post my tasks or courses (which I do on daily routing) related to widely known JavaScript.">
   <!-- Browser -> Check for RWD availability -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Open Graph Tags -->
@@ -61,7 +62,7 @@
 
                   <div class="slide-container__content-single">
                     <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
-                      <img src="./media/fcc_primary_large.svg" width="400" height="42"><h2>Tasks</h2>
+                      <img src="./media/fcc_primary_large.svg" width="400" height="42" alt="FreeCodeCamp Logotype"><h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
                     <div id="fcc" class="slide-container__content-single__wrap"> <!-- FCC Course notes content -->
                       <ul id="list-fcc" class="wrap__list">
@@ -74,9 +75,9 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK S -->
                           <span class="marker--red"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Standarization Info:</h4>
+                            <h4 class="single-item__header">Standardization Info:</h4>
                             <p class="single-item__paragraph">
-                              The same standarization is used in every file and would not change.</br></br>
+                              The same standardization is used in every file and would not change.<br><br>
                               <strong>IN JS FILES:</strong> If some values has many duplicates in different tasks, their names has been changed with something that is sugar-like ID. In example, if I have variable "a" duplicated 3-4 times, in each task duplicated variables has other ID at the end of their name. Variable "a" in #Task 4 would stand for "a_T4" (_T4 is ID of Task 4).<br><br>
                               <strong>IN HTML FILES:</strong> Task IDs has always the same construction, they are started with name of parent div (for FreeCodeCamp ID shortcut would be "fcc". And so on: buttons attached to tasks has the same constructions but they are preceded by "run-". In example: for #Task 2, debug button ID would be "run-fcc-task-2", and span id inside debug box (from JS FILES -> debug scope) would be "fcc-task-2", which stands for Standard Task.<br><br>
                               <strong>Debug functions</strong> are based on <strong>debug buttons</strong> (with task ID, in ex. "run-fcc-task-2") and <strong>debug scopes</strong> (spans with task IDs, in ex. "fcc-task-2"), and their functionalities are all <strong>located inside JS files associated with tasks that are completed there</strong>. For better functionality, I left them all under the tasks instead of creating arrays or big lists, which simply would not be good idea while scopes still have to be defined, so Array would simply not change much instead of creating more code.<br><br>
@@ -140,7 +141,7 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 4: Assigning the Value of One Variable to Another</h4>
                             <p class="single-item__paragraph">
-                              Assigning the Value of One Variable to Another. Remeber that they are just a copy of memory instead of scope.<br><br>
+                              Assigning the Value of One Variable to Another. Remember that they are just a copy of memory instead of scope.<br><br>
                               var a_T4;<br>
                               a_T4 = 7;<br>
                               var b_T4;<br>
@@ -162,7 +163,7 @@
                             <h4 class="single-item__header">Task 5: Initializing Variables with the Assignment Operator</h4>
                             <p class="single-item__paragraph">
                               var a_T5 = 9;<br><br>
-                              Now it's the inital value of variable a_T5.<br><br>
+                              Now it's the initial value of variable a_T5.<br><br>
                               <strong>Debug will show value of a_T5.</strong>
                             </p>
                             <div class="single-item__debug-box">
@@ -930,7 +931,7 @@
                               <strong>In example:</strong><br><br>
                               var myArray_T43 = [["John", 23], ["cat", 2]];
                               var removedFromMyArray_T43 = myArray_T43.pop();<br><br>
-                              So now we assigned .poped value to variable removedFromMyArray_T43<br>
+                              So now we assigned .popped value to variable removedFromMyArray_T43<br>
                               <br>
                               <strong>Debug will show value of removedFromMyArray_T43.</strong>
                             </p>
@@ -1108,7 +1109,7 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 51: Global vs. Local Scope in Functions</h4>
                             <p class="single-item__paragraph">
-                              However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precendence over the global variable.<br><br>
+                              However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precedence over the global variable.<br><br>
                               const globalOne = "What";<br>
                               function locTest() {<br>
                               &nbsp;var globalOne = "World";<br>
@@ -1346,7 +1347,7 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 61 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 61: Comparison with inqeuality operator</h4>
+                            <h4 class="single-item__header">Task 61: Comparison with inequality operator</h4>
                             <p class="single-item__paragraph">
                               The inequality operator (!=) is the opposite of the equality operator. It means „Not Equal". and returns false where equality would return true and vice versa. The same like equality operator, the inequality operator will convert data types of values while comparing.<br><br>
                               function testNotEqual(testNotEqualVal) {<br>
@@ -1371,7 +1372,7 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 62: Comparison with Strict Inequality Operator</h4>
                             <p class="single-item__paragraph">
-                              Strict inequality operator (!==) is the logical opposite of the strict equality operator. „Stricty Not Equal" returns FALSE where strict equality woulr return true and vice versa. IT WILL NOT CONVERT DATA TYPES.<br><br>
+                              Strict inequality operator (!==) is the logical opposite of the strict equality operator. „Strictly Not Equal" returns FALSE where strict equality would return true and vice versa. IT WILL NOT CONVERT DATA TYPES.<br><br>
                               function testStrictNotEqual(testStrictNotEqualVal) {<br>
                               &nbsp;if(testStrictNotEqualVal !== 564) {<br>
                               &nbsp;&nbsp;return "testStrictNotEqualVal isn't equal 564.";<br>
@@ -1567,9 +1568,9 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 70 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 70: Introducint Else If Statements</h4>
+                            <h4 class="single-item__header">Task 70: Introducing Else If Statements</h4>
                             <p class="single-item__paragraph">
-                              If we have multiple conditions that needs to be adressed, we can chain if's statements together with else if statements. <br><br>
+                              If we have multiple conditions that needs to be addressed, we can chain if's statements together with else if statements. <br><br>
                               function testElseIf(testElseIfVal) {<br>
                               &nbsp;if(testElseIfVal === "email@mail.org") {<br>
                               &nbsp;&nbsp;return "Your recovery email has been send!";<br>
@@ -1593,7 +1594,7 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 71 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task 71: Logical Orded in If Else Statements</h4>
+                            <h4 class="single-item__header">Task 71: Logical Order in If Else Statements</h4>
                             <p class="single-item__paragraph">
                               In: if, else if and else statements order is very important. The whole function is executed from top to bottom so you will want to be careful of what statement comes first. It would be better explained in math problem:<br><br>
                               function testIfOrder(testIfOrderVal) {<br>
@@ -1632,7 +1633,7 @@
                               &nbsp;} else if (testIfChainVal < 20) {<br>
                               &nbsp;&nbsp;return "It's pretty nice outside today.";<br>
                               &nbsp;} else if (testIfChainVal < 30) {<br>
-                              &nbsp;&nbsp;return "It's very hot outisde!";<br>
+                              &nbsp;&nbsp;return "It's very hot outside!";<br>
                               &nbsp;} else {<br>
                               &nbsp;&nbsp;"Just don't leave house today!";<br>
                               &nbsp;}<br>
@@ -1755,7 +1756,7 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 76: Multiple Identical Options in Switch Statements</h4>
                             <p class="single-item__paragraph">
-                              If the break statement is ommited from a switch statement's case, the following case statement(s) are executed until a break is encountered. If we have multiple inputs with the same output, we can represent them in a switch statement like this:<br><br>
+                              If the break statement is omitted from a switch statement's case, the following case statement(s) are executed until a break is encountered. If we have multiple inputs with the same output, we can represent them in a switch statement like this:<br><br>
                               function testMultipleSwitch(testMultipleSwitchVal) {<br>
                               &nbsp;var testMultipleSwitchResult = "";<br>
                               &nbsp;switch (testMultipleSwitchVal) {<br>
@@ -1882,7 +1883,7 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 80: Counting Cards</h4>
                             <p class="single-item__paragraph">
-                              BlackJack - Actually, I have to write a programm that would count my cards. It is done by keeping track of the relative numbers of high and low cards remaining in the deck. Each Card is assigned a value according to the table below. Then the count is positive, the player should bet high. When the count is zero or negative, the player should bet low.<br><br>
+                              BlackJack - Actually, I have to write a program that would count my cards. It is done by keeping track of the relative numbers of high and low cards remaining in the deck. Each Card is assigned a value according to the table below. Then the count is positive, the player should bet high. When the count is zero or negative, the player should bet low.<br><br>
                               First of all, I tried to  do it only via ifs, so I put everything in a dunction and forgot that it would not properly display my output with Bet and Hold because it would output every step instead of only calculated output. So the solution for this is to create switch inside function.<br><br>
                               var cardCount = 0;<br>
                               function cardCounter(cardItems){<br>
@@ -2004,7 +2005,7 @@
                               &nbsp;return prefix + str;<br>
                               }<br><br>
                               var downloadPat = patPrefix("Name");<br><br>
-                              You can also do it not-dynamicaly via:<br><br>
+                              You can also do it not-dynamically via:<br><br>
                               var dogList = {<br>
                               &nbsp;Terrier: "Abel.", Doberman: "Kenie.", Labrador: "Es."<br>
                               };<br><br>
@@ -2416,7 +2417,7 @@
 
                   <div class="slide-container__content-single">
                     <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
-                      <img src="./media/zenva-academy.png" width="auto" height="60"> <h2>Tasks</h2>
+                      <img src="./media/zenva-academy.png" height="60" alt="Zenva Academy Logotype"> <h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
                     <div id="zenva" class="slide-container__content-single__wrap"> <!-- Course notes content -->
                       <ul class="wrap__list">
@@ -2429,8 +2430,8 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Standardization Info:</h4>
                             <p class="single-item__paragraph">
-                              Just the same as in FreeCodeCamp Tasks (check previous slide).</br></br>
-                              <strong>Remember that not every task has standarized IDs, why in that way? Because earlier ones are simply much more advanced, so the examples are more advanced (they are different comparing to older ones), so there is no need to destroy their in-code readability with IDs, they are created mostly only for avoid duplicating variables which would destroy tasks results.</strong>
+                              Just the same as in FreeCodeCamp Tasks (check previous slide).<br><br>
+                              <strong>Remember that not every task has standardized IDs, why in that way? Because earlier ones are simply much more advanced, so the examples are more advanced (they are different comparing to older ones), so there is no need to destroy their in-code readability with IDs, they are created mostly only for avoid duplicating variables which would destroy tasks results.</strong>
                             </p>
                           </div>
                         </li> <!-- /SINGLE TASK -->
@@ -2570,7 +2571,7 @@
                                 hp_Z5 += 30; //91<br>
                                 hp_Z5 *= 2; //182<br>
                                 hp_Z5 /= 2; //91<br><br>
-                                Yep, we actually raised an 81 to the power of 81 which result is 43 milions. So on now Incrementation and decrementation.<br><br>
+                                Yep, we actually raised an 81 to the power of 81 which result is 43 millions. So on now Incrementation and decrementing.<br><br>
                                 hp_Z5++; //92<br>
                                 hp_Z5--; //91<br><br>
                                 And remember the PEMDAS with brackets! It is better to make brackets for higher priority operations in maths even if they are no needed.<br><br>
@@ -2600,7 +2601,7 @@
                                 let word1_Z6 = "Hello";<br>
                                 let word2_Z6 = "World";<br>
                                 let result_Z6 = word1_Z6 + word2_Z6;<br><br>
-                                Well it is just to said that we can also make a operations on strings which is really useful. Now let's go with comparsion operators.<br><br>
+                                Well it is just to said that we can also make a operations on strings which is really useful. Now let's go with comparison operators.<br><br>
                                 let number1_Z6 = 13;<br>
                                 let number2_Z6 = 17;<br>
                                 let operationResult1_Z6 = number1_Z6 > number2_Z6; //false, not higher than n2.<br><br>
@@ -2616,7 +2617,7 @@
                                 ^ with OR operator || only one of operands have to be true to return true<br><br>
                                 Ternary ? : something like if else<br><br>
                                 let ternary_Z6 = number1_Z6 > number2_Z6 ? number1_Z6 : number2_Z6;<br><br>
-                                What we did there? We asked the computer about comparsion, is the number 1 bigger than number 2? No, so if the number 2 is bigger then it will store number 2 value, because first sentence after ? stores only true, so if the statement is true then return number1, if not - there comes an : - then store a value of number2.
+                                What we did there? We asked the computer about comparison, is the number 1 bigger than number 2? No, so if the number 2 is bigger then it will store number 2 value, because first sentence after ? stores only true, so if the statement is true then return number1, if not - there comes an : - then store a value of number2.
                                 <br><br>
                                 Homework - Game over or not depending on number of lives.<br><br>
                                 const maxLives_Z6 = 3;<br>
@@ -2711,7 +2712,7 @@
                                 &nbsp;function body<br>
                                 &nbsp;return value<br>
                                 }<br><br>
-                                Hovewer, we don't have to return values or scopes any inputs all the time. Our function can work without this and it would be perfectly fair if we just want to do some code without returning anything or scoping any targets.<br><br>
+                                However, we don't have to return values or scopes any inputs all the time. Our function can work without this and it would be perfectly fair if we just want to do some code without returning anything or scoping any targets.<br><br>
                                 let currentHealth_Z9 = 100;<br>
                                 let healAmount_Z9 = 25;<br><br>
                                 function heal() {<br>
@@ -2787,12 +2788,12 @@
                               <p class="single-item__paragraph">
                                 let maxBalance_Z11 = 200.0;<br>
                                 let currentBalance_Z11 = 198.1;<br><br>
-                                Now we want to calculate a precentage of our balance, during this we would learn how to return something from a function to make some calculations.<br><br>
+                                Now we want to calculate a percentage of our balance, during this we would learn how to return something from a function to make some calculations.<br><br>
                                 function transaction(transValue_Z11 = 1.0) {<br>
                                 &nbsp;let calcValue_Z11 = currentBalance_Z11 + transValue_Z11;<br>
                                 &nbsp;currentBalance_Z11 = calcValue_Z11 > 200 ? maxBalance_Z11 : calcValue_Z11;<br>
                                 &nbsp;currentBalance_Z10 -= transValue_Z11;<br>
-                                &nbsp;return (currentBalance_Z11 / maxBalance_Z11) * 100; //Calculating the precentage.<br>
+                                &nbsp;return (currentBalance_Z11 / maxBalance_Z11) * 100; //Calculating the percentage.<br>
                                 }<br><br>
                                 let result_Z11 = transaction();<br>
                                 result_Z11 = transaction(20.9);<br><br>
@@ -2899,7 +2900,7 @@
                             <h4 class="single-item__header">Task 14: While Loops</h4>
                             <p class="single-item__paragraph">
                               <p class="single-item__paragraph">
-                                Ye let's do the same another time (oof), now we are going to move foward continously by 50 until we met end of our „map" (at least in math)<br><br>
+                                Ye let's do the same another time (oof), now we are going to move forward continuously by 50 until we met end of our „map" (at least in math)<br><br>
                                 let endOfMap_Z14 = 500;<br>
                                 let aPos_Z14 = 0;<br>
                                 let enemyPos_Z14 = 450;<br>
