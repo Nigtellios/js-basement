@@ -7,51 +7,20 @@ const bttMyOwnTop = document.getElementById('go-to-top-my-own');
 const bttMyOwnBot = document.getElementById('go-to-bot-my-own');
 
 /* Assign FreeCodeCamp and Zenva slider divs */
-let fcc = document.getElementById('fcc');
-let zenva = document.getElementById('zenva');
-let myOwn = document.getElementById('my-own');
+const fcc = document.getElementById('fcc');
+const zenva = document.getElementById('zenva');
+const myOwn = document.getElementById('my-own');
 
-/* FCC */
-function FCCscrollToTop() {
-  fcc.scrollTo({
+function scrollToTop(targetDivTop) {
+  targetDivTop.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
 }
 
-function FCCscrollToBot() {
-  fcc.scrollTo({
-    top: fcc.scrollHeight,
-    behavior: 'smooth'
-  });
-}
-
-/* Zenva */
-function ZscrollToTop() {
-  zenva.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
-function ZscrollToBot() {
-  zenva.scrollTo({
-    top: zenva.scrollHeight,
-    behavior: 'smooth'
-  });
-}
-
-/* My Own */
-function MyOwnScrollToTop() {
-  myOwn.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-}
-
-function MyOwnScrollToBot() {
-  myOwn.scrollTo({
-    top: myOwn.scrollHeight,
+function scrollToBot(targetDivBot) {
+  targetDivBot.scrollTo({
+    top: targetDivBot.scrollHeight,
     behavior: 'smooth'
   });
 }
@@ -60,27 +29,27 @@ function MyOwnScrollToBot() {
 
 /* FCC */
 if (bttFccTop !== null) {
-  bttFccTop.addEventListener('click', FCCscrollToTop);
+  bttFccTop.addEventListener('click', function(){scrollToTop(fcc)});
 } 
 
 if (bttFccBot !== null) {
-  bttFccBot.addEventListener('click', FCCscrollToBot);
-}
+  bttFccBot.addEventListener('click', function(){scrollToBot(fcc)});
+} 
 
 /* Zenva */
 if (bttZTop !== null) {
-  bttZTop.addEventListener('click', ZscrollToTop);
+  bttZTop.addEventListener('click', function(){scrollToTop(zenva)});
 } 
 
 if (bttZBot !== null) {
-  bttZBot.addEventListener('click', ZscrollToBot);
+  bttZBot.addEventListener('click', function(){scrollToBot(zenva)});
 }
 
 /* My Own */
 if (bttMyOwnTop !== null) {
-  bttMyOwnTop.addEventListener('click', MyOwnScrollToTop);
+  bttMyOwnTop.addEventListener('click', function(){scrollToTop(myOwn)});
 } 
 
 if (bttMyOwnBot !== null) {
-  bttMyOwnBot.addEventListener('click', MyOwnScrollToTop);
+  bttMyOwnBot.addEventListener('click', function(){scrollToBot(myOwn)});
 }
