@@ -10,12 +10,12 @@
   <meta property="og:title" content="JS Basement by jakubkowalski.dev">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://js-basement.jakubkowalski.dev">
-  <meta property="og:image" content="/media/js-basement-og.png">
+  <meta property="og:image" content="./media/js-basement-og.png">
   <!-- Normalize, CSS Resets-->
-  <link rel="stylesheet" href="/css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./css/normalize.css" type="text/css">
   <!-- Main/Obligatory Styles -->
-  <link rel="stylesheet" href="/css/tiny-slider.css" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/tiny-slider.css" type="text/css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
 <body class="main-wrapper"> <!-- body class -->
@@ -26,15 +26,15 @@
 
         <header class="promo-bar">
             <div class="promo-bar__logotype">
-              <img src="/media/js-logo.png" width="56" height="56">
+              <img src="./media/js-logo.png" width="56" height="56">
               <h1>Basement</h1>
             </div>
             <div class="promo-bar__socials">
               <span class="socials__item">
-                <a href="https://github.com/Nigtellios" target="_blank"><i><img src="/media/github-icon.svg" width="40"  height="40"></i></a>
+                <a href="https://github.com/Nigtellios" target="_blank"><i><img src="./media/github-icon.svg" width="40"  height="40"></i></a>
               </span>
               <span class="socials__item">
-                <a href="https://www.linkedin.com/in/jakub-kowalski-209248170/" target="_blank"><i><img src="/media/linkedin-icon.svg" width="36" height="36"></i></a>
+                <a href="https://www.linkedin.com/in/jakub-kowalski-209248170/" target="_blank"><i><img src="./media/linkedin-icon.svg" width="36" height="36"></i></a>
               </span>
             </div>
         </header><!-- /top bar -->
@@ -46,22 +46,22 @@
                 <div class="single-slide--layout">
                   <aside class="single-slide__toolbar"> <!-- Course notes TOOLBAR -->
                     <div class="toolbar__item">
-                      <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
+                      <a onClick="window.location.reload();"><i><img src="./media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a id="go-to-top-fcc"><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-top-fcc"><i><img src="./media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a id="go-to-bot-fcc"><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-bot-fcc"><i><img src="./media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/fcc-scripts.js" target="_blank" alt="Check github file."><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/fcc-scripts.js" target="_blank" alt="Check github file."><i><img src="./media/toolbar-github-icon.svg" width="25" height="26"></i></a>
                     </div>
                   </aside> <!-- /Course notes TOOLBAR -->
 
                   <div class="slide-container__content-single">
                     <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
-                      <img src="media/fcc_primary_large.svg" width="400" height="42"><h2>Tasks</h2>
+                      <img src="./media/fcc_primary_large.svg" width="400" height="42"><h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
                     <div id="fcc" class="slide-container__content-single__wrap"> <!-- FCC Course notes content -->
                       <ul id="list-fcc" class="wrap__list">
@@ -2219,17 +2219,17 @@
                             <p class="single-item__paragraph">
                               The sub-properties of objects can be accessed by chaining together the dot or bracket notation.<br><br>
                               var myChest = {<br>
-                                "inside" : {<br>
-                                  "top": {<br>
-                                    "socket": "old shirt"<br>
-                                  },<br>
-                                  "bottom": {<br>
-                                    "sachet": {<br>
-                                      "first": "old maps",<br>
-                                      "second": "old poster"<br>
-                                    }<br>
-                                  }<br>
-                                }<br>
+                              &nbsp;"inside" : {<br>
+                              &nbsp;&nbsp;"top": {<br>
+                              &nbsp;&nbsp;&nbsp;"socket": "old shirt"<br>
+                              &nbsp;&nbsp;},<br>
+                              &nbsp;&nbsp;"bottom": {<br>
+                              &nbsp;&nbsp;&nbsp;"sachet": {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;"first": "old maps",<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;"second": "old poster"<br>
+                              &nbsp;&nbsp;&nbsp;}<br>
+                              &nbsp;&nbsp;&nbsp;}<br>
+                              &nbsp;}<br>
                               };<br><br>
                               var whatsInsideChest = myChest.inside.top["socket"];<br>
                               var whatsInsideChest2 = myChest.inside.bottom["sachet"].second;<br><br>
@@ -2249,28 +2249,143 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 92: Accessing Nested Arrays</h4>
                             <p class="single-item__paragraph">
-                              The sub-properties of objects can be accessed by chaining together the dot or bracket notation.<br><br>
-                              var myChest = {<br>
-                                "inside" : {<br>
-                                  "top": {<br>
-                                    "socket": "old shirt"<br>
-                                  },<br>
-                                  "bottom": {<br>
-                                    "sachet": {<br>
-                                      "first": "old maps",<br>
-                                      "second": "old poster"<br>
-                                    }<br>
-                                  }<br>
-                                }<br>
-                              };<br><br>
-                              var whatsInsideChest = myChest.inside.top["socket"];<br>
-                              var whatsInsideChest2 = myChest.inside.bottom["sachet"].second;<br><br>
-                              <strong>Debug will show values of whatsInsideChest and whatsInsideChest2.</strong>
+                              As we have seen in earlies examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays.<br><br>
+                              var doorAccessList = [<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;workerID: 1,<br>
+                              &nbsp;&nbsp;name: 'David',<br>
+                              &nbsp;&nbsp;position: 'Assistant',<br>
+                              &nbsp;&nbsp;entries: [<br>
+                              &nbsp;&nbsp;&nbsp;'16.03.2021',<br>
+                              &nbsp;&nbsp;&nbsp;'17.03.2021'<br>
+                              &nbsp;&nbsp;]<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;workerID: 2,<br>
+                              &nbsp;&nbsp;name: 'John',<br>
+                              &nbsp;&nbsp;position: 'CTO',<br>
+                              &nbsp;&nbsp;entries: [<br>
+                              &nbsp;&nbsp;&nbsp;'16.03.2021',<br>
+                              &nbsp;&nbsp;&nbsp;'17.03.2021'<br>
+                              &nbsp;&nbsp;]<br>
+                              &nbsp;}<br>
+                              ];<br><br>
+                              doorAccessList[0].name;<br>
+                              doorAccessList[1].entries[1];<br><br>
+                              <strong>Debug will show values of doorAccessList[0].name and doorAccessList[1].entries[1].</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-92" class="button button--debug">RUN DEBUG</button>
                               <div class="debug-box__scope">
                                 <p class="single-item__paragraph"><span id="fcc-task-92"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 93 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 93: Record Collection</h4>
+                            <p class="single-item__paragraph">
+                              You are given a JSON object representing a part of your musical album collection. Each album has a unique id number as its key and several other properties. Not all albums have complete information.<br><br>
+                              You start with an updateRecords function that takes an object like collection, an id, a prop (like artist or tracks), and a value. Complete the function using the rules below to modify the object passed to the function.<br><br>
+                              Your function must always return the entire object.<br>
+                              If prop isn't tracks and value isn't an empty string, update or set that album's prop to value.<br>
+                              If prop is tracks but the album doesn't have a tracks property, create an empty array and add value to it.<br>
+                              If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.<br>
+                              If value is an empty string, delete the given prop property from the album.<br><br>
+                              var collection = {<br>
+                              &nbsp;2548: {<br>
+                              &nbsp;&nbsp;albumTitle: 'Slippery When Wet',<br>
+                              &nbsp;&nbsp;artist: 'Bon Jovi',<br>
+                              &nbsp;&nbsp;tracks: ['Let It Rock', 'You Give Love a Bad Name']<br>
+                              &nbsp;},<br>
+                              &nbsp;2468: {<br>
+                              &nbsp;&nbsp;albumTitle: '1999',<br>
+                              &nbsp;&nbsp;artist: 'Prince',<br>
+                              &nbsp;&nbsp;tracks: ['1999', 'Little Red Corvette']<br>
+                              &nbsp;},<br>
+                              &nbsp;1245: {<br>
+                              &nbsp;&nbsp;artist: 'Robert Palmer',<br>
+                              &nbsp;&nbsp;tracks: []<br>
+                              &nbsp;},<br>
+                              &nbsp;5439: {<br>
+                              &nbsp;&nbsp;albumTitle: 'ABBA Gold'<br>
+                              &nbsp;}<br>
+                              };<br><br>
+                              function updateRecords(object, id, prop, value) {<br>
+                              &nbsp;if (prop !== 'tracks' && value !== "") {<br>
+                              &nbsp;&nbsp;object[id][prop] = value;<br>
+                              &nbsp;} else if (prop === "tracks" && object[id].hasOwnProperty("tracks") === false) {<br>
+                              &nbsp;&nbsp;object[id][prop] = [value];<br>
+                              &nbsp;} else if (prop === "tracks" && value !== "") {<br>
+                              &nbsp;&nbsp;object[id][prop].push(value);<br>
+                              &nbsp;} else if (value === "") {<br>
+                              &nbsp;&nbsp;delete object[id][prop];<br>
+                              &nbsp;}<br>
+                              &nbsp;return object;<br>
+                              }<br><br>
+                              updateRecords(collection, 5439, 'artist', 'John Lemon');<br><br>
+                              var collectionUpdateOutput = collection['5439'].artist;<br><br>
+                              <strong>Debug will show value of collectionUpdateOutput.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-93" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-93"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 94 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 94: Iterate with JavaScript While Loops</h4>
+                            <p class="single-item__paragraph">
+                              We can run the same code multiple times by using a loop.<br><br>
+                              The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true.<br><br>
+                              var whileArray = [];<br>
+                              var i = 0;<br><br>
+                              while (i < 5) {<br>
+                              &nbsp;whileArray.push(i);<br>
+                              &nbsp;i++;<br>
+                              }<br><br>
+                              In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.<br><br>
+                              var whileOutput = whileArray;<br><br>
+                              <strong>Debug will show value of whileOutput.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-94" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-94"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 95 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 95: Iterate with JavaScript For Loops</h4>
+                            <p class="single-item__paragraph">
+                              We can run the same code multiple times by using a loop.<br><br>
+                              The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true.<br><br>
+                              var whileArray = [];<br>
+                              var i = 0;<br><br>
+                              while (i < 5) {<br>
+                              &nbsp;whileArray.push(i);<br>
+                              &nbsp;i++;<br>
+                              }<br><br>
+                              In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.<br><br>
+                              var whileOutput = whileArray;<br><br>
+                              <strong>Debug will show value of whileOutput.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-95" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-95"></span></p>
                               </div>
                             </div>
                           </div>
@@ -2286,22 +2401,22 @@
                 <div class="single-slide--layout">
                   <aside class="single-slide__toolbar"> <!-- Course notes TOOLBAR -->
                     <div class="toolbar__item">
-                      <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
+                      <a onClick="window.location.reload();"><i><img src="./media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a id="go-to-top-zenva"><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-top-zenva"><i><img src="./media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a id="go-to-bot-zenva"><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-bot-zenva"><i><img src="./media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/zenva-scripts.js"><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/zenva-scripts.js"><i><img src="./media/toolbar-github-icon.svg" width="25" height="26"></i></a>
                     </div>
                   </aside> <!-- /Course notes TOOLBAR -->
 
                   <div class="slide-container__content-single">
                     <div class="slide-container__content-single__heading"> <!-- Course notes HEADER -->
-                      <img src="/media/zenva-academy.png" width="auto" height="60"> <h2>Tasks</h2>
+                      <img src="./media/zenva-academy.png" width="auto" height="60"> <h2>Tasks</h2>
                     </div> <!-- /Course notes HEADER -->
                     <div id="zenva" class="slide-container__content-single__wrap"> <!-- Course notes content -->
                       <ul class="wrap__list">
@@ -3127,16 +3242,16 @@
                 <div class="single-slide--layout">
                   <aside class="single-slide__toolbar"> <!-- Course notes TOOLBAR -->
                     <div class="toolbar__item">
-                      <a onClick="window.location.reload();"><i><img src="/media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
+                      <a onClick="window.location.reload();"><i><img src="./media/toolbar-refresh-icon.svg" width="25" height="25"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a id="go-to-top-my-own"><i><img src="/media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-top-my-own"><i><img src="./media/toolbar-go-to-top-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a id="go-to-bot-my-own"><i><img src="/media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
+                      <a id="go-to-bot-my-own"><i><img src="./media/toolbar-go-to-bottom-icon.svg" width="25" height="26"></i></a>
                     </div>
                     <div class="toolbar__item">
-                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/my-own-script.js"><i><img src="/media/toolbar-github-icon.svg" width="25" height="26"></i></a>
+                      <a href="https://github.com/Nigtellios/js-basement/blob/main/js/my-own-script.js"><i><img src="./media/toolbar-github-icon.svg" width="25" height="26"></i></a>
                     </div>
                   </aside> <!-- /Course notes TOOLBAR -->
 
@@ -3176,8 +3291,8 @@
           </div> <!-- /slides content -->
           <div class="slide-container__controls">
             <div class="slide-container__controls__arrows">
-              <button class="button prev"><img src="/media/arrow-left.svg" width="15" height="25"></button>
-              <button class="button next"><img src="/media/arrow-right.svg" width="15" height="25"></button>
+              <button class="button prev"><img src="./media/arrow-left.svg" width="15" height="25"></button>
+              <button class="button next"><img src="./media/arrow-right.svg" width="15" height="25"></button>
             </div>
             <div class="slide-container__controls__nav">
               <li class="nav__dot"></li>
@@ -3193,16 +3308,16 @@
     <aside class="sidebar">
       <nav class="navbar">
         <div class="navbar__item">
-          <a href="index.html"><i><img src="/media/nav-home-icon.svg" width="35" height="35"></i></a>
+          <a href="./index.html"><i><img src="./media/nav-home-icon.svg" width="35" height="35"></i></a>
         </div>
         <div class="navbar__item">
-          <a href="index.html"><i><img src="/media/nav-share-icon.svg" width="35" height="36"></i></a>
+          <a href="./index.html"><i><img src="./media/nav-share-icon.svg" width="35" height="36"></i></a>
         </div>
         <div class="navbar__item">
-          <a href="index.html"><i><img src="/media/nav-info-icon.svg" width="20" height="33"></i></a>
+          <a href="./index.html"><i><img src="./media/nav-info-icon.svg" width="20" height="33"></i></a>
         </div>
         <div class="navbar__item">
-          <a href="index.html"><i><img src="/media/nav-envelope-icon.svg" width="35" height="28"></i></a>
+          <a href="./index.html"><i><img src="./media/nav-envelope-icon.svg" width="35" height="28"></i></a>
         </div>
       </nav>
       <footer class="copyright">
@@ -3213,12 +3328,12 @@
 
 
   <!-- Script Includes -->
-  <script src="/js/tiny-slider.js"></script>
-  <script src="/js/slider-tiny-slider.js"></script>
-  <script src="/js/layout-scripts.js"></script>
-  <script src="/js/fcc-scripts.js"></script>
-  <script src="/js/zenva-scripts.js"></script>
-  <script src="/js/my-own-scripts.js"></script>
+  <script src="./js/tiny-slider.js"></script>
+  <script src="./js/slider-tiny-slider.js"></script>
+  <script src="./js/layout-scripts.js"></script>
+  <script src="./js/fcc-scripts.js"></script>
+  <script src="./js/zenva-scripts.js"></script>
+  <script src="./js/my-own-scripts.js"></script>
 </body>
 
 </html>
