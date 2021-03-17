@@ -1,3 +1,7 @@
+const fccScripts = () => 'Free Code Camp Scripts from Tasks';
+// eslint-disable-next-line no-console
+console.log(fccScripts());
+
 /* Free Code Camp Tasks */
 
 /* BASE -> FUNCTION OUTPUT SETUP */
@@ -2523,7 +2527,7 @@ while (i_T94 < 5) {
   i_T94++;
 }
 
-/* In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.*/
+/* In the code above, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.*/
 
 var whileOutput = whileArray;
 
@@ -2543,4 +2547,36 @@ if (btnFCC94 !== null && scopeFCC94 !== null) {
 }
 
 /* Task 95: Iterate with JavaScript For Loops */
+
+/* You can run the same code multiple times by using a loop - the most common type of JavaScript loop is called a FOR loop because it runs FOR a specific number of times. For loops are declared with three optional expressions separated by semicolons:
+
+for (a; b; c), where: a is the initialization statement, b is the condition statement and c is the final expression.
+
+The initialization statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.
+
+The condition statement is evaluated at the beginning of every loop iteration and will continue as long as it evaluates to TRUE. When the condition is FALSE at the start of the iteration, the loop will stop executing. This means if the condition starts as false, your loop will never execute.
+
+The final expression is executed at the end of each loop iteration, prior to the next condition check and is usually used to increment or decrement your loop counter.
+*/
+
+var cookiePack = [];
+
+for (var icP = 0; icP < 10; icP++) {
+  cookiePack.push(" Cookie Pack number: " + icP);
+}
+
+/* OUTPUT CODE */
+
+const btnFCC95 = document.getElementById('run-fcc-task-95');
+const scopeFCC95 = document.getElementById('fcc-task-95');
+
+function debugFCC95() {
+  scopeFCC95.innerHTML = outputResponse + cookiePack;
+}
+
+if (btnFCC95 !== null && scopeFCC95 !== null) {
+  btnFCC95.addEventListener('click', debugFCC95);
+} else {
+  scopeFCC95.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
 
