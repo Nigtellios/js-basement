@@ -1,114 +1,13 @@
-/* Import Font - Baloo Chettan 2 */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
-
-/* Main classes */
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-ul, ol, li {
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-/* FONTS */
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-  font-family: 'Baloo Chettan 2';
-  color: #FFFFFF;
-}
-
-h1 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 69px;
-}
-
-h2 {
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 58px;
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 50px;
-}
-
-h4 {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 32px;
-}
-
-.font--light {
-  color: #FFFFFF;
-}
-
-.font--dark {
-  color: #000000;
-}
-
-.font--pink {
-  color: #FF506B;
-}
-
-/* MARKERS */
-
-.marker--cyan {
-  border: 5px solid #43CFFF;
-  border-radius: 25px;
-}
-
-.marker--yellow {
-  border: 5px solid #FFC354;
-  border-radius: 25px;
-}
-
-.marker--red {
-  border: 5px solid #ff5c5c;
-  border-radius: 25px;
-}
+/* Core Files Imports */
+@use 'core/fonts';
+@use 'core/basic';
+@use 'core/buttons';
+@use 'core/markers';
 
 /* HOVERS */
 
 .wrap__list__module__single-item:hover .marker--highlight {
   border-color: #00e71f;
-}
-
-/* BUTTONS */
-
-.button {
-  padding: 10px 35px 10px 35px;
-  color: #FFFFFF;
-  background: rgba(255, 255, 255, 0);
-  font-family: 'Baloo Chettan 2';
-  font-weight: 600;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.button--debug {
-  border: 2px solid #FFFFFF;
-  box-sizing: border-box;
-  border-radius: 30px;
-  cursor: pointer;
 }
 
 .prev, .next {
@@ -122,20 +21,13 @@ h4 {
   cursor: pointer;
 }
 
-img {
-  max-width: 100%;
-  width: auto;
-}
-
 /* Styling */
 
 .main-wrapper {
   width: 100%;
   height: 100vh;
-  background: url("../media/background.svg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../media/background.svg") no-repeat center;
 }
 
 .main-container {
@@ -144,11 +36,9 @@ img {
   height: 880px;
   display: flex;
   flex-flow: row nowrap;
-
-  /* margin: 20px; */
   left: calc(50% - 1520px/2);
   top: calc(50% - 880px/2);
-  background: linear-gradient(288.53deg, #673DE0 0.01%, #8F3DE0 54.69%, #BD55FD 100%);
+  background: linear-gradient(288.53deg, #673DE0 0.01%, #8F3DE0 54.69%, #bd55fd 100%);
   box-shadow: 25px 50px 50px rgba(0, 0, 0, 0.15);
   border-radius: 102px;
   position: absolute;
@@ -198,13 +88,13 @@ img {
     margin: 0 0 22px 0;
   }
 
-  > a {
+  a {
     display: block;
     width: 100%;
     height: 100%;
     text-align: center;
 
-    > i > img {
+    i img {
       padding: 25px 0 25px 0;
     }
   }
@@ -241,7 +131,7 @@ img {
   flex-flow: row nowrap;
   justify-content: flex-start;
 
-  > img {
+  img {
     margin: 0 15px 0 0;
   }
 }
@@ -276,15 +166,13 @@ img {
   height: 75px;
   margin: 0 0 20px 0;
 
-  > {
-    img {
-      margin: 8px 0 0 0;
-    }
-
-    h2 {
-      margin: 0 0 0 20px;
-    }
+  img {
+    margin: 8px 0 0 0;
   }
+
+   h2 {
+     margin: 0 0 0 20px;
+   }
 }
 
 .slide-container__content-single__wrap {
@@ -315,13 +203,13 @@ img {
   cursor: pointer;
   margin: 0 0 40px 0;
 
-  > a {
+  a {
     display: block;
     width: 100%;
     height: 100%;
     text-align: center;
 
-    > i > img {
+    i  img {
       padding: 22px 0 22px 0;
     }
   }
@@ -515,7 +403,7 @@ img {
   .slide-container__content-single__heading {
     flex-flow: row wrap;
 
-    > img {
+    img {
       max-width: 200px;
     }
   }

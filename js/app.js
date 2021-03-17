@@ -1,5 +1,5 @@
-import '../css/normalize.css';
-import '../css/tiny-slider.css';
+import '../css/vendor/normalize.css';
+import '../css/vendor/tiny-slider.css';
 import '../css/style.scss';
 
 /* Slider Init */
