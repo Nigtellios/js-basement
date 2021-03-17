@@ -1,0 +1,60 @@
+/* Main classes */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* FONTS */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Chettan 2';
+  color: #FFFFFF;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 69px;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
