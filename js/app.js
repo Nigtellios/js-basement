@@ -1,3 +1,19 @@
+import '../css/normalize.css';
+import '../css/tiny-slider.css';
+import '../css/style.scss';
+
+/* Slider Init */
+let slider = tns({
+  container: '.slide-container__content',
+  items: 1,
+  rewind: true,
+  speed: 200,
+  controlsContainer: '.slide-container__controls__arrows',
+  navContainer: '.slide-container__controls__nav'
+});
+
+/* Layout Functionality scripts */
+
 /* Assign buttons IDs to variables */
 const firstSlideButtonUp = document.getElementById('go-to-top-fcc');
 const firstSlideButtonDown = document.getElementById('go-to-bot-fcc');
@@ -38,3 +54,9 @@ function buttonsListeners() {
 }
 
 window.onload = buttonsListeners;
+
+/* JS Imports */
+import { tns } from '../node_modules/tiny-slider/src/tiny-slider';
+import './tasks/fcc-scripts';
+import './tasks/zenva-scripts';
+import './tasks/my-own-scripts';
