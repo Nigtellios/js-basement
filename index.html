@@ -2366,17 +2366,18 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 95: Iterate with JavaScript For Loops</h4>
                             <p class="single-item__paragraph">
-                              We can run the same code multiple times by using a loop.<br><br>
-                              The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true.<br><br>
-                              var whileArray = [];<br>
-                              var i = 0;<br><br>
-                              while (i < 5) {<br>
-                              &nbsp;whileArray.push(i);<br>
-                              &nbsp;i++;<br>
-                              }<br><br>
-                              In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.<br><br>
-                              var whileOutput = whileArray;<br><br>
-                              <strong>Debug will show value of whileOutput.</strong>
+                              The most common type of JavaScript loop is called a for loop because it runs for a specific number of times.<br><br>
+                              For loops are declared with three optional expressions separated by semicolons:
+                              for (a; b; c), where a is the initialization statement, b is the condition statement, and c is the final expression.<br><br>
+                              The initialization statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.<br><br>
+                              The condition statement is evaluated at the beginning of every loop iteration and will continue as long as it evaluates to true. When the condition is false at the start of the iteration, the loop will stop executing. This means if the condition starts as false, your loop will never execute.<br><br>
+                              The final expression is executed at the end of each loop iteration, prior to the next condition check and is usually used to increment or decrement your loop counter.<br><br>
+                              var myDogs = ['Elanie', 'Jade', 'Martha', 'Margareth', 'John', 'Mary', 'Joseph'];<br><br>
+                              var myDogsOutput = [];<br><br>
+                              for (var dogCounter = 0; dogCounter < 6; dogCounter++) {<br>
+                              &nbsp;myDogsOutput.push(myDogs[dogCounter]);<br>
+                              }<br>
+                              <strong>Debug will show values of myDogsOutput.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-95" class="button button--debug">RUN DEBUG</button>
@@ -2386,6 +2387,118 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK 95 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 96 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 96: Iterate with JavaScript For Loops</h4>
+                            <p class="single-item__paragraph">
+                              For loops don't have to iterate one at time. By changing our final-expression , we can count by even numbers. Basically, we'll increment iterator by 2 each loop with i += 2.<br><br>
+                              var oddArray = [];<br><br>
+                              for (var oddIterator = 0; oddIterator < 10; oddIterator += 2) {<br>
+                              &nbsp;oddArray.push(oddIterator);<br>
+                              }<br><br>
+                              <strong>Debug will show values of oddArray.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-96" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-96"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 96 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 97 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 97: Iterate with JavaScript For Loops</h4>
+                            <p class="single-item__paragraph">
+                              A for loop also count backwards, so long as we can define the right conditions. In order to decrement by two each iteration, we'll need to change our initialization, condition, and final expression. We'll start at 10, and loop while iterator > 0. We'll decrement iterator by 2 each loop with i -= 2.<br><br>
+                              var backwardCount = [];<br><br>
+                              for (var backwardIterator = 10; backwardIterator > 0; backwardIterator -= 2) {<br>
+                              &nbsp;backwardCount.push(backwardIterator);<br>
+                              }<br><br>
+                              <strong>Debug will show values of backwardCount.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-97" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-97"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 97 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 98 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 98: Iterate Through an Array with a For Loop</h4>
+                            <p class="single-item__paragraph">
+                              A common task in JavaScript is to iterate through the contents of an array. One way to do this is with a for loop. The code below will output each element of the array dataSheet to the console:<br><br>
+                              Remember that arrays have zero-based indexing, which means the last index of the array is length-1. Our condition for this loop is i < array.length, which stops the loop when i is equal to length. In this case last iteration is i === 3, i.e. when i becomes equal to array.length and outputs "Elisa, 3".<br><br>
+                              var dataSheet = [['Martin', 1], ['John', 2], ['Elisa', 3]];<br>
+                              var dataSheetOutput = [];<br>
+                              var totalData = 0;<br><br>
+                              for (var dataCounter = 0; dataCounter < dataSheet.length; dataCounter++) {<br>
+                              &nbsp;dataSheetOutput.push(dataSheet[dataCounter]);<br>
+                              &nbsp;totalData += dataCounter;<br>
+                              }<br><br>
+                              <strong>Debug will show values of dataSheetOutput and totalData.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-98" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-98"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 98 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 99 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 99: Nesting For Loops</h4>
+                            <p class="single-item__paragraph">
+                              If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:<br><br>
+                              var multiLoopData = [<br>
+                              ['16.04.2021', 'Martin'], ['17.04.2021', 'John'], ['18.04.2021', 'Nikolai']<br>
+                              ];<br>
+                              var multiLoopDataOutput = [];<br><br>
+                              for (var firstCounter = 0; firstCounter < multiLoopData.length; firstCounter++) {<br>
+                              &nbsp;for (var secondCounter = 0; secondCounter < multiLoopData[firstCounter].length; secondCounter++) {<br>
+                              &nbsp;multiLoopDataOutput.push(multiLoopData[firstCounter][secondCounter]);<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              Note that above example outputs each sub-element in multiLoopData one at a time. For the inner loop, we are checking the .length of multiLoopData[firstCounter] since multiLoopData[firstCounter] is itself an array.<br><br>
+                              Well, it is the same as the previous Task, while the previous one was much easier and faster, because we listed whole Arrays content. The loop above will be useful if there will be some specific nested array content to output.<br><br>
+                              <strong>Debug will show values of multiLoopDataOutput.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-99" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-99"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 99 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 100 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 100: Iterate with JavaScript Do... While Loops</h4>
+                            <p class="single-item__paragraph">
+
+                              <strong>Debug will show values of multiLoopDataOutput.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-100" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-100"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 100 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->

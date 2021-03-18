@@ -111,9 +111,9 @@ if (btnFCC5 !== null && scopeFCC5 !== null) {
 
 /* Task 6: Basic JavaScript: Understanding Uninitialized Variables */
 
-// When JavaScript variables are declared, they have an initial value of undefined. 
-// If you do a mathematical operation on an undefined variable your result will 
-// be NaN which means "Not a Number". If you concatenate a string with an undefined 
+// When JavaScript variables are declared, they have an initial value of undefined.
+// If you do a mathematical operation on an undefined variable your result will
+// be NaN which means "Not a Number". If you concatenate a string with an undefined
 // variable, you will get a literal string of "undefined".
 
 var a_T6;
@@ -490,7 +490,7 @@ if (btnFCC22 !== null && scopeFCC22 !== null) {
 
 /* Task 23: Basic JavaScript: Escaping Literal Quotes in Strings */
 
-// In JavaScript, you can escape a quote from considering it as an end of string quote by 
+// In JavaScript, you can escape a quote from considering it as an end of string quote by
 // placing a backslash (\) in front of the quote.
 
 var myStr_T23 = "I am a \"double quoted\" string inside \"double quotes\".";
@@ -512,7 +512,7 @@ if (btnFCC23 !== null && scopeFCC23 !== null) {
 
 /* Task 24: Basic JavaScript: Quoting Strings with Single Quotes */
 
-// Remember, a string has the same kind of quote at the beginning and end. 
+// Remember, a string has the same kind of quote at the beginning and end.
 // But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
 // That's why we can use single quotes in strings too.
 
@@ -678,7 +678,7 @@ if (btnFCC31 !== null && scopeFCC31 !== null) {
 /* Task 32: Basic JavaScript: Understand String Immutability */
 
 var myStr_T32 = "Jello World";
-myStr_T32[0] = "H"; 
+myStr_T32[0] = "H";
 // ^It can't be done, strings are immutable. Proper way is below.
 myStr_T32 = "Hello World";
 
@@ -902,7 +902,7 @@ if (btnFCC42 !== null && scopeFCC42 !== null) {
 /* Task 43: Basic JavaScript: Manipulate Arrays With pop() */
 
 var myArray_T43 = [["John", 23], ["cat", 2]];
-var removedFromMyArray_T43 = myArray_T43.pop(); 
+var removedFromMyArray_T43 = myArray_T43.pop();
 // So now we assigned .poped value to variable removedFromMyArray
 
 /* OUTPUT CODE */
@@ -923,7 +923,7 @@ if (btnFCC43 !== null && scopeFCC43 !== null) {
 /* Task 44: Basic JavaScript: Manipulate Arrays With shift() */
 
 var myArray_T44 = [["John", 23], ["dog", 3]];
-var removedFromMyArray_T44 = myArray_T44.shift(); 
+var removedFromMyArray_T44 = myArray_T44.shift();
 // Now removedFromMyArray_T44 has ["John", 23]
 
 /* OUTPUT CODE */
@@ -945,7 +945,7 @@ if (btnFCC44 !== null && scopeFCC44 !== null) {
 
 var myArray_T45 = [["John", 23], ["dog", 3]];
 myArray_T45.shift();
-myArray_T45.unshift(["Paul", 35]); 
+myArray_T45.unshift(["Paul", 35]);
 // Now we have also ["Paul", 35] at the beginning of array myArray
 
 /* OUTPUT CODE */
@@ -1806,7 +1806,7 @@ if (btnFCC74 !== null && scopeFCC74 !== null) {
 function testSwitchDefault(testSwitchDefaultVal) {
   var testSwitchDefaultResponse = "";
   switch(testSwitchDefaultVal) {
-  case 1: 
+  case 1:
     testSwitchDefaultResponse =  "We are going North.";
     break;
   case 2:
@@ -2178,7 +2178,7 @@ var propHunt = {
   weapon: 'Kukri Knife'
 };
 
-propHunt.jacket = 'Bomber'; 
+propHunt.jacket = 'Bomber';
 //^ or we can also do propHunt["jacket"] = 'Bomber';
 
 /* OUTPUT CODE */
@@ -2543,4 +2543,155 @@ if (btnFCC94 !== null && scopeFCC94 !== null) {
 }
 
 /* Task 95: Iterate with JavaScript For Loops */
+
+/* The most common type of JavaScript loop is called a for loop because it runs for a specific number of times.
+
+For loops are declared with three optional expressions separated by semicolons:
+
+for (a; b; c), where a is the initialization statement, b is the condition statement, and c is the final expression.
+
+The initialization statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.
+
+The condition statement is evaluated at the beginning of every loop iteration and will continue as long as it evaluates to true. When the condition is false at the start of the iteration, the loop will stop executing. This means if the condition starts as false, your loop will never execute.
+
+The final expression is executed at the end of each loop iteration, prior to the next condition check and is usually used to increment or decrement your loop counter. */
+
+var myDogs = ['Elanie', 'Jade', 'Martha', 'Margareth', 'John', 'Mary', 'Joseph'];
+var myDogsOutput = [];
+
+for (var dogCounter = 0; dogCounter < 6; dogCounter++) {
+  myDogsOutput.push(myDogs[dogCounter]);
+}
+
+/* OUTPUT CODE */
+
+const btnFCC95 = document.getElementById('run-fcc-task-95');
+const scopeFCC95 = document.getElementById('fcc-task-95');
+
+function debugFCC95() {
+  scopeFCC95.innerHTML = outputResponse + myDogsOutput;
+}
+
+if (btnFCC95 !== null && scopeFCC95 !== null) {
+  btnFCC95.addEventListener('click', debugFCC95);
+} else {
+  scopeFCC95.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 96: Iterate with JavaScript For Loops */
+
+/* For loops don't have to iterate one at time. By changing our final-expression , we can count by even numbers. Basically, we'll increment iterator by 2 each loop with i += 2. */
+
+var oddArray = [];
+
+for (var oddIterator = 0; oddIterator < 10; oddIterator += 2) {
+  oddArray.push(oddIterator);
+}
+
+/* OUTPUT CODE */
+
+const btnFCC96 = document.getElementById('run-fcc-task-96');
+const scopeFCC96 = document.getElementById('fcc-task-96');
+
+function debugFCC96() {
+  scopeFCC96.innerHTML = outputResponse + oddArray;
+}
+
+if (btnFCC96 !== null && scopeFCC96 !== null) {
+  btnFCC96.addEventListener('click', debugFCC96);
+} else {
+  scopeFCC96.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 97: Count Backwards With a For Loop */
+
+/* A for loop also count backwards, so long as we can define the right conditions. In order to decrement by two each iteration, we'll need to change our initialization, condition, and final expression. We'll start at 10, and loop while iterator > 0. We'll decrement iterator by 2 each loop with i -= 2. */
+
+var backwardCount = [];
+
+for (var backwardIterator = 10; backwardIterator > 0; backwardIterator -= 2) {
+  backwardCount.push(backwardIterator);
+}
+
+/* OUTPUT CODE */
+
+const btnFCC97 = document.getElementById('run-fcc-task-97');
+const scopeFCC97 = document.getElementById('fcc-task-97');
+
+function debugFCC97() {
+  scopeFCC97.innerHTML = outputResponse + backwardCount;
+}
+
+if (btnFCC97 !== null && scopeFCC97 !== null) {
+  btnFCC97.addEventListener('click', debugFCC97);
+} else {
+  scopeFCC97.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 98: Iterate Through an Array with a For Loop */
+
+/* A common task in JavaScript is to iterate through the contents of an array. One way to do this is with a for loop. The code below will output each element of the array dataSheet to the console: */
+
+/* Remember that arrays have zero-based indexing, which means the last index of the array is length-1. Our condition for this loop is i < array.length, which stops the loop when i is equal to length. In this case last iteration is i === 3, i.e. when i becomes equal to array.length and outputs "Elisa, 3". */
+
+var dataSheet = [['Martin', 1], ['John', 2], ['Elisa', 3]];
+var dataSheetOutput = [];
+var totalData = 0;
+
+for (var dataCounter = 0; dataCounter < dataSheet.length; dataCounter++) {
+  dataSheetOutput.push(dataSheet[dataCounter]);
+  totalData += dataCounter;
+}
+
+/* OUTPUT CODE */
+
+const btnFCC98 = document.getElementById('run-fcc-task-98');
+const scopeFCC98 = document.getElementById('fcc-task-98');
+
+function debugFCC98() {
+  scopeFCC98.innerHTML = outputResponse + dataSheetOutput + ', Number of iterations: ' + totalData + '.';
+}
+
+if (btnFCC98 !== null && scopeFCC98 !== null) {
+  btnFCC98.addEventListener('click', debugFCC98);
+} else {
+  scopeFCC98.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 99: Nesting For Loops */
+
+/* If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example: */
+
+var multiLoopData = [
+  ['16.04.2021', 'Martin'], ['17.04.2021', 'John'], ['18.04.2021', 'Nikolai']
+];
+var multiLoopDataOutput = [];
+
+for (var firstCounter = 0; firstCounter < multiLoopData.length; firstCounter++) {
+  for (var secondCounter = 0; secondCounter < multiLoopData[firstCounter].length; secondCounter++) {
+    multiLoopDataOutput.push(multiLoopData[firstCounter][secondCounter]);
+  }
+}
+
+/* Note that above example outputs each sub-element in multiLoopData one at a time. For the inner loop, we are checking the .length of multiLoopData[firstCounter] since multiLoopData[firstCounter] is itself an array.*/
+
+/* Well, it is the same as the previous Task, while the previous one was much easier and faster, because we listed whole Arrays content. The loop above will be useful if there will be some specific nested array content to output. */
+
+/* OUTPUT CODE */
+
+const btnFCC99 = document.getElementById('run-fcc-task-99');
+const scopeFCC99 = document.getElementById('fcc-task-99');
+
+function debugFCC99() {
+  scopeFCC99.innerHTML = outputResponse + multiLoopDataOutput;
+}
+
+if (btnFCC99 !== null && scopeFCC99 !== null) {
+  btnFCC99.addEventListener('click', debugFCC99);
+} else {
+  scopeFCC99.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 100: Iterate with JavaScript Do... While Loops */
+
 
