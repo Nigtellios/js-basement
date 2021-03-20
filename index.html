@@ -2512,15 +2512,27 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 101: Replace Loops using Recursion</h4>
                             <p class="single-item__paragraph">
-                              Next type of loop is called a "do...while" loop. It will first DO one pass of the code inside the loop no matter what, and then continue to run the loop WHILE the specified condition evaluates to TRUE. What makes "do...while" different from other loops? It behaves different if the condition fails on the first check. DO...WHILE Loop ensures that the code inside the loop will run AT LEAST ONCE.<br><br>
-                              var doWhileData = [];<br>
-                              var doWhileIterator = 0;<br>
-                              do {<br>
-                              &nbsp;doWhileData.push(doWhileIterator);<br>
-                              &nbsp;doWhileIterator++;<br>
-                              } while (doWhileIterator < 5);<br><br>
-                              So we're gonna get results like [0, 1, 2, 3, 4]. If we change doWhileIterator to 5, then we will get [5] inside doWhileData because we will add a single element to the array AND THEN increment the iterator before we get to the condition check. That's what makes DO...WHILE loop different from other ones, in case of normal WHILE, the loop would never add single value to array because it would fail at condition check.<br><br>
-                              <strong>Debug will show values of doWhileData.</strong>
+                              Recursion is the concept that a function can be expressed in terms of itself. To help understand this, start by thinking about the following task: multiply the first N elements of an array to create the product of those elements. Using a FOR loop, you could do this:<br><br>
+                              var dfArray = [1, 2, 3];<br>
+                              var rArray = [1, 4, 5];<br><br>
+                              function doForMultiply(multiplyArray, nElements) {<br>
+                              &nbsp;var multiProduct = 1;<br>
+                              &nbsp;for (var multiIterator = 0; multiIterator < nElements; multiIterator++) {<br>
+                              &nbsp;&nbsp;multiProduct *= multiplyArray[multiIterator];<br>
+                              &nbsp;}<br>
+                              &nbsp;return multiProduct;<br>
+                              }<br><br>
+                              However, notice that doForMultiply(multiplyArray, nElements) == doForMultiply(multiplyArray, nElements - 1) * multiplyArray[nElements - 1]. That means you can rewrite doForMultiply in terms of itself and never need to use a loop.<br><br>
+                              function doRecursiveMultiply(recursiveArray, rnElements) {<br>
+                              &nbsp;if (rnElements <= 0) {<br>
+                              &nbsp;&nbsp;return 1;<br>
+                              &nbsp;} else {<br>
+                              &nbsp;&nbsp;return doRecursiveMultiply(recursiveArray, rnElements - 1) * recursiveArray[rnElements - 1];<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              The recursive version of multiply breaks down like this. In the base case, where rnElements <= 0, it returns 1. For larger values of n, it calls itself, but with rnElements - 1. That function call is evaluated in the same way, calling doRecursiveMultiply again until rnElements <= 0. At this point, all the functions can return and the original doRecursiveMultiply returns the answer.<br><br>
+                              Recursive functions must have a base case when they return without calling the function again (in example above, when rnElements <= 0. Otherwise, they can never finish executing.<br><br>
+                              <strong>Debug will show execution of doForMultiply(dfArray, 3) and doRecursiveMultiply(rArray, 3).</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-101" class="button button--debug">RUN DEBUG</button>
