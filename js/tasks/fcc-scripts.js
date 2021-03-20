@@ -2694,4 +2694,72 @@ if (btnFCC99 !== null && scopeFCC99 !== null) {
 
 /* Task 100: Iterate with JavaScript Do... While Loops */
 
+/* Next type of loop is called a "do...while" loop. It will first DO one pass of the code inside the loop no matter what, and then continue to run the loop WHILE the specified condition evaluates to TRUE. What makes "do...while" different from other loops? It behaves different if the condition fails on the first check. DO...WHILE Loop ensures that the code inside the loop will run AT LEAST ONCE. */
 
+var doWhileData = [];
+var doWhileIterator = 0;
+do {
+  doWhileData.push(doWhileIterator);
+  doWhileIterator++;
+} while (doWhileIterator < 5);
+
+/* So we're gonna get results like [0, 1, 2, 3, 4]. If we change doWhileIterator to 5, then we will get [5] inside doWhileData because we will add a single element to the array AND THEN increment the iterator before we get to the condition check. That's what makes DO...WHILE loop different from other ones, in case of normal WHILE, the loop would never add single value to array because it would fail at condition check. */
+
+/* OUTPUT CODE */
+
+const btnFCC100 = document.getElementById('run-fcc-task-100');
+const scopeFCC100 = document.getElementById('fcc-task-100');
+
+function debugFCC100() {
+  scopeFCC100.innerHTML = outputResponse + doWhileData;
+}
+
+if (btnFCC100 !== null && scopeFCC100 !== null) {
+  btnFCC100.addEventListener('click', debugFCC100);
+} else {
+  scopeFCC100.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 101: Replace Loops using Recursion */
+
+/* Recursion is the concept that a function can be expressed in terms of itself. To help understand this, start by thinking about the following task: multiply the first N elements of an array to create the product of those elements. Using a FOR loop, you could do this: */
+
+var dfArray = [1, 2, 3];
+var rArray = [1, 4, 5];
+
+function doForMultiply(multiplyArray, nElements) {
+  var multiProduct = 1;
+  for (var multiIterator = 0; multiIterator < nElements; multiIterator++) {
+    multiProduct *= multiplyArray[multiIterator];
+  }
+  return multiProduct;
+}
+
+/* However, notice that doForMultiply(multiplyArray, nElements) == doForMultiply(multiplyArray, nElements - 1) * multiplyArray[nElements - 1]. That means you can rewrite doForMultiply in terms of itself and never need to use a loop. */
+
+function doRecursiveMultiply(recursiveArray, rnElements) {
+  if (rnElements <= 0) {
+    return 1;
+  } else {
+    return doRecursiveMultiply(recursiveArray, rnElements - 1) * recursiveArray[rnElements - 1];
+  }
+}
+
+/* The recursive version of multiply breaks down like this. In the base case, where rnElements <= 0, it returns 1. For larger values of n, it calls itself, but with rnElements - 1. That function call is evaluated in the same way, calling doRecursiveMultiply again until rnElements <= 0. At this point, all the functions can return and the original doRecursiveMultiply returns the answer. */
+
+/* Recursive functions must have a base case when they return without calling the function again (in example above, when rnElements <= 0. Otherwise, they can never finish executing. */
+
+/* OUTPUT CODE */
+
+const btnFCC101 = document.getElementById('run-fcc-task-101');
+const scopeFCC101 = document.getElementById('fcc-task-101');
+
+function debugFCC101() {
+  scopeFCC101.innerHTML = outputResponse + 'For loop: ' + doForMultiply(dfArray, 3) + '. Recursion version: ' + doRecursiveMultiply(rArray, 3) + '.';
+}
+
+if (btnFCC101 !== null && scopeFCC101 !== null) {
+  btnFCC101.addEventListener('click', debugFCC101);
+} else {
+  scopeFCC101.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

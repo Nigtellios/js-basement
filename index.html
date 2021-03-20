@@ -2488,8 +2488,15 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 100: Iterate with JavaScript Do... While Loops</h4>
                             <p class="single-item__paragraph">
-
-                              <strong>Debug will show values of multiLoopDataOutput.</strong>
+                              Next type of loop is called a "do...while" loop. It will first DO one pass of the code inside the loop no matter what, and then continue to run the loop WHILE the specified condition evaluates to TRUE. What makes "do...while" different from other loops? It behaves different if the condition fails on the first check. DO...WHILE Loop ensures that the code inside the loop will run AT LEAST ONCE.<br><br>
+                              var doWhileData = [];<br>
+                              var doWhileIterator = 0;<br>
+                              do {<br>
+                              &nbsp;doWhileData.push(doWhileIterator);<br>
+                              &nbsp;doWhileIterator++;<br>
+                              } while (doWhileIterator < 5);<br><br>
+                              So we're gonna get results like [0, 1, 2, 3, 4]. If we change doWhileIterator to 5, then we will get [5] inside doWhileData because we will add a single element to the array AND THEN increment the iterator before we get to the condition check. That's what makes DO...WHILE loop different from other ones, in case of normal WHILE, the loop would never add single value to array because it would fail at condition check.<br><br>
+                              <strong>Debug will show values of doWhileData.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-100" class="button button--debug">RUN DEBUG</button>
@@ -2499,6 +2506,30 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK 100 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 101 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 101: Replace Loops using Recursion</h4>
+                            <p class="single-item__paragraph">
+                              Next type of loop is called a "do...while" loop. It will first DO one pass of the code inside the loop no matter what, and then continue to run the loop WHILE the specified condition evaluates to TRUE. What makes "do...while" different from other loops? It behaves different if the condition fails on the first check. DO...WHILE Loop ensures that the code inside the loop will run AT LEAST ONCE.<br><br>
+                              var doWhileData = [];<br>
+                              var doWhileIterator = 0;<br>
+                              do {<br>
+                              &nbsp;doWhileData.push(doWhileIterator);<br>
+                              &nbsp;doWhileIterator++;<br>
+                              } while (doWhileIterator < 5);<br><br>
+                              So we're gonna get results like [0, 1, 2, 3, 4]. If we change doWhileIterator to 5, then we will get [5] inside doWhileData because we will add a single element to the array AND THEN increment the iterator before we get to the condition check. That's what makes DO...WHILE loop different from other ones, in case of normal WHILE, the loop would never add single value to array because it would fail at condition check.<br><br>
+                              <strong>Debug will show values of doWhileData.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-101" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-101"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 101 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
