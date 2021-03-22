@@ -2763,3 +2763,73 @@ if (btnFCC101 !== null && scopeFCC101 !== null) {
 } else {
   scopeFCC101.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task 102: Profile Lookup */
+
+/* We have an array of objects representing different people in our contacts lists.
+
+A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.
+
+The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.
+
+If both are true, then return the "value" of that property.
+
+If name does not correspond to any contacts then return the string No such contact.
+
+If prop does not correspond to any valid properties of a contact found to match name then return the string No such property. */
+
+var contacts = [
+  {
+    "firstName": "Akira",
+    "lastName": "Laine",
+    "number": "0543236543",
+    "likes": ["Pizza", "Coding", "Brownie Points"]
+  },
+  {
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "number": "0994372684",
+    "likes": ["Hogwarts", "Magic", "Hagrid"]
+  },
+  {
+    "firstName": "Sherlock",
+    "lastName": "Holmes",
+    "number": "0487345643",
+    "likes": ["Intriguing Cases", "Violin"]
+  },
+  {
+    "firstName": "Kristian",
+    "lastName": "Vos",
+    "number": "unknown",
+    "likes": ["JavaScript", "Gaming", "Foxes"]
+  }
+];
+
+function lookUpProfile(inputName, profileProp) {
+  for (var iContacts = 0; iContacts < contacts.length; iContacts++) {
+    if (contacts[iContacts].firstName === inputName) {
+      if (contacts[iContacts].hasOwnProperty(profileProp)) {
+        return contacts[iContacts][profileProp];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
+
+/* OUTPUT CODE */
+
+const btnFCC102 = document.getElementById('run-fcc-task-102');
+const scopeFCC102 = document.getElementById('fcc-task-102');
+
+function debugFCC102() {
+  scopeFCC102.innerHTML = outputResponse + lookUpProfile('Harry', 'number');
+}
+
+if (btnFCC102 !== null && scopeFCC102 !== null) {
+  btnFCC102.addEventListener('click', debugFCC102);
+} else {
+  scopeFCC102.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
