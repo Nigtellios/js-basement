@@ -2530,8 +2530,8 @@
                               &nbsp;&nbsp;return doRecursiveMultiply(recursiveArray, rnElements - 1) * recursiveArray[rnElements - 1];<br>
                               &nbsp;}<br>
                               }<br><br>
-                              The recursive version of multiply breaks down like this. In the base case, where rnElements <= 0, it returns 1. For larger values of n, it calls itself, but with rnElements - 1. That function call is evaluated in the same way, calling doRecursiveMultiply again until rnElements <= 0. At this point, all the functions can return and the original doRecursiveMultiply returns the answer.<br><br>
-                              Recursive functions must have a base case when they return without calling the function again (in example above, when rnElements <= 0. Otherwise, they can never finish executing.<br><br>
+                              The recursive version of multiply breaks down like this. In the base case, where rnElements smaller or equal to 0, it returns 1. For larger values of n, it calls itself, but with rnElements - 1. That function call is evaluated in the same way, calling doRecursiveMultiply again until rnElements smaller or equal to 0. At this point, all the functions can return and the original doRecursiveMultiply returns the answer.<br><br>
+                              Recursive functions must have a base case when they return without calling the function again (in example above, when rnElements smaller or equal to 0. Otherwise, they can never finish executing.<br><br>
                               <strong>Debug will show execution of doForMultiply(dfArray, 3) and doRecursiveMultiply(rArray, 3).</strong>
                             </p>
                             <div class="single-item__debug-box">
@@ -2542,6 +2542,126 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK 101 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 102 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 102: Profile Lookup</h4>
+                            <p class="single-item__paragraph">
+                              We have an array of objects representing different people in our contacts lists.<br><br>
+                              A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.<br><br>
+                              The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.<br><br>
+                              If both are true, then return the "value" of that property.<br><br>
+                              If name does not correspond to any contacts then return the string No such contact.<br><br>
+                              If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.<br><br>
+                              var contacts = [<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Akira",<br>
+                              &nbsp;&nbsp;"lastName": "Laine",<br>
+                              &nbsp;&nbsp;"number": "0543236543",<br>
+                              &nbsp;&nbsp;"likes": ["Pizza", "Coding", "Brownie Points"]<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Harry",<br>
+                              &nbsp;&nbsp;"lastName": "Potter",<br>
+                              &nbsp;&nbsp;"number": "0994372684",<br>
+                              &nbsp;&nbsp;"likes": ["Hogwarts", "Magic", "Hagrid"]<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Sherlock",<br>
+                              &nbsp;&nbsp;"lastName": "Holmes",<br>
+                              &nbsp;&nbsp;"number": "0487345643",<br>
+                              &nbsp;&nbsp;"likes": ["Intriguing Cases", "Violin"]<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Kristian",<br>
+                              &nbsp;&nbsp;"lastName": "Vos",<br>
+                              &nbsp;&nbsp;"number": "unknown",<br>
+                              &nbsp;&nbsp;"likes": ["JavaScript", "Gaming", "Foxes"]<br>
+                              &nbsp;}<br>
+                              &nbsp;];<br><br>
+                              function lookUpProfile(inputName, profileProp) {<br>
+                              &nbsp;for (var iContacts = 0; iContacts < contacts.length; iContacts++) {<br>
+                              &nbsp;&nbsp;if (contacts[iContacts].firstName === inputName) {<br>
+                              &nbsp;&nbsp;&nbsp;if (contacts[iContacts].hasOwnProperty(profileProp)) {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;return contacts[iContacts][profileProp];<br>
+                              &nbsp;&nbsp;&nbsp;} else {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;return "No such property";<br>
+                              &nbsp;&nbsp;&nbsp;}<br>
+                              &nbsp;&nbsp;}<br>
+                              &nbsp;&nbsp;}<br>
+                              &nbsp;return "No such contact";<br>
+                              }<br><br>
+                              <strong>Debug will show execution of lookUpProfile('Harry', 'number');</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-102" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-102"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 102 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 103 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 103: Generate Random Fractions with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              We have an array of objects representing different people in our contacts lists.<br><br>
+                              A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.<br><br>
+                              The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.<br><br>
+                              If both are true, then return the "value" of that property.<br><br>
+                              If name does not correspond to any contacts then return the string No such contact.<br><br>
+                              If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.<br><br>
+                              var contacts = [<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Akira",<br>
+                              &nbsp;&nbsp;"lastName": "Laine",<br>
+                              &nbsp;&nbsp;"number": "0543236543",<br>
+                              &nbsp;&nbsp;"likes": ["Pizza", "Coding", "Brownie Points"]<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Harry",<br>
+                              &nbsp;&nbsp;"lastName": "Potter",<br>
+                              &nbsp;&nbsp;"number": "0994372684",<br>
+                              &nbsp;&nbsp;"likes": ["Hogwarts", "Magic", "Hagrid"]<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Sherlock",<br>
+                              &nbsp;&nbsp;"lastName": "Holmes",<br>
+                              &nbsp;&nbsp;"number": "0487345643",<br>
+                              &nbsp;&nbsp;"likes": ["Intriguing Cases", "Violin"]<br>
+                              &nbsp;},<br>
+                              &nbsp;{<br>
+                              &nbsp;&nbsp;"firstName": "Kristian",<br>
+                              &nbsp;&nbsp;"lastName": "Vos",<br>
+                              &nbsp;&nbsp;"number": "unknown",<br>
+                              &nbsp;&nbsp;"likes": ["JavaScript", "Gaming", "Foxes"]<br>
+                              &nbsp;}<br>
+                              &nbsp;];<br><br>
+                              function lookUpProfile(inputName, profileProp) {<br>
+                              &nbsp;for (var iContacts = 0; iContacts < contacts.length; iContacts++) {<br>
+                              &nbsp;&nbsp;if (contacts[iContacts].firstName === inputName) {<br>
+                              &nbsp;&nbsp;&nbsp;if (contacts[iContacts].hasOwnProperty(profileProp)) {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;return contacts[iContacts][profileProp];<br>
+                              &nbsp;&nbsp;&nbsp;} else {<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;return "No such property";<br>
+                              &nbsp;&nbsp;&nbsp;}<br>
+                              &nbsp;&nbsp;}<br>
+                              &nbsp;&nbsp;}<br>
+                              &nbsp;return "No such contact";<br>
+                              }<br><br>
+                              <strong>Debug will show execution of lookUpProfile('Harry', 'number');</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-103" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-103"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 103 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
