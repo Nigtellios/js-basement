@@ -2833,3 +2833,226 @@ if (btnFCC102 !== null && scopeFCC102 !== null) {
   scopeFCC102.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* Task 103: Generate Random Fractions with JavaScript */
+
+/* Random numbers are useful for creating random behavior. JavaScript has a Math.random() function that generates a random decimal number between 0 (inclusive) and not quite up to 1 (exclusive). Thus Math.random() can return a 0 but never quite return a 1. NOTE that like in "Storing Values with the Equal Operator", all functions calls will be resolved before the RETURN executes, so we can return the value of the Math.random() function. */
+
+function randomNumberGenerator() {
+  // return Math.random();
+  var rngResult = Math.random();
+  return Math.round(rngResult * 100) / 100;
+  /* Or you can just leave it "*100" if you want bigger numbers */
+}
+
+/* ^numbers after digits from http://www.javascriptkit.com/javatutors/round.shtml */
+
+/* OUTPUT CODE */
+
+const btnFCC103 = document.getElementById('run-fcc-task-103');
+const scopeFCC103 = document.getElementById('fcc-task-103');
+
+function debugFCC103() {
+  scopeFCC103.innerHTML = outputResponse + randomNumberGenerator();
+}
+
+if (btnFCC103 !== null && scopeFCC103 !== null) {
+  btnFCC103.addEventListener('click', debugFCC103);
+} else {
+  scopeFCC103.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 104: Generate Random Whole Numbers with JavaScript */
+
+/* It's nice that we can generate random decimal numbers, bit it's even more useful if we use it to generate random whole numbers. First of all, we use Math.random() to generate a random DECIMAL. Then we multiply that random decimal by 20, then we can use another function, Math.floor() to round the number down to its nearest whole number. REMEMBER that Math.random() can never quite return a 1 and, because we're rounding down, it's impossible to actually get 20. This technique will give us a whole number between 0 and 19. So: */
+
+function wholeRNGenerator() {
+  return Math.floor(Math.random() * 21);
+}
+
+/* We are calling Math.random(), multiplying the result by 21 (well it's my fix, I want to get whole range between 0 and 20, if we can't reach 20 itself then let's raise it by whole 1 to 21), then passing the value to Math.floor() function to round the value down to the nearest whole number.*/
+
+/* OUTPUT CODE */
+
+const btnFCC104 = document.getElementById('run-fcc-task-104');
+const scopeFCC104 = document.getElementById('fcc-task-104');
+
+function debugFCC104() {
+  scopeFCC104.innerHTML = outputResponse + wholeRNGenerator();
+}
+
+if (btnFCC104 !== null && scopeFCC104 !== null) {
+  btnFCC104.addEventListener('click', debugFCC104);
+} else {
+  scopeFCC104.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 105: Generate Random Whole Numbers within a Range */
+
+/* Instead of generating a random whole number between zero and a given number like we did before, we can generate a random whole number that falls within a range of two specific numbers. To do this, we'll define a minimum number MIN and a maximum number MAX. Look at the formula:
+
+Math.floor(Math.random() * (max - min + 1)) + min.
+
+We would multiply randomly generated (Math.random()) number with size of the range (max - min + 1) (to scale the random number) and adding minimum value to "shift" our scaled number into the range. */
+
+function randomRNGenerator(rMin, rMax) {
+  return Math.floor(Math.random() * (rMax - rMin + 1)) + rMin;
+}
+
+/* OUTPUT CODE */
+
+const btnFCC105 = document.getElementById('run-fcc-task-105');
+const scopeFCC105 = document.getElementById('fcc-task-105');
+
+function debugFCC105() {
+  scopeFCC105.innerHTML = outputResponse + randomRNGenerator(0, 50);
+}
+
+if (btnFCC105 !== null && scopeFCC105 !== null) {
+  btnFCC105.addEventListener('click', debugFCC105);
+} else {
+  scopeFCC105.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 106: Use the parseInt Function */
+
+/* The parseInt() function parses a string and returns an integer. parseInt() itself is much more advanced, check more in Mozilla's MDN docs. Here's an example: */
+
+function convertToInt(convString) {
+  return parseInt(convString);
+}
+
+/* OUTPUT CODE */
+
+const btnFCC106 = document.getElementById('run-fcc-task-106');
+const scopeFCC106 = document.getElementById('fcc-task-106');
+
+function debugFCC106() {
+  scopeFCC106.innerHTML = outputResponse + convertToInt("00156");
+}
+
+if (btnFCC106 !== null && scopeFCC106 !== null) {
+  btnFCC106.addEventListener('click', debugFCC106);
+} else {
+  scopeFCC106.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 107: Use the parseInt Function with a Radix */
+
+/* The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36. The function call looks like: parseInt(string, radix); And here is example: */
+
+function convertToIntRadix(rString, rRadix) {
+  return parseInt(rString, rRadix);
+}
+
+/* So actually we converted string in binary system (radix - base 2) to whole decimal number. */
+
+/* OUTPUT CODE */
+
+const btnFCC107 = document.getElementById('run-fcc-task-107');
+const scopeFCC107 = document.getElementById('fcc-task-107');
+
+function debugFCC107() {
+  scopeFCC107.innerHTML = outputResponse + convertToIntRadix("101011", 2);
+}
+
+if (btnFCC107 !== null && scopeFCC107 !== null) {
+  btnFCC107.addEventListener('click', debugFCC107);
+} else {
+  scopeFCC107.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 108: Use the Conditional (Ternary) Operator */
+
+/* The conditional operator, also called the ternary operator, can be used as a one line if-else expression. The synrax is a ? b : c, where A is the condition, B is the code to run when the conditions returns TRUE, anc C is the code to run when the conditions returns FALSE. Let's use it to check which of two values is greater. */
+
+function findGreaterThan(firstNumber, secondNumber) {
+  return firstNumber > secondNumber ? "First number is greater than second one." : "Second number is greater than first one.";
+}
+
+/* OUTPUT CODE */
+
+const btnFCC108 = document.getElementById('run-fcc-task-108');
+const scopeFCC108 = document.getElementById('fcc-task-108');
+
+function debugFCC108() {
+  scopeFCC108.innerHTML = outputResponse + findGreaterThan(12, 24);
+}
+
+if (btnFCC108 !== null && scopeFCC108 !== null) {
+  btnFCC108.addEventListener('click', debugFCC108);
+} else {
+  scopeFCC108.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 109: Use Multiple Conditional (Ternary) Operators */
+
+/* In the previous challenge, we used a single conditional operator. You can also chain them together to check for multiple conditions. It is considered best practice to format multiple conditional operators such that each condition is on separate line, as shown below. */
+
+function findGreaterOrEqualTernary(tFirst, tSecond) {
+  return (tFirst === tSecond) ? "Both numbers are equal."
+    : (tFirst > tSecond) ? "First number is greater than second one."
+      : "Second number is greater than first one.";
+}
+
+/* OUTPUT CODE */
+
+const btnFCC109 = document.getElementById('run-fcc-task-109');
+const scopeFCC109 = document.getElementById('fcc-task-109');
+
+function debugFCC109() {
+  scopeFCC109.innerHTML = outputResponse + findGreaterOrEqualTernary(15, 99);
+}
+
+if (btnFCC109 !== null && scopeFCC109 !== null) {
+  btnFCC109.addEventListener('click', debugFCC109);
+} else {
+  scopeFCC109.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 110: Use Recursion to Create a Countdown */
+
+/* In previous challenges, you learned how to use recursion to replace a for loop. Now, let's look at a more complex function that returns an array of consecutive integers starting with 1 through the number passed to the function. As mentioned there, there will be a BASE CASE. The base case tells the recursive function when it no longer needs to call itself. It is a simple case where the return value is already known. There will also be a recursive call which executes the original function with different arguments. If the function is written correctly, eventually the base case will be reached. For example, say you want to write a recursive function that returns an array containing the numbers 1 through N. This function will need to accept an argument, N, representing the final number. Then it will need to call itself with progressively smaller values of N until it reaches 1. You could write the function as follows: */
+
+/* function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5));
+
+So on, the value [1,2,3,4,5] will be displayed in the console. */
+
+/* At first, this seems counterintuitive since the value of N decreases, but the values in the final array are increasing. This happens because the push happens last, after the recursive call has returned. At the point where n is pushed into the Array, countup(n - 1) has already been evaluated and returned [1, 2, ...., n - 1]. */
+
+function countDown(nTimes) {
+  if (nTimes < 1) {
+    return []; //return empty array
+  } else {
+    //else - in this case, call itself until nTimes < 1 will be TRUE (right now it's false - that's why we are iterating).
+    var array = countDown(nTimes - 1);
+    array.unshift(nTimes);
+    return array;
+  }
+}
+
+/* OUTPUT CODE */
+
+const btnFCC110 = document.getElementById('run-fcc-task-110');
+const scopeFCC110 = document.getElementById('fcc-task-110');
+
+function debugFCC110() {
+  scopeFCC110.innerHTML = outputResponse + countDown(10);
+}
+
+if (btnFCC110 !== null && scopeFCC110 !== null) {
+  btnFCC110.addEventListener('click', debugFCC110);
+} else {
+  scopeFCC110.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task 111: Use Recursion to Create a Range of Numbers */
+

@@ -2608,51 +2608,14 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 103: Generate Random Fractions with JavaScript</h4>
                             <p class="single-item__paragraph">
-                              We have an array of objects representing different people in our contacts lists.<br><br>
-                              A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.<br><br>
-                              The function should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.<br><br>
-                              If both are true, then return the "value" of that property.<br><br>
-                              If name does not correspond to any contacts then return the string No such contact.<br><br>
-                              If prop does not correspond to any valid properties of a contact found to match name then return the string No such property.<br><br>
-                              var contacts = [<br>
-                              &nbsp;{<br>
-                              &nbsp;&nbsp;"firstName": "Akira",<br>
-                              &nbsp;&nbsp;"lastName": "Laine",<br>
-                              &nbsp;&nbsp;"number": "0543236543",<br>
-                              &nbsp;&nbsp;"likes": ["Pizza", "Coding", "Brownie Points"]<br>
-                              &nbsp;},<br>
-                              &nbsp;{<br>
-                              &nbsp;&nbsp;"firstName": "Harry",<br>
-                              &nbsp;&nbsp;"lastName": "Potter",<br>
-                              &nbsp;&nbsp;"number": "0994372684",<br>
-                              &nbsp;&nbsp;"likes": ["Hogwarts", "Magic", "Hagrid"]<br>
-                              &nbsp;},<br>
-                              &nbsp;{<br>
-                              &nbsp;&nbsp;"firstName": "Sherlock",<br>
-                              &nbsp;&nbsp;"lastName": "Holmes",<br>
-                              &nbsp;&nbsp;"number": "0487345643",<br>
-                              &nbsp;&nbsp;"likes": ["Intriguing Cases", "Violin"]<br>
-                              &nbsp;},<br>
-                              &nbsp;{<br>
-                              &nbsp;&nbsp;"firstName": "Kristian",<br>
-                              &nbsp;&nbsp;"lastName": "Vos",<br>
-                              &nbsp;&nbsp;"number": "unknown",<br>
-                              &nbsp;&nbsp;"likes": ["JavaScript", "Gaming", "Foxes"]<br>
-                              &nbsp;}<br>
-                              &nbsp;];<br><br>
-                              function lookUpProfile(inputName, profileProp) {<br>
-                              &nbsp;for (var iContacts = 0; iContacts < contacts.length; iContacts++) {<br>
-                              &nbsp;&nbsp;if (contacts[iContacts].firstName === inputName) {<br>
-                              &nbsp;&nbsp;&nbsp;if (contacts[iContacts].hasOwnProperty(profileProp)) {<br>
-                              &nbsp;&nbsp;&nbsp;&nbsp;return contacts[iContacts][profileProp];<br>
-                              &nbsp;&nbsp;&nbsp;} else {<br>
-                              &nbsp;&nbsp;&nbsp;&nbsp;return "No such property";<br>
-                              &nbsp;&nbsp;&nbsp;}<br>
-                              &nbsp;&nbsp;}<br>
-                              &nbsp;&nbsp;}<br>
-                              &nbsp;return "No such contact";<br>
+                              Random numbers are useful for creating random behavior. JavaScript has a Math.random() function that generates a random decimal number between 0 (inclusive) and not quite up to 1 (exclusive). Thus Math.random() can return a 0 but never quite return a 1. NOTE that like in "Storing Values with the Equal Operator", all functions calls will be resolved before the RETURN executes, so we can return the value of the Math.random() function.<br><br>
+                              function randomNumberGenerator() {<br>
+                              &nbsp;var rngResult = Math.random();<br>
+                              &nbsp;return Math.round(rngResult * 100) / 100;<br>
+                              &nbsp;/* Or you can just leave it "*100" if you want bigger numbers */<br>
                               }<br><br>
-                              <strong>Debug will show execution of lookUpProfile('Harry', 'number');</strong>
+                              ^numbers after digits from http://www.javascriptkit.com/javatutors/round.shtml<br><br>
+                              <strong>Debug will show execution of randomNumberGenerator(), you can run it multiple times.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-103" class="button button--debug">RUN DEBUG</button>
@@ -2662,6 +2625,188 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK 103 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 104 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 104: Generate Random Whole Numbers with JavaScript</h4>
+                            <p class="single-item__paragraph">
+                              It's nice that we can generate random decimal numbers, bit it's even more useful if we use it to generate random whole numbers. First of all, we use Math.random() to generate a random DECIMAL. Then we multiply that random decimal by 20, then we can use another function, Math.floor() to round the number down to its nearest whole number. REMEMBER that Math.random() can never quite return a 1 and, because we're rounding down, it's impossible to actually get 20. This technique will give us a whole number between 0 and 19. So:<br><br>
+                              function wholeRNGenerator() {<br>
+                              &nbsp;return Math.floor(Math.random() * 21);<br>
+                              }<br><br>
+                              We are calling Math.random(), multiplying the result by 21 (well it's my fix, I want to get whole range between 0 and 20, if we can't reach 20 itself then let's raise it by whole 1 to 21), then passing the value to Math.floor() function to round the value down to the nearest whole number.<br><br>
+                              <strong>Debug will show execution of wholeRNGenerator(), you can run it multiple times.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-104" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-104"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 104 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 105 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 105: Generate Random Whole Numbers within a Range</h4>
+                            <p class="single-item__paragraph">
+                              Instead of generating a random whole number between zero and a given number like we did before, we can generate a random whole number that falls within a range of two specific numbers. To do this, we'll define a minimum number MIN and a maximum number MAX. Look at the formula:<br><br>
+                              Math.floor(Math.random() * (max - min + 1)) + min.<br><br>
+                              We would multiply randomly generated (Math.random()) number with size of the range (max - min + 1) (to scale the random number) and adding minimum value to "shift" our scaled number into the range.<br><br>
+                              function randomRNGenerator(rMin, rMax) {<br>
+                              &nbsp;return Math.floor(Math.random() * (rMax - rMin + 1)) + rMin;<br>
+                              }<br><br>
+                              <strong>Debug will show execution of randomRNGenerator(0, 50), you can run it multiple times.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-105" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-105"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 105 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 106 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 106: Use the parseInt Function</h4>
+                            <p class="single-item__paragraph">
+                              The parseInt() function parses a string and returns an integer. parseInt() itself is much more advanced, check more in Mozilla's MDN docs. Here's an example:<br><br>
+                              function convertToInt(convString) {<br>
+                              &nbsp;return parseInt(convString);<br>
+                              }<br><br>
+                              <strong>Debug will show execution of convertToInt("00156").</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-106" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-106"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 106 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 107 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 107: Use the parseInt Function with a Radix</h4>
+                            <p class="single-item__paragraph">
+                              The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36. The function call looks like: parseInt(string, radix); And here is example:<br><br>
+                              function convertToIntRadix(rString, rRadix) {<br>
+                              &nbsp;return parseInt(rString, rRadix);<br>
+                              }<br><br>
+                              So actually we converted string in binary system (radix - base 2) to whole decimal number.<br><br>
+                              <strong>Debug will show execution of convertToIntRadix("101011", 2).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-107" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-107"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 107 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 108 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 108: Use the Conditional (Ternary) Operator</h4>
+                            <p class="single-item__paragraph">
+                              The conditional operator, also called the ternary operator, can be used as a one line if-else expression. The synrax is a ? b : c, where A is the condition, B is the code to run when the conditions returns TRUE, anc C is the code to run when the conditions returns FALSE. Let's use it to check which of two values is greater.<br><br>
+                              function findGreaterThan(firstNumber, secondNumber) {<br>
+                              &nbsp;return firstNumber > secondNumber ? "First number is greater than second one." : "Second number is greater than first one.";<br>
+                              }<br><br>
+                              <strong>Debug will show execution of findGreaterThan(12, 24).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-108" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-108"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 108 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 109 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 109: Use the Conditional (Ternary) Operator</h4>
+                            <p class="single-item__paragraph">
+                              In the previous challenge, we used a single conditional operator. You can also chain them together to check for multiple conditions. It is considered best practice to format multiple conditional operators such that each condition is on separate line, as shown below.<br><br>
+                              function findGreaterOrEqualTernary(tFirst, tSecond) {<br>
+                              &nbsp;return (tFirst === tSecond) ? "Both numbers are equal."<br>
+                              &nbsp;&nbsp;: (tFirst > tSecond) ? "First number is greater than second one."<br>
+                              &nbsp;&nbsp;&nbsp;: "Second number is greater than first one.";<br>
+                              }<br><br>
+                              <strong>Debug will show execution of findGreaterOrEqualTernary(15, 99).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-109" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-109"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 109 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 110 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 110: Use Recursion to Create a Countdown</h4>
+                            <p class="single-item__paragraph">
+                              In previous challenges, you learned how to use recursion to replace a for loop. Now, let's look at a more complex function that returns an array of consecutive integers starting with 1 through the number passed to the function. As mentioned there, there will be a BASE CASE. The base case tells the recursive function when it no longer needs to call itself. It is a simple case where the return value is already known. There will also be a recursive call which executes the original function with different arguments. If the function is written correctly, eventually the base case will be reached. For example, say you want to write a recursive function that returns an array containing the numbers 1 through N. This function will need to accept an argument, N, representing the final number. Then it will need to call itself with progressively smaller values of N until it reaches 1. You could write the function as follows:<br><br>
+                              function countup(n) {<br>
+                              &nbsp;if (n < 1) {<br>
+                              &nbsp;&nbsp;return [];<br>
+                              &nbsp;} else {<br>
+                              &nbsp;&nbsp;const countArray = countup(n - 1);<br>
+                              &nbsp;&nbsp;countArray.push(n);<br>
+                              &nbsp;&nbsp;return countArray;<br>
+                              &nbsp;}<br>
+                              }<br>
+                              console.log(countup(5));<br><br>
+                              So on, the value [1,2,3,4,5] will be displayed in the console.<br><br>
+                              At first, this seems counterintuitive since the value of N decreases, but the values in the final array are increasing. This happens because the push happens last, after the recursive call has returned. At the point where n is pushed into the Array, countup(n - 1) has already been evaluated and returned [1, 2, ...., n - 1].<br><br>
+                              function countDown(nTimes) {<br>
+                              &nbsp;if (nTimes < 1) {<br>
+                              &nbsp;&nbsp;return []; //return empty array<br>
+                              &nbsp;} else {<br>
+                              &nbsp;&nbsp;//else - in this case, call itself until nTimes < 1 will be TRUE (right now it's false - that's why we are iterating).<br>
+                              &nbsp;&nbsp;var array = countDown(nTimes - 1);<br>
+                              &nbsp;&nbsp;array.unshift(nTimes);<br>
+                              &nbsp;&nbsp;return array;<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              <strong>Debug will show execution of countDown(10).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-110" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-110"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 110 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 111 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task 111: Use Recursion to Create a Range of Numbers</h4>
+                            <p class="single-item__paragraph">
+                              <br><br>
+                              <strong>Debug will show execution of countDown(10).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-111" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-111"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK 110 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
