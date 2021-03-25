@@ -64,7 +64,13 @@
 
                         <li class="wrap__list__module__header">
                           <span class="marker--cyan"></span>
-                          <h3>#1: Basic JavaScript (ES5)</h3>
+                          <div class="single-item--layout">
+                            <h3 class="single-item__header">#1: Basic JavaScript (ES5)</h3>
+                            <p class="single-item__paragraph">
+                            JavaScript is a scripting language you can use to make web pages interactive. It is one of the core technologies of the web, along with HTML and CSS, and is supported by all modern browsers.<br><br>
+                            In this course, you'll learn fundamental programming concepts in JavaScript. You'll start with basic data structures like numbers and strings. Then you'll learn to work with arrays, objects, functions, loops, if/else statements, and more.
+                            </p>
+                          </div>
                         </li>
 
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK S -->
@@ -2348,7 +2354,7 @@
                               &nbsp;whileArray.push(i);<br>
                               &nbsp;i++;<br>
                               }<br><br>
-                              In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.<br><br>
+                              In the code above, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.<br><br>
                               var whileOutput = whileArray;<br><br>
                               <strong>Debug will show value of whileOutput.</strong>
                             </p>
@@ -2818,6 +2824,90 @@
                           </div>
                         </li> <!-- /SINGLE TASK 111 -->
 
+                        <li class="wrap__list__module__header">
+                          <span class="marker--cyan"></span>
+                          <div class="single-item--layout">
+                            <h3 class="single-item__header">#2: ES6</h3>
+                            <p class="single-item__paragraph">
+                            ECMAScript, or ES, is a standardized version of JavaScript. Because all major browsers follow this specification, the terms ECMAScript and JavaScript are interchangeable.<br><br>Most of the JS we've learned up to this point was in ES5 (ECMAScript 5), which was finalized in 2009. While you can still write programs in ES5, JavaScript is always evolving, and new features are released every year.<br><br>ES6, released in 2015, added many powerful new features to the language. In this course, you'll learn these new features, including LET and CONST, arrow functions, classes, promises and modules.
+                            </p>
+                          </div>
+                        </li> <!-- ES6 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B1 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B1: Explore Differences Between the var and let Keywords</h4>
+                            <p class="single-item__paragraph">
+                              One of the biggest problems with declaring variables with the VAR keyword is that you can overwrite variable declarations without an error. In example:<br><br>
+                              var testVar = 'Some text';<br>
+                              var testVar = 'Some overridden text';<br><br>
+                              console.log("We're testing VARs: " + testVar);<br><br>
+                              So as you can see, console will display string 'Some overwritten text'. testVar variable is originally declared as 'Some text', and then overridden to be 'Some overridden text'. In a small APP, you might not run into this type of problem, but when your code becomes larger, you might accidentally overwrite a variable that you did not intend to overwrite. Because this behavior does not throw an error, searching and fixing bugs becomes more difficult.<br><br>
+                              A new keyword called LET was introduced in ES6 to solve this potential issue with the VAR keyword. If you were to replace var with let in the variable declarations of the code above, the result would be an error.<br><br>
+                              let testLet = 'Some Nice Text';<br>
+                              let testLet = 'Some not nice Text';<br>
+                              ^It will throw "Identifier 'testLet' has already been declared (3110:4)"<br><br>
+                              This error can be seen in the console of your browser. So unlike var, when using let, a variable with the same name can only be declared once. Note the "use strict". This enables Strict Mode, which catches common coding mistakes and "unsafe" actions, For instance:<br><br>
+                              "use strict";<br>
+                              x = 3.14;<br><br>
+                              <strong>Debug will show values of testVar and testLet.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b1" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b1"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B1 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B2 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B2: Compare Scopes of the var and let Keywords</h4>
+                            <p class="single-item__paragraph">
+                              When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function. The let keyword behaves similarly, but with some extra features. When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression. In example:<br><br>
+                              var numArray1 = [];<br>
+                              for (var i1 = 0; i1 < 3; i1++) {<br>
+                              &nbsp;numArray1.push(i1);<br>
+                              }<br><br>
+                              With the var keyword, i is declared globally. So when i++ is executed, it updates the global variable. This code is similar to the following:<br><br>
+                              var numArray2 = [];<br>
+                              var i2;<br>
+                              for (i2 = 0; i2 < 3; i2++) {<br>
+                              &nbsp;numArray2.push(i2);<br>
+                              }<br><br>
+                              Here output will display the values [0,1,2] and 3. This behavior will cause problems if you were to create a function and store it for later use inside a for loop that uses the i variable. This is because the stored function will always refer to the value of the updated global i variable.<br><br>
+                              var printNumTwo1;<br>
+                              for (var i11 = 0; i11 < 3; i11++) {<br>
+                              &nbsp;if (i11 === 2) {<br>
+                              &nbsp;&nbsp;printNumTwo1 = function() {<br>
+                              &nbsp;&nbsp;&nbsp;return i11;<br>
+                              &nbsp;&nbsp;};<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              Here the console will display the value 3. As we can see, printNumTwo1() prints 3 and not 2. This is because the value assigned to i11 was updated and the printNumTwo1() returns the global i11 and not the value i11 had when the function was created in the for loop. The let keyword does not follow this behavior:<br><br>
+                              let printNumTwo2;<br>
+                              for (let i22 = 0; i22 < 3; i22++) {<br>
+                              &nbsp;if (i22 === 2) {<br>
+                              &nbsp;&nbsp;printNumTwo2 = function() {<br>
+                              &nbsp;&nbsp;&nbsp;return i22;<br>
+                              &nbsp;&nbsp;};<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              Here we are not debugging, because console will display value 2, and an error that i22 is not defined. i22 is not defined because it was not declared in the global scope. It is only declared within the for loop statement. printNumTwo2 returned the correct value because three different i22 variables with unique values (0, 1 and 2) were created by the let keyword within the loop statement.<br><br>
+                              <strong>Debug will show values of numArray1, i1, numArray2, i2 and printNumTwo1().</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b2" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b2"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B2 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
@@ -2849,7 +2939,9 @@
                       <ul class="wrap__list">
                         <li class="wrap__list__module__header">
                           <span class="marker--cyan"></span>
-                          <h3>#1: JavaScript Foundations (2019)</h3>
+                          <div class="single-item--layout">
+                            <h3 class="single-item__header">#1: JavaScript Foundations (2019)</h3>
+                          </div>
                         </li>
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 1 -->
                           <span class="marker--red"></span>
@@ -3690,7 +3782,9 @@
                       <ul class="wrap__list">
                         <li class="wrap__list__module__header">
                           <span class="marker--cyan"></span>
-                          <h3>#1: JavaScript ES5+</h3>
+                          <div class="single-item--layout">
+                            <h3 class="single-item__header">#1: JavaScript ES5+</h3>
+                          </div>
                         </li>
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK -->
                           <span class="marker--yellow"></span>
