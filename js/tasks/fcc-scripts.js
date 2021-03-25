@@ -3056,3 +3056,31 @@ if (btnFCC110 !== null && scopeFCC110 !== null) {
 
 /* Task 111: Use Recursion to Create a Range of Numbers */
 
+/* Apart from fact, that recursion should never be used in any of these cases (exponential running time without permament access to memory), we have to do another boring Recursion function. */
+
+/* We have defined a function named rangeOfNumbers with two parameters. The function should return an array of integers which begins with a number represented by the startNum parameter and ends with a number represented by the endNum parameter. The starting number will always be less than or equal to the ending number. Your function must use recursion by calling itself and not use loops of any kind. It should also work for cases where both startNum and endNum are the same. */
+
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum - startNum === 0) {
+    return [startNum];
+  } else {
+    var numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+
+/* OUTPUT CODE */
+
+const btnFCC111 = document.getElementById('run-fcc-task-111');
+const scopeFCC111 = document.getElementById('fcc-task-111');
+
+function debugFCC111() {
+  scopeFCC111.innerHTML = outputResponse + rangeOfNumbers(1, 5);
+}
+
+if (btnFCC111 !== null && scopeFCC111 !== null) {
+  btnFCC111.addEventListener('click', debugFCC111);
+} else {
+  scopeFCC111.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
