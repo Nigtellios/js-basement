@@ -2796,8 +2796,18 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task 111: Use Recursion to Create a Range of Numbers</h4>
                             <p class="single-item__paragraph">
-                              <br><br>
-                              <strong>Debug will show execution of countDown(10).</strong>
+                              Apart from fact, that recursion should never be used in any of these cases (exponential running time without permament access to memory), we have to do another boring Recursion function.<br><br>
+                              We have defined a function named rangeOfNumbers with two parameters. The function should return an array of integers which begins with a number represented by the startNum parameter and ends with a number represented by the endNum parameter. The starting number will always be less than or equal to the ending number. Your function must use recursion by calling itself and not use loops of any kind. It should also work for cases where both startNum and endNum are the same.<br><br>
+                              function rangeOfNumbers(startNum, endNum) {<br>
+                              &nbsp;if (endNum - startNum === 0) {<br>
+                              &nbsp;&nbsp;return [startNum];<br>
+                              &nbsp;} else {<br>
+                              &nbsp;&nbsp;var numbers = rangeOfNumbers(startNum, endNum - 1);<br>
+                              &nbsp;&nbsp;numbers.push(endNum);<br>
+                              &nbsp;&nbsp;return numbers;<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              <strong>Debug will show execution of rangeOfNumbers(1, 5).</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-111" class="button button--debug">RUN DEBUG</button>
@@ -2806,7 +2816,7 @@
                               </div>
                             </div>
                           </div>
-                        </li> <!-- /SINGLE TASK 110 -->
+                        </li> <!-- /SINGLE TASK 111 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
