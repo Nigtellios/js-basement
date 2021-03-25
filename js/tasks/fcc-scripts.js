@@ -1,5 +1,9 @@
 /* Free Code Camp Tasks */
 
+/* ############################# */
+/* ######## ECMAScript 5 ####### */
+/* ############################# */
+
 /* BASE -> FUNCTION OUTPUT SETUP */
 
 /* const btnFCCX = document.getElementById('run-fcc-task-X');
@@ -1033,7 +1037,7 @@ if (btnFCC48 !== null && scopeFCC48 !== null) {
 var myGlobal_T49 = 10;
 
 function fun_T49() {
-  oopsGlobal_T49 = 5; // oopsGlobal is defined without var so it has Global scope.
+  var oopsGlobal_T49 = 5; // oopsGlobal is defined without var so it has Global scope.
 }
 
 function fun2_T49() {
@@ -3056,7 +3060,7 @@ if (btnFCC110 !== null && scopeFCC110 !== null) {
 
 /* Task 111: Use Recursion to Create a Range of Numbers */
 
-/* Apart from fact, that recursion should never be used in any of these cases (exponential running time without permament access to memory), we have to do another boring Recursion function. */
+/* Apart from fact, that recursion should never be used in any of these cases (exponential running time without permanent access to memory), we have to do another boring Recursion function. */
 
 /* We have defined a function named rangeOfNumbers with two parameters. The function should return an array of integers which begins with a number represented by the startNum parameter and ends with a number represented by the endNum parameter. The starting number will always be less than or equal to the ending number. Your function must use recursion by calling itself and not use loops of any kind. It should also work for cases where both startNum and endNum are the same. */
 
@@ -3083,4 +3087,99 @@ if (btnFCC111 !== null && scopeFCC111 !== null) {
   btnFCC111.addEventListener('click', debugFCC111);
 } else {
   scopeFCC111.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* ############################# */
+/* ######## ECMAScript 6 ####### */
+/* ############################# */
+
+/* Task B1: Explore Differences Between the var and let Keywords */
+
+/* One of the biggest problems with declaring variables with the VAR keyword is that you can overwrite variable declarations without an error. In example: */
+
+var testVar = 'Some text';
+var testVar = 'Some overridden text';
+
+/* So as you can see, console will display string 'Some overwritten text'. testVar variable is originally declared as 'Some text', and then overridden to be 'Some overridden text'. In a small APP, you might not run into this type of problem, but when your code becomes larger, you might accidentally overwrite a variable that you did not intend to overwrite. Because this behavior does not throw an error, searching and fixing bugs becomes more difficult. */
+
+/* A new keyword called LET was introduced in ES6 to solve this potential issue with the VAR keyword. If you were to replace var with let in the variable declarations of the code above, the result would be an error. */
+
+let testLet = 'Some Nice Text';
+// let testLet = 'Some not nice Text';
+//It will throw "Identifier 'testLet' has already been declared (3110:4)"
+
+/* This error can be seen in the console of your browser. So unlike var, when using let, a variable with the same name can only be declared once. Note the "use strict". This enables Strict Mode, which catches common coding mistakes and "unsafe" actions, For instance: */
+
+"use strict";
+x = 3.14;
+
+/* OUTPUT CODE */
+
+const btnFCCB1 = document.getElementById('run-fcc-task-b1');
+const scopeFCCB1 = document.getElementById('fcc-task-b1');
+
+function debugFCCB1() {
+  scopeFCCB1.innerHTML = outputResponse + "We're testing VARs: " + testVar + '. Test let: ' + testLet + '.';
+}
+
+if (btnFCCB1 !== null && scopeFCCB1 !== null) {
+  btnFCCB1.addEventListener('click', debugFCCB1);
+} else {
+  scopeFCCB1.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B2: Compare Scopes of the var and let Keywords */
+
+/* When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function. The let keyword behaves similarly, but with some extra features. When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression. In example: */
+
+var numArray1 = [];
+for (var i1 = 0; i1 < 3; i1++) {
+  numArray1.push(i1);
+}
+
+/* With the var keyword, i is declared globally. So when i++ is executed, it updates the global variable. This code is similar to the following: */
+
+var numArray2 = [];
+var i2;
+for (i2 = 0; i2 < 3; i2++) {
+  numArray2.push(i2);
+}
+
+/* Here output will display the values [0,1,2] and 3. This behavior will cause problems if you were to create a function and store it for later use inside a for loop that uses the i variable. This is because the stored function will always refer to the value of the updated global i variable. */
+
+var printNumTwo1;
+for (var i11 = 0; i11 < 3; i11++) {
+  if (i11 === 2) {
+    printNumTwo1 = function() {
+      return i11;
+    };
+  }
+}
+
+/* Here the console will display the value 3. As we can see, printNumTwo1() prints 3 and not 2. This is because the value assigned to i11 was updated and the printNumTwo1() returns the global i11 and not the value i11 had when the function was created in the for loop. The let keyword does not follow this behavior: */
+
+let printNumTwo2;
+for (let i22 = 0; i22 < 3; i22++) {
+  if (i22 === 2) {
+    printNumTwo2 = function() {
+      return i22;
+    };
+  }
+}
+
+/* Here we are not debugging, because console will display value 2, and an error that i22 is not defined. i22 is not defined because it was not declared in the global scope. It is only declared within the for loop statement. printNumTwo2 returned the correct value because three different i22 variables with unique values (0, 1 and 2) were created by the let keyword within the loop statement. */
+
+/* OUTPUT CODE */
+
+const btnFCCB2 = document.getElementById('run-fcc-task-b2');
+const scopeFCCB2 = document.getElementById('fcc-task-b2');
+
+function debugFCCB2() {
+  scopeFCCB2.innerHTML = outputResponse + 'First example: ' + numArray1 + '. Iterator value: ' + i1 + '.' + ' Second example: ' + numArray2 + '. Iterator value: ' + i2 + '.' + ' Third example: ' + printNumTwo1() + '.';
+}
+
+if (btnFCCB2 !== null && scopeFCCB2 !== null) {
+  btnFCCB2.addEventListener('click', debugFCCB2);
+} else {
+  scopeFCCB2.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
