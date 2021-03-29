@@ -3183,3 +3183,31 @@ if (btnFCCB2 !== null && scopeFCCB2 !== null) {
 } else {
   scopeFCCB2.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B3: Declare a Read-Only Variable with the const Keyword */
+
+/* The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword. */
+
+/* const has all the awesome features that let has, with the added bonus that variables declared using const are read-only. They are a constant value, which means that once a variable is assigned with const, it cannot be reassigned. Trying to reassign a variable declared with const will throw an error. You should always name variables you don't want to reassign using the CONST keyword. This helps you accidentally attempt to reassign a variable that is meant to say constant. A common practice when naming constants is to use all uppercase letters, with words separated by an underscore. */
+
+/* It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (Objects and arrays). In a later challenge you will see an example of lowercase variable identifier being used for an array. */
+
+function printSomethingConst(inputSth) {
+  const sentence = "This is something " + inputSth + "!";
+  return sentence;
+}
+
+/* OUTPUT CODE */
+
+const btnFCCB3 = document.getElementById('run-fcc-task-b3');
+const scopeFCCB3 = document.getElementById('fcc-task-b3');
+
+function debugFCCB3() {
+  scopeFCCB3.innerHTML = outputResponse + printSomethingConst("amazing");
+}
+
+if (btnFCCB3 !== null && scopeFCCB3 !== null) {
+  btnFCCB3.addEventListener('click', debugFCCB3);
+} else {
+  scopeFCCB3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
