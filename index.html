@@ -3189,10 +3189,12 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B15 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task B15: Use Destructuring Assignment to Assign Variables from Arrays</h4>
+                            <h4 class="single-item__header">Task B15: Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements</h4>
                             <p class="single-item__paragraph">
-                              <br><br>
-                              <strong>Debug will show values of a2B14, b2B14 and c2B14.</strong>
+                              In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array. The result is similar to Array.prototype.slice(), as shown below:<br><br>
+                              const [firstE, secondE, ...restOfArray] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br><br>
+                              The debug would display values 1, 2, and [3, 4, 5, 6, 7, 8, 9, 10]. Variables firstE and secondE take the first and second values from the array. After that, because of the rest parameter's presence, restOfArray gets the rest of the values in the form of an array. The rest element only works correctly as the last variable in the list. As in, you cannot use the rest parameter to catch a subarray that leaves out the last element of the original array.<br><br>
+                              <strong>Debug will show values of restOfArray.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-b15" class="button button--debug">RUN DEBUG</button>

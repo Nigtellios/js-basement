@@ -3377,7 +3377,7 @@ function debugFCCB9() {
   scopeFCCB9.innerHTML = outputResponse + howManyArguments(1,2,3,4,5);
 }
 
-if (btnFCCB9 !== null && scopeFCCB9!== null) {
+if (btnFCCB9 !== null && scopeFCCB9 !== null) {
   btnFCCB9.addEventListener('click', debugFCCB9);
 } else {
   scopeFCCB9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3410,7 +3410,7 @@ function debugFCCB10() {
   scopeFCCB10.innerHTML = outputResponse + maxArr + ", Max from spread array: " + maxArray;
 }
 
-if (btnFCCB10 !== null && scopeFCCB10!== null) {
+if (btnFCCB10 !== null && scopeFCCB10 !== null) {
   btnFCCB10.addEventListener('click', debugFCCB10);
 } else {
   scopeFCCB10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3439,7 +3439,7 @@ function debugFCCB11() {
   scopeFCCB11.innerHTML = outputResponse + golfUser.age1;
 }
 
-if (btnFCCB11 !== null && scopeFCCB11!== null) {
+if (btnFCCB11 !== null && scopeFCCB11 !== null) {
   btnFCCB11.addEventListener('click', debugFCCB11);
 } else {
   scopeFCCB11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3466,7 +3466,7 @@ function debugFCCB12() {
   scopeFCCB12.innerHTML = outputResponse + "My pet is called: " + petName + " and her age is: " + petAge + ".";
 }
 
-if (btnFCCB12 !== null && scopeFCCB12!== null) {
+if (btnFCCB12 !== null && scopeFCCB12 !== null) {
   btnFCCB12.addEventListener('click', debugFCCB12);
 } else {
   scopeFCCB12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3500,7 +3500,7 @@ function debugFCCB13() {
   scopeFCCB13.innerHTML = outputResponse + "First user is: " + mikeAge + ", " + mikeEmail;
 }
 
-if (btnFCCB13 !== null && scopeFCCB13!== null) {
+if (btnFCCB13 !== null && scopeFCCB13 !== null) {
   btnFCCB13.addEventListener('click', debugFCCB13);
 } else {
   scopeFCCB13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3527,8 +3527,31 @@ function debugFCCB14() {
   scopeFCCB14.innerHTML = outputResponse + a2B14 + ', ' + b2B14 + ', ' + c2B14;
 }
 
-if (btnFCCB14 !== null && scopeFCCB14!== null) {
+if (btnFCCB14 !== null && scopeFCCB14 !== null) {
   btnFCCB14.addEventListener('click', debugFCCB14);
 } else {
   scopeFCCB14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B15: Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements */
+
+/* In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array. The result is similar to Array.prototype.slice(), as shown below: */
+
+const [firstE, secondE, ...restOfArray] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+/* The debug would display values 1, 2, and [3, 4, 5, 6, 7, 8, 9, 10]. Variables firstE and secondE take the first and second values from the array. After that, because of the rest parameter's presence, restOfArray gets the rest of the values in the form of an array. The rest element only works correctly as the last variable in the list. As in, you cannot use the rest parameter to catch a subarray that leaves out the last element of the original array. */
+
+/* OUTPUT CODE */
+
+const btnFCCB15= document.getElementById('run-fcc-task-b15');
+const scopeFCCB15 = document.getElementById('fcc-task-b15');
+
+function debugFCCB15() {
+  scopeFCCB15.innerHTML = outputResponse + restOfArray;
+}
+
+if (btnFCCB15 !== null && scopeFCCB15 !== null) {
+  btnFCCB15.addEventListener('click', debugFCCB15);
+} else {
+  scopeFCCB15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
