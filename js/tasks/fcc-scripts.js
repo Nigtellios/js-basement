@@ -1097,7 +1097,7 @@ if (btnFCC50 !== null && scopeFCC50 !== null) {
 
 /* Task 51: Global vs. Local Scope in Functions */
 
-/* However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precendence over the global variable. */
+/* However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precedence over the global variable. */
 
 const globalOne = "What";
 function locTest() {
@@ -1633,9 +1633,9 @@ if (btnFCC69 !== null && scopeFCC69 !== null) {
   scopeFCC69.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 70: Introducint Else If Statements */
+/* Task 70: Introducing Else If Statements */
 
-/* If we have multiple conditions that needs to be adressed, we can chain if's statements together with else if statements. */
+/* If we have multiple conditions that needs to be addressed, we can chain if's statements together with else if statements. */
 
 function testElseIf(testElseIfVal) {
   if(testElseIfVal === "email@mail.org") {
@@ -1705,7 +1705,7 @@ function testIfChain(testIfChainVal) {
   } else if (testIfChainVal < 20) {
     return "It's pretty nice outside today.";
   } else if (testIfChainVal < 30) {
-    return "It's very hot outisde!";
+    return "It's very hot outside!";
   } else {
     "Just don't leave house today!";
   }
@@ -1840,7 +1840,7 @@ if (btnFCC75 !== null && scopeFCC75 !== null) {
 
 /* Task 76: Multiple Identical Options in Switch Statements */
 
-/* If the break statement is ommited from a switch statement's case, the following case statement(s) are executed until a break is encountered. If we have multiple inputs with the same output, we can represent them in a switch statement like this: */
+/* If the break statement is omitted from a switch statement's case, the following case statement(s) are executed until a break is encountered. If we have multiple inputs with the same output, we can represent them in a switch statement like this: */
 
 function testMultipleSwitch(testMultipleSwitchVal) {
   var testMultipleSwitchResult = "";
@@ -1982,9 +1982,9 @@ if (btnFCC79 !== null && scopeFCC79 !== null) {
 
 /* Task 80: Counting Cards */
 
-/* BlackJack - Actually, I have to write a programm that would count my cards. It is done by keeping track of the relative numbers of high and low cards remaining in the deck. Each Card is assigned a value according to the table below. Then the count is positive, the player should bet high. When the count is zero or negative, the player should bet low. */
+/* BlackJack - Actually, I have to write a program that would count my cards. It is done by keeping track of the relative numbers of high and low cards remaining in the deck. Each Card is assigned a value according to the table below. Then the count is positive, the player should bet high. When the count is zero or negative, the player should bet low. */
 
-/* First of all, I tried to  do it only via ifs, so I put everything in a dunction and forgot that it would not properly display my output with „Bet" and „Hold" because it would output every step instead of only calculated output. So the solution for this is to create switch inside function. */
+/* First of all, I tried to  do it only via ifs, so I put everything in a function and forgot that it would not properly display my output with „Bet" and „Hold" because it would output every step instead of only calculated output. So the solution for this is to create switch inside function. */
 
 var cardCount = 0;
 function cardCounter(cardItems){
@@ -2123,7 +2123,7 @@ function patPrefix(str) {
 
 var downloadPat = patPrefix("Name");
 
-/* You can also do it not-dynamicaly via: */
+/* You can also do it not-dynamically via: */
 
 var dogList = {
   Terrier: "Abel.", Doberman: "Kenie.", Labrador: "Es."
@@ -2138,7 +2138,7 @@ const btnFCC84 = document.getElementById('run-fcc-task-84');
 const scopeFCC84 = document.getElementById('fcc-task-84');
 
 function debugFCC84() {
-  scopeFCC84.innerHTML = outputResponse + 'Dynamicaly: ' + patData[downloadPat] + '. Non dynamicaly: ' + myDogBreed;
+  scopeFCC84.innerHTML = outputResponse + 'Dynamically: ' + patData[downloadPat] + '. Non dynamically: ' + myDogBreed;
 }
 
 if (btnFCC84 !== null && scopeFCC84 !== null) {
@@ -2241,8 +2241,8 @@ var customerList = {
   7: 'Lee'
 };
 
-customerList[1];
-customerList[5];
+// customerList[1];
+// customerList[5];
 
 var selectedCustomer = 7;
 customerList[selectedCustomer];
@@ -2408,7 +2408,7 @@ if (btnFCC91 !== null && scopeFCC91 !== null) {
 
 /* Task 92: Accessing Nested Arrays */
 
-/* As we have seen in earlies examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays. */
+/* As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays. */
 
 var doorAccessList = [
   {
@@ -2431,8 +2431,8 @@ var doorAccessList = [
   }
 ];
 
-doorAccessList[0].name;
-doorAccessList[1].entries[1];
+// doorAccessList[0].name;
+// doorAccessList[1].entries[1];
 
 /* OUTPUT CODE */
 
@@ -2527,7 +2527,7 @@ while (i_T94 < 5) {
   i_T94++;
 }
 
-/* In the code aboce, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.*/
+/* In the code above, the while loop will execute 5 times and append the numbers 0 through 4 to whileArray. First we are pushing value of i to the array, and then we are incrementing it and repeating execution till i will bump value of 5.*/
 
 var whileOutput = whileArray;
 
@@ -2560,7 +2560,7 @@ The condition statement is evaluated at the beginning of every loop iteration an
 
 The final expression is executed at the end of each loop iteration, prior to the next condition check and is usually used to increment or decrement your loop counter. */
 
-var myDogs = ['Elanie', 'Jade', 'Martha', 'Margareth', 'John', 'Mary', 'Joseph'];
+var myDogs = ['Elaine', 'Jade', 'Martha', 'Margaret', 'John', 'Mary', 'Joseph'];
 var myDogsOutput = [];
 
 for (var dogCounter = 0; dogCounter < 6; dogCounter++) {
@@ -3210,4 +3210,98 @@ if (btnFCCB3 !== null && scopeFCCB3 !== null) {
   btnFCCB3.addEventListener('click', debugFCCB3);
 } else {
   scopeFCCB3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B4: Mutate an Array Declared with const */
+
+/* The const declaration has many use cases in modern JavaScript. Some developers prefer to assign all their variables using const by default, unless they know they will need to reassign the value. Only in that case, they use let. */
+
+/* However, it is important to understand that objects (including arrays and functions) assigned to a variable using const are still mutable. Using the const declaration only prevents reassignment of the variable identifier. */
+
+/* Here below you can mutate the object itself and the variable will still point to the altered array. Like all arrays, the array elements in testArrayConst are mutable, but because const was used, you cannot use the variable identifier testArrayConst to point to a different array using the assignment operator. */
+
+const testArrayConst = ["Ok", 0, 2];
+// testArrayConst = ["XD", 1, 1]; -> This will throw an error.
+testArrayConst[2] = 1;
+
+/* OUTPUT CODE */
+
+const btnFCCB4 = document.getElementById('run-fcc-task-b4');
+const scopeFCCB4 = document.getElementById('fcc-task-b4');
+
+function debugFCCB4() {
+  scopeFCCB4.innerHTML = outputResponse + testArrayConst[2];
+}
+
+if (btnFCCB4 !== null && scopeFCCB4 !== null) {
+  btnFCCB4.addEventListener('click', debugFCCB4);
+} else {
+  scopeFCCB4.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B4: Prevent Object Mutation */
+
+/* As seen in the previous challenge, const declaration alone doesn't really protect your data from mutation. To ensure your data doesn't change, JavaScript provides function Object.freeze to prevent data mutation. Once the object if frozen, you can no longer add, update, or delete properties from it. Any attempt at changing the object will be rejected without an error. */
+
+let preventObjectMutation = {
+  name: 'Object',
+  ID: 0
+};
+
+Object.freeze(preventObjectMutation);
+preventObjectMutation.name = "What?";
+preventObjectMutation.newProp = "Test";
+
+/* The preventObjectMutation.name and preventObjectMutation.newProp assignments will result in errors, and the console will display values: Object, 0. */
+
+/* OUTPUT CODE */
+
+const btnFCCB5 = document.getElementById('run-fcc-task-b5');
+const scopeFCCB5 = document.getElementById('fcc-task-b5');
+
+function debugFCCB5() {
+  scopeFCCB5.innerHTML = outputResponse + preventObjectMutation.name + ": " + preventObjectMutation.ID;
+}
+
+if (btnFCCB5 !== null && scopeFCCB5 !== null) {
+  btnFCCB5.addEventListener('click', debugFCCB5);
+} else {
+  scopeFCCB5.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B6: Use Arrow Functions to Write Concise Anonymous Functions */
+
+/* In JS, we often don't need to name our functions, especially when passing a function as an argument to another function. Instead, we create inline functions. We don't need to name these functions because we do not reuse them anywhere else. To achieve this, we often use the following syntax: */
+
+const myConstFunction = function() {
+  const myConst = "Some String Value";
+  return myConst;
+}
+
+/* ES6 provides us with the syntactic sugar to not have to write anonymous functions this way. Instead, you can use arrow funciton syntax: */
+
+const myArrowFunction = () => {
+  const myArrowConst = "Some String Value in Arrow Function";
+  return myArrowConst;
+}
+
+/* However, when there is no function body, and only a return value, arrow function syntax allows you to omit the keyword return as well as the brackets surrounding the code. This helps simplify smaller functions into one-line statements: */
+
+const myShortFunction = (someString) => "This is: " + someString;
+
+/* This code will still return the string "This is:" by default. */
+
+/* OUTPUT CODE */
+
+const btnFCCB6 = document.getElementById('run-fcc-task-b6');
+const scopeFCCB6 = document.getElementById('fcc-task-b6');
+
+function debugFCCB6() {
+  scopeFCCB6.innerHTML = outputResponse + myConstFunction() + ", " + myArrowFunction() + ", " + myShortFunction("really short function.");
+}
+
+if (btnFCCB6 !== null && scopeFCCB6 !== null) {
+  btnFCCB6.addEventListener('click', debugFCCB6);
+} else {
+  scopeFCCB6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
