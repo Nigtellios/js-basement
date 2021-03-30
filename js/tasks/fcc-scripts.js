@@ -3344,7 +3344,7 @@ const gameGreeting = (name = "Stranger") => "Hello " + name + "!";
 /* OUTPUT CODE */
 
 const btnFCCB8 = document.getElementById('run-fcc-task-b8');
-const scopeFCCB8= document.getElementById('fcc-task-b8');
+const scopeFCCB8 = document.getElementById('fcc-task-b8');
 
 function debugFCCB8() {
   scopeFCCB8.innerHTML = outputResponse + gameGreeting();
@@ -3371,7 +3371,7 @@ function howManyArguments(...args) {
 /* OUTPUT CODE */
 
 const btnFCCB9 = document.getElementById('run-fcc-task-b9');
-const scopeFCCB9= document.getElementById('fcc-task-b9');
+const scopeFCCB9 = document.getElementById('fcc-task-b9');
 
 function debugFCCB9() {
   scopeFCCB9.innerHTML = outputResponse + howManyArguments(1,2,3,4,5);
@@ -3404,7 +3404,7 @@ const maxArray = Math.max(...spreadArray);
 /* OUTPUT CODE */
 
 const btnFCCB10 = document.getElementById('run-fcc-task-b10');
-const scopeFCCB10= document.getElementById('fcc-task-b10');
+const scopeFCCB10 = document.getElementById('fcc-task-b10');
 
 function debugFCCB10() {
   scopeFCCB10.innerHTML = outputResponse + maxArr + ", Max from spread array: " + maxArray;
@@ -3420,23 +3420,23 @@ if (btnFCCB10 !== null && scopeFCCB10!== null) {
 
 /* Destructing assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code: */
 
-const golfUser = { name: 'Jade Duh', age: 26};
+const golfUser = { name: 'Jade Duh', age1: 26};
 const golfUserName = golfUser.name;
-const golfUserAge = golfUser.age;
+const golfUserAge = golfUser.age1;
 
 /* Name would have a value of the string Jade Duh, and age would have number 26. Here's equivalent assignment statement using the ES6 destructing syntax: */
 
-const { name, age } = golfUser;
+const { name, age1 } = golfUser;
 
 /* And again, name would have a value of the string John Doe, and age would have the number 34. Here, the name and age variables will be created and assigned the values of their respective values from the golfUser object. You can see how much cleaner this is. You can extract as many or few values from the object as you want. */
 
 /* OUTPUT CODE */
 
 const btnFCCB11 = document.getElementById('run-fcc-task-b11');
-const scopeFCCB11= document.getElementById('fcc-task-b11');
+const scopeFCCB11 = document.getElementById('fcc-task-b11');
 
 function debugFCCB11() {
-  scopeFCCB11.innerHTML = outputResponse + golfUser.age;
+  scopeFCCB11.innerHTML = outputResponse + golfUser.age1;
 }
 
 if (btnFCCB11 !== null && scopeFCCB11!== null) {
@@ -3444,3 +3444,66 @@ if (btnFCCB11 !== null && scopeFCCB11!== null) {
 } else {
   scopeFCCB11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B12: Use Destructuring Assignment to Assign Variables from Objects */
+
+/* Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value. */
+
+const myPet = { name: 'Lovi', age: 10, type: 'Dog'};
+
+/* Here's how you cna give new variable names in the assignment: */
+
+const { name: petName, age: petAge } = myPet;
+
+/* You may read it as "get the value of myPet.name and assign it to a new variable named petName" and so on. The value of petname would be string Lovi, and the value of petAge would be the number 10. */
+
+/* OUTPUT CODE */
+
+const btnFCCB12 = document.getElementById('run-fcc-task-b12');
+const scopeFCCB12 = document.getElementById('fcc-task-b12');
+
+function debugFCCB12() {
+  scopeFCCB12.innerHTML = outputResponse + "My pet is called: " + petName + " and her age is: " + petAge + ".";
+}
+
+if (btnFCCB12 !== null && scopeFCCB12!== null) {
+  btnFCCB12.addEventListener('click', debugFCCB12);
+} else {
+  scopeFCCB12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B13: Use Destructuring Assignment to Assign Variables from Nested Objects */
+
+/* You can use the name principles from the previous two lessons to destructure values from nested objects. Using an object similar to previous examples: */
+
+const pokerUser = {
+  mike: {
+    age2: 42,
+    email: 'mike@wazowski.com'
+  }
+};
+
+/* Here's how to extract the values of object properties and assign them to variables with the same name: */
+
+const { mike: { age2, email }} = pokerUser;
+
+/* And here's how you can assign an object properties' values to variables with different names: */
+
+const { mike: { age2: mikeAge, email: mikeEmail}} = pokerUser;
+
+/* OUTPUT CODE */
+
+const btnFCCB13 = document.getElementById('run-fcc-task-b13');
+const scopeFCCB13 = document.getElementById('fcc-task-b13');
+
+function debugFCCB13() {
+  scopeFCCB13.innerHTML = outputResponse + "First user is: " + mikeAge + ", " + mikeEmail;
+}
+
+if (btnFCCB13 !== null && scopeFCCB13!== null) {
+  btnFCCB13.addEventListener('click', debugFCCB13);
+} else {
+  scopeFCCB13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B14: Use Destructuring Assignment to Assign Variables from Arrays */

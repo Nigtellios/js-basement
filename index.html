@@ -3097,7 +3097,7 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B11 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task B11: Use Destructing Assignment to Extract Values from Objects</h4>
+                            <h4 class="single-item__header">Task B11: Use Destructuring Assignment to Extract Values from Objects</h4>
                             <p class="single-item__paragraph">
                               Destructing assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code:<br><br>
                               const golfUser = { name: 'Jade Duh', age: 26};<br>
@@ -3117,7 +3117,70 @@
                           </div>
                         </li> <!-- /SINGLE TASK B11 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B12 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B12: Use Destructuring Assignment to Assign Variables from Objects</h4>
+                            <p class="single-item__paragraph">
+                              Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value.<br><br>
+                              const myPet = { name: 'Lovi', age: 10, type: 'Dog'};<br><br>
+                              Here's how you cna give new variable names in the assignment:<br><br>
+                              const { name: petName, age: petAge } = myPet;<br><br>
+                              You may read it as "get the value of myPet.name and assign it to a new variable named petName" and so on. The value of petName would be string Lovi, and the value of petAge would be the number 10.<br><br>
+                              <strong>Debug will show values of petName and petAge.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b12" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b12"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B12 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B13 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B13: Use Destructuring Assignment to Assign Variables from Nested Objects</h4>
+                            <p class="single-item__paragraph">
+                              You can use the name principles from the previous two lessons to destructure values from nested objects. Using an object similar to previous examples:<br><br>
+                              const pokerUser = {<br>
+                              &nbsp;mike: {<br>
+                              &nbsp;&nbsp;age2: 42,<br>
+                              &nbsp;email: 'mike@wazowski.com'<br>
+                              &nbsp;}<br>
+                              };<br><br>
+                              Here's how to extract the values of object properties and assign them to variables with the same name:<br><br>
+                              const { mike: { age2, email }} = pokerUser;<br><br>
+                              And here's how you can assign an object properties' values to variables with different names:<br><br>
+                              const { mike: { age2: mikeAge, email: mikeEmail}} = pokerUser;<br><br>
+                              <strong>Debug will show values of mikeAge and mikeEmail.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b13" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b13"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B13 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B14 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B14: Use Destructuring Assignment to Assign Variables from Arrays</h4>
+                            <p class="single-item__paragraph">
+                              <br><br>
+                              <strong>Debug will show values of mikeAge and mikeEmail.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b14" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b14"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B14 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
