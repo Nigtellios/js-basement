@@ -3305,3 +3305,84 @@ if (btnFCCB6 !== null && scopeFCCB6 !== null) {
 } else {
   scopeFCCB6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B7: Write Arrow Functions with Parameters */
+
+/* Just like a regular function, you can pass arguments into an arrow function. */
+
+const roundUp = (inputValue) => Math.ceil(inputValue);
+
+/* However, if an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted. */
+
+const doubleUp = inputValue => inputValue * 2;
+
+/* It is possible to pass more than one argument into an arrow function: */
+
+const multiplyNumbers = (inputValue, multiplyBy) => inputValue * multiplyBy;
+
+/* OUTPUT CODE */
+
+const btnFCCB7 = document.getElementById('run-fcc-task-b7');
+const scopeFCCB7 = document.getElementById('fcc-task-b7');
+
+function debugFCCB7() {
+  scopeFCCB7.innerHTML = outputResponse + roundUp(8.02) + ". Double Up: " + doubleUp(256) + ". Multiply: " + multiplyNumbers(256, 4) + ".";
+}
+
+if (btnFCCB7 !== null && scopeFCCB7 !== null) {
+  btnFCCB7.addEventListener('click', debugFCCB7);
+} else {
+  scopeFCCB7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B8: Set Default Parameters for Your Functions */
+
+/* In order to help us create more flexible functions, ES6 introduces default parameters for functions. The default parameter kicks in when the argument is not specified (it is undefined). As you can see, the parameter name will receive its default value Stranger when you do not provide a value for the parameter. You can add default values for as many parameters as you want. */
+
+const gameGreeting = (name = "Stranger") => "Hello " + name + "!";
+
+/* OUTPUT CODE */
+
+const btnFCCB8 = document.getElementById('run-fcc-task-b8');
+const scopeFCCB8= document.getElementById('fcc-task-b8');
+
+function debugFCCB8() {
+  scopeFCCB8.innerHTML = outputResponse + gameGreeting();
+}
+
+if (btnFCCB8 !== null && scopeFCCB8 !== null) {
+  btnFCCB8.addEventListener('click', debugFCCB8);
+} else {
+  scopeFCCB8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B9: Use the Rest Parameter with Function Parameters */
+
+/* In order to help us create more flexible functions, ES6 Introduces the REST PARAMETER for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function. */
+
+function howManyArguments(...args) {
+  return "We've passed: " + arguments.length + " arguments.";
+}
+
+/* The debug would display the strings "We've passed 5 arguments. */
+
+/* The rest parameter eliminates the need to check the ARGS array and allows us to apply map(), filter() and reduce() on the parameters array. */
+
+/* OUTPUT CODE */
+
+const btnFCCB9 = document.getElementById('run-fcc-task-b9');
+const scopeFCCB9= document.getElementById('fcc-task-b9');
+
+function debugFCCB9() {
+  scopeFCCB9.innerHTML = outputResponse + howManyArguments(1,2,3,4,5);
+}
+
+if (btnFCCB9 !== null && scopeFCCB9!== null) {
+  btnFCCB9.addEventListener('click', debugFCCB9);
+} else {
+  scopeFCCB9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B10: Use the Spread Operator to Evaluate Arrays In-Place */
+
+/* ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are excepted. */
