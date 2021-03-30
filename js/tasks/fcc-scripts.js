@@ -3386,3 +3386,32 @@ if (btnFCCB9 !== null && scopeFCCB9!== null) {
 /* Task B10: Use the Spread Operator to Evaluate Arrays In-Place */
 
 /* ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are excepted. */
+
+/* The ES5 code below uses apply() to compute the maximum value in an array: */
+
+var spreadArr = [1, 2, 5, 8, 20];
+var maxArr = Math.max.apply(null, spreadArr);
+
+/* Max arr would have value of 89. We had to use Math.max.apply(null,arr) because Math.max(arr) returns Nan.Math.max() excepts comma-separated arguments, but not an array. The spread operator makes this syntax much better to read and maintain. */
+
+const spreadArray = [299, 349, 568, 154];
+const maxArray = Math.max(...spreadArray);
+
+/* maxArray would have a value of 89. ...spreadArray returns an unpacked array. In other words, it SPREADS the array. However, the spread operator only works in-place, like in an argument to a function or in an array literal. The following code will not work: */
+
+// const spreadedData = ...spreadArray;
+
+/* OUTPUT CODE */
+
+const btnFCCB10 = document.getElementById('run-fcc-task-b10');
+const scopeFCCB10= document.getElementById('fcc-task-b10');
+
+function debugFCCB10() {
+  scopeFCCB10.innerHTML = outputResponse + maxArr + ", Max from spread array: " + maxArray;
+}
+
+if (btnFCCB10 !== null && scopeFCCB10!== null) {
+  btnFCCB10.addEventListener('click', debugFCCB10);
+} else {
+  scopeFCCB10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
