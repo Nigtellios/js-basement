@@ -3415,3 +3415,32 @@ if (btnFCCB10 !== null && scopeFCCB10!== null) {
 } else {
   scopeFCCB10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B11: Use Destructuring Assignment to Extract Values from Objects */
+
+/* Destructing assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code: */
+
+const golfUser = { name: 'Jade Duh', age: 26};
+const golfUserName = golfUser.name;
+const golfUserAge = golfUser.age;
+
+/* Name would have a value of the string Jade Duh, and age would have number 26. Here's equivalent assignment statement using the ES6 destructing syntax: */
+
+const { name, age } = golfUser;
+
+/* And again, name would have a value of the string John Doe, and age would have the number 34. Here, the name and age variables will be created and assigned the values of their respective values from the golfUser object. You can see how much cleaner this is. You can extract as many or few values from the object as you want. */
+
+/* OUTPUT CODE */
+
+const btnFCCB11 = document.getElementById('run-fcc-task-b11');
+const scopeFCCB11= document.getElementById('fcc-task-b11');
+
+function debugFCCB11() {
+  scopeFCCB11.innerHTML = outputResponse + golfUser.age;
+}
+
+if (btnFCCB11 !== null && scopeFCCB11!== null) {
+  btnFCCB11.addEventListener('click', debugFCCB11);
+} else {
+  scopeFCCB11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
