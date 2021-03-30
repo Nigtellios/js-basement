@@ -3170,8 +3170,12 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task B14: Use Destructuring Assignment to Assign Variables from Arrays</h4>
                             <p class="single-item__paragraph">
-                              <br><br>
-                              <strong>Debug will show values of mikeAge and mikeEmail.</strong>
+                              ES6 makes destructuring arrays as easy as destructuring objects. One key difference between the spread operator and array destructuring is that the spread operator unpacks all contents of an array into a comma-separated list. Consequently, you cannot pick or choose which elements you want to assign to variables. Destructuring an array lets us do exactly that:<br><br>
+                              const [aB14, bB14] = [1, 2, 3, 4, 5, 6];<br><br>
+                              The debug will display the values of aB14 and bB14 as 1 and 2.<br><br>
+                              The variable aB14 is assigned the first value of the array, and b is assigned to the second value of the array. We can also access the value at any index in an array with destructuring by using commas to reach the desired index:<br><br>
+                              const [a2B14, b2B14,,, c2B14] = [1, 2, 3, 5, 8, 10, 22];<br><br>
+                              <strong>Debug will show values of a2B14, b2B14 and c2B14.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-b14" class="button button--debug">RUN DEBUG</button>
@@ -3181,6 +3185,23 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK B14 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B15 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B15: Use Destructuring Assignment to Assign Variables from Arrays</h4>
+                            <p class="single-item__paragraph">
+                              <br><br>
+                              <strong>Debug will show values of a2B14, b2B14 and c2B14.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b15" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b15"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B15 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->

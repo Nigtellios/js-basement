@@ -3507,3 +3507,28 @@ if (btnFCCB13 !== null && scopeFCCB13!== null) {
 }
 
 /* Task B14: Use Destructuring Assignment to Assign Variables from Arrays */
+
+/* ES6 makes destructuring arrays as easy as destructuring objects. One key difference between the spread operator and array destructuring is that the spread operator unpacks all contents of an array into a comma-separated list. Consequently, you cannot pick or choose which elements you want to assign to variables. Destructuring an array lets us do exactly that: */
+
+const [aB14, bB14] = [1, 2, 3, 4, 5, 6];
+
+/* The debug will display the values of aB14 and bB14 as 1 and 2.*/
+
+/* The variable aB14 is assigned the first value of the array, and b is assigned to the second value of the array. We can also access the value at any index in an array with destructuring by using commas to reach the desired index: */
+
+const [a2B14, b2B14,,, c2B14] = [1, 2, 3, 5, 8, 10, 22];
+
+/* OUTPUT CODE */
+
+const btnFCCB14 = document.getElementById('run-fcc-task-b14');
+const scopeFCCB14 = document.getElementById('fcc-task-b14');
+
+function debugFCCB14() {
+  scopeFCCB14.innerHTML = outputResponse + a2B14 + ', ' + b2B14 + ', ' + c2B14;
+}
+
+if (btnFCCB14 !== null && scopeFCCB14!== null) {
+  btnFCCB14.addEventListener('click', debugFCCB14);
+} else {
+  scopeFCCB14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
