@@ -2931,6 +2931,82 @@
                           </div>
                         </li> <!-- /SINGLE TASK B3 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B4 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B4: Declare a Read-Only Variable with the const Keyword</h4>
+                            <p class="single-item__paragraph">
+                              The const declaration has many use cases in modern JavaScript. Some developers prefer to assign all their variables using const by default, unless they know they will need to reassign the value. Only in that case, they use let.<br><br>
+                              However, it is important to understand that objects (including arrays and functions) assigned to a variable using const are still mutable. Using the const declaration only prevents reassignment of the variable identifier.<br><br>
+                              Here below you can mutate the object itself and the variable will still point to the altered array. Like all arrays, the array elements in testArrayConst are mutable, but because const was used, you cannot use the variable identifier testArrayConst to point to a different array using the assignment operator.<br><br>
+                              const testArrayConst = ["Ok", 0, 2];<br>
+                              // testArrayConst = ["XD", 1, 1]; -> This will throw an error.<br>
+                              testArrayConst[2] = 1;<br><br>
+                              <strong>Debug will show value of  testArrayConst[2].</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b4" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b4"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B4 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B5 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B5: Prevent Object Mutation</h4>
+                            <p class="single-item__paragraph">
+                              As seen in the previous challenge, const declaration alone doesn't really protect your data from mutation. To ensure your data doesn't change, JavaScript provides function Object.freeze to prevent data mutation. Once the object if frozen, you can no longer add, update, or delete properties from it. Any attempt at changing the object will be rejected without an error.<br><br>
+                              let preventObjectMutation = {<br>
+                              &nbsp;name: 'Object',<br>
+                              &nbsp;ID: 0<br>
+                              };<br><br>
+                              Object.freeze(preventObjectMutation);<br>
+                              preventObjectMutation.name = "What?";<br>
+                              preventObjectMutation.newProp = "Test";<br><br>
+                              The preventObjectMutation.name and preventObjectMutation.newProp assignments will result in errors, and the console will display values: Object, 0.<br><br>
+                              <strong>Debug will show values of preventObjectMutation.name and preventObjectMutation.ID.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b5" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b5"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B5 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B6 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B6: Use Arrow Functions to Write Concise Anonymous Functions</h4>
+                            <p class="single-item__paragraph">
+                              In JS, we often don't need to name our functions, especially when passing a function as an argument to another function. Instead, we create inline functions. We don't need to name these functions because we do not reuse them anywhere else. To achieve this, we often use the following syntax:<br><br>
+                              const myConstFunction = function() {<br>
+                              const myConst = "Some String Value";<br>
+                              return myConst;<br>
+                              }<br><br>
+                              ES6 provides us with the syntactic sugar to not have to write anonymous functions this way. Instead, you can use arrow funciton syntax:<br><br>
+                              const myArrowFunction = () => {<br>
+                              const myArrowConst = "Some String Value in Arrow Function";<br>
+                              return myArrowConst;<br>
+                              }<br><br>
+                              However, when there is no function body, and only a return value, arrow function syntax allows you to omit the keyword return as well as the brackets surrounding the code. This helps simplify smaller functions into one-line statements:<br><br>
+                              const myShortFunction = (someString) => "This is: " + someString;<br>
+                              This code will still return the string "This is:" by default.<br><br>
+                              <strong>Debug will show values of myConstFunction(), myArrowFunction() and myShortFunction("really short function.")</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b6" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b6"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B6 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
