@@ -3305,3 +3305,253 @@ if (btnFCCB6 !== null && scopeFCCB6 !== null) {
 } else {
   scopeFCCB6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B7: Write Arrow Functions with Parameters */
+
+/* Just like a regular function, you can pass arguments into an arrow function. */
+
+const roundUp = (inputValue) => Math.ceil(inputValue);
+
+/* However, if an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted. */
+
+const doubleUp = inputValue => inputValue * 2;
+
+/* It is possible to pass more than one argument into an arrow function: */
+
+const multiplyNumbers = (inputValue, multiplyBy) => inputValue * multiplyBy;
+
+/* OUTPUT CODE */
+
+const btnFCCB7 = document.getElementById('run-fcc-task-b7');
+const scopeFCCB7 = document.getElementById('fcc-task-b7');
+
+function debugFCCB7() {
+  scopeFCCB7.innerHTML = outputResponse + roundUp(8.02) + ". Double Up: " + doubleUp(256) + ". Multiply: " + multiplyNumbers(256, 4) + ".";
+}
+
+if (btnFCCB7 !== null && scopeFCCB7 !== null) {
+  btnFCCB7.addEventListener('click', debugFCCB7);
+} else {
+  scopeFCCB7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B8: Set Default Parameters for Your Functions */
+
+/* In order to help us create more flexible functions, ES6 introduces default parameters for functions. The default parameter kicks in when the argument is not specified (it is undefined). As you can see, the parameter name will receive its default value Stranger when you do not provide a value for the parameter. You can add default values for as many parameters as you want. */
+
+const gameGreeting = (name = "Stranger") => "Hello " + name + "!";
+
+/* OUTPUT CODE */
+
+const btnFCCB8 = document.getElementById('run-fcc-task-b8');
+const scopeFCCB8 = document.getElementById('fcc-task-b8');
+
+function debugFCCB8() {
+  scopeFCCB8.innerHTML = outputResponse + gameGreeting();
+}
+
+if (btnFCCB8 !== null && scopeFCCB8 !== null) {
+  btnFCCB8.addEventListener('click', debugFCCB8);
+} else {
+  scopeFCCB8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B9: Use the Rest Parameter with Function Parameters */
+
+/* In order to help us create more flexible functions, ES6 Introduces the REST PARAMETER for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function. */
+
+function howManyArguments(...args) {
+  return "We've passed: " + arguments.length + " arguments.";
+}
+
+/* The debug would display the strings "We've passed 5 arguments. */
+
+/* The rest parameter eliminates the need to check the ARGS array and allows us to apply map(), filter() and reduce() on the parameters array. */
+
+/* OUTPUT CODE */
+
+const btnFCCB9 = document.getElementById('run-fcc-task-b9');
+const scopeFCCB9 = document.getElementById('fcc-task-b9');
+
+function debugFCCB9() {
+  scopeFCCB9.innerHTML = outputResponse + howManyArguments(1,2,3,4,5);
+}
+
+if (btnFCCB9 !== null && scopeFCCB9 !== null) {
+  btnFCCB9.addEventListener('click', debugFCCB9);
+} else {
+  scopeFCCB9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B10: Use the Spread Operator to Evaluate Arrays In-Place */
+
+/* ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are excepted. */
+
+/* The ES5 code below uses apply() to compute the maximum value in an array: */
+
+var spreadArr = [1, 2, 5, 8, 20];
+var maxArr = Math.max.apply(null, spreadArr);
+
+/* Max arr would have value of 89. We had to use Math.max.apply(null,arr) because Math.max(arr) returns Nan.Math.max() excepts comma-separated arguments, but not an array. The spread operator makes this syntax much better to read and maintain. */
+
+const spreadArray = [299, 349, 568, 154];
+const maxArray = Math.max(...spreadArray);
+
+/* maxArray would have a value of 89. ...spreadArray returns an unpacked array. In other words, it SPREADS the array. However, the spread operator only works in-place, like in an argument to a function or in an array literal. The following code will not work: */
+
+// const spreadedData = ...spreadArray;
+
+/* OUTPUT CODE */
+
+const btnFCCB10 = document.getElementById('run-fcc-task-b10');
+const scopeFCCB10 = document.getElementById('fcc-task-b10');
+
+function debugFCCB10() {
+  scopeFCCB10.innerHTML = outputResponse + maxArr + ", Max from spread array: " + maxArray;
+}
+
+if (btnFCCB10 !== null && scopeFCCB10 !== null) {
+  btnFCCB10.addEventListener('click', debugFCCB10);
+} else {
+  scopeFCCB10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B11: Use Destructuring Assignment to Extract Values from Objects */
+
+/* Destructing assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code: */
+
+const golfUser = { name: 'Jade Duh', age1: 26};
+const golfUserName = golfUser.name;
+const golfUserAge = golfUser.age1;
+
+/* Name would have a value of the string Jade Duh, and age would have number 26. Here's equivalent assignment statement using the ES6 destructing syntax: */
+
+const { name, age1 } = golfUser;
+
+/* And again, name would have a value of the string John Doe, and age would have the number 34. Here, the name and age variables will be created and assigned the values of their respective values from the golfUser object. You can see how much cleaner this is. You can extract as many or few values from the object as you want. */
+
+/* OUTPUT CODE */
+
+const btnFCCB11 = document.getElementById('run-fcc-task-b11');
+const scopeFCCB11 = document.getElementById('fcc-task-b11');
+
+function debugFCCB11() {
+  scopeFCCB11.innerHTML = outputResponse + golfUser.age1;
+}
+
+if (btnFCCB11 !== null && scopeFCCB11 !== null) {
+  btnFCCB11.addEventListener('click', debugFCCB11);
+} else {
+  scopeFCCB11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B12: Use Destructuring Assignment to Assign Variables from Objects */
+
+/* Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value. */
+
+const myPet = { name: 'Lovi', age: 10, type: 'Dog'};
+
+/* Here's how you cna give new variable names in the assignment: */
+
+const { name: petName, age: petAge } = myPet;
+
+/* You may read it as "get the value of myPet.name and assign it to a new variable named petName" and so on. The value of petname would be string Lovi, and the value of petAge would be the number 10. */
+
+/* OUTPUT CODE */
+
+const btnFCCB12 = document.getElementById('run-fcc-task-b12');
+const scopeFCCB12 = document.getElementById('fcc-task-b12');
+
+function debugFCCB12() {
+  scopeFCCB12.innerHTML = outputResponse + "My pet is called: " + petName + " and her age is: " + petAge + ".";
+}
+
+if (btnFCCB12 !== null && scopeFCCB12 !== null) {
+  btnFCCB12.addEventListener('click', debugFCCB12);
+} else {
+  scopeFCCB12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B13: Use Destructuring Assignment to Assign Variables from Nested Objects */
+
+/* You can use the name principles from the previous two lessons to destructure values from nested objects. Using an object similar to previous examples: */
+
+const pokerUser = {
+  mike: {
+    age2: 42,
+    email: 'mike@wazowski.com'
+  }
+};
+
+/* Here's how to extract the values of object properties and assign them to variables with the same name: */
+
+const { mike: { age2, email }} = pokerUser;
+
+/* And here's how you can assign an object properties' values to variables with different names: */
+
+const { mike: { age2: mikeAge, email: mikeEmail}} = pokerUser;
+
+/* OUTPUT CODE */
+
+const btnFCCB13 = document.getElementById('run-fcc-task-b13');
+const scopeFCCB13 = document.getElementById('fcc-task-b13');
+
+function debugFCCB13() {
+  scopeFCCB13.innerHTML = outputResponse + "First user is: " + mikeAge + ", " + mikeEmail;
+}
+
+if (btnFCCB13 !== null && scopeFCCB13 !== null) {
+  btnFCCB13.addEventListener('click', debugFCCB13);
+} else {
+  scopeFCCB13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B14: Use Destructuring Assignment to Assign Variables from Arrays */
+
+/* ES6 makes destructuring arrays as easy as destructuring objects. One key difference between the spread operator and array destructuring is that the spread operator unpacks all contents of an array into a comma-separated list. Consequently, you cannot pick or choose which elements you want to assign to variables. Destructuring an array lets us do exactly that: */
+
+const [aB14, bB14] = [1, 2, 3, 4, 5, 6];
+
+/* The debug will display the values of aB14 and bB14 as 1 and 2.*/
+
+/* The variable aB14 is assigned the first value of the array, and b is assigned to the second value of the array. We can also access the value at any index in an array with destructuring by using commas to reach the desired index: */
+
+const [a2B14, b2B14,,, c2B14] = [1, 2, 3, 5, 8, 10, 22];
+
+/* OUTPUT CODE */
+
+const btnFCCB14 = document.getElementById('run-fcc-task-b14');
+const scopeFCCB14 = document.getElementById('fcc-task-b14');
+
+function debugFCCB14() {
+  scopeFCCB14.innerHTML = outputResponse + a2B14 + ', ' + b2B14 + ', ' + c2B14;
+}
+
+if (btnFCCB14 !== null && scopeFCCB14 !== null) {
+  btnFCCB14.addEventListener('click', debugFCCB14);
+} else {
+  scopeFCCB14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B15: Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements */
+
+/* In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array. The result is similar to Array.prototype.slice(), as shown below: */
+
+const [firstE, secondE, ...restOfArray] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+/* The debug would display values 1, 2, and [3, 4, 5, 6, 7, 8, 9, 10]. Variables firstE and secondE take the first and second values from the array. After that, because of the rest parameter's presence, restOfArray gets the rest of the values in the form of an array. The rest element only works correctly as the last variable in the list. As in, you cannot use the rest parameter to catch a subarray that leaves out the last element of the original array. */
+
+/* OUTPUT CODE */
+
+const btnFCCB15= document.getElementById('run-fcc-task-b15');
+const scopeFCCB15 = document.getElementById('fcc-task-b15');
+
+function debugFCCB15() {
+  scopeFCCB15.innerHTML = outputResponse + restOfArray;
+}
+
+if (btnFCCB15 !== null && scopeFCCB15 !== null) {
+  btnFCCB15.addEventListener('click', debugFCCB15);
+} else {
+  scopeFCCB15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

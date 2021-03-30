@@ -3007,6 +3007,204 @@
                           </div>
                         </li> <!-- /SINGLE TASK B6 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B7 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B7: Write Arrow Functions with Parameters</h4>
+                            <p class="single-item__paragraph">
+                              Just like a regular function, you can pass arguments into an arrow function.<br><br>
+                              const roundUp = (inputValue) => Math.ceil(inputValue);<br><br>
+                              However, if an arrow function has a single parameter, the parentheses enclosing the parameter may be omitted.<br><br>
+                              const doubleUp = inputValue => inputValue * 2;<br><br>
+                              It is possible to pass more than one argument into an arrow function:<br><br>
+                              const multiplyNumbers = (inputValue, multiplyBy) => inputValue * multiplyBy;<br><br>
+                              <strong>Debug will show executions of roundUp(8.02), doubleUp(256) and multiplyNumbers(256, 4).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b7" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b7"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B7 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B8 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B8: Set Default Parameters for Your Functions</h4>
+                            <p class="single-item__paragraph">
+                              In order to help us create more flexible functions, ES6 introduces default parameters for functions. The default parameter kicks in when the argument is not specified (it is undefined). As you can see, the parameter name will receive its default value Stranger when you do not provide a value for the parameter. You can add default values for as many parameters as you want.<br><br>
+                              const gameGreeting = (name = "Stranger") => "Hello " + name + "!";<br><br>
+                              <strong>Debug will show execution of gameGreeting.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b8" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b8"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B8 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B9 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B9: Use the Rest Parameter with Function Parameters</h4>
+                            <p class="single-item__paragraph">
+                              In order to help us create more flexible functions, ES6 Introduces the REST PARAMETER for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function.<br><br>
+                              function howManyArguments(...args) {<br>
+                              return "We've passed: " + arguments.length + " arguments.";<br>
+                              }<br><br>
+                              The debug would display the strings "We've passed 5 arguments.<br><br>
+                              The rest parameter eliminates the need to check the ARGS array and allows us to apply map(), filter() and reduce() on the parameters array.<br><br>
+                              <strong>Debug will show execution of howManyArguments(1,2,3,4,5).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b9" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b9"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B9 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B10 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B10: Use the Rest Parameter with Function Parameters</h4>
+                            <p class="single-item__paragraph">
+                              ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are excepted.<br><br>
+                              The ES5 code below uses apply() to compute the maximum value in an array:<br><br>
+                              var spreadArr = [1, 2, 5, 8, 20];<br>
+                              var maxArr = Math.max.apply(null, spreadArr);<br>
+                              Max arr would have value of 89. We had to use Math.max.apply(null,arr) because Math.max(arr) returns Nan.Math.max() excepts comma-separated arguments, but not an array. The spread operator makes this syntax much better to read and maintain.<br><br>
+                              const spreadArray = [299, 349, 568, 154];<br>
+                              const maxArray = Math.max(...spreadArray);<br>
+                              maxArray would have a value of 89. ...spreadArray returns an unpacked array. In other words, it SPREADS the array. However, the spread operator only works in-place, like in an argument to a function or in an array literal. The following code will not work:<br><br>
+                              const spreadedData = ...spreadArray;<br><br>
+                              <strong>Debug will show execution of maxArr and maxArray.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b10" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b10"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B10 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B11 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B11: Use Destructuring Assignment to Extract Values from Objects</h4>
+                            <p class="single-item__paragraph">
+                              Destructing assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code:<br><br>
+                              const golfUser = { name: 'Jade Duh', age: 26};<br>
+                              const golfUserName = golfUser.name;<br>
+                              const golfUserAge = golfUser.age;<br><br>
+                              Name would have a value of the string Jade Duh, and age would have number 26. Here's equivalent assignment statement using the ES6 destructing syntax:<br><br>
+                              const { name, age } = golfUser;<br><br>
+                              And again, name would have a value of the string John Doe, and age would have the number 34. Here, the name and age variables will be created and assigned the values of their respective values from the golfUser object. You can see how much cleaner this is. You can extract as many or few values from the object as you want.<br><br>
+                              <strong>Debug will show execution of golfUser.age.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b11" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b11"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B11 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B12 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B12: Use Destructuring Assignment to Assign Variables from Objects</h4>
+                            <p class="single-item__paragraph">
+                              Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value.<br><br>
+                              const myPet = { name: 'Lovi', age: 10, type: 'Dog'};<br><br>
+                              Here's how you cna give new variable names in the assignment:<br><br>
+                              const { name: petName, age: petAge } = myPet;<br><br>
+                              You may read it as "get the value of myPet.name and assign it to a new variable named petName" and so on. The value of petName would be string Lovi, and the value of petAge would be the number 10.<br><br>
+                              <strong>Debug will show values of petName and petAge.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b12" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b12"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B12 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B13 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B13: Use Destructuring Assignment to Assign Variables from Nested Objects</h4>
+                            <p class="single-item__paragraph">
+                              You can use the name principles from the previous two lessons to destructure values from nested objects. Using an object similar to previous examples:<br><br>
+                              const pokerUser = {<br>
+                              &nbsp;mike: {<br>
+                              &nbsp;&nbsp;age2: 42,<br>
+                              &nbsp;email: 'mike@wazowski.com'<br>
+                              &nbsp;}<br>
+                              };<br><br>
+                              Here's how to extract the values of object properties and assign them to variables with the same name:<br><br>
+                              const { mike: { age2, email }} = pokerUser;<br><br>
+                              And here's how you can assign an object properties' values to variables with different names:<br><br>
+                              const { mike: { age2: mikeAge, email: mikeEmail}} = pokerUser;<br><br>
+                              <strong>Debug will show values of mikeAge and mikeEmail.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b13" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b13"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B13 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B14 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B14: Use Destructuring Assignment to Assign Variables from Arrays</h4>
+                            <p class="single-item__paragraph">
+                              ES6 makes destructuring arrays as easy as destructuring objects. One key difference between the spread operator and array destructuring is that the spread operator unpacks all contents of an array into a comma-separated list. Consequently, you cannot pick or choose which elements you want to assign to variables. Destructuring an array lets us do exactly that:<br><br>
+                              const [aB14, bB14] = [1, 2, 3, 4, 5, 6];<br><br>
+                              The debug will display the values of aB14 and bB14 as 1 and 2.<br><br>
+                              The variable aB14 is assigned the first value of the array, and b is assigned to the second value of the array. We can also access the value at any index in an array with destructuring by using commas to reach the desired index:<br><br>
+                              const [a2B14, b2B14,,, c2B14] = [1, 2, 3, 5, 8, 10, 22];<br><br>
+                              <strong>Debug will show values of a2B14, b2B14 and c2B14.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b14" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b14"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B14 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B15 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B15: Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements</h4>
+                            <p class="single-item__paragraph">
+                              In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array. The result is similar to Array.prototype.slice(), as shown below:<br><br>
+                              const [firstE, secondE, ...restOfArray] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];<br><br>
+                              The debug would display values 1, 2, and [3, 4, 5, 6, 7, 8, 9, 10]. Variables firstE and secondE take the first and second values from the array. After that, because of the rest parameter's presence, restOfArray gets the rest of the values in the form of an array. The rest element only works correctly as the last variable in the list. As in, you cannot use the rest parameter to catch a subarray that leaves out the last element of the original array.<br><br>
+                              <strong>Debug will show values of restOfArray.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b15" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b15"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B15 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
