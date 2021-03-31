@@ -3593,3 +3593,48 @@ if (btnFCCB16 !== null && scopeFCCB16 !== null) {
 } else {
   scopeFCCB16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B17: Create String using Template Literals */
+
+/* A new feature of ES6 is the template literal. This is special type of string that makes creating complex strings easier. Template Literals allow you to create multi-line strings and to use string interpolation features to create strings. Consider the code below: */
+
+const person = {
+  name: "Karollo",
+  age: 22,
+  nationality: 'Poland'
+};
+
+const profileGreeting = `Hello there ${person.name}!
+ You are ${person.age}, from ${person.nationality}.`
+
+/* A lot of things happened there. Firstly, the example uses backticks (`), not quotes (' or "), to wrap the string. Secondly, notice that the string is multi-line, both in the code and the output. This saves inserting \n within strings. The ${variable} syntax used above is a placeholder. Basically, you won't have to use concatenation with the + operator anymore. To add variables to strings, you just drop the variable in a template string and wrap it with ${here}. Similarly, you can include other expressions in your string literal, for example ${a + b}. This new way of creating string gives you more flexibility to create robust strings. We can use it to create more complex functionalities: */
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+
+function makeList(arr) {
+  "use strict";
+  const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`);
+  return failureItems;
+}
+const failuresList = makeList(result.failure);
+
+/* OUTPUT CODE */
+
+const btnFCCB17= document.getElementById('run-fcc-task-b17');
+const scopeFCCB17 = document.getElementById('fcc-task-b17');
+
+function debugFCCB17() {
+  scopeFCCB17.innerHTML = `${outputResponse} First code execution: ${profileGreeting}. Second code execution: ${makeList(failuresList)}.`;
+}
+
+if (btnFCCB17 !== null && scopeFCCB17 !== null) {
+  btnFCCB17.addEventListener('click', debugFCCB17);
+} else {
+  scopeFCCB17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B18:  */

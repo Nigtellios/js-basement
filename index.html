@@ -3235,6 +3235,43 @@
                           </div>
                         </li> <!-- /SINGLE TASK B16 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B17 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B17: Create Strings using Template Literals</h4>
+                            <p class="single-item__paragraph">
+                              A new feature of ES6 is the template literal. This is special type of string that makes creating complex strings easier. Template Literals allow you to create multi-line strings and to use string interpolation features to create strings. Consider the code below:<br><br>
+                              const person = {<br>
+                              &nbsp;name: "Karollo",<br>
+                              &nbsp;age: 22,<br>
+                              &nbsp;nationality: 'Poland'<br>
+                              };<br><br>
+                              const profileGreeting = `Hello there ${person.name}!<br>
+                              You are ${person.age}, from ${person.nationality}.`<br><br>
+                              A lot of things happened there. Firstly, the example uses backticks (`), not quotes (' or "), to wrap the string. Secondly, notice that the string is multi-line, both in the code and the output. This saves inserting \n within strings. The ${variable} syntax used above is a placeholder. Basically, you won't have to use concatenation with the + operator anymore. To add variables to strings, you just drop the variable in a template string and wrap it with ${here}. Similarly, you can include other expressions in your string literal, for example ${a + b}. This new way of creating string gives you more flexibility to create robust strings. We can use it to create more complex functionalities:<br><br>
+                              const result = {<br>
+                              &nbsp;success: ["max-length", "no-amd", "prefer-arrow-functions"],<br>
+                              &nbsp;failure: ["no-var", "var-on-top", "linebreak"],<br>
+                              &nbsp;skipped: ["no-extra-semi", "no-dup-keys"]<br>
+                              };<br><br>
+                              function makeList(arr) {<br>
+                              &nbsp;"use strict";<br>
+                              &nbsp;const failureItems = arr.map(item => `li class="text-warning">${item} li`);
+                              &nbsp;//^ <> deleted for proper HTML render, there are < > on LI tags.
+                              &nbsp;return failureItems;<br>
+                        }<br><br>
+                        const failuresList = makeList(result.failure);<br><br>
+                              <strong>Debug will show value of profName.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b17" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b17"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B16 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
@@ -4142,11 +4179,11 @@
               <button class="button prev"><img src="./media/arrow-left.svg" width="15" height="25" alt="Change slide to left"></button>
               <button class="button next"><img src="./media/arrow-right.svg" width="15" height="25" alt="Change slide to Right"></button>
             </div>
-            <div class="slide-container__controls__nav">
+            <ul class="slide-container__controls__nav">
               <li class="nav__dot"></li>
               <li class="nav__dot"></li>
               <li class="nav__dot"></li>
-            </div>
+            </ul>
           </div> <!-- /slide controls -->
         </div> <!-- /slider + toolbar -->
 
