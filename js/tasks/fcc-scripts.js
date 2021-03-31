@@ -3637,4 +3637,30 @@ if (btnFCCB17 !== null && scopeFCCB17 !== null) {
   scopeFCCB17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task B18:  */
+/* Task B18: Write Concise Object Literal Declarations Using Object Property Shorthand */
+
+/* ES6 Adds some nice support for easily defining object literals. Consider the following code: */
+
+const getMousePos = (x, y) => ({
+  x: x,
+  y: y
+});
+
+/* getMousePos is a simple function that returns an object containing two properties. ES6 provides the syntatic sugar to eliminate the redundancy of having to write x: x. You can simply write x once, and it will be converted to x: x (or sth equivalent) under the hood. Here is the same function from above rewritten to use this new syntax: */
+
+const getMousePosition = (x, y) => ({ x, y });
+
+/* OUTPUT CODE */
+
+const btnFCCB18= document.getElementById('run-fcc-task-b18');
+const scopeFCCB18 = document.getElementById('fcc-task-b18');
+
+function debugFCCB18() {
+  scopeFCCB18.innerHTML = `${outputResponse} Our function for getting mouse position: ${getMousePosition(12,12)}, and x value from it equals: ${getMousePosition.x}.`;
+}
+
+if (btnFCCB18 !== null && scopeFCCB18 !== null) {
+  btnFCCB18.addEventListener('click', debugFCCB18);
+} else {
+  scopeFCCB18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
