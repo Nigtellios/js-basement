@@ -3426,7 +3426,7 @@ const golfUserAge = golfUser.age1;
 
 /* Name would have a value of the string Jade Duh, and age would have number 26. Here's equivalent assignment statement using the ES6 destructing syntax: */
 
-const { name, age1 } = golfUser;
+let { name, age1 } = golfUser;
 
 /* And again, name would have a value of the string John Doe, and age would have the number 34. Here, the name and age variables will be created and assigned the values of their respective values from the golfUser object. You can see how much cleaner this is. You can extract as many or few values from the object as you want. */
 
@@ -3554,4 +3554,42 @@ if (btnFCCB15 !== null && scopeFCCB15 !== null) {
   btnFCCB15.addEventListener('click', debugFCCB15);
 } else {
   scopeFCCB15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B16: Use Destructuring Assignment to Pass an Object as a Function's Parameters */
+
+/* In some cases, you can destructure the object in a function argument itself. Consider the code below: */
+
+const profileData = {
+  name: 'Jurij',
+  age: 18,
+  nationality: 'Russian',
+  location: 'Russia'
+};
+
+const profileUpdate = (profileData) => {
+  const { name, age, nationality, location } = profileData;
+}
+
+const profName = profileData.name;
+
+/* This effectively destructures the object sent into the function. This can also be done in-place: */
+
+const profileUpdate2 = ({ name, age, nationality, location }) => {};
+
+/* When profileData is passed to above function, the values are destructured from the function parameter for use within the function. */
+
+/* OUTPUT CODE */
+
+const btnFCCB16= document.getElementById('run-fcc-task-b16');
+const scopeFCCB16 = document.getElementById('fcc-task-b16');
+
+function debugFCCB16() {
+  scopeFCCB16.innerHTML = outputResponse + 'And some data from it is: ' + profName;
+}
+
+if (btnFCCB16 !== null && scopeFCCB16 !== null) {
+  btnFCCB16.addEventListener('click', debugFCCB16);
+} else {
+  scopeFCCB16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
