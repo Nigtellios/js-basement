@@ -3741,3 +3741,82 @@ if (btnFCCB20 !== null && scopeFCCB20 !== null) {
 } else {
   scopeFCCB20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B21: Use getters and setters to Control Access to an Object */
+
+/* You can obtain values from an object and set the value of a property within an object. These are classically called getters and setters. */
+
+/* Getter functions are meant to simply return (get) the value of an object's private variable to the user without the user directly accessing the private variable. */
+
+/* Setter functions are meant to modify (set) the value of an object's private variable based on the value passed into the setter function. This change could involve calculations, or even overwriting the previous value completely. */
+
+class Book {
+  constructor(title, author, quantity) {
+    this._title = title;
+    this._author = author;
+    this._quantity = quantity;
+  }
+  //getters
+  get title() {
+    return this._title;
+  }
+  get author() {
+    return this._author;
+  }
+  get quantity() {
+    return this._quantity;
+  }
+  //setters
+  set title(titleUpdate) {
+    this._title = titleUpdate;
+  }
+  set author(authorUpdate) {
+    this._author = authorUpdate;
+  }
+  set quantity(quantityUpdate) {
+    this._quantity = quantityUpdate;
+  }
+}
+
+const NewEra = new Book('New Era', 'Marcin Soczynski', 24);
+
+NewEra.author = 'Marcin S';
+NewEra.quantity = 23;
+
+/* We can also perform a lil-bit more advanced things with getters and setters, feel the power of creating API (Application Programming Interface) */
+
+class Thermostat {
+  constructor(fahrenheit) {
+    this.fahrenheit = fahrenheit;
+  }
+
+  get temperature() {
+    return (5 / 9) * (this.fahrenheit - 32);
+  }
+
+  set temperature(celsius) {
+    this.fahrenheit = (celsius * 9.0) / 5 + 32;
+  }
+}
+
+const livingRoomThermostat = new Thermostat(80);
+let currentTemp = livingRoomThermostat.temperature;
+currentTemp = livingRoomThermostat.temperature = 22;
+
+/* Notice the syntax used to invoke the getter and setter. They do not even look like functions. Getters and setters are important because they hide internal implementation details. However, (_) is convention to precede the name of a private variable with an underscore, this practice itself does not make a variable private. */
+
+/* OUTPUT CODE */
+
+const btnFCCB21= document.getElementById('run-fcc-task-b21');
+const scopeFCCB21 = document.getElementById('fcc-task-b21');
+
+function debugFCCB21() {
+  scopeFCCB21.innerHTML = `${outputResponse} Our book is: ${NewEra.title}, written by ${NewEra.author}, and there is still ${NewEra.quantity} more of it. Now let's see Thermostat temperature: ${currentTemp}`;
+}
+
+if (btnFCCB21 !== null && scopeFCCB21 !== null) {
+  btnFCCB21.addEventListener('click', debugFCCB21);
+} else {
+  scopeFCCB21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
