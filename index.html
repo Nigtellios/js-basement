@@ -3441,6 +3441,32 @@
                           </div>
                         </li> <!-- /SINGLE TASK B22 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B23 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B23: Use export to Share a Code Block</h4>
+                            <p class="single-item__paragraph">
+                              Imagine a file called math_functions.js that contains several functions related to mathematical operations. One of them is stored in a variable, add, that takes in two numbers and returns their sum. You want to use this function in several different JS files. In order to share it with these other files, you first need to export it.<br><br>
+                              export const add1 = (x,y) => {<br>
+                              return x + y;<br>
+                              }<br><br>
+                              The above is a common way to export a single function, but you can achieve the same thing like this:<br><br>
+                              const add2 = (x,y) => {<br>
+                              return x + y;<br>
+                              }<br><br>
+                              export { add2 };<br><br>
+                              When you export a variable or function, you can import it in another file and use it without having to rewrite the code. You can export multiple things by repeating the first example for each thing you want to export, or by placing them all in the export statement of the second example (with comma) */<br><br>
+                              <strong>Debug will show execute of add2(14,16).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b23" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b23"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B23 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>

@@ -3845,3 +3845,33 @@ if (btnFCCB22 !== null && scopeFCCB22 !== null) {
 
 /* Task B23: Use export to Share a Code Block */
 
+/* Imagine a file called math_functions.js that contains several functions related to mathematical operations. One of them is stored in a variable, add, that takes in two numbers and returns their sum. You want to use this function in several different JS files. In order to share it with these other files, you first need to export it. */
+
+// export const add1 = (x,y) => {
+//   return x + y;
+// }
+
+/* The above is a common way to export a single function, but you can achieve the same thing like this: */
+
+const add2 = (x,y) => {
+  return x + y;
+}
+
+// export { add2 };
+
+/* When you export a variable or function, you can import it in another file and use it without having to rewrite the code. You can export multiple things by repeating the first example for each thing you want to export, or by placing them all in the export statement of the second example (with comma) */
+
+/* OUTPUT CODE */
+
+const btnFCCB23= document.getElementById('run-fcc-task-b23');
+const scopeFCCB23 = document.getElementById('fcc-task-b23');
+
+function debugFCCB23() {
+  scopeFCCB23.innerHTML = `${outputResponse} ${add2(14,16)}`;
+}
+
+if (btnFCCB23 !== null && scopeFCCB23 !== null) {
+  btnFCCB23.addEventListener('click', debugFCCB23);
+} else {
+  scopeFCCB23.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
