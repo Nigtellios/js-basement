@@ -3699,3 +3699,45 @@ if (btnFCCB19 !== null && scopeFCCB19 !== null) {
 } else {
   scopeFCCB19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B20: Use class Syntax to Define a Constructor Function */
+
+/* ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
+
+In ES5, we usually define a constructor function to use the new keyword to initiate an object. */
+
+var SpaceShuttle = function(targetPlanet) {
+  this.targetPlanet = targetPlanet;
+}
+
+var shuttleOne = new SpaceShuttle('Jupiter');
+
+/* The class syntax simply replaces the constructor function creation: */
+
+class SpaceShip {
+  constructor(targetSpace) {
+    this.targetSpace = targetSpace;
+  }
+}
+
+const shuttleTwo = new SpaceShip('Saturn');
+
+/* It should be noted that the class keyword declares a new function, to which a constructor is added. This constructor is invoked when new is called to create a new object. UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle and SpaceShip used above.
+
+The constructor method is a special method for creating and initializing an object created with a class. You will learn more about it in the Object Oriented Programming Section of the JS Algorithms And Data Structures Certification. */
+
+
+/* OUTPUT CODE */
+
+const btnFCCB20= document.getElementById('run-fcc-task-b20');
+const scopeFCCB20 = document.getElementById('fcc-task-b20');
+
+function debugFCCB20() {
+  scopeFCCB20.innerHTML = `${outputResponse} ${shuttleOne.targetPlanet} and the second class execution (ES6 function - constructor) is: ${shuttleTwo.targetSpace}.`;
+}
+
+if (btnFCCB20 !== null && scopeFCCB20 !== null) {
+  btnFCCB20.addEventListener('click', debugFCCB20);
+} else {
+  scopeFCCB20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

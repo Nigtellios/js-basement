@@ -3314,7 +3314,7 @@
                               &nbsp;return `Hello ${this.name}!`;<br>
                               }<br>
                               };<br><br>
-                              <strong>Debug will show value of profName.</strong>
+                              <strong>Debug will show executions of codUser.sayHello() and bfUser.sayHello().</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-b19" class="button button--debug">RUN DEBUG</button>
@@ -3324,6 +3324,37 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK B19 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B20 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B20: </h4>
+                            <p class="single-item__paragraph">
+                              ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.<br><br>
+                              In ES5, we usually define a constructor function to use the new keyword to initiate an object.<br><br>
+                              var SpaceShuttle = function(targetPlanet) {<br>
+                              &nbsp;this.targetPlanet = targetPlanet;<br>
+                              }<br><br>
+                              var shuttleOne = new SpaceShuttle('Jupiter');<br><br>
+                              The class syntax simply replaces the constructor function creation:<br><br>
+                              class SpaceShip {<br>
+                              &nbsp;constructor(targetSpace) {<br>
+                              &nbsp;&nbsp;this.targetSpace = targetSpace;<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              const shuttleTwo = new SpaceShip('Saturn');<br><br>
+                              It should be noted that the class keyword declares a new function, to which a constructor is added. This constructor is invoked when new is called to create a new object. UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle and SpaceShip used above.<br><br>
+                              The constructor method is a special method for creating and initializing an object created with a class. You will learn more about it in the Object Oriented Programming Section of the JS Algorithms And Data Structures Certification.<br><br>
+                              <strong>Debug will show value of shuttleOne.targetPlanet and shuttleTwo.targetSpace.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b20" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b20"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B20 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
