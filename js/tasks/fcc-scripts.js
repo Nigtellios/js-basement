@@ -3664,3 +3664,38 @@ if (btnFCCB18 !== null && scopeFCCB18 !== null) {
 } else {
   scopeFCCB18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B19: Write Concise Declarative Functions with ES6 */
+
+/* When defining functions within objects in ES5, we have to use the keyword function as follows: */
+
+const codUser = {
+  name: "xXx_Destroyer_xXx",
+  sayHello: function() {
+    return `Hello ${this.name}!`;
+  }
+};
+
+/* With ES6, you can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax: */
+
+const bfUser = {
+  name: 'Total_Chad',
+  sayHello() {
+    return `Hello ${this.name}!`;
+  }
+};
+
+/* OUTPUT CODE */
+
+const btnFCCB19= document.getElementById('run-fcc-task-b19');
+const scopeFCCB19 = document.getElementById('fcc-task-b19');
+
+function debugFCCB19() {
+  scopeFCCB19.innerHTML = `${outputResponse} ${codUser.sayHello()} and the second execution (ES6 function) is: ${bfUser.sayHello()}`;
+}
+
+if (btnFCCB19 !== null && scopeFCCB19 !== null) {
+  btnFCCB19.addEventListener('click', debugFCCB19);
+} else {
+  scopeFCCB19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
