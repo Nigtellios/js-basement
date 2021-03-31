@@ -3820,3 +3820,28 @@ if (btnFCCB21 !== null && scopeFCCB21 !== null) {
   scopeFCCB21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* Task B22: Create a Module Script */
+
+/* JavaScript started with a small role to play on an otherwise mostly HTML web. Today, it's really huge, and some websites are built almost entirely with JS. In order to make JS more modular, clean, and maintainable; ES6 introduced a way to easily share code among JS files. This involves exporting parts of a file for use in one or more other files, and importing the parts you nee, where you need them. In order to take advantage of this functionality, you need to create a script in your HTML document with a type of module. Here's an example: */
+
+// <script type="module" src="filename.js"></script>
+
+/* A script that uses this module type can now use the IMPORT and EXPORT features you will learn about in the upcoming challenges. */
+
+/* OUTPUT CODE */
+
+const btnFCCB22= document.getElementById('run-fcc-task-b22');
+const scopeFCCB22 = document.getElementById('fcc-task-b22');
+
+function debugFCCB22() {
+  scopeFCCB22.innerHTML = `${outputResponse}`;
+}
+
+if (btnFCCB22 !== null && scopeFCCB22 !== null) {
+  btnFCCB22.addEventListener('click', debugFCCB22);
+} else {
+  scopeFCCB22.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B23: Use export to Share a Code Block */
+
