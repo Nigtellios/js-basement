@@ -3205,6 +3205,222 @@
                           </div>
                         </li> <!-- /SINGLE TASK B15 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B16 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B16: Use Destructuring Assignment to Pass an Object as a Functuon's Parameters</h4>
+                            <p class="single-item__paragraph">
+                              In some cases, you can destructure the object in a function argument itself. Consider the code below:<br><br>
+                              const profileData = {<br>
+                              &nbsp;name: 'Jurij',<br>
+                              &nbsp;age: 18,<br>
+                              &nbsp;nationality: 'Russian',<br>
+                              &nbsp;location: 'Russia'<br>
+                              };<br><br>
+                              const profileUpdate = (profileData) => {<br>
+                              &nbsp; { name, age, nationality, location } = profileData;<br>
+                              }<br><br>
+                              const profName = profileData.name;<br><br>
+                              This effectively destructures the object sent into the function. This can also be done in-place:<br><br>
+                              const profileUpdate2 = ({ name, age, nationality, location }) => {};<br><br>
+                              When profileData is passed to above function, the values are destructured from the function parameter for use within the function.<br><br>
+                              <strong>Debug will show value of profName.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b16" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b16"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B16 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B17 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B17: Create Strings using Template Literals</h4>
+                            <p class="single-item__paragraph">
+                              A new feature of ES6 is the template literal. This is special type of string that makes creating complex strings easier. Template Literals allow you to create multi-line strings and to use string interpolation features to create strings. Consider the code below:<br><br>
+                              const person = {<br>
+                              &nbsp;name: "Karollo",<br>
+                              &nbsp;age: 22,<br>
+                              &nbsp;nationality: 'Poland'<br>
+                              };<br><br>
+                              const profileGreeting = `Hello there ${person.name}!<br>
+                              You are ${person.age}, from ${person.nationality}.`<br><br>
+                              A lot of things happened there. Firstly, the example uses backticks (`), not quotes (' or "), to wrap the string. Secondly, notice that the string is multi-line, both in the code and the output. This saves inserting \n within strings. The ${variable} syntax used above is a placeholder. Basically, you won't have to use concatenation with the + operator anymore. To add variables to strings, you just drop the variable in a template string and wrap it with ${here}. Similarly, you can include other expressions in your string literal, for example ${a + b}. This new way of creating string gives you more flexibility to create robust strings. We can use it to create more complex functionalities:<br><br>
+                              const result = {<br>
+                              &nbsp;success: ["max-length", "no-amd", "prefer-arrow-functions"],<br>
+                              &nbsp;failure: ["no-var", "var-on-top", "linebreak"],<br>
+                              &nbsp;skipped: ["no-extra-semi", "no-dup-keys"]<br>
+                              };<br><br>
+                              function makeList(arr) {<br>
+                              &nbsp;"use strict";<br>
+                              &nbsp;const failureItems = arr.map(item => `li class="text-warning">${item} li`);
+                              &nbsp;//^ <> deleted for proper HTML render, there are < > on LI tags.
+                              &nbsp;return failureItems;<br>
+                        }<br><br>
+                        const failuresList = makeList(result.failure);<br><br>
+                              <strong>Debug will show values outputResponse, profileGreeting and makeList(failuresList).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b17" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b17"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B17 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B18 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B18: Write Concise Object Literal Declarations Using Object Property Shorthand</h4>
+                            <p class="single-item__paragraph">
+                              ES6 Adds some nice support for easily defining object literals. Consider the following code:<br><br>
+                              const getMousePos = (x, y) => ({<br>
+                              x: x,<br>
+                              y: y<br>
+                              });<br><br>
+                              getMousePos is a simple function that returns an object containing two properties. ES6 provides the syntatic sugar to eliminate the redundancy of having to write x: x. You can simply write x once, and it will be converted to x: x (or sth equivalent) under the hood. Here is the same function from above rewritten to use this new syntax:<br><br>
+                              const getMousePosition = (x, y) => ({ x, y });<br><br>
+                              <strong>Debug will show value of getMousePosition.x.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b18" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b18"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B18 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B19 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B19: Write Concise Declarative Functions with ES6</h4>
+                            <p class="single-item__paragraph">
+                              When defining functions within objects in ES5, we have to use the keyword function as follows:<br><br>
+                              const codUser = {<br>
+                              &nbsp;name: "xXx_Destroyer_xXx",<br>
+                              &nbsp;sayHello: function() {<br>
+                              &nbsp;return `Hello ${this.name}!`;<br>
+                              }<br>
+                              };<br><br>
+                              With ES6, you can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax:<br><br>
+                              const bfUser = {<br>
+                              &nbsp;name: 'Total_Chad',<br>
+                              &nbsp;sayHello() {<br>
+                              &nbsp;return `Hello ${this.name}!`;<br>
+                              }<br>
+                              };<br><br>
+                              <strong>Debug will show executions of codUser.sayHello() and bfUser.sayHello().</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b19" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b19"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B19 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B20 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B20: Use class Syntax to Define a Constructor Function</h4>
+                            <p class="single-item__paragraph">
+                              ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.<br><br>
+                              In ES5, we usually define a constructor function to use the new keyword to initiate an object.<br><br>
+                              var SpaceShuttle = function(targetPlanet) {<br>
+                              &nbsp;this.targetPlanet = targetPlanet;<br>
+                              }<br><br>
+                              var shuttleOne = new SpaceShuttle('Jupiter');<br><br>
+                              The class syntax simply replaces the constructor function creation:<br><br>
+                              class SpaceShip {<br>
+                              &nbsp;constructor(targetSpace) {<br>
+                              &nbsp;&nbsp;this.targetSpace = targetSpace;<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              const shuttleTwo = new SpaceShip('Saturn');<br><br>
+                              It should be noted that the class keyword declares a new function, to which a constructor is added. This constructor is invoked when new is called to create a new object. UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle and SpaceShip used above.<br><br>
+                              The constructor method is a special method for creating and initializing an object created with a class. You will learn more about it in the Object Oriented Programming Section of the JS Algorithms And Data Structures Certification.<br><br>
+                              <strong>Debug will show value of shuttleOne.targetPlanet and shuttleTwo.targetSpace.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b20" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b20"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B20 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B21 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B21: Use getters and setters to Control Access to an Object</h4>
+                            <p class="single-item__paragraph">
+                              You can obtain values from an object and set the value of a property within an object. These are classically called getters and setters.<br><br>
+                              Getter functions are meant to simply return (get) the value of an object's private variable to the user without the user directly accessing the private variable.<br><br>
+                              Setter functions are meant to modify (set) the value of an object's private variable based on the value passed into the setter function. This change could involve calculations, or even overwriting the previous value completely.<br><br>
+                              class Book {<br>
+                              &nbsp;constructor(title, author, quantity) {<br>
+                              &nbsp;&nbsp;this._title = title;<br>
+                              &nbsp;&nbsp;this._author = author;<br>
+                              &nbsp;&nbsp;this._quantity = quantity;<br>
+                              &nbsp;}<br><br>
+                              &nbsp;//getters<br>
+                              &nbsp;get title() {<br>
+                              &nbsp;&nbsp;return this._title;<br>
+                              &nbsp;}<br>
+                              &nbsp;get author() {<br>
+                              &nbsp;&nbsp;return this._author;<br>
+                              &nbsp;}<br>
+                              &nbsp;get quantity() {<br>
+                              &nbsp;&nbsp;return this._quantity;<br>
+                              &nbsp;}<br><br>
+                              &nbsp;//setters<br>
+                              &nbsp;set title(titleUpdate) {<br>
+                              &nbsp;&nbsp;this._title = titleUpdate;<br>
+                              &nbsp;}<br>
+                              &nbsp;set author(authorUpdate) {<br>
+                              &nbsp;&nbsp;this._author = authorUpdate;<br>
+                              &nbsp;}<br>
+                              &nbsp;set quantity(quantityUpdate) {<br>
+                              &nbsp;&nbsp;this._quantity = quantityUpdate;<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              const NewEra = new Book('New Era', 'Marcin Soczynski', 24);<br><br>
+                              NewEra.author = 'Marcin S';<br>
+                              NewEra.quantity = 23;<br><br>
+                              We can also perform a lil-bit more advanced things with getters and setters, feel the power of creating API (Application Programming Interface)<br><br>
+                              class Thermostat {<br>
+                              &nbsp;constructor(fahrenheit) {<br>
+                              &nbsp;&nbsp;this.fahrenheit = fahrenheit;<br>
+                              &nbsp;}<br><br>
+                              &nbsp;get temperature() {<br>
+                              &nbsp;&nbsp;return (5 / 9) * (this.fahrenheit - 32);<br>
+                              &nbsp;}<br><br>
+                              &nbsp;set temperature(celsius) {<br>
+                              &nbsp;&nbsp;this.fahrenheit = (celsius * 9.0) / 5 + 32;<br>
+                              &nbsp;}<br>
+                              }<br><br>
+                              const livingRoomThermostat = new Thermostat(80);<br>
+                              let currentTemp = livingRoomThermostat.temperature;<br>
+                              currentTemp = livingRoomThermostat.temperature = 22;<br><br>
+                              Notice the syntax used to invoke the getter and setter. They do not even look like functions. Getters and setters are important because they hide internal implementation details. However, (_) is convention to precede the name of a private variable with an underscore, this practice itself does not make a variable private.<br><br>
+                              <strong>Debug will show values of NewEra.title, NewEra.author, NewEra.quantity and currentTemp.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b21" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b21"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B21 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
@@ -4112,11 +4328,11 @@
               <button class="button prev"><img src="./media/arrow-left.svg" width="15" height="25" alt="Change slide to left"></button>
               <button class="button next"><img src="./media/arrow-right.svg" width="15" height="25" alt="Change slide to Right"></button>
             </div>
-            <div class="slide-container__controls__nav">
+            <ul class="slide-container__controls__nav">
               <li class="nav__dot"></li>
               <li class="nav__dot"></li>
               <li class="nav__dot"></li>
-            </div>
+            </ul>
           </div> <!-- /slide controls -->
         </div> <!-- /slider + toolbar -->
 

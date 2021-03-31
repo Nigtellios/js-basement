@@ -3426,7 +3426,7 @@ const golfUserAge = golfUser.age1;
 
 /* Name would have a value of the string Jade Duh, and age would have number 26. Here's equivalent assignment statement using the ES6 destructing syntax: */
 
-const { name, age1 } = golfUser;
+let { name, age1 } = golfUser;
 
 /* And again, name would have a value of the string John Doe, and age would have the number 34. Here, the name and age variables will be created and assigned the values of their respective values from the golfUser object. You can see how much cleaner this is. You can extract as many or few values from the object as you want. */
 
@@ -3555,3 +3555,268 @@ if (btnFCCB15 !== null && scopeFCCB15 !== null) {
 } else {
   scopeFCCB15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B16: Use Destructuring Assignment to Pass an Object as a Function's Parameters */
+
+/* In some cases, you can destructure the object in a function argument itself. Consider the code below: */
+
+const profileData = {
+  name: 'Jurij',
+  age: 18,
+  nationality: 'Russian',
+  location: 'Russia'
+};
+
+const profileUpdate = (profileData) => {
+  const { name, age, nationality, location } = profileData;
+}
+
+const profName = profileData.name;
+
+/* This effectively destructures the object sent into the function. This can also be done in-place: */
+
+const profileUpdate2 = ({ name, age, nationality, location }) => {};
+
+/* When profileData is passed to above function, the values are destructured from the function parameter for use within the function. */
+
+/* OUTPUT CODE */
+
+const btnFCCB16= document.getElementById('run-fcc-task-b16');
+const scopeFCCB16 = document.getElementById('fcc-task-b16');
+
+function debugFCCB16() {
+  scopeFCCB16.innerHTML = outputResponse + 'And some data from it is: ' + profName;
+}
+
+if (btnFCCB16 !== null && scopeFCCB16 !== null) {
+  btnFCCB16.addEventListener('click', debugFCCB16);
+} else {
+  scopeFCCB16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B17: Create String using Template Literals */
+
+/* A new feature of ES6 is the template literal. This is special type of string that makes creating complex strings easier. Template Literals allow you to create multi-line strings and to use string interpolation features to create strings. Consider the code below: */
+
+const person = {
+  name: "Karollo",
+  age: 22,
+  nationality: 'Poland'
+};
+
+const profileGreeting = `Hello there ${person.name}!
+ You are ${person.age}, from ${person.nationality}.`
+
+/* A lot of things happened there. Firstly, the example uses backticks (`), not quotes (' or "), to wrap the string. Secondly, notice that the string is multi-line, both in the code and the output. This saves inserting \n within strings. The ${variable} syntax used above is a placeholder. Basically, you won't have to use concatenation with the + operator anymore. To add variables to strings, you just drop the variable in a template string and wrap it with ${here}. Similarly, you can include other expressions in your string literal, for example ${a + b}. This new way of creating string gives you more flexibility to create robust strings. We can use it to create more complex functionalities: */
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+
+function makeList(arr) {
+  "use strict";
+  const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`);
+  return failureItems;
+}
+const failuresList = makeList(result.failure);
+
+/* OUTPUT CODE */
+
+const btnFCCB17= document.getElementById('run-fcc-task-b17');
+const scopeFCCB17 = document.getElementById('fcc-task-b17');
+
+function debugFCCB17() {
+  scopeFCCB17.innerHTML = `${outputResponse} First code execution: ${profileGreeting}. Second code execution: ${makeList(failuresList)}.`;
+}
+
+if (btnFCCB17 !== null && scopeFCCB17 !== null) {
+  btnFCCB17.addEventListener('click', debugFCCB17);
+} else {
+  scopeFCCB17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B18: Write Concise Object Literal Declarations Using Object Property Shorthand */
+
+/* ES6 Adds some nice support for easily defining object literals. Consider the following code: */
+
+const getMousePos = (x, y) => ({
+  x: x,
+  y: y
+});
+
+/* getMousePos is a simple function that returns an object containing two properties. ES6 provides the syntatic sugar to eliminate the redundancy of having to write x: x. You can simply write x once, and it will be converted to x: x (or sth equivalent) under the hood. Here is the same function from above rewritten to use this new syntax: */
+
+const getMousePosition = (x, y) => ({ x, y });
+
+/* OUTPUT CODE */
+
+const btnFCCB18= document.getElementById('run-fcc-task-b18');
+const scopeFCCB18 = document.getElementById('fcc-task-b18');
+
+function debugFCCB18() {
+  scopeFCCB18.innerHTML = `${outputResponse} Our function for getting mouse position: ${getMousePosition(12,12)}, and x value from it equals: ${getMousePosition.x}.`;
+}
+
+if (btnFCCB18 !== null && scopeFCCB18 !== null) {
+  btnFCCB18.addEventListener('click', debugFCCB18);
+} else {
+  scopeFCCB18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B19: Write Concise Declarative Functions with ES6 */
+
+/* When defining functions within objects in ES5, we have to use the keyword function as follows: */
+
+const codUser = {
+  name: "xXx_Destroyer_xXx",
+  sayHello: function() {
+    return `Hello ${this.name}!`;
+  }
+};
+
+/* With ES6, you can remove the function keyword and colon altogether when defining functions in objects. Here's an example of this syntax: */
+
+const bfUser = {
+  name: 'Total_Chad',
+  sayHello() {
+    return `Hello ${this.name}!`;
+  }
+};
+
+/* OUTPUT CODE */
+
+const btnFCCB19= document.getElementById('run-fcc-task-b19');
+const scopeFCCB19 = document.getElementById('fcc-task-b19');
+
+function debugFCCB19() {
+  scopeFCCB19.innerHTML = `${outputResponse} ${codUser.sayHello()} and the second execution (ES6 function) is: ${bfUser.sayHello()}`;
+}
+
+if (btnFCCB19 !== null && scopeFCCB19 !== null) {
+  btnFCCB19.addEventListener('click', debugFCCB19);
+} else {
+  scopeFCCB19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B20: Use class Syntax to Define a Constructor Function */
+
+/* ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
+
+In ES5, we usually define a constructor function to use the new keyword to initiate an object. */
+
+var SpaceShuttle = function(targetPlanet) {
+  this.targetPlanet = targetPlanet;
+}
+
+var shuttleOne = new SpaceShuttle('Jupiter');
+
+/* The class syntax simply replaces the constructor function creation: */
+
+class SpaceShip {
+  constructor(targetSpace) {
+    this.targetSpace = targetSpace;
+  }
+}
+
+const shuttleTwo = new SpaceShip('Saturn');
+
+/* It should be noted that the class keyword declares a new function, to which a constructor is added. This constructor is invoked when new is called to create a new object. UpperCamelCase should be used by convention for ES6 class names, as in SpaceShuttle and SpaceShip used above.
+
+The constructor method is a special method for creating and initializing an object created with a class. You will learn more about it in the Object Oriented Programming Section of the JS Algorithms And Data Structures Certification. */
+
+
+/* OUTPUT CODE */
+
+const btnFCCB20= document.getElementById('run-fcc-task-b20');
+const scopeFCCB20 = document.getElementById('fcc-task-b20');
+
+function debugFCCB20() {
+  scopeFCCB20.innerHTML = `${outputResponse} ${shuttleOne.targetPlanet} and the second class execution (ES6 function - constructor) is: ${shuttleTwo.targetSpace}.`;
+}
+
+if (btnFCCB20 !== null && scopeFCCB20 !== null) {
+  btnFCCB20.addEventListener('click', debugFCCB20);
+} else {
+  scopeFCCB20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B21: Use getters and setters to Control Access to an Object */
+
+/* You can obtain values from an object and set the value of a property within an object. These are classically called getters and setters. */
+
+/* Getter functions are meant to simply return (get) the value of an object's private variable to the user without the user directly accessing the private variable. */
+
+/* Setter functions are meant to modify (set) the value of an object's private variable based on the value passed into the setter function. This change could involve calculations, or even overwriting the previous value completely. */
+
+class Book {
+  constructor(title, author, quantity) {
+    this._title = title;
+    this._author = author;
+    this._quantity = quantity;
+  }
+  //getters
+  get title() {
+    return this._title;
+  }
+  get author() {
+    return this._author;
+  }
+  get quantity() {
+    return this._quantity;
+  }
+  //setters
+  set title(titleUpdate) {
+    this._title = titleUpdate;
+  }
+  set author(authorUpdate) {
+    this._author = authorUpdate;
+  }
+  set quantity(quantityUpdate) {
+    this._quantity = quantityUpdate;
+  }
+}
+
+const NewEra = new Book('New Era', 'Marcin Soczynski', 24);
+
+NewEra.author = 'Marcin S';
+NewEra.quantity = 23;
+
+/* We can also perform a lil-bit more advanced things with getters and setters, feel the power of creating API (Application Programming Interface) */
+
+class Thermostat {
+  constructor(fahrenheit) {
+    this.fahrenheit = fahrenheit;
+  }
+
+  get temperature() {
+    return (5 / 9) * (this.fahrenheit - 32);
+  }
+
+  set temperature(celsius) {
+    this.fahrenheit = (celsius * 9.0) / 5 + 32;
+  }
+}
+
+const livingRoomThermostat = new Thermostat(80);
+let currentTemp = livingRoomThermostat.temperature;
+currentTemp = livingRoomThermostat.temperature = 22;
+
+/* Notice the syntax used to invoke the getter and setter. They do not even look like functions. Getters and setters are important because they hide internal implementation details. However, (_) is convention to precede the name of a private variable with an underscore, this practice itself does not make a variable private. */
+
+/* OUTPUT CODE */
+
+const btnFCCB21= document.getElementById('run-fcc-task-b21');
+const scopeFCCB21 = document.getElementById('fcc-task-b21');
+
+function debugFCCB21() {
+  scopeFCCB21.innerHTML = `${outputResponse} Our book is: ${NewEra.title}, written by ${NewEra.author}, and there is still ${NewEra.quantity} more of it. Now let's see Thermostat temperature: ${currentTemp}`;
+}
+
+if (btnFCCB21 !== null && scopeFCCB21 !== null) {
+  btnFCCB21.addEventListener('click', debugFCCB21);
+} else {
+  scopeFCCB21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
