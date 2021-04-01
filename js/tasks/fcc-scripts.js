@@ -3986,4 +3986,21 @@ if (btnFCCB27!== null && scopeFCCB27 !== null) {
 
 /* Task B28: Create a JavaScript Promise */
 
-/* A promise in JavaScript  */
+/* A promise in JavaScript is exactly what it sounds like - you use it to make a promise to do something, usually asynchronously. When the task completes, you either fulfill your promise or fail to do so. Promise is a constructor function, so you need to use the new keyword to create one. It takes a function, as its argument, with two parameters - resolve and reject. These are methods used to determine the outcome of the promise. The syntax looks like this: */
+
+const firstPromise = new Promise((resolve, reject) => {});
+
+/* OUTPUT CODE */
+
+const btnFCCB28= document.getElementById('run-fcc-task-b28');
+const scopeFCCB28 = document.getElementById('fcc-task-b28');
+
+function debugFCCB28() {
+  scopeFCCB28.innerHTML = `${outputResponse} ${firstPromise} The promise is empty, so there is no response.`;
+}
+
+if (btnFCCB28!== null && scopeFCCB28 !== null) {
+  btnFCCB28.addEventListener('click', debugFCCB28);
+} else {
+  scopeFCCB28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
