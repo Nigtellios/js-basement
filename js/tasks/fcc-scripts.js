@@ -4060,3 +4060,27 @@ if (btnFCCB30!== null && scopeFCCB30 !== null) {
 } else {
   scopeFCCB30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B31: Handle a Rejected Promise with catch */
+
+/* catch is the method used when your promise has been rejected. It is executed immediately after a promise's reject method is called. Here's the syntax: */
+
+secondPromise.catch(error => {
+  //execution
+  console.log(error);
+});
+
+/* OUTPUT CODE */
+
+const btnFCCB31 = document.getElementById('run-fcc-task-b31');
+const scopeFCCB31 = document.getElementById('fcc-task-b31');
+
+function debugFCCB31() {
+  scopeFCCB31.innerHTML = `${outputResponse} ${secondPromise} and response is empty.`;
+}
+
+if (btnFCCB31!== null && scopeFCCB31 !== null) {
+  btnFCCB31.addEventListener('click', debugFCCB31);
+} else {
+  scopeFCCB31.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
