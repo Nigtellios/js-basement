@@ -3680,7 +3680,7 @@
                               let testWojtek = /Wojciech/;<br>
                               This test call will return true. Any other forms of Wojciech will not match. For example, the regex /Wojciech/ will not match WOJCIECH or wojciech.<br><br>
                               let wojtekWrong = /wojtek/;<br><br>
-                              <strong>Debug will show execution of testRegex.test(testString).</strong>
+                              <strong>Debug will show execution of wojtekWrong.test(wojtekString and testWojtek.test(wojtekString.</strong>
                             </p>
                             <div class="single-item__debug-box">
                               <button id="run-fcc-task-c2" class="button button--debug">RUN DEBUG</button>
@@ -3690,6 +3690,27 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK C2 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C3 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C3: Match a Literal String with Different Possibilities</h4>
+                            <p class="single-item__paragraph">
+                              Using regexes like /coding/, you can look for the pattern coding in another string. This is powerful to search single strings, but it's limited to only one pattern. You can search for multiple patterns using the alternation or OR operator: |.<br><br>
+                              This operator matches patterns either before or after it. For example, if you wanted to match the strings yes or no, the regex you want is /yes|no/. You can also search for more than just two patterns. You can do this by adding more patterns with more OR operators separating them, like: /yes|no|maybe/.<br><br>
+                              let vodkaPattern = "Where is my vOdka, Jurij?";<br>
+                              let testVodkaPattern = /vodka|Vodka|VODKA|vOdka|vODKA/;<br>
+                              let vodkaResult = testVodkaPattern.test(vodkaPattern);<br><br>
+                              <strong>Debug will show execution of vodkaResult.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c3" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c3"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C3 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
