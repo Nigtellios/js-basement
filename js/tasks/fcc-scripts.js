@@ -4034,3 +4034,29 @@ if (btnFCCB29!== null && scopeFCCB29 !== null) {
 } else {
   scopeFCCB29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B30: Handle a Fulfilled Promise with then */
+
+/* Promises are most useful when you have a process that takes an unknown amount of time in your code (i.e. something asynchronous), often a server request. When you make a server request it takes some amount ot time, and after it completes usually want to do something with the response from the server. This can be achieved by using the then method. The then method is executed immediately after your promise is fulfilled with resolve. Here's an example: */
+
+secondPromise.then(result => {
+  //execution
+  console.log(result);
+});
+
+/* Result comes from the argument given to the resolve method. */
+
+/* OUTPUT CODE */
+
+const btnFCCB30 = document.getElementById('run-fcc-task-b30');
+const scopeFCCB30 = document.getElementById('fcc-task-b30');
+
+function debugFCCB30() {
+  scopeFCCB30.innerHTML = `${outputResponse} ${secondPromise} and response is empty.`;
+}
+
+if (btnFCCB30!== null && scopeFCCB30 !== null) {
+  btnFCCB30.addEventListener('click', debugFCCB30);
+} else {
+  scopeFCCB30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
