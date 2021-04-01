@@ -3921,7 +3921,7 @@ function debugFCCB25() {
   scopeFCCB25.innerHTML = `${outputResponse} There is no more coverage of this subject.`;
 }
 
-if (btnFCCB25!== null && scopeFCCB25 !== null) {
+if (btnFCCB25 !== null && scopeFCCB25 !== null) {
   btnFCCB25.addEventListener('click', debugFCCB25);
 } else {
   scopeFCCB25.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3955,7 +3955,7 @@ function debugFCCB26() {
   scopeFCCB26.innerHTML = `${outputResponse} There is no more coverage of this subject.`;
 }
 
-if (btnFCCB26!== null && scopeFCCB26 !== null) {
+if (btnFCCB26 !== null && scopeFCCB26 !== null) {
   btnFCCB26.addEventListener('click', debugFCCB26);
 } else {
   scopeFCCB26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3978,7 +3978,7 @@ function debugFCCB27() {
   scopeFCCB27.innerHTML = `${outputResponse} There is no more coverage of this subject.`;
 }
 
-if (btnFCCB27!== null && scopeFCCB27 !== null) {
+if (btnFCCB27 !== null && scopeFCCB27 !== null) {
   btnFCCB27.addEventListener('click', debugFCCB27);
 } else {
   scopeFCCB27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -3999,7 +3999,7 @@ function debugFCCB28() {
   scopeFCCB28.innerHTML = `${outputResponse} ${firstPromise} The promise is empty, so there is no response.`;
 }
 
-if (btnFCCB28!== null && scopeFCCB28 !== null) {
+if (btnFCCB28 !== null && scopeFCCB28 !== null) {
   btnFCCB28.addEventListener('click', debugFCCB28);
 } else {
   scopeFCCB28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -4029,7 +4029,7 @@ function debugFCCB29() {
   scopeFCCB29.innerHTML = `${outputResponse} ${secondPromise}`;
 }
 
-if (btnFCCB29!== null && scopeFCCB29 !== null) {
+if (btnFCCB29 !== null && scopeFCCB29 !== null) {
   btnFCCB29.addEventListener('click', debugFCCB29);
 } else {
   scopeFCCB29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -4055,7 +4055,7 @@ function debugFCCB30() {
   scopeFCCB30.innerHTML = `${outputResponse} ${secondPromise} and response is empty.`;
 }
 
-if (btnFCCB30!== null && scopeFCCB30 !== null) {
+if (btnFCCB30 !== null && scopeFCCB30 !== null) {
   btnFCCB30.addEventListener('click', debugFCCB30);
 } else {
   scopeFCCB30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
@@ -4079,8 +4079,38 @@ function debugFCCB31() {
   scopeFCCB31.innerHTML = `${outputResponse} ${secondPromise} and response is empty.`;
 }
 
-if (btnFCCB31!== null && scopeFCCB31 !== null) {
+if (btnFCCB31 !== null && scopeFCCB31 !== null) {
   btnFCCB31.addEventListener('click', debugFCCB31);
 } else {
   scopeFCCB31.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* ############################# */
+/* ########## REGEX ############ */
+/* ############################# */
+
+/* Task C1: Using the Test Method */
+
+/* Regular expressions are used in programming languages to match parts of string. You create patterns to help you do that matching. */
+
+/* If you want to find the word 'the" in the string "The dog chased the cat", you could use the following regular expressions: /the/. Notice that quote marks are not required within the regular expression. */
+
+/* JS has multiple ways to use regexes. One way to test a regex is using the .test() method. The .test() method takes the regex, applies it to a string (which is placed inside the parentheses), and returns true or false if your pattern finds something or not. */
+
+let testString = "Hello darkness my old friend.";
+let testRegex = /darkness/;
+
+/* OUTPUT CODE */
+
+const btnFCCC1 = document.getElementById('run-fcc-task-c1');
+const scopeFCCC1 = document.getElementById('fcc-task-c1');
+
+function debugFCCC1() {
+  scopeFCCC1.innerHTML = `${outputResponse} Our regex is: ${testRegex.test(testString)}`;
+}
+
+if (btnFCCC1 !== null && scopeFCCC1 !== null) {
+  btnFCCC1.addEventListener('click', debugFCCC1);
+} else {
+  scopeFCCC1.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
