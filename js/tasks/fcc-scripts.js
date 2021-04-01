@@ -3960,3 +3960,30 @@ if (btnFCCB26!== null && scopeFCCB26 !== null) {
 } else {
   scopeFCCB26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task B27: Import a Default Export */
+
+/* In the last challenge, you learned about export default and its uses. To import a default export, you need to use a different import syntax. In the following example, add is the default export of the math_functions.js file. Here is how to import it: */
+
+// import add from "./math_functions.js";
+
+/* The syntax differs in one key place. The imported value, add, is not surrounded by curly braces ({}). add here is simply a variable name for whatever the default export of the math_functions.js file is. You can use any name here when importing a default. */
+
+/* OUTPUT CODE */
+
+const btnFCCB27= document.getElementById('run-fcc-task-b27');
+const scopeFCCB27 = document.getElementById('fcc-task-b27');
+
+function debugFCCB27() {
+  scopeFCCB27.innerHTML = `${outputResponse} There is no more coverage of this subject.`;
+}
+
+if (btnFCCB27!== null && scopeFCCB27 !== null) {
+  btnFCCB27.addEventListener('click', debugFCCB27);
+} else {
+  scopeFCCB27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B28: Create a JavaScript Promise */
+
+/* A promise in JavaScript  */
