@@ -3543,7 +3543,7 @@ const [firstE, secondE, ...restOfArray] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 /* OUTPUT CODE */
 
-const btnFCCB15= document.getElementById('run-fcc-task-b15');
+const btnFCCB15 = document.getElementById('run-fcc-task-b15');
 const scopeFCCB15 = document.getElementById('fcc-task-b15');
 
 function debugFCCB15() {
@@ -3624,7 +3624,7 @@ const failuresList = makeList(result.failure);
 
 /* OUTPUT CODE */
 
-const btnFCCB17= document.getElementById('run-fcc-task-b17');
+const btnFCCB17 = document.getElementById('run-fcc-task-b17');
 const scopeFCCB17 = document.getElementById('fcc-task-b17');
 
 function debugFCCB17() {
@@ -3652,7 +3652,7 @@ const getMousePosition = (x, y) => ({ x, y });
 
 /* OUTPUT CODE */
 
-const btnFCCB18= document.getElementById('run-fcc-task-b18');
+const btnFCCB18 = document.getElementById('run-fcc-task-b18');
 const scopeFCCB18 = document.getElementById('fcc-task-b18');
 
 function debugFCCB18() {
@@ -3687,7 +3687,7 @@ const bfUser = {
 
 /* OUTPUT CODE */
 
-const btnFCCB19= document.getElementById('run-fcc-task-b19');
+const btnFCCB19 = document.getElementById('run-fcc-task-b19');
 const scopeFCCB19 = document.getElementById('fcc-task-b19');
 
 function debugFCCB19() {
@@ -3729,7 +3729,7 @@ The constructor method is a special method for creating and initializing an obje
 
 /* OUTPUT CODE */
 
-const btnFCCB20= document.getElementById('run-fcc-task-b20');
+const btnFCCB20 = document.getElementById('run-fcc-task-b20');
 const scopeFCCB20 = document.getElementById('fcc-task-b20');
 
 function debugFCCB20() {
@@ -3807,7 +3807,7 @@ currentTemp = livingRoomThermostat.temperature = 22;
 
 /* OUTPUT CODE */
 
-const btnFCCB21= document.getElementById('run-fcc-task-b21');
+const btnFCCB21 = document.getElementById('run-fcc-task-b21');
 const scopeFCCB21 = document.getElementById('fcc-task-b21');
 
 function debugFCCB21() {
@@ -3830,7 +3830,7 @@ if (btnFCCB21 !== null && scopeFCCB21 !== null) {
 
 /* OUTPUT CODE */
 
-const btnFCCB22= document.getElementById('run-fcc-task-b22');
+const btnFCCB22 = document.getElementById('run-fcc-task-b22');
 const scopeFCCB22 = document.getElementById('fcc-task-b22');
 
 function debugFCCB22() {
@@ -3863,7 +3863,7 @@ const add2 = (x,y) => {
 
 /* OUTPUT CODE */
 
-const btnFCCB23= document.getElementById('run-fcc-task-b23');
+const btnFCCB23 = document.getElementById('run-fcc-task-b23');
 const scopeFCCB23 = document.getElementById('fcc-task-b23');
 
 function debugFCCB23() {
@@ -3888,7 +3888,7 @@ if (btnFCCB23 !== null && scopeFCCB23 !== null) {
 
 /* OUTPUT CODE */
 
-const btnFCCB24= document.getElementById('run-fcc-task-b24');
+const btnFCCB24 = document.getElementById('run-fcc-task-b24');
 const scopeFCCB24 = document.getElementById('fcc-task-b24');
 
 function debugFCCB24() {
@@ -3914,7 +3914,7 @@ if (btnFCCB24 !== null && scopeFCCB24 !== null) {
 
 /* OUTPUT CODE */
 
-const btnFCCB25= document.getElementById('run-fcc-task-b25');
+const btnFCCB25 = document.getElementById('run-fcc-task-b25');
 const scopeFCCB25 = document.getElementById('fcc-task-b25');
 
 function debugFCCB25() {
@@ -3948,7 +3948,7 @@ Below are examples using export default: */
 
 /* OUTPUT CODE */
 
-const btnFCCB26= document.getElementById('run-fcc-task-b26');
+const btnFCCB26 = document.getElementById('run-fcc-task-b26');
 const scopeFCCB26 = document.getElementById('fcc-task-b26');
 
 function debugFCCB26() {
@@ -3971,7 +3971,7 @@ if (btnFCCB26!== null && scopeFCCB26 !== null) {
 
 /* OUTPUT CODE */
 
-const btnFCCB27= document.getElementById('run-fcc-task-b27');
+const btnFCCB27 = document.getElementById('run-fcc-task-b27');
 const scopeFCCB27 = document.getElementById('fcc-task-b27');
 
 function debugFCCB27() {
@@ -3992,7 +3992,7 @@ const firstPromise = new Promise((resolve, reject) => {});
 
 /* OUTPUT CODE */
 
-const btnFCCB28= document.getElementById('run-fcc-task-b28');
+const btnFCCB28 = document.getElementById('run-fcc-task-b28');
 const scopeFCCB28 = document.getElementById('fcc-task-b28');
 
 function debugFCCB28() {
@@ -4003,4 +4003,34 @@ if (btnFCCB28!== null && scopeFCCB28 !== null) {
   btnFCCB28.addEventListener('click', debugFCCB28);
 } else {
   scopeFCCB28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task B29: Complete a Promise with resolve and reject */
+
+/* A promise has three states: pending, fulfilled, and rejected. The promise you created in the last challenge is forever stuck in the pending state because you did not add a way to complete the promise. The resolve and reject parameters given to the promise argument are used to do this. resolve is used when you want your promise to succeed, and reject is used when you want it to fail. These are methods that take an argument, as seen below. */
+
+const secondPromise = new Promise((resolve, reject) => {
+  const response = 200;
+  if (response === 200) {
+    return resolve("Promise was fulfilled");
+  } else {
+    return reject("Promise was rejected");
+  }
+});
+
+/* The example above uses strings for the argument of these functions, but it can really be anything. Often, it might be an object, that you would use data from, to put on your website or elsewhere. */
+
+/* OUTPUT CODE */
+
+const btnFCCB29 = document.getElementById('run-fcc-task-b29');
+const scopeFCCB29 = document.getElementById('fcc-task-b29');
+
+function debugFCCB29() {
+  scopeFCCB29.innerHTML = `${outputResponse} ${secondPromise}`;
+}
+
+if (btnFCCB29!== null && scopeFCCB29 !== null) {
+  btnFCCB29.addEventListener('click', debugFCCB29);
+} else {
+  scopeFCCB29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }

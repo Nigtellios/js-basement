@@ -3555,7 +3555,7 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B28 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task B28: </h4>
+                            <h4 class="single-item__header">Task B28: Create a JavaScript Promise a JavaScript Promise</h4>
                             <p class="single-item__paragraph">
                               A promise in JavaScript is exactly what it sounds like - you use it to make a promise to do something, usually asynchronously. When the task completes, you either fulfill your promise or fail to do so. Promise is a constructor function, so you need to use the new keyword to create one. It takes a function, as its argument, with two parameters - resolve and reject. These are methods used to determine the outcome of the promise. The syntax looks like this:<br><br>
                               const firstPromise = new Promise((resolve, reject) => {});<br><br>
@@ -3569,6 +3569,32 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK B28 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK B29 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task B29: Complete a Promise with resolve and reject</h4>
+                            <p class="single-item__paragraph">
+                              A promise has three states: pending, fulfilled, and rejected. The promise you created in the last challenge is forever stuck in the pending state because you did not add a way to complete the promise. The resolve and reject parameters given to the promise argument are used to do this. resolve is used when you want your promise to succeed, and reject is used when you want it to fail. These are methods that take an argument, as seen below.<br><br>
+                              const secondPromise = new Promise((resolve, reject) => {<br>
+                              const response = 200;<br>
+                              if (response === 200) {<br>
+                              return resolve("Promise was fulfilled");<br>
+                              } else {<br>
+                              return reject("Promise was rejected");<br>
+                              }<br>
+                              });<br><br>
+                              The example above uses strings for the argument of these functions, but it can really be anything. Often, it might be an object, that you would use data from, to put on your website or elsewhere.<br><br>
+                              <strong>Debug will show execution of secondPromise.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-b29" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-b29"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK B29 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
