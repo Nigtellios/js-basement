@@ -57,6 +57,8 @@ window.onload = buttonsListeners;
 
 /* JS Imports */
 import { tns } from '../node_modules/tiny-slider/src/tiny-slider';
-import './tasks/fcc-scripts';
+import './tasks/fcc-js-basics';
+import './tasks/fcc-js-es6';
+import './tasks/fcc-js-regex';
 import './tasks/zenva-scripts';
 import './tasks/my-own-scripts';
