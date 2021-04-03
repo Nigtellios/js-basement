@@ -152,7 +152,7 @@ const btnFCCC6 = document.getElementById('run-fcc-task-c6');
 const scopeFCCC6 = document.getElementById('fcc-task-c6');
 
 function debugFCCC6() {
-  scopeFCCC6.innerHTML = `${outputResponse} Is there any David? ${sixthResult}`;
+  scopeFCCC6.innerHTML = `${outputResponse} Is there any Five? ${sixthResult}`;
 }
 
 if (btnFCCC6 !== null && scopeFCCC6 !== null) {
@@ -163,3 +163,25 @@ if (btnFCCC6 !== null && scopeFCCC6 !== null) {
 
 /* Task C7: Match Anything with Wildcard Peroid */
 
+/* Sometimes you won't (or don't need to) know the exact characters in your patterns. Thinking of all words that match, say, a misspelling would take a long time. Luckily, you can save time using the wildcard character: . */
+
+/* The wildcard character . will match any one character. The wildcard is also called dot and peroid. You can use the wildcard character just like any other character in the regex. For example, if you wanted to match hug, huh, hut, and hum, you can use the refex /hu./ to match all four words. */
+
+let seventhRegex1 = "Camera is on!";
+let seventhRegex2 = "Castle has been built.";
+let testSeventhRegex = /ca./;
+
+/* OUTPUT CODE */
+
+const btnFCCC7 = document.getElementById('run-fcc-task-c7');
+const scopeFCCC7 = document.getElementById('fcc-task-c7');
+
+function debugFCCC7() {
+  scopeFCCC7.innerHTML = `${outputResponse} Is there any ca.? ${testSeventhRegex.test(seventhRegex1)} and second test: ${testSeventhRegex.test(seventhRegex2)}`;
+}
+
+if (btnFCCC7 !== null && scopeFCCC7 !== null) {
+  btnFCCC7.addEventListener('click', debugFCCC7);
+} else {
+  scopeFCCC7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
