@@ -3712,6 +3712,93 @@
                           </div>
                         </li> <!-- /SINGLE TASK C3 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C4 - TO CHECK -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C4: Match a Literal String with Different Possibilities</h4>
+                            <p class="single-item__paragraph">
+                              Up until now, you've looked at regexes to do literal matches of strings. But sometimes, you might want to also match case differences.<br><br>
+                              Case (or sometimes letter case) is the difference between uppercase letters and lowercase letters. Examples of uppercase are A, B, and C. Examples of lowercase are a, b, and c.<br><br>
+                              You can match both cases using what is calles a flag. There are other flags but here you'll focus on the flag that ignores case - the i flag. You can use it by appending it to the regex. An example of using this flag is /ignorecase/i. This regex can match the strings ignorecase, igNoreCase, and IgnoreCase.<br><br>
+                              let fourthRegex = "WhAt are we doing?";<br>
+                              let testFourthRegex = /what/i;<br>
+                              let fourthResult = testFourthRegex.test(fourthRegex);<br><br>
+                              <strong>Debug will show execution of fourthResult.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c4" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c4"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C4 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C5 - TO CHECK -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C5: Extract Matches - TO CHECK</h4>
+                            <p class="single-item__paragraph">
+                              So far, you have only been checking if a pattern exists or not within a string. You can also extract the actual matches you found with the .match() method.<br><br>
+                              To use the .match() method, apply the method on a string and pass in the regex inside the parentheses. Here is the example:<br><br>                
+                              "This request has been denIed.".match(/denied/i);<br>
+                              let fifthRegex = "Where is the David?";<br>
+                              let testFifthRegex = /david/i;<br><br>             
+                              Here the first matdh would return ["denied"] and the second would                               return ["david"]. Note that the .match syntax is the "opposite" of the .test method you have been using this far.<br><br>
+                              'string'.match(/regex/);<br>
+                              /regex/.test('string');<br><br>
+                              <strong>Debug will show execution of fifthRegex.match(testFifthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c5" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c5"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C5 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C6 - TO CHECK -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C6: Find More Than the First Match - TO CHECK</h4>
+                            <p class="single-item__paragraph">
+                              So far, you have only been able to extract or search a pattern once. To search or extract a pattern more than once, you can use the g flag. Note that we can combine multiple regex flags, so we can use g with i at the same time.<br><br>
+                              let sixthRegex = "Seven, three, five, fIVe, six, zero, eight.";<br>
+                              let testSixthRegex = /five/gi;<br>
+                              let sixthResult = sixthRegex.match(testSixthRegex);<br><br>
+                              <strong>Debug will show execution of sixthResult.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c6" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c6"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C6 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C7 - TO CHECK -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C7: Match Anything with Wildcard Period - TO CHECK</h4>
+                            <p class="single-item__paragraph">
+                              Sometimes you won't (or don't need to) know the exact characters in your patterns. Thinking of all words that match, say, a misspelling would take a long time. Luckily, you can save time using the wildcard character: .<br><br>
+                              The wildcard character . will match any one character. The wildcard is also called dot and peroid. You can use the wildcard character just like any other character in the regex. For example, if you wanted to match hug, huh, hut, and hum, you can use the refex /hu./ to match all four words.<br><br>
+                              let seventhRegex1 = "Camera is on!";<br>
+                              let seventhRegex2 = "Castle has been built.";<br>
+                              let testSeventhRegex = /ca./;<br><br>
+                              <strong>Debug will show execution of testSeventhRegex.test(seventhRegex1) and testSeventhRegex.test(seventhRegex2).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c7" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c7"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C7 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
