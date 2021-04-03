@@ -80,3 +80,86 @@ if (btnFCCC3 !== null && scopeFCCC3 !== null) {
 } else {
   scopeFCCC3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C4: Ignore Case While Matching - TO CHECK */
+
+/* Up until now, you've looked at regexes to do literal matches of strings. But sometimes, you might want to also match case differences. */
+
+/* Case (or sometimes letter case) is the difference between uppercase letters and lowercase letters. Examples of uppercase are A, B, and C. Examples of lowercase are a, b, and c. */
+
+/* You can match both cases using what is calles a flag. There are other flags but here you'll focus on the flag that ignores case - the i flag. You can use it by appending it to the regex. An example of using this flag is /ignorecase/i. This regex can match the strings ignorecase, igNoreCase, and IgnoreCase. */
+
+let fourthRegex = "WhAt are we doing?";
+let testFourthRegex = /what/i;
+let fourthResult = testFourthRegex.test(fourthRegex);
+
+/* OUTPUT CODE */
+
+const btnFCCC4 = document.getElementById('run-fcc-task-c4');
+const scopeFCCC4 = document.getElementById('fcc-task-c4');
+
+function debugFCCC4() {
+  scopeFCCC4.innerHTML = `${outputResponse} Is there any what? ${fourthResult}`;
+}
+
+if (btnFCCC4 !== null && scopeFCCC4 !== null) {
+  btnFCCC4.addEventListener('click', debugFCCC4);
+} else {
+  scopeFCCC4.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task C5: Extract Matches - TO CHECK */
+
+/* So far, you have only been checking if a pattern exists or not within a string. You can also extract the actual matches you found with the .match() method. */
+
+/* To use the .match() method, apply the method on a string and pass in the regex inside the parentheses. Here is the example: */
+  n 
+"This request has been denIed.".match(/denied/i);
+let fifthRegex = "Where is the David?";
+let testFifthRegex = /david/i;
+
+/* Here the first matdh would return ["denied"] and the second would return ["david"]. Note that the .match syntax is the "opposite" of the .test method you have been using this far. */
+
+// 'string'.match(/regex/);
+// /regex/.test('string');
+
+/* OUTPUT CODE */
+
+const btnFCCC5 = document.getElementById('run-fcc-task-c5');
+const scopeFCCC5 = document.getElementById('fcc-task-c5');
+
+function debugFCCC5() {
+  scopeFCCC5.innerHTML = `${outputResponse} Is there any David? ${fifthRegex.match(testFifthRegex)}`;
+}
+
+if (btnFCCC5 !== null && scopeFCCC5 !== null) {
+  btnFCCC5.addEventListener('click', debugFCCC5);
+} else {
+  scopeFCCC5.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task C6: Find More Than the First Match */
+
+/* So far, you have only been able to extract or search a pattern once. To search or extract a pattern more than once, you can use the g flag. Note that we can combine multiple regex flags, so we can use g with i at the same time. */
+
+let sixthRegex = "Seven, three, five, fIVe, six, zero, eight.";
+let testSixthRegex = /five/gi;
+let sixthResult = sixthRegex.match(testSixthRegex);
+
+/* OUTPUT CODE */
+
+const btnFCCC6 = document.getElementById('run-fcc-task-c6');
+const scopeFCCC6 = document.getElementById('fcc-task-c6');
+
+function debugFCCC6() {
+  scopeFCCC6.innerHTML = `${outputResponse} Is there any David? ${sixthResult}`;
+}
+
+if (btnFCCC6 !== null && scopeFCCC6 !== null) {
+  btnFCCC6.addEventListener('click', debugFCCC6);
+} else {
+  scopeFCCC6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
+/* Task C7: Match Anything with Wildcard Peroid */
+
