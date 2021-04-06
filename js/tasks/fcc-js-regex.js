@@ -239,3 +239,27 @@ if (btnFCCC9 !== null && scopeFCCC9 !== null) {
 } else {
   scopeFCCC9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task 10: Match Numbers and Letters of the Alphabet */
+
+/* Using the hyphen (-) to match a range of characters is not limited to letters. It also works to match a range of numbers.
+
+For example, /[0-5]/ matches any number between 0 and 5, including the 0 and 5. Also, it is possible to combine a range of letters and numbers in a single character set. */
+
+let tenthStr = "Dehad1998";
+let testTenthRegex = /[a-z0-9]/gi;
+
+/* OUTPUT CODE */
+
+const btnFCCC10 = document.getElementById('run-fcc-task-c10');
+const scopeFCCC10 = document.getElementById('fcc-task-c10');
+
+function debugFCCC10() {
+  scopeFCCC10.innerHTML = `${outputResponse} Our match: ${tenthStr.match(testTenthRegex)}.`;
+}
+
+if (btnFCCC10 !== null && scopeFCCC10 !== null) {
+  btnFCCC10.addEventListener('click', debugFCCC10);
+} else {
+  scopeFCCC10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
