@@ -3928,6 +3928,28 @@
                           </div>
                         </li> <!-- /SINGLE TASK C13 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C14 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C14: Find Characters with Lazy Matching</h4>
+                            <p class="single-item__paragraph">
+                              In regular expressions, a greedy match finds the longest possibler part of a string that fits the regex pattern and returns it as a match. The alternative is called a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern.<br><br>
+                              You can apply the regex /t[a-z]*i/ to the string "titanic". This regex is basically a pattern that starts with t, ends with i, and has some letters in between. Regular expressions are by default greedy, so the match would return ["titani"]. It finds the largest sub-string possible to fit the pattern.<br><br>
+                              However, you can use the ? character to change it to lazy matching. "titanic" matched against the adjusted regex of /t[a-z]*?i/ returns ["ti"]. Note that parsing HTML with REGEX should be avoided, but pattern matching an HTML string with regular expressions is completely fine.<br><br>
+                              let fourteenthStr = " h1 Titanic /h1 ";<br>
+                              ^(HTML TAGS was deleted, put <> here).<br>
+                              let testFourteenthRegex = /<.*?>/;<br><br>
+                              <strong>Debug will show execution of fourteenthStr.match(testFourteenthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c14" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c14"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C14 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>

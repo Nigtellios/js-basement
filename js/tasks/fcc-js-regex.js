@@ -339,3 +339,30 @@ if (btnFCCC13 !== null && scopeFCCC13 !== null) {
 } else {
   scopeFCCC13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C14: Find Characters with Lazy Matching */
+
+/* In regular expressions, a greedy match finds the longest possibler part of a string that fits the regex pattern and returns it as a match. The alternative is called a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern.
+
+You can apply the regex /t[a-z]*i/ to the string "titanic". This regex is basically a pattern that starts with t, ends with i, and has some letters in between. Regular expressions are by default greedy, so the match would return ["titani"]. It finds the largest sub-string possible to fit the pattern.
+
+However, you can use the ? character to change it to lazy matching. "titanic" matched against the adjusted regex of /t[a-z]*?i/ returns ["ti"]. Note that parsing HTML with REGEX should be avoided, but pattern matching an HTML string with regular expressions is completely fine
+ */
+
+let fourteenthStr = "<h1>Titanic</h1>";
+let testFourteenthRegex = /<.*?>/;
+
+/* OUTPUT CODE */
+
+const btnFCCC14 = document.getElementById('run-fcc-task-c14');
+const scopeFCCC14 = document.getElementById('fcc-task-c14');
+
+function debugFCCC14() {
+  scopeFCCC14.innerHTML = `${outputResponse} Our match: ${fourteenthStr.match(testFourteenthRegex)}.`;
+}
+
+if (btnFCCC14 !== null && scopeFCCC14 !== null) {
+  btnFCCC14.addEventListener('click', debugFCCC14);
+} else {
+  scopeFCCC14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
