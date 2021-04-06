@@ -311,3 +311,31 @@ if (btnFCCC12 !== null && scopeFCCC12 !== null) {
 } else {
   scopeFCCC12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C13: Match Characters that Occur Zero or More Times */
+
+/* The last challenge used the plus + sign to look for characters that occur one or more times. There's also an option that matches character that occur zero or more times.
+
+The character to do this is the asterisk or star: *.
+
+In order below, the three match calls would return the values with go (last would be null). */
+
+let thirteenthStr1 = "Polska goooola!";
+let thirteenthStr2 = "GOOOOOOL ROBERT LEWANDOWSKI";
+let thirteenthStr3 = "Global Village";
+let testThirteenthRegex = /go*/gi;
+
+/* OUTPUT CODE */
+
+const btnFCCC13 = document.getElementById('run-fcc-task-c13');
+const scopeFCCC13 = document.getElementById('fcc-task-c13');
+
+function debugFCCC13() {
+  scopeFCCC13.innerHTML = `${outputResponse} Our first match: ${thirteenthStr1.match(testThirteenthRegex)}, second match: ${thirteenthStr2.match(testThirteenthRegex)}, third match: ${thirteenthStr3.match(testThirteenthRegex)}.`;
+}
+
+if (btnFCCC13 !== null && scopeFCCC13 !== null) {
+  btnFCCC13.addEventListener('click', debugFCCC13);
+} else {
+  scopeFCCC13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
