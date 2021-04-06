@@ -3868,7 +3868,7 @@
                         <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C11 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
-                            <h4 class="single-item__header">Task C10: Match Single Characters Not Specified</h4>
+                            <h4 class="single-item__header">Task C11: Match Single Characters Not Specified</h4>
                             <p class="single-item__paragraph">
                               So far, you have created a set of characters that you want to match, but you could also create a set of characters that you do not want to match. These types of character sets ale called NEGATED CHARACTER SETS.<br><br>
                               To create a negated character set, you place a caret character (^) after the opening bracket and before the characters you do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel. Note that characters like ., !, [, @, / and white space are matched - the negated vowel character set only excludes the vowel characters. Let's create a single regex that matches all character that are not a number or a vowel with some flags.<br><br>
@@ -3883,7 +3883,29 @@
                               </div>
                             </div>
                           </div>
-                        </li> <!-- /SINGLE TASK C10 -->
+                        </li> <!-- /SINGLE TASK C11 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C12 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C12: Match Single Characters Not Specified</h4>
+                            <p class="single-item__paragraph">
+                              Sometimes, you need to match a character (or group of characters) that appears one or more times in a row. This means it occurs at least once, and may be repeated. You can use the + character to check if that is the case. Remember, the character or pattern has to be present consecutively. That is, the character has to repeat one after the other.<br><br>
+                              For example, /a+/g would find one match in abc and return ["a"]. Because of the +, it would also find a single match in aabc and return ["aa"]. If it were instead checking the string abab, it would find two matches and return ["a", "a"] because the a characters are not in a row - there is a b between them. Finally, since there is no a in the string bcd, it wouldn't find a match.<br><br>
+                              let twelfthStr = "Missouri";<br>
+                              let testTwelfthRegex = /s+/gi;<br><br>
+                              <strong>Debug will show execution of twelfthStr.match(testTwelfthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c12" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c12"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C12 -->
+
+
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
