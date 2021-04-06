@@ -213,3 +213,29 @@ if (btnFCCC8 !== null && scopeFCCC8 !== null) {
 } else {
   scopeFCCC8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C9: Match Letters of the Alphabet */
+
+/* You saw how you can use character sets to specify a group of characters to match, but that's a lot of typing when you need to match a large range of characters (for example, every letter in the alphabet). Fortunately, there is a built-in feature that makes this short and simple. Inside a character set, you can define a range of characters to match using a hyphen character: -. */
+
+/* For example, to match lowercase letters a through e you would use [a-e]. */
+
+let ninthStr1 = "cat";
+let ninthStr2 = "bat";
+let ninthStr3 = "mat";
+let testNinthRegex = /[a-e]at/;
+
+/* OUTPUT CODE */
+
+const btnFCCC9 = document.getElementById('run-fcc-task-c9');
+const scopeFCCC9 = document.getElementById('fcc-task-c9');
+
+function debugFCCC9() {
+  scopeFCCC9.innerHTML = `${outputResponse} First match: ${ninthStr1.match(testNinthRegex)}, second match: ${ninthStr2.match(testNinthRegex)}, third match: ${ninthStr3.match(testNinthRegex)}.`;
+}
+
+if (btnFCCC9 !== null && scopeFCCC9 !== null) {
+  btnFCCC9.addEventListener('click', debugFCCC9);
+} else {
+  scopeFCCC9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
