@@ -3778,7 +3778,7 @@
                           </div>
                         </li> <!-- /SINGLE TASK C6 -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C7 - TO CHECK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C7  -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task C7: Match Anything with Wildcard Period - TO CHECK</h4>
@@ -3798,6 +3798,186 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK C7 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C8 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C8: Match Single Character with Multiple Possibilities</h4>
+                            <p class="single-item__paragraph">
+                              You learned how to match literal patterns (/literal/) and wildcard character (/./). These are the extremes of regular expressions, where one finds exact matches and the other matches everything. There are options that are a balance between the two extremes.<br><br>
+                              You can search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ ]) brackets. For example, if you want to match bag, big, ana bug but not bog. You can create the regex /b[aiu]g/ to do this. The [aiu] is the character class that will only match the characters a, i, or u.<br><br>
+                              let eightRegex1 = "big";<br>
+                              let eightRegex2 = "bag";<br>
+                              let eightRegex3 = "bug";<br>
+                              let eightRegex4 = "bog";<br>
+                              let testEightRegex = /b[aiu]g/i;<br><br>
+                              In example: To match all vowels with letters a, e, i, o, u you can just do regex = /[aeiou]/gi<br><br>
+                              <strong>Debug will show execution of eightRegex1.match(testEightRegex),eightRegex2.match(testEightRegex), eightRegex3.match(testEightRegex) and eightRegex4.match(testEightRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c8" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c8"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C8 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C9 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C9: Match Letters of the Alphabet</h4>
+                            <p class="single-item__paragraph">
+                              You saw how you can use character sets to specify a group of characters to match, but that's a lot of typing when you need to match a large range of characters (for example, every letter in the alphabet). Fortunately, there is a built-in feature that makes this short and simple. Inside a character set, you can define a range of characters to match using a hyphen character: -.<br><br>
+                              For example, to match lowercase letters a through e you would use [a-e].<br><br>
+                              let ninthStr1 = "cat";<br>
+                              let ninthStr2 = "bat";<br>
+                              let ninthStr3 = "mat";<br>
+                              let testNinthRegex = /[a-e]at/;<br><br>
+                              <strong>Debug will show execution of ninthStr1.match(testNinthRegex), ninthStr2.match(testNinthRegex) and ninthStr3.match(testNinthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c9" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c9"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C9 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C10 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C10: Match Numbers and Letters of the Alphabet</h4>
+                            <p class="single-item__paragraph">
+                              Using the hyphen (-) to match a range of characters is not limited to letters. It also works to match a range of numbers.<br><br>
+                              For example, /[0-5]/ matches any number between 0 and 5, including the 0 and 5. Also, it is possible to combine a range of letters and numbers in a single character set.<br><br>
+                              let tenthStr = "Dehad1998";<br>
+                              let testTenthRegex = /[a-z0-9]/gi;<br><br>
+                              <strong>Debug will show execution of tenthStr.match(testTenthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c10" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c10"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C10 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C11 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C11: Match Single Characters Not Specified</h4>
+                            <p class="single-item__paragraph">
+                              So far, you have created a set of characters that you want to match, but you could also create a set of characters that you do not want to match. These types of character sets ale called NEGATED CHARACTER SETS.<br><br>
+                              To create a negated character set, you place a caret character (^) after the opening bracket and before the characters you do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel. Note that characters like ., !, [, @, / and white space are matched - the negated vowel character set only excludes the vowel characters. Let's create a single regex that matches all character that are not a number or a vowel with some flags.<br><br>
+                              let eleventhStr = "4 blind mages.";<br>
+                              let testEleventhRegex = /[^0-9aeiou]/gi;<br><br>
+                              <strong>Debug will show execution of eleventhStr.match(testEleventhRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c11" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c11"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C11 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C12 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C12: Match Single Characters Not Specified</h4>
+                            <p class="single-item__paragraph">
+                              Sometimes, you need to match a character (or group of characters) that appears one or more times in a row. This means it occurs at least once, and may be repeated. You can use the + character to check if that is the case. Remember, the character or pattern has to be present consecutively. That is, the character has to repeat one after the other.<br><br>
+                              For example, /a+/g would find one match in abc and return ["a"]. Because of the +, it would also find a single match in aabc and return ["aa"]. If it were instead checking the string abab, it would find two matches and return ["a", "a"] because the a characters are not in a row - there is a b between them. Finally, since there is no a in the string bcd, it wouldn't find a match.<br><br>
+                              let twelfthStr = "Missouri";<br>
+                              let testTwelfthRegex = /s+/gi;<br><br>
+                              <strong>Debug will show execution of twelfthStr.match(testTwelfthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c12" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c12"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C12 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C13 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C13: Match Characters that Occur Zero or More Times</h4>
+                            <p class="single-item__paragraph">
+                              The last challenge used the plus + sign to look for characters that occur one or more times. There's also an option that matches character that occur zero or more times.<br><br>
+                              The character to do this is the asterisk or star: *.<br><br>
+                              In order below, the three match calls would return the values with go (last would be null).<br><br>
+                              let thirteenthStr1 = "Polska goooola!";<br>
+                              let thirteenthStr2 = "GOOOOOOL ROBERT LEWANDOWSKI";<br>
+                              let thirteenthStr3 = "Global Village";<br>
+                              let testThirteenthRegex = /go*/gi;<br><br>
+                              <strong>Debug will show execution of thirteenthStr1.match(testThirteenthRegex), thirteenthStr2.match(testThirteenthRegex), and thirteenthStr3.match(testThirteenthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c13" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c13"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C13 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C14 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C14: Find Characters with Lazy Matching</h4>
+                            <p class="single-item__paragraph">
+                              In regular expressions, a greedy match finds the longest possibler part of a string that fits the regex pattern and returns it as a match. The alternative is called a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern.<br><br>
+                              You can apply the regex /t[a-z]*i/ to the string "titanic". This regex is basically a pattern that starts with t, ends with i, and has some letters in between. Regular expressions are by default greedy, so the match would return ["titani"]. It finds the largest sub-string possible to fit the pattern.<br><br>
+                              However, you can use the ? character to change it to lazy matching. "titanic" matched against the adjusted regex of /t[a-z]*?i/ returns ["ti"]. Note that parsing HTML with REGEX should be avoided, but pattern matching an HTML string with regular expressions is completely fine.<br><br>
+                              let fourteenthStr = " h1 Titanic /h1 ";<br>
+                              ^(HTML TAGS was deleted, put <> here).<br>
+                              let testFourteenthRegex = /<.*?>/;<br><br>
+                              <strong>Debug will show execution of fourteenthStr.match(testFourteenthRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c14" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c14"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C14 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C15 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C15: Find One or More Criminals in a Hunt</h4>
+                            <p class="single-item__paragraph">
+                              Time to pause and test your new regex writing skills. A group of criminals escaped from jail and ran away, but you don't know how many. However, you do know that they stay close together when they are around other people. You are responsible for finding all of the criminals at once. Here's and example to review how to do this:<br><br>
+                              The regex /z+/ matches the letter z then it appears one or more times in a row. It would fins matches in all of the following strings: "z"<br>
+                              "zzzzzz"<br>
+                              "ABCzzzz"<br>
+                              "zzzzABC"<br>
+                              "abczzzzzzzzzzzzzzzzzzzzzabc"<br><br>
+                              But it doesn't find matches in the following strings since there are no letter z characters:<br><br>
+                              ""<br>
+                              "ABC"<br>
+                              "abcabc"<br><br>
+                              Write a greedy regex that finds one or more criminals within a group of other people. A Criminal is represented by the capital letter C.<br><br>
+                              let reCriminalito = /C+/;<br><br>
+                              Yeah like, it was very easy (but requirements could be tricky somehow).<br><br>
+                              <strong>Debug will show execution of reCriminalito.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c15" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c15"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C15 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
