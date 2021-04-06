@@ -185,3 +185,31 @@ if (btnFCCC7 !== null && scopeFCCC7 !== null) {
   scopeFCCC7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* Task C8: Match Single Character with Multiple Possibilities */
+
+/* You learned how to match literal patterns (/literal/) and wildcard character (/./). These are the extremes of regular expressions, where one finds exact matches and the other matches everything. There are options that are a balance between the two extremes. */
+
+/* You can search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ ]) brackets. For example, if you want to match bag, big, ana bug but not bog. You can create the regex /b[aiu]g/ to do this. The [aiu] is the character class that will only match the characters a, i, or u. */
+
+let eightRegex1 = "big";
+let eightRegex2 = "bag";
+let eightRegex3 = "bug";
+let eightRegex4 = "bog";
+let testEightRegex = /b[aiu]g/i;
+
+/* In example: To match all vowels with letters a, e, i, o, u you can just do regex = /[aeiou]/gi */
+
+/* OUTPUT CODE */
+
+const btnFCCC8 = document.getElementById('run-fcc-task-c8');
+const scopeFCCC8 = document.getElementById('fcc-task-c8');
+
+function debugFCCC8() {
+  scopeFCCC8.innerHTML = `${outputResponse} First match: ${eightRegex1.match(testEightRegex)}, second match: ${eightRegex2.match(testEightRegex)}, third match: ${eightRegex3.match(testEightRegex)}, fourth match: ${eightRegex4.match(testEightRegex)}.`;
+}
+
+if (btnFCCC8 !== null && scopeFCCC8 !== null) {
+  btnFCCC8.addEventListener('click', debugFCCC8);
+} else {
+  scopeFCCC8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

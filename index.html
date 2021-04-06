@@ -3778,7 +3778,7 @@
                           </div>
                         </li> <!-- /SINGLE TASK C6 -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C7 - TO CHECK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C7  -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task C7: Match Anything with Wildcard Period - TO CHECK</h4>
@@ -3798,6 +3798,30 @@
                             </div>
                           </div>
                         </li> <!-- /SINGLE TASK C7 -->
+
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C8 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C8: Match Single Character with Multiple Possibilities</h4>
+                            <p class="single-item__paragraph">
+                              You learned how to match literal patterns (/literal/) and wildcard character (/./). These are the extremes of regular expressions, where one finds exact matches and the other matches everything. There are options that are a balance between the two extremes.<br><br>
+                              You can search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ ]) brackets. For example, if you want to match bag, big, ana bug but not bog. You can create the regex /b[aiu]g/ to do this. The [aiu] is the character class that will only match the characters a, i, or u.<br><br>
+                              let eightRegex1 = "big";<br>
+                              let eightRegex2 = "bag";<br>
+                              let eightRegex3 = "bug";<br>
+                              let eightRegex4 = "bog";<br>
+                              let testEightRegex = /b[aiu]g/i;<br><br>
+                              In example: To match all vowels with letters a, e, i, o, u you can just do regex = /[aeiou]/gi<br><br>
+                              <strong>Debug will show execution of eightRegex1.match(testEightRegex),eightRegex2.match(testEightRegex), eightRegex3.match(testEightRegex) and eightRegex4.match(testEightRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c8" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c8"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C8 -->
 
                       </ul>
                     </div> <!-- /FCC Course notes content -->
