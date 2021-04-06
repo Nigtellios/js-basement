@@ -263,3 +263,27 @@ if (btnFCCC10 !== null && scopeFCCC10 !== null) {
 } else {
   scopeFCCC10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C11: Match Single Characters Not Specified */
+
+/* So far, you have created a set of characters that you want to match, but you could also create a set of characters that you do not want to match. These types of character sets ale called NEGATED CHARACTER SETS. */
+
+/* To create a negated character set, you place a caret character (^) after the opening bracket and before the characters you do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel. Note that characters like ., !, [, @, / and white space are matched - the negated vowel character set only excludes the vowel characters. Let's create a single regex that matches all character that are not a number or a vowel with some flags. */
+
+let eleventhStr = "4 blind mages.";
+let testEleventhRegex = /[^0-9aeiou]/gi;
+
+/* OUTPUT CODE */
+
+const btnFCCC11 = document.getElementById('run-fcc-task-c11');
+const scopeFCCC11 = document.getElementById('fcc-task-c11');
+
+function debugFCCC11() {
+  scopeFCCC11.innerHTML = `${outputResponse} Our match: ${eleventhStr.match(testEleventhRegex)}.`;
+}
+
+if (btnFCCC11 !== null && scopeFCCC11 !== null) {
+  btnFCCC11.addEventListener('click', debugFCCC11);
+} else {
+  scopeFCCC11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

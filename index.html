@@ -3865,6 +3865,26 @@
                           </div>
                         </li> <!-- /SINGLE TASK C10 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C11 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C10: Match Single Characters Not Specified</h4>
+                            <p class="single-item__paragraph">
+                              So far, you have created a set of characters that you want to match, but you could also create a set of characters that you do not want to match. These types of character sets ale called NEGATED CHARACTER SETS.<br><br>
+                              To create a negated character set, you place a caret character (^) after the opening bracket and before the characters you do not want to match. For example, /[^aeiou]/gi matches all characters that are not a vowel. Note that characters like ., !, [, @, / and white space are matched - the negated vowel character set only excludes the vowel characters. Let's create a single regex that matches all character that are not a number or a vowel with some flags.<br><br>
+                              let eleventhStr = "4 blind mages.";<br>
+                              let testEleventhRegex = /[^0-9aeiou]/gi;<br><br>
+                              <strong>Debug will show execution of eleventhStr.match(testEleventhRegex).</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c11" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c11"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C10 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
