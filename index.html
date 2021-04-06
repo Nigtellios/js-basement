@@ -3712,7 +3712,7 @@
                           </div>
                         </li> <!-- /SINGLE TASK C3 -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C4 - TO CHECK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C4 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task C4: Match a Literal String with Different Possibilities</h4>
@@ -3734,17 +3734,17 @@
                           </div>
                         </li> <!-- /SINGLE TASK C4 -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C5 - TO CHECK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C5 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task C5: Extract Matches - TO CHECK</h4>
                             <p class="single-item__paragraph">
                               So far, you have only been checking if a pattern exists or not within a string. You can also extract the actual matches you found with the .match() method.<br><br>
-                              To use the .match() method, apply the method on a string and pass in the regex inside the parentheses. Here is the example:<br><br>                
+                              To use the .match() method, apply the method on a string and pass in the regex inside the parentheses. Here is the example:<br><br>
                               "This request has been denIed.".match(/denied/i);<br>
                               let fifthRegex = "Where is the David?";<br>
-                              let testFifthRegex = /david/i;<br><br>             
-                              Here the first matdh would return ["denied"] and the second would                               return ["david"]. Note that the .match syntax is the "opposite" of the .test method you have been using this far.<br><br>
+                              let testFifthRegex = /david/i;<br><br>
+                              Here the first match would return ["denied"] and the second would                               return ["david"]. Note that the .match syntax is the "opposite" of the .test method you have been using this far.<br><br>
                               'string'.match(/regex/);<br>
                               /regex/.test('string');<br><br>
                               <strong>Debug will show execution of fifthRegex.match(testFifthRegex).</strong>
@@ -3758,7 +3758,7 @@
                           </div>
                         </li> <!-- /SINGLE TASK C5 -->
 
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C6 - TO CHECK -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C6 -->
                           <span class="marker--yellow marker--highlight"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task C6: Find More Than the First Match - TO CHECK</h4>
@@ -3784,10 +3784,10 @@
                             <h4 class="single-item__header">Task C7: Match Anything with Wildcard Period - TO CHECK</h4>
                             <p class="single-item__paragraph">
                               Sometimes you won't (or don't need to) know the exact characters in your patterns. Thinking of all words that match, say, a misspelling would take a long time. Luckily, you can save time using the wildcard character: .<br><br>
-                              The wildcard character . will match any one character. The wildcard is also called dot and peroid. You can use the wildcard character just like any other character in the regex. For example, if you wanted to match hug, huh, hut, and hum, you can use the refex /hu./ to match all four words.<br><br>
+                              The wildcard character . will match any one character. The wildcard is also called dot and peroid. You can use the wildcard character just like any other character in the regex. For example, if you wanted to match hug, huh, hut, and hum, you can use the regex /hu./ to match all four words.<br><br>
                               let seventhRegex1 = "Camera is on!";<br>
                               let seventhRegex2 = "Castle has been built.";<br>
-                              let testSeventhRegex = /ca./;<br><br>
+                              let testSeventhRegex = /ca./i;<br><br>
                               <strong>Debug will show execution of testSeventhRegex.test(seventhRegex1) and testSeventhRegex.test(seventhRegex2).</strong>
                             </p>
                             <div class="single-item__debug-box">
