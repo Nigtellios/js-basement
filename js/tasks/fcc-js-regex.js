@@ -366,3 +366,41 @@ if (btnFCCC14 !== null && scopeFCCC14 !== null) {
 } else {
   scopeFCCC14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C15: Find One or More Criminals in a Hunt */
+
+/* Time to pause and test your new regex writing skills. A group of criminals escaped from jail and ran away, but you don't know how many. However, you do know that they stay close together when they are around other people. You are responsible for finding all of the criminals at once. Here's and example to review how to do this: */
+
+/* The regex /z+/ matches the letter z then it appears one or more times in a row. It would fins matches in all of the following strings: "z"
+"zzzzzz"
+"ABCzzzz"
+"zzzzABC"
+"abczzzzzzzzzzzzzzzzzzzzzabc"
+
+But it doesn't find matches in the following strings since there are no letter z characters:
+
+""
+"ABC"
+"abcabc"
+
+Write a greedy regex that finds one or more criminals within a group of other people. A Criminal is represented by the capital letter C.
+*/
+
+let reCriminalito = /C+/;
+
+/* Yeah like, it was very easy (but requirements could be tricky somehow). */
+
+/* OUTPUT CODE */
+
+const btnFCCC15 = document.getElementById('run-fcc-task-c15');
+const scopeFCCC15 = document.getElementById('fcc-task-c15');
+
+function debugFCCC15() {
+  scopeFCCC15.innerHTML = `${outputResponse} Well, task is done, I just had to write /C+/ as a regex, the case group doesn't matter.`;
+}
+
+if (btnFCCC15 !== null && scopeFCCC15 !== null) {
+  btnFCCC15.addEventListener('click', debugFCCC15);
+} else {
+  scopeFCCC15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
