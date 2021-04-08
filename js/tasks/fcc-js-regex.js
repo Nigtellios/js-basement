@@ -521,3 +521,27 @@ if (btnFCCC20 !== null && scopeFCCC20 !== null) {
 } else {
   scopeFCCC20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C21: Match All Non-Numbers */
+
+/* The last challenge showed how to search for digits using the shortcut \d with a lowercase d. You can also search for non-digits using a similar shortcut that uses an uppercase D instead. The shortcut to look for non-digit characters is \D. This is equal to the character class [^0-9], which looks for a single character that is not a number between zero and nine. */
+
+let twentyFirstStr = "2021: Godzilla vs Kong";
+let testTwentyFirstRegex = /\D/g;
+
+/* We are going to count how many non-digits are in this title. For that, we are using .length property after our match. */
+
+/* OUTPUT CODE */
+
+const btnFCCC21 = document.getElementById('run-fcc-task-c21');
+const scopeFCCC21 = document.getElementById('fcc-task-c21');
+
+function debugFCCC21() {
+  scopeFCCC21.innerHTML = `${outputResponse} Looking only for numbers: ${twentyFirstStr.match(testTwentyFirstRegex).length}.`;
+}
+
+if (btnFCCC21 !== null && scopeFCCC21 !== null) {
+  btnFCCC21.addEventListener('click', debugFCCC21);
+} else {
+  scopeFCCC21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
