@@ -799,3 +799,31 @@ if (btnFCCC30 !== null && scopeFCCC30 !== null) {
 } else {
   scopeFCCC30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C31: Reuse Patterns Using Capture Groups */
+
+/* Some patterns you search for will occur multiple times in a string. It is wasteful to manually repeat that regex. There is a better way to specify when you have multiple repeat substrings in your string. You can search for repeat substrings using capture groups. Parentheses, ( and ), are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses. */
+
+/* To specify where that repeat string will appear, you use a backslash (\) and then a number. This number starts at 1 and increases with each additional capture group you use. An example would be \1 to match the first group. The example below matches any word that occurs twice separated by a space: */
+
+let repeatStr = "regex regex";
+let checkRepeatedRegex = /(\w+)\s\1/;
+let repeatStrResult1 = checkRepeatedRegex.test(repeatStr);
+let repeatStrResult2 = repeatStr.match(checkRepeatedRegex);
+
+/* The test call would return true, and the match call would return ["regex regex", "regex"]. Using the .match() method on a string will return an array with the string it matches, along with its capture group. */
+
+/* OUTPUT CODE */
+
+const btnFCCC31 = document.getElementById('run-fcc-task-c31');
+const scopeFCCC31 = document.getElementById('fcc-task-c31');
+
+function debugFCCC31() {
+  scopeFCCC31.innerHTML = `${outputResponse} Ye ye, two results: ${repeatStrResult1}, ${repeatStrResult2}.`;
+}
+
+if (btnFCCC31 !== null && scopeFCCC31 !== null) {
+  btnFCCC31.addEventListener('click', debugFCCC31);
+} else {
+  scopeFCCC31.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
