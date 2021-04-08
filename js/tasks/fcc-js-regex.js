@@ -450,3 +450,29 @@ if (btnFCCC17 !== null && scopeFCCC17 !== null) {
 } else {
   scopeFCCC17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C18: Match All Letters and Numbers */
+
+/* Using character classes, you were able to search for all letters of the alphabet with [a-z]. This kind of character class is common enough that there is a shortcut for it, although it includes a few extra characters as well. */
+
+/* The closest character class in JavaScript to match the alphabet is \w. This shortcut is equal to [A-Za-z0-9_]. This character class matches upper and lowercase letters plus numbers. Note, this character class also includes the underscore character (_). These shortcut character classes are also known as shorthand character classes. */
+
+let eighteenthStr1 = "important_let_const_var";
+let eighteenthStr2 = "420";
+let testEighteenthRegexLongHand = /[A-Za-z0-9_]+/;
+let testEighteenthRegexShortHand = /\w+/;
+
+/* OUTPUT CODE */
+
+const btnFCCC18 = document.getElementById('run-fcc-task-c18');
+const scopeFCCC18 = document.getElementById('fcc-task-c18');
+
+function debugFCCC18() {
+  scopeFCCC18.innerHTML = `${outputResponse} First test longhand on string: ${testEighteenthRegexLongHand.test(eighteenthStr1)}, second test longhand on numbers: ${testEighteenthRegexLongHand.test(eighteenthStr2)}. First test shorthand on string: ${testEighteenthRegexShortHand.test(eighteenthStr1)}, second test shorthand on numbers: ${testEighteenthRegexShortHand.test(eighteenthStr2)}.`;
+}
+
+if (btnFCCC18 !== null && scopeFCCC18 !== null) {
+  btnFCCC18.addEventListener('click', debugFCCC18);
+} else {
+  scopeFCCC18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
