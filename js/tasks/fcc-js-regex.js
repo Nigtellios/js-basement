@@ -586,3 +586,29 @@ if (btnFCCC22 !== null && scopeFCCC22 !== null) {
 } else {
   scopeFCCC22.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C23: Match Whitespace */
+
+/* The challenges so far have covered matching letters of the alphabet and numbers. You can also match the whitespace or spaces between letters. */
+
+/* You can search for whitespace using \s, which is a lowercase s. This pattern not only matches whitespace, but also carriage return, tab, form feed, and new line characters. You can think of it as similar to the character class [\r\t\f\n\v]. Below we would check how many whitespaces are in our string. */
+
+let twentyThirdStr = "Spaces? Le what? They are e v e r y w h e r e.";
+let testTwentyThirdRegex = /\s/g;
+let twentyThirdResult = twentyThirdStr.match(testTwentyThirdRegex).length;
+
+/* OUTPUT CODE */
+
+const btnFCCC23 = document.getElementById('run-fcc-task-c23');
+const scopeFCCC23 = document.getElementById('fcc-task-c23');
+
+function debugFCCC23() {
+  scopeFCCC23.innerHTML = `${outputResponse} How many whitespaces? There are: ${twentyThirdResult}.`;
+}
+
+if (btnFCCC23 !== null && scopeFCCC23 !== null) {
+  btnFCCC23.addEventListener('click', debugFCCC23);
+} else {
+  scopeFCCC23.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
+
