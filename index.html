@@ -4339,6 +4339,28 @@
                           </div>
                         </li> <!-- /SINGLE TASK C31 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C32 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C32: Use Capture Groups to Search and Replace</h4>
+                            <p class="single-item__paragraph">
+                              Searching is useful. However, you can make searching even more powerful when it also changes (or replaces) the text you match. You can search and replace text in a string using .replace() on a string. The inputs for .replace() is first the regex pattern you want to search for. The second parameter is the string to replace the match or a function to do something.<br><br>
+                              let wrongText = "The sky is gold.";<br>
+                              let textRegex = /gold/;<br>
+                              let repairedText = wrongText.replace(textRegex, "blue");<br><br>
+                              The replace call would return the string The sky is blue. You can also access capture groups in the replacement string with dollar signs ($).<br><br>
+                              "Ay Lmao".replace(/(\w+)\s(\w+)/, '$2 $1');<br><br>
+                              <strong>Debug will show values of repairedText.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c32" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c32"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C32 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
