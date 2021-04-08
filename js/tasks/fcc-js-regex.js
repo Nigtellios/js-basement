@@ -854,3 +854,26 @@ if (btnFCCC32 !== null && scopeFCCC32 !== null) {
 } else {
   scopeFCCC32.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C33: Remove Whitespace from Start and End */
+
+/* Sometimes whitespace characters around strings are not wanted byt are there. Typical processing of strings is to remove the whitespace at the start and end of it. */
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+let wsResult = hello.replace(wsRegex, "");
+
+/* OUTPUT CODE */
+
+const btnFCCC33 = document.getElementById('run-fcc-task-c33');
+const scopeFCCC33 = document.getElementById('fcc-task-c33');
+
+function debugFCCC33() {
+  scopeFCCC33.innerHTML = `${outputResponse} Repaired text: ${wsResult}.`;
+}
+
+if (btnFCCC33 !== null && scopeFCCC33 !== null) {
+  btnFCCC33.addEventListener('click', debugFCCC33);
+} else {
+  scopeFCCC33.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
