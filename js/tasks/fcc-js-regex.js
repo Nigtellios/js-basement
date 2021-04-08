@@ -545,3 +545,44 @@ if (btnFCCC21 !== null && scopeFCCC21 !== null) {
 } else {
   scopeFCCC21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C22: Restrict Possible Usernames */
+
+/* Usernames are used everywhere on the internet. They are what give users a unique identity on their favourite sites. */
+
+/* You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating a username: */
+
+/* 1. Usernames can only use alpha-numeric characters.
+*  2. The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.
+*  3. Username letters can be lowercase and uppercase.
+*  4. Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.
+*  */
+
+let usernameC22 = "JackOfDehad420";
+let checkUsernameC22 = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i;
+let checkResult = checkUsernameC22.test(usernameC22);
+
+/* Code Explanation
+^ - start of input
+[a-z] - first character is a letter
+[0-9]{2,0} - ends with two or more numbers
+| - or
+[a-z]+ - has one or more letters next
+\d* - and ends with zero or more numbers
+$ - end of input
+i - ignore case of input */
+
+/* OUTPUT CODE */
+
+const btnFCCC22 = document.getElementById('run-fcc-task-c22');
+const scopeFCCC22 = document.getElementById('fcc-task-c22');
+
+function debugFCCC22() {
+  scopeFCCC22.innerHTML = `${outputResponse} Does the username fits checklist 1-4? ${checkResult}.`;
+}
+
+if (btnFCCC22 !== null && scopeFCCC22 !== null) {
+  btnFCCC22.addEventListener('click', debugFCCC22);
+} else {
+  scopeFCCC22.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

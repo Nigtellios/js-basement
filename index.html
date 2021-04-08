@@ -4100,6 +4100,40 @@
                           </div>
                         </li> <!-- /SINGLE TASK C21 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C22 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C22: Restrict Possible Usernames</h4>
+                            <p class="single-item__paragraph">
+                              Usernames are used everywhere on the internet. They are what give users a unique identity on their favourite sites.<br><br>
+                              You need to check all the usernames in a database. Here are some simple rules that users have to follow when creating a username:<br><br>
+                              1. Usernames can only use alpha-numeric characters.<br>
+                              2. The only numbers in the username have to be at the end. There can be zero or more of them at the end. Username cannot start with the number.<br>
+                              3. Username letters can be lowercase and uppercase.<br>
+                              4. Usernames have to be at least two characters long. A two-character username can only use alphabet letters as characters.<br><br>
+                              let usernameC22 = "JackOfDehad420";<br>
+                              let checkUsernameC22 = /^[a-z]([0-9]{2,}|[a-z]+\d*)$/i;<br>
+                              let checkResult = checkUsernameC22.test(usernameC22);<br><br>
+                              Code Explanation<br>
+                              ^ - start of input<br>
+                              [a-z] - first character is a letter<br>
+                              [0-9]{2,0} - ends with two or more numbers<br>
+                              | - or<br>
+                              [a-z]+ - has one or more letters next<br>
+                              \d* - and ends with zero or more numbers<br>
+                              $ - end of input<br>
+                              i - ignore case of input<br><br>
+                              <strong>Debug will show execution of checkResult.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c22" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c22"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C22 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
