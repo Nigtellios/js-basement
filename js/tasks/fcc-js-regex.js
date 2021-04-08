@@ -499,3 +499,25 @@ if (btnFCCC19 !== null && scopeFCCC19 !== null) {
 } else {
   scopeFCCC19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C20: Match All Numbers */
+
+/* You've learned shortcuts for common string patterns like alphanumerics. Another common pattern is looking for just digits or numbers. The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0-9], which looks for a single character of any number between zero and nine. */
+
+let twentiethStr1 = "2001: A Space Odyssey";
+let testTwentiethRegex = /\d/g;
+
+/* OUTPUT CODE */
+
+const btnFCCC20 = document.getElementById('run-fcc-task-c20');
+const scopeFCCC20 = document.getElementById('fcc-task-c20');
+
+function debugFCCC20() {
+  scopeFCCC20.innerHTML = `${outputResponse} Looking only for numbers: ${twentiethStr1.match(testTwentiethRegex)}.`;
+}
+
+if (btnFCCC20 !== null && scopeFCCC20 !== null) {
+  btnFCCC20.addEventListener('click', debugFCCC20);
+} else {
+  scopeFCCC20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
