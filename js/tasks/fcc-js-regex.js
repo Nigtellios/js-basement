@@ -476,3 +476,26 @@ if (btnFCCC18 !== null && scopeFCCC18 !== null) {
 } else {
   scopeFCCC18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C19: Match Everything But Letters and Numbers */
+
+/* You've learned that you can use a shortcut to match alphanumerics [A-Za-z0-9_] using \w. A natural pattern you might want to search for is the opposite of alphanumerics. You can search for the opposite of the \w with \W. Note, the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_]. */
+
+let nineteenthStr1 = "We go boys!!";
+let nineteenthStr2 = "40%";
+let testNineteenthRegex = /\W/;
+
+/* OUTPUT CODE */
+
+const btnFCCC19 = document.getElementById('run-fcc-task-c19');
+const scopeFCCC19 = document.getElementById('fcc-task-c19');
+
+function debugFCCC19() {
+  scopeFCCC19.innerHTML = `${outputResponse} First match with shorthand: ${nineteenthStr1.match(testNineteenthRegex)}, second match with shorthand: ${nineteenthStr2.match(testNineteenthRegex)}.`;
+}
+
+if (btnFCCC19 !== null && scopeFCCC19 !== null) {
+  btnFCCC19.addEventListener('click', debugFCCC19);
+} else {
+  scopeFCCC19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
