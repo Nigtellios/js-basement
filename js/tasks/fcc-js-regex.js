@@ -427,3 +427,26 @@ if (btnFCCC16 !== null && scopeFCCC16 !== null) {
 } else {
   scopeFCCC16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C17: Match Ending String Patterns */
+
+/* In the last challenge, you learned to use the caret character to search for patterns at the beginning of string. There is also a way to search for patterns at the end of strings. You can search the end of string using the dollar sign character $ at the end of the regex. */
+
+let seventeenthStr = "Where would you go, Wizard";
+let seventeenthStr2 = "Wizard is not there!";
+let testSeventeenthRegex = /Wizard$/;
+
+/* OUTPUT CODE */
+
+const btnFCCC17 = document.getElementById('run-fcc-task-c17');
+const scopeFCCC17 = document.getElementById('fcc-task-c17');
+
+function debugFCCC17() {
+  scopeFCCC17.innerHTML = `${outputResponse} First test for Wizard at the end of string: ${testSeventeenthRegex.test(seventeenthStr)}, second test: ${testSeventeenthRegex.test(seventeenthStr2)}.`;
+}
+
+if (btnFCCC17 !== null && scopeFCCC17 !== null) {
+  btnFCCC17.addEventListener('click', debugFCCC17);
+} else {
+  scopeFCCC17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
