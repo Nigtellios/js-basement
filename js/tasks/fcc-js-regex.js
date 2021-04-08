@@ -688,3 +688,28 @@ if (btnFCCC26 !== null && scopeFCCC26 !== null) {
 } else {
   scopeFCCC26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C27: Specify Exact Number of Matches */
+
+/* You can specify the lowe and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want a specific number of matches. To specify a certain number of patterns, just have that one number between the curly brackets. For example, to match only the word hah with the letter a 3 times, your regex would be /ha{3}h/. */
+
+let twentySeventhStr1 = "haaah";
+let twentySeventhStr2 = "hah";
+let testTwentySeventhRegex = /ha{3}h/;
+let twentySeventhResult1 = testTwentySeventhRegex.test(twentySeventhStr1);
+let twentySeventhResult2 = testTwentySeventhRegex.test(twentySeventhStr2);
+
+/* OUTPUT CODE */
+
+const btnFCCC27 = document.getElementById('run-fcc-task-c27');
+const scopeFCCC27 = document.getElementById('fcc-task-c27');
+
+function debugFCCC27() {
+  scopeFCCC27.innerHTML = `${outputResponse} First range: ${twentySeventhResult1}, second range: ${twentySeventhResult2}.`;
+}
+
+if (btnFCCC27 !== null && scopeFCCC27 !== null) {
+  btnFCCC27.addEventListener('click', debugFCCC27);
+} else {
+  scopeFCCC27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
