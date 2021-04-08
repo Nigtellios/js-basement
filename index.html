@@ -4243,6 +4243,28 @@
                           </div>
                         </li> <!-- /SINGLE TASK C27 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C28 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C28: Check for All or None</h4>
+                            <p class="single-item__paragraph">
+                              Sometimes the patterns you want to search for may have parts of it that may or may not exist. However, it may be important to check for them nonetheless. You can specify the possible existence of an element with a question mark, ?. This checks for zero or one of the preceding element. You can think of this symbol as saying the previous element is optional. For example, there are slight differences in American and British English and you can use the question mark to match both spellings.<br><br>
+                              let americano = "Color";<br>
+                              let british = "Colour";<br>
+                              let checkColorsRegex = /colou?r/i;<br>
+                              let spellingCheckResult1 = checkColorsRegex.test(americano);<br>
+                              let spellingCheckResult2 = checkColorsRegex.test(british);<br><br>
+                              <strong>Debug will show values of spellingCheckResult1 and spellingCheckResult2.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c28" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c28"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C28 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>

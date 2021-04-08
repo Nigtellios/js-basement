@@ -713,3 +713,28 @@ if (btnFCCC27 !== null && scopeFCCC27 !== null) {
 } else {
   scopeFCCC27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C28: Check for All or None */
+
+/* Sometimes the patterns you want to search for may have parts of it that may or may not exist. However, it may be important to check for them nonetheless. You can specify the possible existence of an element with a question mark, ?. This checks for zero or one of the preceding element. You can think of this symbol as saying the previous element is optional. For example, there are slight differences in American and British English and you can use the question mark to match both spellings. */
+
+let americano = "Color";
+let british = "Colour";
+let checkColorsRegex = /colou?r/i;
+let spellingCheckResult1 = checkColorsRegex.test(americano);
+let spellingCheckResult2 = checkColorsRegex.test(british);
+
+/* OUTPUT CODE */
+
+const btnFCCC28 = document.getElementById('run-fcc-task-c28');
+const scopeFCCC28 = document.getElementById('fcc-task-c28');
+
+function debugFCCC28() {
+  scopeFCCC28.innerHTML = `${outputResponse} Our spell check: ${spellingCheckResult1}, ${spellingCheckResult2}.`;
+}
+
+if (btnFCCC28 !== null && scopeFCCC28 !== null) {
+  btnFCCC28.addEventListener('click', debugFCCC28);
+} else {
+  scopeFCCC28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
