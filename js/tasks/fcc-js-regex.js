@@ -772,3 +772,30 @@ if (btnFCCC29 !== null && scopeFCCC29 !== null) {
 } else {
   scopeFCCC29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C30: Check For Mixed Grouping of Characters */
+
+/* Sometimes we want to check for groups of characters using a Regular Expression and to achieve that we use parentheses (). If you want to find either Penguin or Pumpkin in a string, you can use the following regular expression: /P(engu|umpk)in/g */
+
+/* Then check whether the desired string groups are in the test string by using the test() method. */
+
+let thirtyStr1 = "Pumpkin";
+let thirtyStr2 = "Penguin";
+let testThirtyRegex = /P(umpk|engu)in/g;
+let thirtyRegexResult1 = testThirtyRegex.test(thirtyStr1);
+let thirtyRegexResult2 = testThirtyRegex.test(thirtyStr2);
+
+/* OUTPUT CODE */
+
+const btnFCCC30 = document.getElementById('run-fcc-task-c30');
+const scopeFCCC30 = document.getElementById('fcc-task-c30');
+
+function debugFCCC30() {
+  scopeFCCC30.innerHTML = `${outputResponse} Is this Penguin or Pumpkin? ${thirtyRegexResult1}, ${thirtyRegexResult2}.`;
+}
+
+if (btnFCCC30 !== null && scopeFCCC30 !== null) {
+  btnFCCC30.addEventListener('click', debugFCCC30);
+} else {
+  scopeFCCC30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
