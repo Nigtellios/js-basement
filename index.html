@@ -4176,6 +4176,29 @@
                           </div>
                         </li> <!-- /SINGLE TASK C24 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C25 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C25: Specify Upper and Lower Number of Matches</h4>
+                            <p class="single-item__paragraph">
+                              Recall that you use the plus sign + to look for one or more characters and the asterisk * to look for zero or more characters. These are convenient but sometimes you want to match a certain range of patterns. You can specify the lower and upper number of patterns with quantity specifiers. Quantity specifiers are used with curly brackets ({ and }). You put two numbers between the curly brackets - for the lower and upper number of patterns.<br><br>
+                              For example, to match only the letter a appearing between 3 and 5 times in the string ah, your regex would be /a{3,5}h/.<br><br>
+                              let twentyFifthStr1 = "aaaah";<br>
+                              let twentyFifthStr2 = "aah";<br>
+                              let testTwentyFifthRegex = /a{3,5}h/;<br>
+                              let twentyFifthResult1 = testTwentyFifthRegex.test(twentyFifthStr1);<br>
+                              let twentyFifthResult2 = testTwentyFifthRegex.test(twentyFifthStr2);<br><br>
+                              <strong>Debug will show value of twentyFifthResult1 and twentyFifthResult2.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c25" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c25"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C25 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>

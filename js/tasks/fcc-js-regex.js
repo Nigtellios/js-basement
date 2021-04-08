@@ -636,3 +636,30 @@ if (btnFCCC24 !== null && scopeFCCC24 !== null) {
 } else {
   scopeFCCC24.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C25: Specify Upper and Lower Number of Matches */
+
+/* Recall that you use the plus sign + to look for one or more characters and the asterisk * to look for zero or more characters. These are convenient but sometimes you want to match a certain range of patterns. You can specify the lower and upper number of patterns with quantity specifiers. Quantity specifiers are used with curly brackets ({ and }). You put two numbers between the curly brackets - for the lower and upper number of patterns. */
+
+/* For example, to match only the letter a appearing between 3 and 5 times in the string ah, your regex would be /a{3,5}h/. */
+
+let twentyFifthStr1 = "aaaah";
+let twentyFifthStr2 = "aah";
+let testTwentyFifthRegex = /a{3,5}h/;
+let twentyFifthResult1 = testTwentyFifthRegex.test(twentyFifthStr1);
+let twentyFifthResult2 = testTwentyFifthRegex.test(twentyFifthStr2);
+
+/* OUTPUT CODE */
+
+const btnFCCC25 = document.getElementById('run-fcc-task-c25');
+const scopeFCCC25 = document.getElementById('fcc-task-c25');
+
+function debugFCCC25() {
+  scopeFCCC25.innerHTML = `${outputResponse} First range: ${twentyFifthResult1}, second range: ${twentyFifthResult2}.`;
+}
+
+if (btnFCCC25 !== null && scopeFCCC25 !== null) {
+  btnFCCC25.addEventListener('click', debugFCCC25);
+} else {
+  scopeFCCC25.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
