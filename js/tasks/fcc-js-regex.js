@@ -612,3 +612,27 @@ if (btnFCCC23 !== null && scopeFCCC23 !== null) {
   scopeFCCC23.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* Task C24: Match Non-Whitespace Characters */
+
+/* You learned about searching for white space using \s, with a lowercase s. You can also search for everything except whitespace. */
+
+/* Search for non-whitespace using \S, which is an uppercase s. This pattern will not match whitespace, carriage return, tab, form feed, and new line characters. You can think of it being similar to the character class [^\r\t\f\n\v]. Here below, the value returned by .length would be equal to all non-whitespace characters. */
+
+let twentyFourthStr = "All my homies does push-up rows on hexagon dumbbells.";
+let testTwentyFourthRegex = /\S/g;
+let twentyFourthResult = twentyFourthStr.match(testTwentyFourthRegex).length;
+
+/* OUTPUT CODE */
+
+const btnFCCC24 = document.getElementById('run-fcc-task-c24');
+const scopeFCCC24 = document.getElementById('fcc-task-c24');
+
+function debugFCCC24() {
+  scopeFCCC24.innerHTML = `${outputResponse} How many non-whitespace characters? There are: ${twentyFourthResult}.`;
+}
+
+if (btnFCCC24 !== null && scopeFCCC24 !== null) {
+  btnFCCC24.addEventListener('click', debugFCCC24);
+} else {
+  scopeFCCC24.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

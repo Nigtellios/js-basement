@@ -4155,6 +4155,27 @@
                           </div>
                         </li> <!-- /SINGLE TASK C23 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C24 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C24: Match Non-Whitespace Characters</h4>
+                            <p class="single-item__paragraph">
+                              You learned about searching for white space using \s, with a lowercase s. You can also search for everything except whitespace.<br><br>
+                              Search for non-whitespace using \S, which is an uppercase s. This pattern will not match whitespace, carriage return, tab, form feed, and new line characters. You can think of it being similar to the character class [^\r\t\f\n\v]. Here below, the value returned by .length would be equal to all non-whitespace characters.<br><br>
+                              let twentyFourthStr = "All my homies does push-up rows on hexagon dumbbells.";<br>
+                              let testTwentyFourthRegex = /\S/g;<br>
+                              let twentyFourthResult = twentyFourthStr.match(testTwentyFourthRegex).length;<br><br>
+                              <strong>Debug will show value of twentyFourthResult.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c24" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c24"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C24 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
