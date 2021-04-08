@@ -4265,6 +4265,34 @@
                           </div>
                         </li> <!-- /SINGLE TASK C28 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C29 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C29: Positive and Negative Lookahead</h4>
+                            <p class="single-item__paragraph">
+                              Lookaheads are patterns that tell JavaScript to look-ahead in your string to check for patterns further along. This can be useful when you want to search for multiple patterns over the same string. There are two kinds of lookaheads: positive lookahead and negative lookahead.<br><br>
+                              A positive lookahead will look to make sure the element in the search pattern is there, but won't actually match it. A positive lookahead is used as (?=...) where the ... is the required part that is not matched. On the other hand, a negative lookahead will look to make sure the element in the search pattern is not there. A negative lookahead is used as (?!...) where the ... is the pattern that you do not want to be there. The rest of the pattern is returned if the negative lookahead part is not present. They are a lil-bit confusing, but some examples could help.<br><br>
+                              let quit = "qu";<br>
+                              let noQuit = "qt";<br>
+                              let quitRegex = /q(?=u)/;<br>
+                              let noQuitRegex = /q(?!u)/;<br>
+                              let quitResult = quit.match(quitRegex);<br>
+                              let noQuitResult = noQuit.match(noQuitRegex);<br><br>
+                              Both of these match calls would return ["q"]. A more practical use of lookaheads is to check two or more patterns in one string. Here is a (naively) simple password checker that looks for between 3 and 6 characters and at least one number:<br><br>
+                              let passwordC29 = "abc1337";<br>
+                              let checkPasswordC29 = /(?=\w{3,6})(?=\D*\d)/;<br>
+                              let passwordCheckResult = checkPasswordC29.test(passwordC29);<br><br>
+                              <strong>Debug will show values of quitResult, noQuitResult and passwordCheckResult.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c29" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c29"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C29 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
