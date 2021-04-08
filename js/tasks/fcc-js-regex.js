@@ -663,3 +663,28 @@ if (btnFCCC25 !== null && scopeFCCC25 !== null) {
 } else {
   scopeFCCC25.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C26: Specify Only the Lower Number of Matches */
+
+/* You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want to specify the lower number of patterns with no upper limit. To only specify the lower number of patterns keep the first number followed by a comma. For example, to match only the string hah with the letter a appearing at least 3 times, your regex would be /ha{3,}h/. */
+
+let twentySixthStr1 = "Haaaah";
+let twentySixthStr2 = "Haah";
+let testTwentySixthRegex = /ha{3,}h/i;
+let twentySixthResult1 = testTwentySixthRegex.test(twentySixthStr1);
+let twentySixthResult2 = testTwentySixthRegex.test(twentySixthStr2);
+
+/* OUTPUT CODE */
+
+const btnFCCC26 = document.getElementById('run-fcc-task-c26');
+const scopeFCCC26 = document.getElementById('fcc-task-c26');
+
+function debugFCCC26() {
+  scopeFCCC26.innerHTML = `${outputResponse} First range: ${twentySixthResult1}, second range: ${twentySixthResult2}.`;
+}
+
+if (btnFCCC26 !== null && scopeFCCC26 !== null) {
+  btnFCCC26.addEventListener('click', debugFCCC26);
+} else {
+  scopeFCCC26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}

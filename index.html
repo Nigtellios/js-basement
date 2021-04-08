@@ -4199,6 +4199,28 @@
                           </div>
                         </li> <!-- /SINGLE TASK C25 -->
 
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK C26 -->
+                          <span class="marker--yellow marker--highlight"></span>
+                          <div class="single-item--layout">
+                            <h4 class="single-item__header">Task C26: Specify Only the Lower Number of Matches</h4>
+                            <p class="single-item__paragraph">
+                              You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want to specify the lower number of patterns with no upper limit. To only specify the lower number of patterns keep the first number followed by a comma. For example, to match only the string hah with the letter a appearing at least 3 times, your regex would be /ha{3,}h/.<br><br>
+                              let twentySixthStr1 = "Haaaah";<br>
+                              let twentySixthStr2 = "Haah";<br>
+                              let testTwentySixthRegex = /ha{3,}h/i;<br>
+                              let twentySixthResult1 = testTwentySixthRegex.test(twentySixthStr1);<br>
+                              let twentySixthResult2 = testTwentySixthRegex.test(twentySixthStr2);<br><br>
+                              <strong>Debug will show value of twentySixthResult1 and twentySixthResult2.</strong>
+                            </p>
+                            <div class="single-item__debug-box">
+                              <button id="run-fcc-task-c26" class="button button--debug">RUN DEBUG</button>
+                              <div class="debug-box__scope">
+                                <p class="single-item__paragraph"><span id="fcc-task-c26"></span></p>
+                              </div>
+                            </div>
+                          </div>
+                        </li> <!-- /SINGLE TASK C26 -->
+
                       </ul>
                     </div> <!-- /FCC Course notes content -->
                   </div>
