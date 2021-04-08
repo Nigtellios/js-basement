@@ -404,3 +404,26 @@ if (btnFCCC15 !== null && scopeFCCC15 !== null) {
 } else {
   scopeFCCC15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
+
+/* Task C16: Match Beginning String Patterns */
+
+/* Prior challenges showed that regular expressions can be used to look for a number of matches. They are also used to search for patterns in specific positions in strings. In an earlier challenge, you used the caret character (^) inside a character set to create a negated character set in the form [^thingsThatWIllNotBeMatched]. Outside of a character set, the caret is used to search for patterns at the beginning of strings. */
+
+let sixteenthStr = "Ricky's mom said that he should use a rubber.";
+let sixteenthStr2 = "Now there is no any Ricky's.";
+let testSixteenthRegex = /^ricky's/gi;
+
+/* OUTPUT CODE */
+
+const btnFCCC16 = document.getElementById('run-fcc-task-c16');
+const scopeFCCC16 = document.getElementById('fcc-task-c16');
+
+function debugFCCC16() {
+  scopeFCCC16.innerHTML = `${outputResponse} First test for Ricky at the beginning of string: ${testSixteenthRegex.test(sixteenthStr)}, second test: ${testSixteenthRegex.test(sixteenthStr2)}.`;
+}
+
+if (btnFCCC16 !== null && scopeFCCC16 !== null) {
+  btnFCCC16.addEventListener('click', debugFCCC16);
+} else {
+  scopeFCCC16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
+}
