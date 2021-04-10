@@ -4366,7 +4366,10 @@
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Task C33: Remove Whitespace from Start and End</h4>
                             <p class="single-item__paragraph">
-                              <br><br>
+                              Sometimes whitespace characters around strings are not wanted but are there. Typical processing of strings is to remove the whitespace at the start and end of it.<br><br>
+                              let hello = "   Hello, World!  ";<br>
+                              let wsRegex = /^\s+|\s+$/g;<br>
+                              let wsResult = hello.replace(wsRegex, "");<br><br>
                               <strong>Debug will show values of repairedText.</strong>
                             </p>
                             <div class="single-item__debug-box">
@@ -4413,7 +4416,7 @@
                             <h3 class="single-item__header">#1: JavaScript Foundations (2019)</h3>
                           </div>
                         </li>
-                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK 1 -->
+                        <li class="wrap__list__module__single-item"> <!-- SINGLE TASK STANDARDIZATION INFO -->
                           <span class="marker--red"></span>
                           <div class="single-item--layout">
                             <h4 class="single-item__header">Standardization Info:</h4>
