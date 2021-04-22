@@ -45,12 +45,12 @@ function scrollToBot(targetDivBot) {
 }
 
 function buttonsListeners() {
-  firstSlideButtonUp.addEventListener('click', function(){scrollToTop(firstSlideTargetDiv)});
-  firstSlideButtonDown.addEventListener('click', function(){scrollToBot(firstSlideTargetDiv)});
-  secondSlideButtonUp.addEventListener('click', function(){scrollToTop(secondSlideTargetDiv)});
-  secondSlideButtonDown.addEventListener('click', function(){scrollToBot(secondSlideTargetDiv)});
-  thirdSlideButtonUp.addEventListener('click', function(){scrollToTop(thirdSlideTargetDiv)});
-  thirdSlideButtonDown.addEventListener('click', function(){scrollToBot(thirdSlideTargetDiv)});
+  firstSlideButtonUp.addEventListener('click', function(){ scrollToTop(firstSlideTargetDiv) });
+  firstSlideButtonDown.addEventListener('click', function(){ scrollToBot(firstSlideTargetDiv) });
+  secondSlideButtonUp.addEventListener('click', function(){ scrollToTop(secondSlideTargetDiv) });
+  secondSlideButtonDown.addEventListener('click', function(){ scrollToBot(secondSlideTargetDiv) });
+  thirdSlideButtonUp.addEventListener('click', function(){ scrollToTop(thirdSlideTargetDiv) });
+  thirdSlideButtonDown.addEventListener('click', function(){ scrollToBot(thirdSlideTargetDiv) });
 }
 
 window.onload = buttonsListeners;
@@ -60,5 +60,6 @@ import { tns } from '../node_modules/tiny-slider/src/tiny-slider';
 import './tasks/fcc-js-basics';
 import './tasks/fcc-js-es6';
 import './tasks/fcc-js-regex';
+import './tasks/fcc-js-debugging';
 import './tasks/zenva-scripts';
 import './tasks/my-own-scripts';
