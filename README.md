@@ -5,7 +5,7 @@ This is the place where I am posting all my non-project-related tasks which I'm 
 </br></br>
 UI/UX Rework: https://www.figma.com/file/P6YYsafas5qskfkUEj8EpL/JS-Basement?node-id=0%3A1
 
-<h2>Stack:</h2> </br>
+<h2>Stack:</h2>
 Simple project structure based on ParcelJS IntelliJ's HTML Boilerplate.
 
 <h3>js-basement</h3>
@@ -22,21 +22,28 @@ Simple project structure based on ParcelJS IntelliJ's HTML Boilerplate.
  </li>
 </ul>
 
-<h2>How to run it:</h2> </br>
-<ul>
-  <li>Download package (CODE -> DOWNLOAD *.ZIP)</li>
-  <li>Create new folder anywhere on your hard drive and unzip *.ZIP file.</li>
-  <li>Open your IDE and use CLI command (be sure that you have Node.JS installed):
-    <ul>
-      <li>npm install</li>
-    </ul>
-  </li>
-  <li>After successful installation, run command:
-    <ul>
-      <li>npm start</li>
-    </ul>
-  </li>
-  <li>Project would run inside your default browser.</li>
-</ul>
+<h2>How to run it:</h2>
+Download the files or clone this repository, then:
 
-There will be hosted version of this avaliable via https://js-basement.jakubkowalski.dev
+```npm
+npm install
+```
+
+After successful process, type down:
+
+```npm
+npm run start
+```
+
+There will be hosted version of this available via https://js-basement.jakubkowalski.dev
+
+<h2>Development notes:</h2>
+After 22.04.2021 I'm no longer uploading tasks into HTML Files.
+
+This approach simply takes too much time and would be better to re-write it to some kind of CRUD application where I could upload any task.
+
+At this moment, **everything after FreeCodeCamp's Regular Expression Module isn't uploaded to HTML.** If you want to check what I've done after that, you can do it inside:
+
+```js
+'/js/tasks/fcc-js-<module-name>'
+```
