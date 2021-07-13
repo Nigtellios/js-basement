@@ -1,6 +1,6 @@
-import '../css/vendor/normalize.css';
-import '../css/vendor/tiny-slider.css';
-import '../css/style.scss';
+import '../scss/vendor/normalize.css';
+import '../scss/vendor/tiny-slider.css';
+import '../scss/style.scss';
 
 /* Slider Init */
 let slider = tns({

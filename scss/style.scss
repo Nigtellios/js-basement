@@ -1,8 +1,8 @@
 /* Core Files Imports */
-@use 'core/fonts';
-@use 'core/basic';
-@use 'core/buttons';
-@use 'core/markers';
+@use 'modules/fonts';
+@use 'modules/basic';
+@use 'modules/buttons';
+@use 'modules/markers';
 /* HOVERS */
 
 .wrap__list__module__single-item:hover .marker--highlight {
