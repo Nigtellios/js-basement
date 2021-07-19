@@ -56,7 +56,7 @@ function buttonsListeners() {
 window.onload = buttonsListeners;
 
 /* JS Imports */
-import { tns } from '../node_modules/tiny-slider/src/tiny-slider';
+import { tns } from '../../node_modules/tiny-slider/src/tiny-slider';
 import './tasks/fcc-js-basics';
 import './tasks/fcc-js-es6';
 import './tasks/fcc-js-regex';
