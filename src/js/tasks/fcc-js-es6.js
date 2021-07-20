@@ -4,7 +4,10 @@
 
 const outputResponse = `Output: `;
 
+
+/* ############################################################ */
 /* Task B1: Explore Differences Between the var and let Keywords */
+/* ############################################################ */
 
 /* One of the biggest problems with declaring variables with the VAR keyword is that you can overwrite variable declarations without an error. In example: */
 
@@ -39,7 +42,10 @@ if (btnFCCB1 !== null && scopeFCCB1 !== null) {
   scopeFCCB1.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B2: Compare Scopes of the var and let Keywords */
+/* ############################################################ */
 
 /* When you declare a variable with the var keyword, it is declared globally, or locally if declared inside a function. The let keyword behaves similarly, but with some extra features. When you declare a variable with the let keyword inside a block, statement, or expression, its scope is limited to that block, statement, or expression. In example: */
 
@@ -95,7 +101,10 @@ if (btnFCCB2 !== null && scopeFCCB2 !== null) {
   scopeFCCB2.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B3: Declare a Read-Only Variable with the const Keyword */
+/* ############################################################ */
 
 /* The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword. */
 
@@ -123,7 +132,10 @@ if (btnFCCB3 !== null && scopeFCCB3 !== null) {
   scopeFCCB3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B4: Mutate an Array Declared with const */
+/* ############################################################ */
 
 /* The const declaration has many use cases in modern JavaScript. Some developers prefer to assign all their variables using const by default, unless they know they will need to reassign the value. Only in that case, they use let. */
 
@@ -150,7 +162,10 @@ if (btnFCCB4 !== null && scopeFCCB4 !== null) {
   scopeFCCB4.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task B4: Prevent Object Mutation */
+
+/* ############################################################ */
+/* Task B5: Prevent Object Mutation */
+/* ############################################################ */
 
 /* As seen in the previous challenge, const declaration alone doesn't really protect your data from mutation. To ensure your data doesn't change, JavaScript provides function Object.freeze to prevent data mutation. Once the object if frozen, you can no longer add, update, or delete properties from it. Any attempt at changing the object will be rejected without an error. */
 
@@ -180,7 +195,10 @@ if (btnFCCB5 !== null && scopeFCCB5 !== null) {
   scopeFCCB5.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B6: Use Arrow Functions to Write Concise Anonymous Functions */
+/* ############################################################ */
 
 /* In JS, we often don't need to name our functions, especially when passing a function as an argument to another function. Instead, we create inline functions. We don't need to name these functions because we do not reuse them anywhere else. To achieve this, we often use the following syntax: */
 
@@ -217,7 +235,10 @@ if (btnFCCB6 !== null && scopeFCCB6 !== null) {
   scopeFCCB6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B7: Write Arrow Functions with Parameters */
+/* ############################################################ */
 
 /* Just like a regular function, you can pass arguments into an arrow function. */
 
@@ -246,7 +267,10 @@ if (btnFCCB7 !== null && scopeFCCB7 !== null) {
   scopeFCCB7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B8: Set Default Parameters for Your Functions */
+/* ############################################################ */
 
 /* In order to help us create more flexible functions, ES6 introduces default parameters for functions. The default parameter kicks in when the argument is not specified (it is undefined). As you can see, the parameter name will receive its default value Stranger when you do not provide a value for the parameter. You can add default values for as many parameters as you want. */
 
@@ -267,7 +291,10 @@ if (btnFCCB8 !== null && scopeFCCB8 !== null) {
   scopeFCCB8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B9: Use the Rest Parameter with Function Parameters */
+/* ############################################################ */
 
 /* In order to help us create more flexible functions, ES6 Introduces the REST PARAMETER for function parameters. With the rest parameter, you can create functions that take a variable number of arguments. These arguments are stored in an array that can be accessed later from inside the function. */
 
@@ -294,7 +321,10 @@ if (btnFCCB9 !== null && scopeFCCB9 !== null) {
   scopeFCCB9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B10: Use the Spread Operator to Evaluate Arrays In-Place */
+/* ############################################################ */
 
 /* ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are excepted. */
 
@@ -327,7 +357,10 @@ if (btnFCCB10 !== null && scopeFCCB10 !== null) {
   scopeFCCB10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B11: Use Destructuring Assignment to Extract Values from Objects */
+/* ############################################################ */
 
 /* Destructing assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object. Consider the following ES5 code: */
 
@@ -356,7 +389,10 @@ if (btnFCCB11 !== null && scopeFCCB11 !== null) {
   scopeFCCB11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B12: Use Destructuring Assignment to Assign Variables from Objects */
+/* ############################################################ */
 
 /* Destructuring allows you to assign a new variable name when extracting values. You can do this by putting the new name after a colon when assigning the value. */
 
@@ -383,7 +419,10 @@ if (btnFCCB12 !== null && scopeFCCB12 !== null) {
   scopeFCCB12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B13: Use Destructuring Assignment to Assign Variables from Nested Objects */
+/* ############################################################ */
 
 /* You can use the name principles from the previous two lessons to destructure values from nested objects. Using an object similar to previous examples: */
 
@@ -417,7 +456,10 @@ if (btnFCCB13 !== null && scopeFCCB13 !== null) {
   scopeFCCB13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B14: Use Destructuring Assignment to Assign Variables from Arrays */
+/* ############################################################ */
 
 /* ES6 makes destructuring arrays as easy as destructuring objects. One key difference between the spread operator and array destructuring is that the spread operator unpacks all contents of an array into a comma-separated list. Consequently, you cannot pick or choose which elements you want to assign to variables. Destructuring an array lets us do exactly that: */
 
@@ -444,7 +486,10 @@ if (btnFCCB14 !== null && scopeFCCB14 !== null) {
   scopeFCCB14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B15: Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements */
+/* ############################################################ */
 
 /* In some situations involving array destructuring, we might want to collect the rest of the elements into a separate array. The result is similar to Array.prototype.slice(), as shown below: */
 
@@ -467,7 +512,10 @@ if (btnFCCB15 !== null && scopeFCCB15 !== null) {
   scopeFCCB15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B16: Use Destructuring Assignment to Pass an Object as a Function's Parameters */
+/* ############################################################ */
 
 /* In some cases, you can destructure the object in a function argument itself. Consider the code below: */
 
@@ -505,7 +553,10 @@ if (btnFCCB16 !== null && scopeFCCB16 !== null) {
   scopeFCCB16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B17: Create String using Template Literals */
+/* ############################################################ */
 
 /* A new feature of ES6 is the template literal. This is special type of string that makes creating complex strings easier. Template Literals allow you to create multi-line strings and to use string interpolation features to create strings. Consider the code below: */
 
@@ -548,7 +599,10 @@ if (btnFCCB17 !== null && scopeFCCB17 !== null) {
   scopeFCCB17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B18: Write Concise Object Literal Declarations Using Object Property Shorthand */
+/* ############################################################ */
 
 /* ES6 Adds some nice support for easily defining object literals. Consider the following code: */
 
@@ -576,7 +630,10 @@ if (btnFCCB18 !== null && scopeFCCB18 !== null) {
   scopeFCCB18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B19: Write Concise Declarative Functions with ES6 */
+/* ############################################################ */
 
 /* When defining functions within objects in ES5, we have to use the keyword function as follows: */
 
@@ -611,7 +668,10 @@ if (btnFCCB19 !== null && scopeFCCB19 !== null) {
   scopeFCCB19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B20: Use class Syntax to Define a Constructor Function */
+/* ############################################################ */
 
 /* ES6 provides a new syntax to create objects, using the class keyword. It should be noted that the class syntax is just syntax, and not a full-fledged class-based implementation of an object-oriented paradigm, unlike in languages such as Java, Python, Ruby, etc.
 
@@ -653,7 +713,10 @@ if (btnFCCB20 !== null && scopeFCCB20 !== null) {
   scopeFCCB20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B21: Use getters and setters to Control Access to an Object */
+/* ############################################################ */
 
 /* You can obtain values from an object and set the value of a property within an object. These are classically called getters and setters. */
 
@@ -731,7 +794,10 @@ if (btnFCCB21 !== null && scopeFCCB21 !== null) {
   scopeFCCB21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B22: Create a Module Script */
+/* ############################################################ */
 
 /* JavaScript started with a small role to play on an otherwise mostly HTML web. Today, it's really huge, and some websites are built almost entirely with JS. In order to make JS more modular, clean, and maintainable; ES6 introduced a way to easily share code among JS files. This involves exporting parts of a file for use in one or more other files, and importing the parts you nee, where you need them. In order to take advantage of this functionality, you need to create a script in your HTML document with a type of module. Here's an example: */
 
@@ -754,7 +820,10 @@ if (btnFCCB22 !== null && scopeFCCB22 !== null) {
   scopeFCCB22.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B23: Use export to Share a Code Block */
+/* ############################################################ */
 
 /* Imagine a file called math_functions.js that contains several functions related to mathematical operations. One of them is stored in a variable, add, that takes in two numbers and returns their sum. You want to use this function in several different JS files. In order to share it with these other files, you first need to export it. */
 
@@ -787,7 +856,10 @@ if (btnFCCB23 !== null && scopeFCCB23 !== null) {
   scopeFCCB23.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B24: Reuse JavaScript Code Using import */
+/* ############################################################ */
 
 /* import allows you to choose which parts of a file or module to load. In the previous lesson, the examples exported add from the math_functions.js file. Here's how you can import it to use in another file: */
 
@@ -812,7 +884,10 @@ if (btnFCCB24 !== null && scopeFCCB24 !== null) {
   scopeFCCB24.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B25: Use * to Import Everything from a File */
+/* ############################################################ */
 
 /* Suppose you have a file and you wish to import all of its contents into the current file. This can be done with the import * as syntax. Here's an example where the contents of a file named math_functions.js are imported into a file in the same directory: */
 
@@ -838,7 +913,10 @@ if (btnFCCB25 !== null && scopeFCCB25 !== null) {
   scopeFCCB25.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B26: Create an Export Fallback with export default */
+/* ############################################################ */
 
 /* In the export lesson, you learned about the syntax referred to as a named export. This allowed you to make multiple functions and variables available for use in other files. There is another export syntax you need to know, known as export default. Usually you will use this syntax if only one value is being exported from a file. It is also used to create a fallback value for a file or module.
 
@@ -872,7 +950,10 @@ if (btnFCCB26 !== null && scopeFCCB26 !== null) {
   scopeFCCB26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B27: Import a Default Export */
+/* ############################################################ */
 
 /* In the last challenge, you learned about export default and its uses. To import a default export, you need to use a different import syntax. In the following example, add is the default export of the math_functions.js file. Here is how to import it: */
 
@@ -895,7 +976,10 @@ if (btnFCCB27 !== null && scopeFCCB27 !== null) {
   scopeFCCB27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B28: Create a JavaScript Promise */
+/* ############################################################ */
 
 /* A promise in JavaScript is exactly what it sounds like - you use it to make a promise to do something, usually asynchronously. When the task completes, you either fulfill your promise or fail to do so. Promise is a constructor function, so you need to use the new keyword to create one. It takes a function, as its argument, with two parameters - resolve and reject. These are methods used to determine the outcome of the promise. The syntax looks like this: */
 
@@ -916,7 +1000,10 @@ if (btnFCCB28 !== null && scopeFCCB28 !== null) {
   scopeFCCB28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B29: Complete a Promise with resolve and reject */
+/* ############################################################ */
 
 /* A promise has three states: pending, fulfilled, and rejected. The promise you created in the last challenge is forever stuck in the pending state because you did not add a way to complete the promise. The resolve and reject parameters given to the promise argument are used to do this. resolve is used when you want your promise to succeed, and reject is used when you want it to fail. These are methods that take an argument, as seen below. */
 
@@ -946,7 +1033,10 @@ if (btnFCCB29 !== null && scopeFCCB29 !== null) {
   scopeFCCB29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+
+/* ############################################################ */
 /* Task B30: Handle a Fulfilled Promise with then */
+/* ############################################################ */
 
 /* Promises are most useful when you have a process that takes an unknown amount of time in your code (i.e. something asynchronous), often a server request. When you make a server request it takes some amount ot time, and after it completes usually want to do something with the response from the server. This can be achieved by using the then method. The then method is executed immediately after your promise is fulfilled with resolve. Here's an example: */
 
@@ -972,7 +1062,10 @@ if (btnFCCB30 !== null && scopeFCCB30 !== null) {
   scopeFCCB30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task B31: Handle a Rejected Promise with catch */
+/* ############################################################ */
+
 
 /* catch is the method used when your promise has been rejected. It is executed immediately after a promise's reject method is called. Here's the syntax: */
 

@@ -10,7 +10,9 @@
 
 const outputResponse = `(Debugging Module) Output: `;
 
+/* ############################################################ */
 /* Task D1: Use JS Console to Check the Value of a Variable */
+/* ############################################################ */
 
 /* Every browser has Developer consoles, also known as DevTools, you can debug your JS there. */
 
@@ -18,5 +20,36 @@ const outputResponse = `(Debugging Module) Output: `;
 
 /* Let's use some console.log! */
 
+let d1_a = "XD";
+
 /* OUTPUT CODE */
-console.log(`Task D1, yes, we are using console logs.`);
+console.log(`Task D1, yes, we are using console logs, A value is: ${d1_a}`);
+
+/* ############################################################ */
+/* Task D2: Understanding the Differences between the freeCodeCamp and Browser Console */
+/* ############################################################ */
+
+/* Console in browser will display our console.log() statements the exact number of times it is called. */
+
+/* In FCC, console will print console.log() statements a short time after the editor detects a change in the script, as well as during testing. This console is cleared before the tests are run and, to avoid spam, only prints the logs during the first test. Console.logs inside functions are printed to the FCC console whenever those functions are called. This can help debugging functions that are called during testing. */
+
+/* ############################################################ */
+/* Task D3: Use typeof to Check the Type of a Variable */
+/* ############################################################ */
+
+/* We are using typeof to check the data structure, or type, of a variable. This is extremely useful in debugging when working with multiple data types. If we are adding two numbers, but one is actually a string, resultrs can be unexcepted. Type errors can lurk in calculations or function calls. Be careful especially when you're accessing and working with external data in the form of a JSON (JavaScript Object Notation) object. */
+
+let d3_seven = 7;
+let d3_sevenString = "Seven";
+let d3_array = [];
+let d3_object = {};
+let d3_calc = () => { };
+
+/* OUTPUT CODE */
+console.log(`Task D3, we're using typeof: ${typeof d3_seven}, ${typeof d3_seven}, ${typeof d3_sevenString}, ${typeof d3_array}, ${typeof d3_object}, ${typeof d3_calc}.`);
+
+/* ############################################################ */
+/* Task D4: Catch Misspelled Variable and Function Names */
+/* ############################################################ */
+
+

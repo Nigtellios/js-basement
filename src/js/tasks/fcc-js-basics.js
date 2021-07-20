@@ -21,14 +21,21 @@ if (btnFCCX !== null && scopeFCCX !== null) {
 
 let outputResponse = "Output: ";
 
-/* Task 1: Basic JavaScript: Comment Your JavaScript Code */
+
+/* ############################################################ */
+/* Task 1: Basic JavaScript: Comment Your JavaScript Code
+* */
+/* ############################################################ */
 
 // in-line comment
 /* multi
 line
 comment */
 
+
+/* ############################################################ */
 /* Task 2: Basic JavaScript: Declare JavaScript Variables */
+/* ############################################################ */
 
 // 8 Different data types: undefined, null, boolean, string, symbol, bigint, number, and object.
 
@@ -51,7 +58,9 @@ if (btnFCC2 !== null && scopeFCC2 !== null) {
 }
 
 
+/* ############################################################ */
 /* Task 3: Basic JavaScript: Storing Values with the Assignment Operator */
+/* ############################################################ */
 
 var a_T3;
 a_T3 = 7; // Now a stores value of 7. Any calculations to the right of = operator are performed
@@ -72,7 +81,9 @@ if (btnFCC3 !== null && scopeFCC3 !== null) {
   scopeFCC3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 4: Basic JavaScript: Assigning the Value of One Variable to Another */
+/* ############################################################ */
 
 var a_T4;
 a_T4 = 7;
@@ -94,7 +105,9 @@ if (btnFCC4 !== null && scopeFCC4 !== null) {
   scopeFCC4.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 5: Basic JavaScript: Initializing Variables with the Assignment Operator */
+/* ############################################################ */
 
 var a_T5 = 9; //Now it's the inital value of variable a.
 
@@ -113,7 +126,9 @@ if (btnFCC5 !== null && scopeFCC5 !== null) {
   scopeFCC5.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 6: Basic JavaScript: Understanding Uninitialized Variables */
+/* ############################################################ */
 
 // When JavaScript variables are declared, they have an initial value of undefined.
 // If you do a mathematical operation on an undefined variable your result will
@@ -143,7 +158,9 @@ if (btnFCC6 !== null && scopeFCC6 !== null) {
   scopeFCC6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 7: Understanding Case Sensitivity in Variables */
+/* ############################################################ */
 
 // JS is Case Sensitive, capitalization matters. It is best practice to use camelCase.
 
@@ -173,7 +190,9 @@ if (btnFCC7 !== null && scopeFCC7 !== null) {
 }
 
 
+/* ############################################################ */
 /* Task 8: Basic JavaScript: Add Two Numbers with JavaScript */
+/* ############################################################ */
 
 var sum_T8 = 10 + 10; // 20
 
@@ -192,7 +211,9 @@ if (btnFCC8 !== null && scopeFCC8 !== null) {
   scopeFCC8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 9: Basic JavaScript: Subtract One Number from Another with JavaScript */
+/* ############################################################ */
 
 var difference_T9 = 45 - 33; // 12
 
@@ -211,7 +232,9 @@ if (btnFCC9 !== null && scopeFCC9 !== null) {
   scopeFCC9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 10: Basic JavaScript: Multiply Two Numbers with JavaScript */
+/* ############################################################ */
 
 var product_T10 = 8 * 10; // 80
 
@@ -231,7 +254,9 @@ if (btnFCC10 !== null && scopeFCC10 !== null) {
 }
 
 
+/* ############################################################ */
 /* Task 11: Basic JavaScript: Divide One Number by Another with JavaScript */
+/* ############################################################ */
 
 var quotient_T11 = 66 / 33; // 2
 
@@ -250,7 +275,9 @@ if (btnFCC11 !== null && scopeFCC11 !== null) {
   scopeFCC11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 12: Basic JavaScript: Increment a Number with JavaScript */
+/* ############################################################ */
 
 var myVar_T12 = 87;
 myVar_T12++;
@@ -270,7 +297,9 @@ if (btnFCC12 !== null && scopeFCC12 !== null) {
   scopeFCC12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 13: Basic JavaScript: Decrement a Number with JavaScript */
+/* ############################################################ */
 
 var myVar_T13 = 11;
 myVar_T13--; // 10
@@ -290,7 +319,9 @@ if (btnFCC13 !== null && scopeFCC13 !== null) {
   scopeFCC13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 14: Basic JavaScript: Create Decimal Numbers with JavaScript */
+/* ############################################################ */
+/* Task 14: Basic JavaScript: Create Decimal Numbers withJavaScript */
+/* ############################################################ */
 
 var myDecimal_T14 = 5.8;
 
@@ -309,7 +340,9 @@ if (btnFCC14 !== null && scopeFCC14 !== null) {
   scopeFCC14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 15: Basic JavaScript: Multiply Two Decimals with JavaScript */
+/* ############################################################ */
 
 var product_T15 = 2.0 * 2.5; // 5
 
@@ -328,7 +361,9 @@ if (btnFCC15 !== null && scopeFCC15 !== null) {
   scopeFCC15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 16: Basic JavaScript: Divide One Decimal by Another with JavaScript */
+/* ############################################################ */
 
 var quotient_T16 = 4.4 / 2.0; // 2.2
 
@@ -347,7 +382,9 @@ if (btnFCC16 !== null && scopeFCC16 !== null) {
   scopeFCC16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 17: Basic JavaScript: Finding a Remainder in JavaScript */
+/* ############################################################ */
 
 var remainder_T17;
 remainder_T17 = 11;
@@ -368,7 +405,9 @@ if (btnFCC17 !== null && scopeFCC17 !== null) {
   scopeFCC17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 18: Basic JavaScript: Compound Assignment With Augmented Addition */
+/* ############################################################ */
 
 var a_T18 = 3;
 var b_T18 = 17;
@@ -393,7 +432,9 @@ if (btnFCC18 !== null && scopeFCC18 !== null) {
   scopeFCC18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 19: Basic JavaScript: Compound Assignment With Augmented Subtraction */
+/* ############################################################ */
 
 var a_T19 = 11;
 var b_T19 = 9;
@@ -418,7 +459,9 @@ if (btnFCC19 !== null && scopeFCC19 !== null) {
   scopeFCC19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 20: Basic JavaScript: Compound Assignment With Augmented Multiplication */
+/* ############################################################ */
 
 var a_T20 = 5;
 var b_T20 = 12;
@@ -443,7 +486,9 @@ if (btnFCC20 !== null && scopeFCC20 !== null) {
   scopeFCC20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 21: Basic JavaScript: Compound Assignment With Augmented Division */
+/* ############################################################ */
 
 var a_T21 = 48;
 var b_T21 = 108;
@@ -469,7 +514,10 @@ if (btnFCC21 !== null && scopeFCC21 !== null) {
   scopeFCC21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 22: Basic JavaScript: Declare String Variables */
+/* ############################################################ */
+
 
 var myFirstName_T22;
 var myLastName_T22;
@@ -492,7 +540,9 @@ if (btnFCC22 !== null && scopeFCC22 !== null) {
   scopeFCC22.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 23: Basic JavaScript: Escaping Literal Quotes in Strings */
+/* ############################################################ */
 
 // In JavaScript, you can escape a quote from considering it as an end of string quote by
 // placing a backslash (\) in front of the quote.
@@ -514,7 +564,9 @@ if (btnFCC23 !== null && scopeFCC23 !== null) {
   scopeFCC23.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 24: Basic JavaScript: Quoting Strings with Single Quotes */
+/* ############################################################ */
+/* Task 24: Basic JavaScript: Quoting Strings with SingleQuotes */
+/* ############################################################ */
 
 // Remember, a string has the same kind of quote at the beginning and end.
 // But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
@@ -537,7 +589,9 @@ if (btnFCC24 !== null && scopeFCC24 !== null) {
   scopeFCC24.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 25: Basic JavaScript: Escape Sequences in Strings */
+/* ############################################################ */
 
 var myStr_T25 = "FirstLine\n\t\\SecondLine\nThirdLine";
 
@@ -556,7 +610,9 @@ if (btnFCC25 !== null && scopeFCC25 !== null) {
   scopeFCC25.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 26: Basic JavaScript: Concatenating Strings with Plus Operator */
+/* ############################################################ */
 
 var myStr_T26 = "This is the start. " + "This is the end.";
 
@@ -575,7 +631,9 @@ if (btnFCC26 !== null && scopeFCC26 !== null) {
   scopeFCC26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 27: Basic JavaScript: Concatenating Strings with the Plus Equals Operator */
+/* ############################################################ */
 
 var myStr_T27 = "This is the first sentence. ";
 myStr_T27 += "This is the second sentence.";
@@ -595,7 +653,9 @@ if (btnFCC27 !== null && scopeFCC27 !== null) {
   scopeFCC27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 28: Basic JavaScript: Constructing Strings with Variables */
+/* ############################################################ */
 
 var myName_T28 = "Jakub";
 var myStr_T28 = "My name is " + myName_T28 + " and I am well!";
@@ -615,7 +675,9 @@ if (btnFCC28 !== null && scopeFCC28 !== null) {
   scopeFCC28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 29: Basic JavaScript: Appending Variables to Strings */
+/* ############################################################ */
 
 var someAdjective_T29 = "Okay";
 var myStr_T29 = "Learning to code is ";
@@ -636,7 +698,9 @@ if (btnFCC29 !== null && scopeFCC29 !== null) {
   scopeFCC29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 30: Basic JavaScript: Find the Length of a String */
+/* ############################################################ */
 
 var lastNameLength_T30 = 0;
 var lastName_T30 = "Lovelace";
@@ -657,7 +721,9 @@ if (btnFCC30 !== null && scopeFCC30 !== null) {
   scopeFCC30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 31: Basic JavaScript: Use Bracket Notation to Find the First Character in a String */
+/* ############################################################ */
 
 var firstLetterOfLastName_T31 = "";
 var lastName_T31 = "Lovelace";
@@ -679,7 +745,9 @@ if (btnFCC31 !== null && scopeFCC31 !== null) {
 }
 
 
+/* ############################################################ */
 /* Task 32: Basic JavaScript: Understand String Immutability */
+/* ############################################################ */
 
 var myStr_T32 = "Jello World";
 myStr_T32[0] = "H";
@@ -701,7 +769,9 @@ if (btnFCC32 !== null && scopeFCC32 !== null) {
   scopeFCC32.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 33: Basic JavaScript: Use Bracket Notation to Find the Nth Character in a String */
+/* ############################################################ */
 
 var lastName_T33 = "Kowalsky";
 
@@ -722,7 +792,9 @@ if (btnFCC33 !== null && scopeFCC33 !== null) {
   scopeFCC33.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 34: Basic JavaScript: Use Bracket Notation to Find the Last Character in a String */
+/* ############################################################ */
 
 var lastLetterOfLastName_T34 = lastName_T33[lastName_T33.length - 1];
 
@@ -741,7 +813,9 @@ if (btnFCC34 !== null && scopeFCC34 !== null) {
   scopeFCC34.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 35: Basic JavaScript: Use Bracket Notation to Find the Nth-to-Last Character in a String */
+/* ############################################################ */
 
 var secondToLastLetterOfLastName_T33 = lastName_T33[lastName_T33.length - 2];
 
@@ -760,7 +834,9 @@ if (btnFCC35 !== null && scopeFCC35 !== null) {
   scopeFCC35.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 36: Basic JavaScript: Word Blanks */
+/* ############################################################ */
 
 var myNoun_T36 = "dog";
 var myAdjective_T36 = "big";
@@ -784,7 +860,9 @@ if (btnFCC36 !== null && scopeFCC36 !== null) {
   scopeFCC36.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 37: Basic JavaScript: Store Multiple Values in one Variable using JavaScript Arrays */
+/* ############################################################ */
 
 var myArray_T37 = ["LeMoiJelly", 0];
 
@@ -803,7 +881,9 @@ if (btnFCC37 !== null && scopeFCC37 !== null) {
   scopeFCC37.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 38: Basic JavaScript: Nest one Array within Another Array */
+/* ############################################################ */
 
 var myArray_T38 = [["Nested Array", 0]];
 
@@ -822,7 +902,9 @@ if (btnFCC38 !== null && scopeFCC38 !== null) {
   scopeFCC38.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 39: Basic JavaScript: Access Array Data with Indexes */
+/* ############################################################ */
 
 var myArray_T39 = [50,60,70];
 var myData_T39 = myArray_T39[0]; // 50
@@ -842,7 +924,9 @@ if (btnFCC39 !== null && scopeFCC39 !== null) {
   scopeFCC39.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 40: Basic JavaScript: Modify Array Data With Indexes */
+/* ############################################################ */
 
 var myArray_T40 = [18,64,99];
 myArray_T40[0] = 45; // now index 0 is 45 instead of 18
@@ -862,7 +946,9 @@ if (btnFCC40 !== null && scopeFCC40 !== null) {
   scopeFCC40.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 41: Basic JavaScript: Access Multi-Dimensional Arrays With Indexes */
+/* ############################################################ */
 
 var myArray_T41 = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 // We are going for item with value 8, so:
@@ -883,7 +969,9 @@ if (btnFCC41 !== null && scopeFCC41 !== null) {
   scopeFCC41.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 42: Basic JavaScript: Manipulate Arrays With push() */
+/* ############################################################ */
 
 var myArray_T42 = [["John", 23], ["cat", 2]];
 myArray_T42.push(["dog", 3]);
@@ -903,7 +991,9 @@ if (btnFCC42 !== null && scopeFCC42 !== null) {
   scopeFCC42.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 43: Basic JavaScript: Manipulate Arrays With pop() */
+/* ############################################################ */
 
 var myArray_T43 = [["John", 23], ["cat", 2]];
 var removedFromMyArray_T43 = myArray_T43.pop();
@@ -924,7 +1014,9 @@ if (btnFCC43 !== null && scopeFCC43 !== null) {
   scopeFCC43.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 44: Basic JavaScript: Manipulate Arrays With shift() */
+/* ############################################################ */
 
 var myArray_T44 = [["John", 23], ["dog", 3]];
 var removedFromMyArray_T44 = myArray_T44.shift();
@@ -945,7 +1037,9 @@ if (btnFCC44 !== null && scopeFCC44 !== null) {
   scopeFCC44.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 45: Basic JavaScript: Manipulate Arrays With unshift() */
+/* ############################################################ */
 
 var myArray_T45 = [["John", 23], ["dog", 3]];
 myArray_T45.shift();
@@ -967,7 +1061,9 @@ if (btnFCC45 !== null && scopeFCC45 !== null) {
   scopeFCC45.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 46: Basic JavaScript: Shopping List */
+/* ############################################################ */
 
 var myList_T46 = [["Milk", 3], ["Butter", 8], ["Chicken Leg", 10], ["Vodka", 40], ["Pen", 5]];
 
@@ -986,7 +1082,9 @@ if (btnFCC46 !== null && scopeFCC46 !== null) {
   scopeFCC46.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 47: Basic JavaScript: Write Reusable JavaScript with Functions */
+/* ############################################################ */
 
 function reusableFunction_T47() {
   return "Hi World";
@@ -1009,7 +1107,9 @@ if (btnFCC47 !== null && scopeFCC47 !== null) {
   scopeFCC47.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 48: Basic JavaScript: Passing Values to Functions with Arguments */
+/* ############################################################ */
 
 function functionWithArgs_T48(arg1_T48, arg2_T48) {
   return arg1_T48 + arg2_T48; // It outputs sum of arg1 and arg2
@@ -1032,7 +1132,9 @@ if (btnFCC48 !== null && scopeFCC48 !== null) {
   scopeFCC48.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 49: Basic JavaScript: Global Scope and Functions */
+/* ############################################################ */
 
 var myGlobal_T49 = 10;
 
@@ -1068,7 +1170,9 @@ if (btnFCC49 !== null && scopeFCC49 !== null) {
   scopeFCC49.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 50: Basic JavaScript: Local Scope and Functions */
+/* ############################################################ */
 
 /* Variables declared within a function, as well as function parameters itself has local scope. They are only visible within that function. */
 
@@ -1095,9 +1199,12 @@ if (btnFCC50 !== null && scopeFCC50 !== null) {
   scopeFCC50.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 51: Global vs. Local Scope in Functions */
+/* ############################################################ */
 
-/* However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precedence over the global variable. */
+/*
+ However, it is possible to have both local and global variables with the same name. If we declare anything this way, the local variable takes precedence over the global variable. */
 
 const globalOne = "What";
 function locTest() {
@@ -1122,7 +1229,9 @@ if (btnFCC51 !== null && scopeFCC51 !== null) {
 
 /* But as far as I see, in ES6+ now the local one just doesn't work and the final value is „What". */
 
+/* ############################################################ */
 /* Task 52: Return a Value from a Function with Return */
+/* ############################################################ */
 
 /* We can pass values into a function with arguments. You can use a return statement to send a value back out of a function. */
 
@@ -1147,7 +1256,9 @@ if (btnFCC52 !== null && scopeFCC52 !== null) {
   scopeFCC52.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 53: Understanding Undefined Value returned from a Function */
+/* ############################################################ */
 
 /* Function can include the return statement but it does not have to. In this case when you call this function it would process inner code but returned value would be undefined. */
 
@@ -1176,9 +1287,12 @@ if (btnFCC53 !== null && scopeFCC53 !== null) {
 
 /* But as far as I see, in ES6+ now it can not return anything so the output of checkSum would be 5. */
 
+/* ############################################################ */
 /* Task 54: Assignment with a Returned Value */
+/* ############################################################ */
 
-/* In JS everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable. */
+/*
+ In JS everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable. */
 
 var process = 0;
 
@@ -1205,9 +1319,12 @@ if (btnFCC54 !== null && scopeFCC54 !== null) {
 }
 
 
+/* ############################################################ */
 /* Task 55: Stand in Line (QUEUE) */
+/* ############################################################ */
 
-/* In Computer Science a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue. */
+/*
+ In Computer Science a QUEUE is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue. */
 
 /* First of all, we want to add the number to the end of array, then remove the first element of the array. */
 
@@ -1234,9 +1351,12 @@ if (btnFCC55 !== null && scopeFCC55 !== null) {
   scopeFCC55.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 56: Understanding Boolean Values */
+/* ############################################################ */
 
-/* Boolean is another data type. They may only be one of two values: true or false. They are basically little on-off switches, there TRUE is ON, and FALSE is OFF. These two states are mutually exclusive. Booleans are never written with QUOTES! */
+/*
+ Boolean is another data type. They may only be one of two values: true or false. They are basically little on-off switches, there TRUE is ON, and FALSE is OFF. These two states are mutually exclusive. Booleans are never written with QUOTES! */
 
 function booleanTest() {
   return true;
@@ -1260,7 +1380,9 @@ if (btnFCC56 !== null && scopeFCC56 !== null) {
   scopeFCC56.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 57: Use Conditional Logic with If Statements */
+/* ############################################################ */
 
 /* If statements are used to make decisions in code. The keyword If tells JavaScript to execute the code in curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false. When condition will be true -> code in curly brackets will execute statements inside them, while FALSE -> they will not. */
 
@@ -1287,9 +1409,12 @@ if (btnFCC57 !== null && scopeFCC57 !== null) {
   scopeFCC57.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 58: Comparison with the Equality Operator */
+/* ############################################################ */
 
-/* There are many comparison operators in JS. All of these operators return a boolean true or false. The most basic operator is equality == and it compares two values and returns true if they're equivalent or false if they are not. */
+/*
+ There are many comparison operators in JS. All of these operators return a boolean true or false. The most basic operator is equality == and it compares two values and returns true if they're equivalent or false if they are not. */
 
 function testEqual(testEqualVal) {
   if (testEqualVal == 50) {
@@ -1313,7 +1438,9 @@ if (btnFCC58 !== null && scopeFCC58 !== null) {
   scopeFCC58.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 59: Comparison with the Strict Equality Operator */
+/* ############################################################ */
 
 /* Strict equality === is the counterpart to the equality operator ==. However, unlike the equality operator which attempts to convert both values being compared to a common type, the strict equality operator DOES NOT perform a type conversion. */
 
@@ -1339,9 +1466,12 @@ if (btnFCC59 !== null && scopeFCC59 !== null) {
   scopeFCC59.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 60: Practice comparing different values */
+/* ############################################################ */
 
-/* In JS you can determine the type of a variable or a value with TYPEOF operator */
+/*
+ In JS you can determine the type of a variable or a value with TYPEOF operator */
 
 var comp1 = 5;
 var comp2 = '5';
@@ -1368,9 +1498,11 @@ if (btnFCC60 !== null && scopeFCC60 !== null) {
   scopeFCC60.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 61: Comparison with inqeuality operator */
-
-/* The inequality operator (!=) is the opposite of the equality operator. It means „Not Equal". and returns false where equality would return true and vice versa. The same like equality operator, the inequality operator will convert data types of values while comparing. */
+/* ############################################################ */
+/* Task 61: Comparison with inequality operator */
+/* ############################################################ */
+/*
+ The inequality operator (!=) is the opposite of the equality operator. It means „Not Equal". and returns false where equality would return true and vice versa. The same like equality operator, the inequality operator will convert data types of values while comparing. */
 
 function testNotEqual(testNotEqualVal) {
   if(testNotEqualVal != 99) {
@@ -1394,7 +1526,9 @@ if (btnFCC61 !== null && scopeFCC61 !== null) {
   scopeFCC61.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 62: Comparison with Strict Inequality Operator */
+/* ############################################################ */
 
 /* Strict inequality operator (!==) is the logical opposite of the strict equality operator. „Stricty Not Equal" returns FALSE where strict equality woulr return true and vice versa. IT WILL NOT CONVERT DATA TYPES. */
 
@@ -1420,7 +1554,9 @@ if (btnFCC62 !== null && scopeFCC62 !== null) {
   scopeFCC62.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 63: Comparison with the Greater Than Operator */
+/* ############################################################ */
 
 /* The greater than (>) operator compares the values of two numbers and returns true if number to the left is greater than the number to the right. Otherwise it returns FALSE. It will convert data types of values while comparing. */
 
@@ -1449,7 +1585,9 @@ if (btnFCC63 !== null && scopeFCC63 !== null) {
   scopeFCC63.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 64: Comparison with the Greater Than or Equal To Operator */
+/* ############################################################ */
 
 /* The greater than (>=) operator compares the values of two numbers and returns true if number to the left is greater than the number to the right. Otherwise it returns FALSE. It will convert data types of values while comparing. */
 
@@ -1478,9 +1616,12 @@ if (btnFCC64 !== null && scopeFCC64 !== null) {
   scopeFCC64.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 65: Comparison with the Less Than Operator */
+/* ############################################################ */
 
-/* Less Than operator compares two values and if value tothe left is less than number to the right, it returns true. It does convert data types while comparing. */
+/*
+ Less Than operator compares two values and if value tothe left is less than number to the right, it returns true. It does convert data types while comparing. */
 
 function testLessThan(testLessThanVal) {
   if(testLessThanVal < 55) {
@@ -1507,7 +1648,9 @@ if (btnFCC65 !== null && scopeFCC65 !== null) {
   scopeFCC65.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 66: Comparison with Less Than or Equal To Operator */
+/* ############################################################ */
 
 /* Less than or equal to operator (<=) compares the values of two numbers. if the number to the left is less than or equal to the number to the right, it will return TRUE. It converts data types. */
 
@@ -1536,7 +1679,9 @@ if (btnFCC66 !== null && scopeFCC66 !== null) {
   scopeFCC66.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 67: Comparisons with the Logical And Operator */
+/* ############################################################ */
 
 /* Sometimes we have to test more than one thing at a time. The logical AND operator (&&) returns TRUE if and only if the operands to the left and right of it are true. */
 
@@ -1578,7 +1723,9 @@ if (btnFCC67 !== null && scopeFCC67 !== null) {
   scopeFCC67.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 68: Comparisons with the Logical OR Operator */
+/* ############################################################ */
 
 /* The logical OR operator (||) returns true if either of the operands is TRUE. Otherwise it returns FALSE. It's composed of two pipe symbols ||. */
 
@@ -1606,9 +1753,12 @@ if (btnFCC68 !== null && scopeFCC68 !== null) {
   scopeFCC68.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 69: Introducing Else Statements */
+/* ############################################################ */
 
-/* With else, we can execute code when previous IF condition is false. Normally, nothing special would happen if we just declare some boolean test inside if condition without ELSE. */
+/*
+ With else, we can execute code when previous IF condition is false. Normally, nothing special would happen if we just declare some boolean test inside if condition without ELSE. */
 
 function testIfElse(testIfElseVal) {
   if(testIfElseVal === "password") {
@@ -1633,9 +1783,12 @@ if (btnFCC69 !== null && scopeFCC69 !== null) {
   scopeFCC69.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 70: Introducing Else If Statements */
+/* ############################################################ */
 
-/* If we have multiple conditions that needs to be addressed, we can chain if's statements together with else if statements. */
+/*
+ If we have multiple conditions that needs to be addressed, we can chain if's statements together with else if statements. */
 
 function testElseIf(testElseIfVal) {
   if(testElseIfVal === "email@mail.org") {
@@ -1662,9 +1815,12 @@ if (btnFCC70 !== null && scopeFCC70 !== null) {
   scopeFCC70.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 71: Logical Orded in If Else Statements */
+/* ############################################################ */
+/* Task 71: Logical Order in If Else Statements */
+/* ############################################################ */
 
-/* In: if, else if and else statements order is very important. The whole function is executed from top to bottom so you will want to be careful of what statement comes first. It would be better explained in math problem: */
+/*
+ In: if, else if and else statements order is very important. The whole function is executed from top to bottom so you will want to be careful of what statement comes first. It would be better explained in math problem: */
 
 function testIfOrder(testIfOrderVal) {
   if(testIfOrderVal <= 25) {
@@ -1691,9 +1847,12 @@ if (btnFCC71 !== null && scopeFCC71 !== null) {
   scopeFCC71.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 72: Chaining If Else Statements */
+/* ############################################################ */
 
-/* if/else can be chained together to make more complex logic (while not using SWITCH) */
+/*
+ if/else can be chained together to make more complex logic (while not using SWITCH) */
 
 function testIfChain(testIfChainVal) {
   if(testIfChainVal < 1) {
@@ -1726,9 +1885,12 @@ if (btnFCC72 !== null && scopeFCC72 !== null) {
   scopeFCC72.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 73: Golf Game */
+/* ############################################################ */
 
-/* Well, I don't know nothing about GOLF, but I did it. */
+/*
+ Well, I don't know nothing about GOLF, but I did it. */
 
 function golfScore(par, strokes) {
   if(strokes == 1) {
@@ -1763,7 +1925,9 @@ if (btnFCC73 !== null && scopeFCC73 !== null) {
   scopeFCC73.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 74: Selecting from Many Options with Switch Statements */
+/* ############################################################ */
 
 /* If you have many options to choose from, use a SWITCH statement. Switch Statement tests a value and can have many CASE statements which define various possible values. Statements are executed from the first matched CASE value until a BREAK is encountered. Remember that case values are tested with STRICT EQUALITY OPERATOR (===)! */
 
@@ -1802,7 +1966,9 @@ if (btnFCC74 !== null && scopeFCC74 !== null) {
   scopeFCC74.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 75: Adding a Default Option in Switch Statements */
+/* ############################################################ */
 
 /* Default option in switch statements works almost the same as ELSE in if ELSE - it makes us a default behaviour bracket if none of above switch cases values are matched in comparing process */
 
@@ -1838,7 +2004,9 @@ if (btnFCC75 !== null && scopeFCC75 !== null) {
   scopeFCC75.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 76: Multiple Identical Options in Switch Statements */
+/* ############################################################ */
 
 /* If the break statement is omitted from a switch statement's case, the following case statement(s) are executed until a break is encountered. If we have multiple inputs with the same output, we can represent them in a switch statement like this: */
 
@@ -1875,9 +2043,12 @@ if (btnFCC76 !== null && scopeFCC76 !== null) {
   scopeFCC76.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 77: Replacing If Else Chains with Switch */
+/* ############################################################ */
 
-/* If you have many options to choose from, a switch statement would be easier and more proper way to write many chained options than if/else if statements. */
+/*
+ If you have many options to choose from, a switch statement would be easier and more proper way to write many chained options than if/else if statements. */
 
 function replaceSwitch(replaceSwitchVal) {
   var replaceSwitchAnswer = "";
@@ -1919,9 +2090,12 @@ if (btnFCC77 !== null && scopeFCC77 !== null) {
   scopeFCC77.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 78: Returning Boolean Values From Functions */
+/* ############################################################ */
 
-/* There are a few approaches to do comparisons with the equality operator (which return a boolean TRUE or FALSE.) Sometimes, people do things like: */
+/*
+ There are a few approaches to do comparisons with the equality operator (which return a boolean TRUE or FALSE.) Sometimes, people do things like: */
 
 function booleanIsEqual(a1, b1) {
   if (a1 === b1) {
@@ -1955,9 +2129,12 @@ if (btnFCC78 !== null && scopeFCC78 !== null) {
 }
 
 
+/* ############################################################ */
 /* Task 79: Return Early Pattern for Functions */
+/* ############################################################ */
 
-/* When a return statement is reached, the execution of the current function stops and control returns to the calling location. */
+/*
+ When a return statement is reached, the execution of the current function stops and control returns to the calling location. */
 
 function earlyPattern() {
   return "Task 79: Early Pattern 1/2 Stage. ";
@@ -1980,9 +2157,12 @@ if (btnFCC79 !== null && scopeFCC79 !== null) {
   scopeFCC79.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 80: Counting Cards */
+/* ############################################################ */
 
-/* BlackJack - Actually, I have to write a program that would count my cards. It is done by keeping track of the relative numbers of high and low cards remaining in the deck. Each Card is assigned a value according to the table below. Then the count is positive, the player should bet high. When the count is zero or negative, the player should bet low. */
+/*
+ BlackJack - Actually, I have to write a program that would count my cards. It is done by keeping track of the relative numbers of high and low cards remaining in the deck. Each Card is assigned a value according to the table below. Then the count is positive, the player should bet high. When the count is zero or negative, the player should bet low. */
 
 /* First of all, I tried to  do it only via ifs, so I put everything in a function and forgot that it would not properly display my output with „Bet" and „Hold" because it would output every step instead of only calculated output. So the solution for this is to create switch inside function. */
 
@@ -2026,9 +2206,12 @@ if (btnFCC80 !== null && scopeFCC80 !== null) {
   scopeFCC80.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 81: Build JavaScript Objects */
+/* ############################################################ */
 
-/* Objects are similar to arrays, but except that instead of using indexes to access and modify their data, you access the data in objects through what are called properties. Objects are useful for storing data in a structured way, and can represent real world objects. You can store all the properties in many different data types, strings, numbers, or even in quotes for single-word string properties. However, if your object has any non-string properties, JavaScript will automatically typecast them as strings. */
+/*
+ Objects are similar to arrays, but except that instead of using indexes to access and modify their data, you access the data in objects through what are called properties. Objects are useful for storing data in a structured way, and can represent real world objects. You can store all the properties in many different data types, strings, numbers, or even in quotes for single-word string properties. However, if your object has any non-string properties, JavaScript will automatically typecast them as strings. */
 
 var myDog = {
   name: 'Arturro',
@@ -2052,7 +2235,9 @@ if (btnFCC81 !== null && scopeFCC81 !== null) {
   scopeFCC81.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 82: Accessing Object Properties with Dot Notation */
+/* ############################################################ */
 
 /* There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array. Dot notation is what you use when you know the name of the property you're trying to access ahead of time. */
 
@@ -2079,7 +2264,9 @@ if (btnFCC82 !== null && scopeFCC82 !== null) {
   scopeFCC82.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 83: Accessing Object Properties with Bracket Notation */
+/* ############################################################ */
 
 /* The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation. However, you can still use bracket notation on object properties without spaces. Note that property names with spaces in them must be in quotes (single or double). */
 
@@ -2106,7 +2293,9 @@ if (btnFCC83 !== null && scopeFCC83 !== null) {
   scopeFCC83.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 84: Accessing Object Properties with Variables */
+/* ############################################################ */
 
 /* Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table. */
 
@@ -2147,9 +2336,12 @@ if (btnFCC84 !== null && scopeFCC84 !== null) {
   scopeFCC84.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 85: Updating Object Properties */
+/* ############################################################ */
 
-/* After creating JS object, we can update its properties at any time just like we would update any other variable. We can use either dot or bracket notation to update them. */
+/*
+ After creating JS object, we can update its properties at any time just like we would update any other variable. We can use either dot or bracket notation to update them. */
 
 var updateObject = {
   versions: ['v1.0.0' , 'v1.0.1'],
@@ -2173,7 +2365,9 @@ if (btnFCC85 !== null && scopeFCC85 !== null) {
   scopeFCC85.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 86: Add New Properties to a JavaScript Object */
+/* ############################################################ */
 
 /* You can add new properties to existing JS Objects the same way you would modify them. */
 
@@ -2200,7 +2394,9 @@ if (btnFCC86 !== null && scopeFCC86 !== null) {
   scopeFCC86.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 87: Delete Properties from a JavaScript Object */
+/* ############################################################ */
 
 /* We can also delete properties from objects like this: */
 
@@ -2227,9 +2423,12 @@ if (btnFCC87 !== null && scopeFCC87 !== null) {
   scopeFCC87.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 88: Using Objects for Lookups */
+/* ############################################################ */
 
-/* Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to lookup values rather than a switch or an if/else chain. This is most useful when you know that your input data is limited to a certain range. */
+/*
+ Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to lookup values rather than a switch or an if/else chain. This is most useful when you know that your input data is limited to a certain range. */
 
 var customerList = {
   1: 'Martin',
@@ -2281,9 +2480,12 @@ if (btnFCC88 !== null && scopeFCC88 !== null) {
   scopeFCC88.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 89: Testing Objects for Properties */
+/* ############################################################ */
 
-/* Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not. */
+/*
+ Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not. */
 
 /* We can do so in some ways, two of them: */
 
@@ -2322,9 +2524,12 @@ if (btnFCC89 !== null && scopeFCC89 !== null) {
   scopeFCC89.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 90: Manipulating Complex Objects */
+/* ############################################################ */
 
-/* Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions and objects. Let's create one of examples: */
+/*
+ Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions and objects. Let's create one of examples: */
 
 var carModels = [
   {
@@ -2370,9 +2575,12 @@ if (btnFCC90 !== null && scopeFCC90 !== null) {
   scopeFCC90.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 91: Accessing Nested Objects */
+/* ############################################################ */
 
-/* The sub-properties of objects can be accessed by chaining together the dot or bracket notation. */
+/*
+ The sub-properties of objects can be accessed by chaining together the dot or bracket notation. */
 
 var myChest = {
   "inside" : {
@@ -2406,9 +2614,12 @@ if (btnFCC91 !== null && scopeFCC91 !== null) {
   scopeFCC91.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 92: Accessing Nested Arrays */
+/* ############################################################ */
 
-/* As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays. */
+/*
+ As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, array bracket notation can be chained to access nested arrays. */
 
 var doorAccessList = [
   {
@@ -2449,9 +2660,12 @@ if (btnFCC92 !== null && scopeFCC92 !== null) {
   scopeFCC92.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 93: Record Collection */
+/* ############################################################ */
 
-/* You are given a JSON object representing a part of your musical album collection. Each album has a unique id number as its key and several other properties. Not all albums have complete information.
+/*
+ You are given a JSON object representing a part of your musical album collection. Each album has a unique id number as its key and several other properties. Not all albums have complete information.
 
 You start with an updateRecords function that takes an object like collection, an id, a prop (like artist or tracks), and a value. Complete the function using the rules below to modify the object passed to the function.
 
@@ -2513,9 +2727,12 @@ if (btnFCC93 !== null && scopeFCC93 !== null) {
   scopeFCC93.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 94: Iterate with JavaScript While Loops */
+/* ############################################################ */
 
-/* We can run the same code multiple times by using a loop. */
+/*
+ We can run the same code multiple times by using a loop. */
 
 /* The first type of loop we will learn is called a while loop because it runs while a specified condition is true and stops once that condition is no longer true. */
 
@@ -2546,9 +2763,12 @@ if (btnFCC94 !== null && scopeFCC94 !== null) {
   scopeFCC94.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 95: Iterate with JavaScript For Loops */
+/* ############################################################ */
 
-/* The most common type of JavaScript loop is called a for loop because it runs for a specific number of times.
+/*
+ The most common type of JavaScript loop is called a for loop because it runs for a specific number of times.
 
 For loops are declared with three optional expressions separated by semicolons:
 
@@ -2582,9 +2802,12 @@ if (btnFCC95 !== null && scopeFCC95 !== null) {
   scopeFCC95.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 96: Iterate with JavaScript For Loops */
+/* ############################################################ */
 
-/* For loops don't have to iterate one at time. By changing our final-expression , we can count by even numbers. Basically, we'll increment iterator by 2 each loop with i += 2. */
+/*
+ For loops don't have to iterate one at time. By changing our final-expression , we can count by even numbers. Basically, we'll increment iterator by 2 each loop with i += 2. */
 
 var oddArray = [];
 
@@ -2607,9 +2830,12 @@ if (btnFCC96 !== null && scopeFCC96 !== null) {
   scopeFCC96.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 97: Count Backwards With a For Loop */
+/* ############################################################ */
 
-/* A for loop also count backwards, so long as we can define the right conditions. In order to decrement by two each iteration, we'll need to change our initialization, condition, and final expression. We'll start at 10, and loop while iterator > 0. We'll decrement iterator by 2 each loop with i -= 2. */
+/*
+ A for loop also count backwards, so long as we can define the right conditions. In order to decrement by two each iteration, we'll need to change our initialization, condition, and final expression. We'll start at 10, and loop while iterator > 0. We'll decrement iterator by 2 each loop with i -= 2. */
 
 var backwardCount = [];
 
@@ -2632,7 +2858,9 @@ if (btnFCC97 !== null && scopeFCC97 !== null) {
   scopeFCC97.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 98: Iterate Through an Array with a For Loop */
+/* ############################################################ */
 
 /* A common task in JavaScript is to iterate through the contents of an array. One way to do this is with a for loop. The code below will output each element of the array dataSheet to the console: */
 
@@ -2662,9 +2890,12 @@ if (btnFCC98 !== null && scopeFCC98 !== null) {
   scopeFCC98.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 99: Nesting For Loops */
+/* ############################################################ */
 
-/* If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example: */
+/*
+ If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example: */
 
 var multiLoopData = [
   ['16.04.2021', 'Martin'], ['17.04.2021', 'John'], ['18.04.2021', 'Nikolai']
@@ -2696,7 +2927,9 @@ if (btnFCC99 !== null && scopeFCC99 !== null) {
   scopeFCC99.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 100: Iterate with JavaScript Do... While Loops */
+/* ############################################################ */
 
 /* Next type of loop is called a "do...while" loop. It will first DO one pass of the code inside the loop no matter what, and then continue to run the loop WHILE the specified condition evaluates to TRUE. What makes "do...while" different from other loops? It behaves different if the condition fails on the first check. DO...WHILE Loop ensures that the code inside the loop will run AT LEAST ONCE. */
 
@@ -2724,9 +2957,12 @@ if (btnFCC100 !== null && scopeFCC100 !== null) {
   scopeFCC100.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 101: Replace Loops using Recursion */
+/* ############################################################ */
 
-/* Recursion is the concept that a function can be expressed in terms of itself. To help understand this, start by thinking about the following task: multiply the first N elements of an array to create the product of those elements. Using a FOR loop, you could do this: */
+/*
+ Recursion is the concept that a function can be expressed in terms of itself. To help understand this, start by thinking about the following task: multiply the first N elements of an array to create the product of those elements. Using a FOR loop, you could do this: */
 
 var dfArray = [1, 2, 3];
 var rArray = [1, 4, 5];
@@ -2768,9 +3004,12 @@ if (btnFCC101 !== null && scopeFCC101 !== null) {
   scopeFCC101.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 102: Profile Lookup */
+/* ############################################################ */
 
-/* We have an array of objects representing different people in our contacts lists.
+/*
+ We have an array of objects representing different people in our contacts lists.
 
 A lookUpProfile function that takes name and a property (prop) as arguments has been pre-written for you.
 
@@ -2837,7 +3076,9 @@ if (btnFCC102 !== null && scopeFCC102 !== null) {
   scopeFCC102.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 103: Generate Random Fractions with JavaScript */
+/* ############################################################ */
 
 /* Random numbers are useful for creating random behavior. JavaScript has a Math.random() function that generates a random decimal number between 0 (inclusive) and not quite up to 1 (exclusive). Thus Math.random() can return a 0 but never quite return a 1. NOTE that like in "Storing Values with the Equal Operator", all functions calls will be resolved before the RETURN executes, so we can return the value of the Math.random() function. */
 
@@ -2865,7 +3106,9 @@ if (btnFCC103 !== null && scopeFCC103 !== null) {
   scopeFCC103.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 104: Generate Random Whole Numbers with JavaScript */
+/* ############################################################ */
 
 /* It's nice that we can generate random decimal numbers, bit it's even more useful if we use it to generate random whole numbers. First of all, we use Math.random() to generate a random DECIMAL. Then we multiply that random decimal by 20, then we can use another function, Math.floor() to round the number down to its nearest whole number. REMEMBER that Math.random() can never quite return a 1 and, because we're rounding down, it's impossible to actually get 20. This technique will give us a whole number between 0 and 19. So: */
 
@@ -2890,7 +3133,9 @@ if (btnFCC104 !== null && scopeFCC104 !== null) {
   scopeFCC104.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 105: Generate Random Whole Numbers within a Range */
+/* ############################################################ */
 
 /* Instead of generating a random whole number between zero and a given number like we did before, we can generate a random whole number that falls within a range of two specific numbers. To do this, we'll define a minimum number MIN and a maximum number MAX. Look at the formula:
 
@@ -2917,9 +3162,12 @@ if (btnFCC105 !== null && scopeFCC105 !== null) {
   scopeFCC105.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 106: Use the parseInt Function */
+/* ############################################################ */
 
-/* The parseInt() function parses a string and returns an integer. parseInt() itself is much more advanced, check more in Mozilla's MDN docs. Here's an example: */
+/*
+ The parseInt() function parses a string and returns an integer. parseInt() itself is much more advanced, check more in Mozilla's MDN docs. Here's an example: */
 
 function convertToInt(convString) {
   return parseInt(convString);
@@ -2940,9 +3188,12 @@ if (btnFCC106 !== null && scopeFCC106 !== null) {
   scopeFCC106.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 107: Use the parseInt Function with a Radix */
+/* ############################################################ */
 
-/* The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36. The function call looks like: parseInt(string, radix); And here is example: */
+/*
+ The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36. The function call looks like: parseInt(string, radix); And here is example: */
 
 function convertToIntRadix(rString, rRadix) {
   return parseInt(rString, rRadix);
@@ -2965,9 +3216,12 @@ if (btnFCC107 !== null && scopeFCC107 !== null) {
   scopeFCC107.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 108: Use the Conditional (Ternary) Operator */
+/* ############################################################ */
 
-/* The conditional operator, also called the ternary operator, can be used as a one line if-else expression. The synrax is a ? b : c, where A is the condition, B is the code to run when the conditions returns TRUE, anc C is the code to run when the conditions returns FALSE. Let's use it to check which of two values is greater. */
+/*
+ The conditional operator, also called the ternary operator, can be used as a one line if-else expression. The synrax is a ? b : c, where A is the condition, B is the code to run when the conditions returns TRUE, anc C is the code to run when the conditions returns FALSE. Let's use it to check which of two values is greater. */
 
 function findGreaterThan(firstNumber, secondNumber) {
   return firstNumber > secondNumber ? "First number is greater than second one." : "Second number is greater than first one.";
@@ -2988,7 +3242,9 @@ if (btnFCC108 !== null && scopeFCC108 !== null) {
   scopeFCC108.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 109: Use Multiple Conditional (Ternary) Operators */
+/* ############################################################ */
 
 /* In the previous challenge, we used a single conditional operator. You can also chain them together to check for multiple conditions. It is considered best practice to format multiple conditional operators such that each condition is on separate line, as shown below. */
 
@@ -3013,9 +3269,12 @@ if (btnFCC109 !== null && scopeFCC109 !== null) {
   scopeFCC109.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 110: Use Recursion to Create a Countdown */
+/* ############################################################ */
 
-/* In previous challenges, you learned how to use recursion to replace a for loop. Now, let's look at a more complex function that returns an array of consecutive integers starting with 1 through the number passed to the function. As mentioned there, there will be a BASE CASE. The base case tells the recursive function when it no longer needs to call itself. It is a simple case where the return value is already known. There will also be a recursive call which executes the original function with different arguments. If the function is written correctly, eventually the base case will be reached. For example, say you want to write a recursive function that returns an array containing the numbers 1 through N. This function will need to accept an argument, N, representing the final number. Then it will need to call itself with progressively smaller values of N until it reaches 1. You could write the function as follows: */
+/*
+ In previous challenges, you learned how to use recursion to replace a for loop. Now, let's look at a more complex function that returns an array of consecutive integers starting with 1 through the number passed to the function. As mentioned there, there will be a BASE CASE. The base case tells the recursive function when it no longer needs to call itself. It is a simple case where the return value is already known. There will also be a recursive call which executes the original function with different arguments. If the function is written correctly, eventually the base case will be reached. For example, say you want to write a recursive function that returns an array containing the numbers 1 through N. This function will need to accept an argument, N, representing the final number. Then it will need to call itself with progressively smaller values of N until it reaches 1. You could write the function as follows: */
 
 /* function countup(n) {
   if (n < 1) {
@@ -3058,7 +3317,9 @@ if (btnFCC110 !== null && scopeFCC110 !== null) {
   scopeFCC110.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 111: Use Recursion to Create a Range of Numbers */
+/* ############################################################ */
 
 /* Apart from fact, that recursion should never be used in any of these cases (exponential running time without permanent access to memory), we have to do another boring Recursion function. */
 

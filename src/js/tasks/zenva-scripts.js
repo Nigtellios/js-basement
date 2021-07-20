@@ -2,7 +2,9 @@
 
 let outputResponseZ = "Output: ";
 
+/* ############################################################ */
 /* 1st Task - Beginning */
+/* ############################################################ */
 
 var hello_Z1 = "#Task 1: Hello, World";
 
@@ -23,7 +25,9 @@ if (btnZ1 !== null && scopeZ1 !== null) {
   scopeZ1.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 2 - Variables */
+/* ############################################################ */
 
 //Assigning a value to the variable. However, this is an literal value -> it is a notation for representing a fixed value.
 
@@ -35,7 +39,7 @@ maxStamina_Z2 = 100;
 var currentStamina_Z2 = 50.2;
 currentStamina_Z2 = maxStamina_Z2; 
 
-//Right here we are assigning current stamina level to their Maximum avaliable value. We don't want to do it vice versa because we would damage our max allowed value.
+//Right here we are assigning current stamina level to their Maximum available value. We don't want to do it vice versa because we would damage our max allowed value.
 
 //This the type of boolean value, it holds two statements - true or false.
 var isGameOver_Z2 = false;
@@ -60,7 +64,9 @@ if (btnZ2 !== null && scopeZ2 !== null) {
   scopeZ2.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 3 - Const vs Let vs Var */
+/* ############################################################ */
 
 const maxMoves_Z3 = 50;
 //The value of constant cannot be changed, so it would stay at 50. Now we can't change its value but we can change other variable value to it, like:
@@ -94,7 +100,9 @@ if (btnZ3 !== null && scopeZ3 !== null) {
   scopeZ3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 4 - Strings */
+/* ############################################################ */
 
 var characterName_Z4 = "Nebed";
 characterName_Z4 = "Miran";
@@ -140,7 +148,9 @@ if (btnZ4 !== null && scopeZ4 !== null) {
   scopeZ4.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 5 - Operators */
+/* ############################################################ */
 
 //Assignment operator, it just assigns a value to a variable.
 
@@ -204,7 +214,9 @@ if (btnZ5 !== null && scopeZ5 !== null) {
   scopeZ5.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 6 - Operators part 2*/
+/* ############################################################ */
 
 let word1_Z6 = "Hello";
 let word2_Z6 = "World";
@@ -267,7 +279,9 @@ if (btnZ6 !== null && scopeZ6 !== null) {
   scopeZ6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 7 - Arrays */
+/* ############################################################ */
 
 let inventory_Z7 = ["shirt", "axe", "sword"];
 //inventory = ["water", "pants"]; We can ofc change the values if we want to something different.
@@ -315,7 +329,9 @@ if (btnZ7 !== null && scopeZ7 !== null) {
   scopeZ7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 8 - Multidimensional Arrays */
+/* ############################################################ */
 
 let levels_Z8 = [
   [1.1, 1.2, 1.3, 1.4], //Array 1
@@ -356,7 +372,9 @@ if (btnZ8 !== null && scopeZ8 !== null) {
   scopeZ8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 9 - Functions */ /* */
+/* ############################################################ */
+/* Task 9 - Functions */
+/* ############################################################ */
 
 /*
 function name(inputs) {
@@ -423,7 +441,9 @@ if (btnZ9 !== null && scopeZ9 !== null) {
   scopeZ9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 10 - Function Parameters */ 
+/* ############################################################ */
+/* Task 10 - Function Parameters */
+/* ############################################################ */
 
 let currentSanity_Z10 = 0;
 
@@ -465,7 +485,9 @@ if (btnZ10 !== null && scopeZ10 !== null) {
   scopeZ10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 11 - Function Return Statements */ 
+/* ############################################################ */
+/* Task 11 - Function Return Statements */
+/* ############################################################ */
 
 let maxBalance_Z11 = 200.0;
 let currentBalance_Z11 = 198.1;
@@ -499,7 +521,9 @@ if (btnZ11 !== null && scopeZ11 !== null) {
   scopeZ11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 12 - If Statements 1/2 */ 
+/* ############################################################ */
+/* Task 12 - If Statements 1/2 */
+/* ############################################################ */
 
 let keyPress_Z12 = "r";
 let xPos_Z12 = 0;
@@ -533,7 +557,9 @@ if (btnZ12 !== null && scopeZ12 !== null) {
   scopeZ12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 13 - If Statements 2/2 */ 
+/* ############################################################ */
+/* Task 13 - If Statements 2/2 */
+/* ############################################################ */
 
 // Let's talk about nested Ifs, imagine if we have:
 
@@ -605,9 +631,11 @@ if (btnZ13 !== null && scopeZ13 !== null) {
   scopeZ13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 14 - While Loops */ 
+/* ############################################################ */
+/* Task 14 - While Loops */
+/* ############################################################ */
 
-// Ye let's do the same another time (oof), now we are going to move foward continously by 50 until we met end of our „map" (at least in math)
+// Ye let's do the same another time (oof), now we are going to move forward continuously by 50 until we met end of our „map" (at least in math)
 
 let endOfMap_Z14 = 500;
 let aPos_Z14 = 0;
@@ -623,13 +651,10 @@ let isGameOver_Z14 = false;
 // }
 
 while(!isGameOver_Z14) {
-  console.log("Current Position: " + aPos_Z14);
   if(aPos_Z14 == enemyPos_Z14){
     isGameOver_Z14 = true;
-    console.log("You've met enemy! Game is over on: " + aPos_Z14);
   } else if (aPos_Z14 == endOfMap_Z14) {
     isGameOver_Z14 = true;
-    console.log("You've met end of the map! Game is over on: " + aPos_Z14);
   } else {
     aPos_Z14 += 50;
   }
@@ -654,7 +679,9 @@ if (btnZ14 !== null && scopeZ14 !== null) {
   scopeZ14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 15 - Control Statements */ 
+/* ############################################################ */
+/* Task 15 - Control Statements */
+/* ############################################################ */
 
 let endOfMap_Z15 = 500;
 let aPos_Z15 = 15;
@@ -718,7 +745,9 @@ if (btnZ15 !== null && scopeZ15 !== null) {
   scopeZ15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 16 - For Loops */ 
+/* ############################################################ */
+/* Task 16 - For Loops */
+/* ############################################################ */
 
 let items = ["Polo", "Gloves", "Wallet"];
 let endPointString = "I have: ";
@@ -754,7 +783,9 @@ if (btnZ16 !== null && scopeZ16 !== null) {
   scopeZ16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 17 - Objects */ 
+/* ############################################################ */
+/* Task 17 - Objects */
+/* ############################################################ */
 
 var task17 = "#Task 17: ";
 
@@ -815,7 +846,9 @@ if (btnZ17 !== null && scopeZ17 !== null) {
   scopeZ17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 18 - References, Object Getters and Setters */ 
+/* ############################################################ */
+/* Task 18 - References, Object Getters and Setters */
+/* ############################################################ */
 
 // By general, there are NO POINTERS in JavaScript. Let's have a look but first let's write some simple object.
 
@@ -888,7 +921,9 @@ if (btnZ18 !== null && scopeZ18 !== null) {
   scopeZ18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 19 - Object Functions */ 
+/* ############################################################ */
+/* Task 19 - Object Functions */
+/* ############################################################ */
 
 // We are going to create multiple instances of single object.
 
@@ -928,7 +963,9 @@ if (btnZ19 !== null && scopeZ19 !== null) {
   scopeZ19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 20 - Object Prototypes */ 
+/* ############################################################ */
+/* Task 20 - Object Prototypes */
+/* ############################################################ */
 
 function constructor(id, posX, posY, name, swingPos) {
   this.id = id;
@@ -982,7 +1019,9 @@ if (btnZ20 !== null && scopeZ20 !== null) {
   scopeZ20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
-/* Task 21 - Classes */ 
+/* ############################################################ */
+/* Task 21 - Classes */
+/* ############################################################ */
 
 class gameCharacter2 {
   constructor(id, name, title, health, mana, xPosition) {
