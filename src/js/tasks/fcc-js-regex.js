@@ -4,7 +4,9 @@
 
 const outputResponse = `Output: `;
 
+/* ############################################################ */
 /* Task C1: Using the Test Method */
+/* ############################################################ */
 
 /* Regular expressions are used in programming languages to match parts of string. You create patterns to help you do that matching. */
 
@@ -30,7 +32,9 @@ if (btnFCCC1 !== null && scopeFCCC1 !== null) {
   scopeFCCC1.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C2: Match Literal Strings */
+/* ############################################################ */
 
 /* In the last challenge, you searched for the word Hello using the regular expression /Hello/. That regex searched for a literal match of the string Hello. Here's another example searching for a literal match of the string Wojciech: */
 
@@ -56,7 +60,9 @@ if (btnFCCC2 !== null && scopeFCCC2 !== null) {
   scopeFCCC2.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C3: Match a Literal String with Different Possibilities */
+/* ############################################################ */
 
 /* Using regexes like /coding/, you can look for the pattern coding in another string. This is powerful to search single strings, but it's limited to only one pattern. You can search for multiple patterns using the alternation or OR operator: |. */
 
@@ -81,7 +87,9 @@ if (btnFCCC3 !== null && scopeFCCC3 !== null) {
   scopeFCCC3.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C4: Ignore Case While Matching - TO CHECK */
+/* ############################################################ */
 
 /* Up until now, you've looked at regexes to do literal matches of strings. But sometimes, you might want to also match case differences. */
 
@@ -108,7 +116,9 @@ if (btnFCCC4 !== null && scopeFCCC4 !== null) {
   scopeFCCC4.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C5: Extract Matches */
+/* ############################################################ */
 
 /* So far, you have only been checking if a pattern exists or not within a string. You can also extract the actual matches you found with the .match() method. */
 
@@ -137,7 +147,9 @@ if (btnFCCC5 !== null && scopeFCCC5 !== null) {
   scopeFCCC5.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C6: Find More Than the First Match */
+/* ############################################################ */
 
 /* So far, you have only been able to extract or search a pattern once. To search or extract a pattern more than once, you can use the g flag. Note that we can combine multiple regex flags, so we can use g with i at the same time. */
 
@@ -160,7 +172,9 @@ if (btnFCCC6 !== null && scopeFCCC6 !== null) {
   scopeFCCC6.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C7: Match Anything with Wildcard Period */
+/* ############################################################ */
 
 /* Sometimes you won't (or don't need to) know the exact characters in your patterns. Thinking of all words that match, say, a misspelling would take a long time. Luckily, you can save time using the wildcard character: . */
 
@@ -185,7 +199,9 @@ if (btnFCCC7 !== null && scopeFCCC7 !== null) {
   scopeFCCC7.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C8: Match Single Character with Multiple Possibilities */
+/* ############################################################ */
 
 /* You learned how to match literal patterns (/literal/) and wildcard character (/./). These are the extremes of regular expressions, where one finds exact matches and the other matches everything. There are options that are a balance between the two extremes. */
 
@@ -214,7 +230,9 @@ if (btnFCCC8 !== null && scopeFCCC8 !== null) {
   scopeFCCC8.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C9: Match Letters of the Alphabet */
+/* ############################################################ */
 
 /* You saw how you can use character sets to specify a group of characters to match, but that's a lot of typing when you need to match a large range of characters (for example, every letter in the alphabet). Fortunately, there is a built-in feature that makes this short and simple. Inside a character set, you can define a range of characters to match using a hyphen character: -. */
 
@@ -240,7 +258,9 @@ if (btnFCCC9 !== null && scopeFCCC9 !== null) {
   scopeFCCC9.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task 10: Match Numbers and Letters of the Alphabet */
+/* ############################################################ */
 
 /* Using the hyphen (-) to match a range of characters is not limited to letters. It also works to match a range of numbers.
 
@@ -264,7 +284,9 @@ if (btnFCCC10 !== null && scopeFCCC10 !== null) {
   scopeFCCC10.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C11: Match Single Characters Not Specified */
+/* ############################################################ */
 
 /* So far, you have created a set of characters that you want to match, but you could also create a set of characters that you do not want to match. These types of character sets ale called NEGATED CHARACTER SETS. */
 
@@ -288,7 +310,9 @@ if (btnFCCC11 !== null && scopeFCCC11 !== null) {
   scopeFCCC11.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C12: Match Characters that Occur One or More Times */
+/* ############################################################ */
 
 /* Sometimes, you need to match a character (or group of characters) that appears one or more times in a row. This means it occurs at least once, and may be repeated. You can use the + character to check if that is the case. Remember, the character or pattern has to be present consecutively. That is, the character has to repeat one after the other. */
 
@@ -312,7 +336,9 @@ if (btnFCCC12 !== null && scopeFCCC12 !== null) {
   scopeFCCC12.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C13: Match Characters that Occur Zero or More Times */
+/* ############################################################ */
 
 /* The last challenge used the plus + sign to look for characters that occur one or more times. There's also an option that matches character that occur zero or more times.
 
@@ -340,7 +366,9 @@ if (btnFCCC13 !== null && scopeFCCC13 !== null) {
   scopeFCCC13.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C14: Find Characters with Lazy Matching */
+/* ############################################################ */
 
 /* In regular expressions, a greedy match finds the longest possibler part of a string that fits the regex pattern and returns it as a match. The alternative is called a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern.
 
@@ -367,7 +395,9 @@ if (btnFCCC14 !== null && scopeFCCC14 !== null) {
   scopeFCCC14.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C15: Find One or More Criminals in a Hunt */
+/* ############################################################ */
 
 /* Time to pause and test your new regex writing skills. A group of criminals escaped from jail and ran away, but you don't know how many. However, you do know that they stay close together when they are around other people. You are responsible for finding all of the criminals at once. Here's and example to review how to do this: */
 
@@ -405,7 +435,9 @@ if (btnFCCC15 !== null && scopeFCCC15 !== null) {
   scopeFCCC15.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C16: Match Beginning String Patterns */
+/* ############################################################ */
 
 /* Prior challenges showed that regular expressions can be used to look for a number of matches. They are also used to search for patterns in specific positions in strings. In an earlier challenge, you used the caret character (^) inside a character set to create a negated character set in the form [^thingsThatWIllNotBeMatched]. Outside of a character set, the caret is used to search for patterns at the beginning of strings. */
 
@@ -428,7 +460,9 @@ if (btnFCCC16 !== null && scopeFCCC16 !== null) {
   scopeFCCC16.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C17: Match Ending String Patterns */
+/* ############################################################ */
 
 /* In the last challenge, you learned to use the caret character to search for patterns at the beginning of string. There is also a way to search for patterns at the end of strings. You can search the end of string using the dollar sign character $ at the end of the regex. */
 
@@ -451,7 +485,9 @@ if (btnFCCC17 !== null && scopeFCCC17 !== null) {
   scopeFCCC17.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C18: Match All Letters and Numbers */
+/* ############################################################ */
 
 /* Using character classes, you were able to search for all letters of the alphabet with [a-z]. This kind of character class is common enough that there is a shortcut for it, although it includes a few extra characters as well. */
 
@@ -477,7 +513,9 @@ if (btnFCCC18 !== null && scopeFCCC18 !== null) {
   scopeFCCC18.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C19: Match Everything But Letters and Numbers */
+/* ############################################################ */
 
 /* You've learned that you can use a shortcut to match alphanumerics [A-Za-z0-9_] using \w. A natural pattern you might want to search for is the opposite of alphanumerics. You can search for the opposite of the \w with \W. Note, the opposite pattern uses a capital letter. This shortcut is the same as [^A-Za-z0-9_]. */
 
@@ -500,7 +538,9 @@ if (btnFCCC19 !== null && scopeFCCC19 !== null) {
   scopeFCCC19.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C20: Match All Numbers */
+/* ############################################################ */
 
 /* You've learned shortcuts for common string patterns like alphanumerics. Another common pattern is looking for just digits or numbers. The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0-9], which looks for a single character of any number between zero and nine. */
 
@@ -522,7 +562,9 @@ if (btnFCCC20 !== null && scopeFCCC20 !== null) {
   scopeFCCC20.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C21: Match All Non-Numbers */
+/* ############################################################ */
 
 /* The last challenge showed how to search for digits using the shortcut \d with a lowercase d. You can also search for non-digits using a similar shortcut that uses an uppercase D instead. The shortcut to look for non-digit characters is \D. This is equal to the character class [^0-9], which looks for a single character that is not a number between zero and nine. */
 
@@ -546,7 +588,9 @@ if (btnFCCC21 !== null && scopeFCCC21 !== null) {
   scopeFCCC21.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C22: Restrict Possible Usernames */
+/* ############################################################ */
 
 /* Usernames are used everywhere on the internet. They are what give users a unique identity on their favourite sites. */
 
@@ -587,7 +631,9 @@ if (btnFCCC22 !== null && scopeFCCC22 !== null) {
   scopeFCCC22.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C23: Match Whitespace */
+/* ############################################################ */
 
 /* The challenges so far have covered matching letters of the alphabet and numbers. You can also match the whitespace or spaces between letters. */
 
@@ -612,7 +658,9 @@ if (btnFCCC23 !== null && scopeFCCC23 !== null) {
   scopeFCCC23.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C24: Match Non-Whitespace Characters */
+/* ############################################################ */
 
 /* You learned about searching for white space using \s, with a lowercase s. You can also search for everything except whitespace. */
 
@@ -637,7 +685,9 @@ if (btnFCCC24 !== null && scopeFCCC24 !== null) {
   scopeFCCC24.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C25: Specify Upper and Lower Number of Matches */
+/* ############################################################ */
 
 /* Recall that you use the plus sign + to look for one or more characters and the asterisk * to look for zero or more characters. These are convenient but sometimes you want to match a certain range of patterns. You can specify the lower and upper number of patterns with quantity specifiers. Quantity specifiers are used with curly brackets ({ and }). You put two numbers between the curly brackets - for the lower and upper number of patterns. */
 
@@ -664,7 +714,9 @@ if (btnFCCC25 !== null && scopeFCCC25 !== null) {
   scopeFCCC25.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C26: Specify Only the Lower Number of Matches */
+/* ############################################################ */
 
 /* You can specify the lower and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want to specify the lower number of patterns with no upper limit. To only specify the lower number of patterns keep the first number followed by a comma. For example, to match only the string hah with the letter a appearing at least 3 times, your regex would be /ha{3,}h/. */
 
@@ -689,7 +741,9 @@ if (btnFCCC26 !== null && scopeFCCC26 !== null) {
   scopeFCCC26.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C27: Specify Exact Number of Matches */
+/* ############################################################ */
 
 /* You can specify the lowe and upper number of patterns with quantity specifiers using curly brackets. Sometimes you only want a specific number of matches. To specify a certain number of patterns, just have that one number between the curly brackets. For example, to match only the word hah with the letter a 3 times, your regex would be /ha{3}h/. */
 
@@ -714,7 +768,9 @@ if (btnFCCC27 !== null && scopeFCCC27 !== null) {
   scopeFCCC27.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C28: Check for All or None */
+/* ############################################################ */
 
 /* Sometimes the patterns you want to search for may have parts of it that may or may not exist. However, it may be important to check for them nonetheless. You can specify the possible existence of an element with a question mark, ?. This checks for zero or one of the preceding element. You can think of this symbol as saying the previous element is optional. For example, there are slight differences in American and British English and you can use the question mark to match both spellings. */
 
@@ -739,7 +795,9 @@ if (btnFCCC28 !== null && scopeFCCC28 !== null) {
   scopeFCCC28.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C29: Positive and Negative Lookahead */
+/* ############################################################ */
 
 /* Lookaheads are patterns that tell JavaScript to look-ahead in your string to check for patterns further along. This can be useful when you want to search for multiple patterns over the same string. There are two kinds of lookaheads: positive lookahead and negative lookahead. */
 
@@ -773,7 +831,9 @@ if (btnFCCC29 !== null && scopeFCCC29 !== null) {
   scopeFCCC29.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C30: Check For Mixed Grouping of Characters */
+/* ############################################################ */
 
 /* Sometimes we want to check for groups of characters using a Regular Expression and to achieve that we use parentheses (). If you want to find either Penguin or Pumpkin in a string, you can use the following regular expression: /P(engu|umpk)in/g */
 
@@ -800,7 +860,9 @@ if (btnFCCC30 !== null && scopeFCCC30 !== null) {
   scopeFCCC30.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C31: Reuse Patterns Using Capture Groups */
+/* ############################################################ */
 
 /* Some patterns you search for will occur multiple times in a string. It is wasteful to manually repeat that regex. There is a better way to specify when you have multiple repeat substrings in your string. You can search for repeat substrings using capture groups. Parentheses, ( and ), are used to find repeat substrings. You put the regex of the pattern that will repeat in between the parentheses. */
 
@@ -828,7 +890,9 @@ if (btnFCCC31 !== null && scopeFCCC31 !== null) {
   scopeFCCC31.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C32: Use Capture Groups to Search and Replace */
+/* ############################################################ */
 
 /* Searching is useful. However, you can make searching even more powerful when it also changes (or replaces) the text you match. You can search and replace text in a string using .replace() on a string. The inputs for .replace() is first the regex pattern you want to search for. The second parameter is the string to replace the match or a function to do something. */
 
@@ -855,7 +919,9 @@ if (btnFCCC32 !== null && scopeFCCC32 !== null) {
   scopeFCCC32.innerHTML = "ERROR: Button ID or box scope ID doesn't exist or has the wrong value.";
 }
 
+/* ############################################################ */
 /* Task C33: Remove Whitespace from Start and End */
+/* ############################################################ */
 
 /* Sometimes whitespace characters around strings are not wanted but are there. Typical processing of strings is to remove the whitespace at the start and end of it. */
 

@@ -3,6 +3,6 @@ let slider = tns({
   items: 1,
   rewind: true,
   speed: 200,
-  controlsContainer: '.slide-container__controls__arrows',
-  navContainer: '.slide-container__controls__nav'
+  controlsContainer: '.slide-container__controls-arrows',
+  navContainer: '.slide-container__controls-nav'
 });
