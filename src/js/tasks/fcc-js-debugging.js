@@ -52,4 +52,26 @@ console.log(`Task D3, we're using typeof: ${typeof d3_seven}, ${typeof d3_seven}
 /* Task D4: Catch Misspelled Variable and Function Names */
 /* ############################################################ */
 
+/* In JS, variable and function names are case-sensitive. Transposed, missing, or mis-capitalized characters in a variable or function name will have the browser looking for an object that doesn't exist - and complain in the form or a reference error. */
 
+/* ############################################################ */
+/* Task D5: Catch Unclosed Parentheses, Brackets, Braces and Quotes */
+/* ############################################################ */
+
+/* Another syntax error to be aware of is that all opening parentheses, brackets, curly braces, and quotes have a closing pair. Forgetting a piece tends to happen when you're editing existing code and inserting items one of the pair types. Please also take care when nesting blocks into others, such as adding a callback function as na argument to a method. */
+
+/* Best way to avoid these is as soon as the opening character is typed, immediately include the closing match, then move the cursor back between them and continue coding. */
+
+/* ############################################################ */
+/* Task D6: Catch Mixed Usage of Single and Double Quotes */
+/* ############################################################ */
+
+/* JS allows the use of both single (') and double (") quotes to declare a string. Having two choices is great when a string has contractions or another piece of text that's in quotes. Just be careful that you don't close the string too early, which causes a syntax error. */
+
+/* ############################################################ */
+/* Task D7: Catch Use of Assignment Operator Instead of Equality Operator */
+/* ############################################################ */
+
+/* Branching programs, i.e. ones that do different things if certain conditions are met, rely on if, else if, and else statements in JS. The condition sometimes takes the form of testing whether a result is equal to a value. */
+
+/* It is very important to remember, that assignment operator (=) in JS assigns a value to a variable name, And the == and === operators check for equality (the triple === tests for strict equality, meaning both value and type are the same)! */
