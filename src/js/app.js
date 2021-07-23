@@ -61,5 +61,6 @@ import './tasks/fcc-js-basics';
 import './tasks/fcc-js-es6';
 import './tasks/fcc-js-regex';
 import './tasks/fcc-js-debugging';
+import './tasks/fcc-js-basic-data-structures';
 import './tasks/zenva-scripts';
 import './tasks/my-own-scripts';
