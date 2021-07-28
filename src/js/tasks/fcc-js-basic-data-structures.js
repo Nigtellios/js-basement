@@ -188,3 +188,38 @@ console.log(`${ outputResponse } Our copy machine: ${ copyAnArray(['XD', 'DX'], 
 /* ############################################################ */
 /* Task E9: Combine Arrays with the Spread Operator */
 /* ############################################################ */
+
+/* With spread operator we can also combine arrays or insert all the elements of one array into another, at any index.
+* With traditional syntaxes we can concatenate arrays, but only at the end of one, and the start of another. Spread
+* operator makes these operations extremely simple: */
+
+let traditionalArray = ["Mike", "George", "David", "Custom_1"];
+let insertIntoNewArray = ["Thomas", "Dave", ...traditionalArray, "Karen"];
+
+console.log(`${ outputResponse } Our Inserted Array: ${ insertIntoNewArray }`);
+
+/* ############################################################ */
+/* Task E10: Check For The Presence of an Element With indexOf() */
+/* ############################################################ */
+
+/* Arrays can be changed, mutated at any time, there's no guarantee about where a particular piece of data will be
+* on a given array, or if that element even still exists. We can do it with indexOf(), it takes an element as a parameter,
+* and when called, it returns the position or index of that element, or -1 if the element does not exist on the array. */
+
+let fruitList = ['Apple', 'Orange', 'Peach', 'Pear', 'Avocado'];
+
+console.log(`${ outputResponse } indexOf Orange and Tomato: ${ fruitList.indexOf('Orange') } and tomato: ${ fruitList.indexOf('Tomato') }`);
+
+/* Now let's check if the element exist in the array via function: */
+
+let checkUsers = ['Madis', 'Evelyn'];
+
+let checkIfElementExist = (arr, el) => {
+    return arr.indexOf(el) >= 0 ? true : false;
+}
+
+console.log(`${ outputResponse } Does "Dehad" exists in Users array? ${ checkIfElementExist(checkUsers, "Dehad") }`);
+
+/* ############################################################ */
+/* Task E11: Iterate Through All an Array's Items Using for Loops */
+/* ############################################################ */
